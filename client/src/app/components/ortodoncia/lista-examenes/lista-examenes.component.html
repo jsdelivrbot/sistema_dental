@@ -1,0 +1,234 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+							<i class="zmdi zmdi-menu"></i>
+						</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row p-20">
+        <app-detalles-paciente class="col-lg-12" [paciente]="paciente"></app-detalles-paciente>
+      </div>
+
+      <div class="row p-20 p-t-0">
+        <div class="col-lg-12">
+          <div class="card m-b-10">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Lista de exámenes</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item border">
+                  <span class="float-left" style="line-height: 192px;">
+                      <div class="avatar">
+                        <img src="/assets/img/icons/d3.png" class="rounded max-w-100">
+                      </div>
+                  </span>
+                  <div class="list-group-item-body">
+                    <div class="list-group-item-heading m-b-20">
+                      <div class="border-bottom row">
+                        <div class="col-auto mr-auto">
+                          <a class="link" href="javascript:void(0)">
+                            <h4 style="line-height: 68px;">
+                              Exámen Facial
+                              <span class="label label-success">Realizado</span>
+                              <span class="label label-warning">No Realizado</span>
+                            </h4>
+                          </a>
+                        </div>
+                        <div class="col-auto">
+                          <button class="btn btn-primary">
+                                      <i class="zmdi zmdi-archive"></i> Archivar
+                                    </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item-text">
+                      <div class="row">
+                        <div class="col-auto mr-auto">
+                          <div class="alert md-bg-light-blue-50">
+                            <md-icon class="mat-icon material-icons align-middle">date_range</md-icon> Exámen realizado el dia 27/09/2017
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <a href="javascript:void(0)" class="btn btn-primary btn-flat border-bottom m-0">
+                                <i class="zmdi zmdi-time-restore"></i> Ver historial de exámen facial
+                              </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item border">
+                  <span class="float-left" style="line-height: 192px;">
+                        <div class="avatar">
+                          <img src="/assets/img/icons/d14.png" class="rounded max-w-100">
+                        </div>
+                  </span>
+                  <div class="list-group-item-body">
+                    <div class="list-group-item-heading m-b-20">
+                      <div class="border-bottom row">
+                        <div class="col-auto mr-auto">
+                          <a href="javascript:void(0)">
+                            <h4 style="line-height: 68px;">
+                              Exámen Dental
+                              <span class="label label-success">Realizado</span>
+                              <span class="label label-warning">No Realizado</span>
+                            </h4>
+                          </a>
+                        </div>
+                        <div class="col-auto">
+                          <button class="btn btn-primary">
+                                            <i class="zmdi zmdi-archive"></i> Archivar
+                                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item-text">
+                      <div class="row">
+                        <div class="col-auto mr-auto">
+                          <div class="alert md-bg-light-blue-50">
+                            <md-icon class="mat-icon material-icons align-middle">date_range</md-icon> Exámen realizado el dia 27/09/2017
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <a href="javascript:void(0)" class="btn btn-primary btn-flat border-bottom m-0">
+                                    <i class="zmdi zmdi-time-restore"></i> Ver historial de exámen dental
+                                  </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item border">
+                  <span class="float-left" style="line-height: 192px;">
+                        <div class="avatar">
+                          <img src="/assets/img/icons/d13.png" class="rounded max-w-100">
+                        </div>
+                  </span>
+                  <div class="list-group-item-body">
+                    <div class="list-group-item-heading m-b-20">
+                      <div class="border-bottom row">
+                        <div class="col-auto mr-auto">
+                          <a href="javascript:void(0)">
+                            <h4 style="line-height: 68px;">
+                              Relaciones Dentales
+                              <span class="label label-success">Realizado</span>
+                              <span class="label label-warning">No Realizado</span>
+                            </h4>
+                          </a>
+                        </div>
+                        <div class="col-auto">
+                          <button class="btn btn-primary">
+                                          <i class="zmdi zmdi-archive"></i> Archivar
+                                        </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item-text">
+                      <div class="row">
+                        <div class="col-auto mr-auto">
+                          <div class="alert md-bg-light-blue-50">
+                            <md-icon class="mat-icon material-icons align-middle">date_range</md-icon> Exámen realizado el dia 27/09/2017
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <a href="javascript:void(0)" class="btn btn-primary btn-flat border-bottom m-0">
+                                    <i class="zmdi zmdi-time-restore"></i> Ver historial de relaciones dentales
+                                  </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row p-20 p-t-0">
+        <div class="col-lg-12">
+          <div class="card m-b-10">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Listado de problemas</h3>
+            </div>
+
+            <div *ngIf="!examenes_realizados" class="card-body">
+              <div class="text-center">
+                <img src="/assets/img/icons/d28.png" alt="sin_examenes" class="rounded max-w-100">
+                <h4>Para ver el listado de problemas se deben realizar los exámenes primero.</h4>
+              </div>
+            </div>
+
+            <div *ngIf="examenes_realizados" class="card-body">
+              <ul class="list-group">
+                <li class="list-group-item border">
+                  <span class="float-left" style="line-height: 192px;">
+                          <div class="avatar">
+                            <img src="/assets/img/icons/d28.png" class="rounded max-w-100">
+                          </div>
+                      </span>
+                  <div class="list-group-item-body">
+                    <div class="list-group-item-heading m-b-20">
+                      <div class="border-bottom row">
+                        <div class="col-auto mr-auto">
+                          <a class="link" href="javascript:void(0)">
+                            <h4 style="line-height: 68px;">
+                              Listado de Problemas
+                              <span class="label label-success">Realizado</span>
+                              <span class="label label-warning">No Realizado</span>
+                            </h4>
+                          </a>
+                        </div>
+                        <div class="col-auto">
+                          <button class="btn btn-primary">
+                                          <i class="zmdi zmdi-archive"></i> Archivar
+                                        </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-group-item-text">
+                      <div class="row">
+                        <div class="col-auto mr-auto">
+                          <div class="alert md-bg-light-blue-50">
+                            <md-icon class="mat-icon material-icons align-middle">date_range</md-icon> Actualizado al dia 27/09/2017
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <a href="javascript:void(0)" class="btn btn-primary btn-flat border-bottom m-0">
+                                    <i class="zmdi zmdi-time-restore"></i> Ver historial
+                                  </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Sidenav -->
+    <md-sidenav #rightSidenav2 mode="{{navMode}}" align="end" class="sidenav">
+      <aside id="rightSidenav2" class="p-20">
+
+      </aside>
+    </md-sidenav>
+    <!-- /END Sidenav -->
+    <!--  Footer Wrapper -->
+    <footer id="footer_wrapper" class="footer_wrapper"></footer>
+  </md-sidenav-container>
+  <!-- /END Sidenav component container -->
+</div>
+<!-- /END Content Wrapper - right Sidenav 2-->

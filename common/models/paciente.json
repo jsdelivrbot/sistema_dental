@@ -1,0 +1,59 @@
+{
+  "name": "paciente",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apepat": {
+      "type": "string",
+      "required": true
+    },
+    "apemat": {
+      "type": "string"
+    },
+    "rut": {
+      "type": "string",
+      "required": true
+    },
+    "fech_nacimiento": {
+      "type": "date",
+      "required": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "apoderado": {
+      "type": "object"
+    },
+    "fotografia": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "tipo_sangre" : {
+      "type": "string"
+    },
+    "historial_medico": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
