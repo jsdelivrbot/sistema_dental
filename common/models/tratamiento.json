@@ -1,0 +1,34 @@
+{
+  "name": "tratamiento",
+  "plural": "tratamientos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "fecha_creacion": {
+      "type": "date",
+      "required": true
+    },
+    "archivado": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "fecha_actualizacion": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

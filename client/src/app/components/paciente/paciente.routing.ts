@@ -13,8 +13,11 @@ const routes: Routes = [
       {path: 'lista', component: ListaComponent},
       {path: 'crear', component: CrearPacienteComponent},
       {path: 'editar/:id', component: EditarPacienteComponent},
-      {path: ':id', component: MenuPacienteComponent},
-      {path: ':id/ortodoncia', loadChildren: 'app/components/ortodoncia/ortodoncia.module#OrtodonciaModule'}
+      {
+        path: ':id',
+        loadChildren: 'app/components/tratamiento/tratamiento.module#TratamientoModule'
+      },
+      //{path: ':id/ortodoncia', loadChildren: 'app/components/ortodoncia/ortodoncia.module#OrtodonciaModule'}
     ]
   }
 ];

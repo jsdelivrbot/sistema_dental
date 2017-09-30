@@ -39,5 +39,9 @@
   "paciente": {
     "dataSource": "db",
     "public": true
+  },
+  "tratamiento": {
+    "dataSource": "db",
+    "public": true
   }
 }

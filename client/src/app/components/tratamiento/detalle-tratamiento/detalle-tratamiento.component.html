@@ -1,0 +1,95 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+							<i class="zmdi zmdi-menu"></i>
+						</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row p-20 p-b-5 m-b-0">
+        <app-detalles-paciente class="col-lg-12" [paciente]="paciente"></app-detalles-paciente>
+      </div>
+
+      <div class="row p-20 m-t-0">
+        <!-- examenes -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Exámenes</h3>
+            </div>
+            <div class="card-body">
+              <div class="p-t-5 p-b-10 border-bottom">
+                <a href="javascript:void(0)">
+                  <img src="/assets/img/icons/d2.png" alt="ondontologia_general" class="rounded circle max-w-20">
+                  Odontologia General
+                </a>
+              </div>
+              <div class="p-t-10 p-b-5">
+                <a [routerLink]="['examenes/ortodoncia']" href="javascript:void(0)">
+                  <img src="/assets/img/icons/d1.png" alt="ortodoncia" class="rounded circle max-w-20">
+                  Ortodoncia              
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /examenes -->
+        <!-- listado de problemas -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h4 class="card-title">
+                Listado de problemas
+              </h4>
+            </div>
+            <div class="card-body">
+              <h4><label class="label label-success">Realizado</label></h4>
+              <div>
+                <i class="zmdi zmdi-calendar"></i> Fecha actualización: 01/01/2017
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /listado de problemas -->
+        <!-- plan de tratamiento -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h4 class="card-title">Plan de tratamiento</h4>
+            </div>
+            <div class="card-body">
+              <h4><label class="label label-success">Realizado</label></h4>
+              <div>
+                <i class="zmdi zmdi-calendar"></i> Fecha actualización: 01/01/2017
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /plan de tratamiento -->
+        <!-- presupuesto -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Presupuesto</h3>
+            </div>
+            <div class="card-body">
+              <div class="p-5 border-bottom"><a href="javascript:void(0)">Odontología General</a></div>
+              <div class="p-5 border-bottom"><a href="javascript:void(0)">Ortodoncia</a></div>
+              <div class="p-5"><a href="javascript:void(0)">Completo</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- /presupuesto -->
+      </div>
+
+    </div>
+  </md-sidenav-container>
+</div>

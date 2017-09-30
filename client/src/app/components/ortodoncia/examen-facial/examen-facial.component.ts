@@ -1,24 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Paciente } from 'app/models/paciente';
-import { PacienteService } from 'app/services/pacientes/paciente.service';
 import { ActivatedRoute } from '@angular/router';
+import { PacienteService } from 'app/services/pacientes/paciente.service';
 
 @Component({
-  selector: 'app-lista-examenes',
-  templateUrl: './lista-examenes.component.html',
-  styleUrls: ['./lista-examenes.component.scss']
+  selector: 'app-examen-facial',
+  templateUrl: './examen-facial.component.html',
+  styleUrls: ['./examen-facial.component.scss']
 })
-export class ListaExamenesComponent implements OnInit {
+export class ExamenFacialComponent implements OnInit {
 
-  public title = "Exámenes Ortodoncia";
-  private id_paciente: string;
-  public paciente: Paciente;
+  public title = "Exámen Facial";
   public cargando = true;
-  public examenes_realizados = true;
+  public paciente: Paciente;
+  private id_paciente: string;
 
   constructor(
-    private _pacienteService: PacienteService,
-    private _activatedRoute: ActivatedRoute
+    private _activatedRoute: ActivatedRoute,
+    private _pacienteService: PacienteService
   ) { }
 
   ngOnInit() {

@@ -43,7 +43,7 @@
     "telefono": {
       "type": "string"
     },
-    "tipo_sangre" : {
+    "tipo_sangre": {
       "type": "string"
     },
     "historial_medico": {
