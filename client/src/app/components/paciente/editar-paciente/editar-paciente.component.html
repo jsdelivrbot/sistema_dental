@@ -87,10 +87,10 @@
 
             <div class="form-group">
               <div class="col-auto">
-                <button class="btn btn-primary" (click)="modalApoderado.show()">
+                <a href="javascript:void(0);" class="btn btn-primary" (click)="modalApoderado.show()" mdRipple>
                     <md-icon class="mat-icon material-icons" role="img">person_add</md-icon>
                     Asignar Apoderado
-                  </button>
+                </a>
               </div>
               <div *ngIf="!paciente.apoderado.nombre" class="col-auto">
                 <div class="alert md-bg-light-blue-50">
@@ -123,10 +123,10 @@
                   </select>
               </div>
               <div class="col text-center">
-                <button (click)="modalHistorialMedico.show()" style="margin-top: 25px !important;" class="btn btn-primary m-b-10" mdRipple>
+                <a href="javascript:void(0);" (click)="modalHistorialMedico.show()" style="margin-top: 25px !important;" class="btn btn-primary m-b-10" mdRipple>
                           <md-icon class="mat-icon material-icons" role="img">add</md-icon>
                           Añadir ítem al historial medico
-                    </button>
+                </a>
 
                 <div *ngIf="paciente.historial_medico.length == 0" class="col-auto">
                   <div class="alert md-bg-light-blue-50">

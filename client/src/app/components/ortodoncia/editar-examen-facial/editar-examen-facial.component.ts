@@ -69,6 +69,7 @@ export class EditarExamenFacialComponent implements OnInit {
 
   // Editar el examen
   onSubmit() {
+    this.examen.fecha_actualizacion = new Date();
     this._examenService.editarExamenFacial(this.examen).subscribe(
       (result: ExamenFacial) => {
         if ( result.id != null ) {
