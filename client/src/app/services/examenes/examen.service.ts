@@ -30,4 +30,9 @@ export class ExamenService {
     return this.httpClient.post(this.url + this.port + '/api/examenFacial', examen);
   }
 
+  editarExamenFacial(examen: ExamenFacial) {
+    console.log(examen);
+    return this.httpClient.patch(this.url + this.port + '/api/examenFacial', examen);
+  }
+
 }

@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { Paciente } from 'app/models/paciente';
+import { ExamenFacial } from 'app/models/examen-facial';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
-import { ExamenFacial } from 'app/models/examen-facial';
 import { ExamenService } from 'app/services/examenes/examen.service';
 import { AlertService } from 'app/services/alert/alert.service';
-import { NotificationsService } from 'angular2-notifications';
+import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
 
 @Component({
-  selector: 'app-examen-facial',
-  templateUrl: './examen-facial.component.html',
-  styleUrls: ['./examen-facial.component.scss']
+  selector: 'app-editar-examen-facial',
+  templateUrl: './editar-examen-facial.component.html',
+  styleUrls: ['./editar-examen-facial.component.scss']
 })
-export class ExamenFacialComponent implements OnInit {
+export class EditarExamenFacialComponent implements OnInit {
 
-  public title = "Exámen Facial";
+  public title = "Actualizar Exámen Facial";
   public cargando = true;
   public paciente: Paciente;
   public examen: ExamenFacial;
@@ -24,15 +24,13 @@ export class ExamenFacialComponent implements OnInit {
   constructor(
     private _activatedRoute: ActivatedRoute,
     private _pacienteService: PacienteService,
+    private _tratamientoService: TratamientoService,
     private _examenService: ExamenService,
     private _alertService: AlertService,
     private _router: Router,
-  ) {
-    this.examen = new ExamenFacial();
-   }
+  ) { }
 
   ngOnInit() {
-
     // id paciente
     this._activatedRoute.parent.parent.params.subscribe(
       params => {
@@ -45,6 +43,7 @@ export class ExamenFacialComponent implements OnInit {
     this._activatedRoute.parent.params.subscribe(
       params => {
         this.id_tratamiento = params['id'];
+        this.obtenerExamen();
       }
     );
   }
@@ -54,21 +53,27 @@ export class ExamenFacialComponent implements OnInit {
       (value: Paciente) => {
         if ( value.id != null ) {
           this.paciente = value;
-          this.cargando = false;
         }
       }
     )
   }
 
-  // guardar examen
+  obtenerExamen() {
+    this._tratamientoService.examenFacialRealizado(this.id_tratamiento).subscribe(
+      (result: ExamenFacial) => {
+        this.examen = result;
+        this.cargando = false;
+      }
+    );
+  }
+
+  // Editar el examen
   onSubmit() {
-    this.examen.fecha_realizacion = new Date();
-    this.examen.fecha_actualizacion = new Date();
-    this._examenService.guardarExamenFacial(this.examen, this.id_tratamiento).subscribe(
-      (result: any) => {
+    this._examenService.editarExamenFacial(this.examen).subscribe(
+      (result: ExamenFacial) => {
         if ( result.id != null ) {
-          this._router.navigate(['../lista-examenes'], {relativeTo: this._activatedRoute});
-          this._alertService.showAlert(true, "Exámen Facial Creado", 1);
+          this._router.navigate(['../../'], {relativeTo: this._activatedRoute});
+          this._alertService.showAlert(true,  'Exámen Facial Actualizado', 1);
         }
       },
       error => {

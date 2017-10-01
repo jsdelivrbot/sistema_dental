@@ -1,7 +1,7 @@
 export class ExamenFacial {
 
-    public fecha_realizacion: string;
-    public fecha_actualizacion: string;
+    public fecha_realizacion: Date;
+    public fecha_actualizacion: Date;
     public meso: boolean;
     public dolico: boolean;
     public braqui: boolean;

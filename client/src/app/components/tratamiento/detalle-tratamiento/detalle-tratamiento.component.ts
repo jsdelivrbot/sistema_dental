@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Paciente } from 'app/models/paciente';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
+import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
 
 @Component({
   selector: 'app-detalle-tratamiento',
@@ -14,11 +15,13 @@ export class DetalleTratamientoComponent implements OnInit {
   public title = "Detalle Tratamiento";
   public cargando = true;
   private id_paciente: string;
+  private id_tratamiento: string;
   public paciente: Paciente;
 
   constructor(
     private _activatedRoute: ActivatedRoute,
-    private _pacienteService: PacienteService
+    private _pacienteService: PacienteService,
+    private _tratamientoService: TratamientoService
   ) { }
 
   ngOnInit() {

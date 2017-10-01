@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Paciente } from 'app/models/paciente';
+import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
 
 @Component({
   selector: 'app-lista-tratamiento',
@@ -18,7 +19,8 @@ export class ListaTratamientoComponent implements OnInit {
   constructor(
     private _pacienteService: PacienteService,
     private _activatedRoute: ActivatedRoute,
-    private _router: Router
+    private _router: Router,
+    private _tratamientoService: TratamientoService
   ) { }
 
   ngOnInit() {

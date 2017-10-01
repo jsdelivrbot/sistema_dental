@@ -6,6 +6,8 @@ import { SharedModule } from 'app/shared/shared.module';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
 import { ExamenFacialComponent } from './examen-facial/examen-facial.component';
 import { ExamenService } from 'app/services/examenes/examen.service';
+import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
+import { EditarExamenFacialComponent } from './editar-examen-facial/editar-examen-facial.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,7 @@ import { ExamenService } from 'app/services/examenes/examen.service';
     OrtodonciaRoutingModule,
     SharedModule
   ],
-  providers: [PacienteService, ExamenService],
-  declarations: [ListaExamenesComponent, ExamenFacialComponent]
+  providers: [PacienteService, ExamenService, TratamientoService],
+  declarations: [ListaExamenesComponent, ExamenFacialComponent, EditarExamenFacialComponent]
 })
 export class OrtodonciaModule { }

@@ -14,7 +14,7 @@
         </ul>
       </header>
 
-      <div class="row p-20 p-b-5 m-b-0">
+      <div *ngIf="paciente" class="row p-20 p-b-5 m-b-0">
         <app-detalles-paciente class="col-lg-12" [paciente]="paciente"></app-detalles-paciente>
       </div>
 

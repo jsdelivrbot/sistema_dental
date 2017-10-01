@@ -28,8 +28,4 @@ export class PacienteService {
   editarPaciente( id: string, paciente: Paciente ) {
     return this.httpClient.patch(this.url + this.port + '/api/pacientes/' + id, paciente);
   }
-
-  getPokemon() {
-    return this.httpClient.get('http://pokeapi.co/api/v2/pokemon/20');
-  }
 }
