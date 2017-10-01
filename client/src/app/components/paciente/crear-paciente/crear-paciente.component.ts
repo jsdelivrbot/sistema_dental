@@ -3,6 +3,7 @@ import { Paciente } from 'app/models/paciente';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
 import { Router } from '@angular/router';
 import { ModalDirective } from 'ngx-bootstrap';
+import { AlertService } from 'app/services/alert/alert.service';
 
 @Component({
   selector: 'app-crear-paciente',
@@ -22,7 +23,8 @@ export class CrearPacienteComponent implements OnInit {
 
   constructor(
     private _pacienteService: PacienteService,
-    private _router: Router
+    private _router: Router,
+    private _alertService: AlertService
   ) {
     this.paciente = new Paciente();
     this.paciente.historial_medico = [];
@@ -40,10 +42,12 @@ export class CrearPacienteComponent implements OnInit {
         if ( value.id != null ) {
           // redireccionar hacia la lista de pacientes
           this._router.navigateByUrl('/pacientes');
+          this._alertService.showAlert(true, 'Paciente creado', 1);
         }
       },
       error => {
         console.log(error);
+        this._alertService.showAlert(true, 'Algo ha salido mal', 2);
       }
     );
   }

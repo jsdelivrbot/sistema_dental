@@ -4,7 +4,7 @@ import {
 	OnInit,
 	HostListener,
 	ViewContainerRef,
-    AfterViewInit
+	AfterViewInit
 } from "@angular/core";
 import { Title } from "@angular/platform-browser";
 declare var $: any;
@@ -13,14 +13,21 @@ import { ConfigService } from "./shared/services/config/config.service";
 import { PreloaderService } from "./shared/services/preloader/preloader.service";
 import { SpinnerService } from "./shared/services/spinner/spinner.service";
 import { ThemesService } from "./shared/services/themes/themes.service";
+import { AlertMessage, AlertService } from "app/services/alert/alert.service";
+import { NotificationsService } from "angular2-notifications";
 @Component({
 	selector: "app-root",
-	template: `
-	<router-outlet></router-outlet>
-	`,
+	templateUrl: './app.component.html',
 	styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit, AfterViewInit {
+
+	public options = {
+		position: ["top", "right"],
+		timeOut: 0,
+		lastOnBottom: true
+	}
+
 	//App Left Sidebar Menu Open/Close Desktop
 	@HostBinding("class.app_sidebar-menu-collapsed")
 	get isApp_SidebarLeftCollapsed() {
@@ -36,6 +43,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 	get isApp_SidebarRightOpen() {
 		return this.config.appLayout.isApp_SidebarRightOpen;
 	}
+
 	//The constructor is called first time before the ngOnInit()
 	//The constructor should only be used to initialize class members but shouldn't do actual "work".
 	//So you should use constructor() to setup Dependency Injection and not much else.
@@ -46,7 +54,39 @@ export class AppComponent implements OnInit, AfterViewInit {
 		private _spinner: SpinnerService,
 		private titleService: Title,
 		private themesService: ThemesService,
-	) {}
+		private _alertService: AlertService,
+		private _notificationsService: NotificationsService
+	) {
+		this._alertService.alertStatus.subscribe(
+			(alert: AlertMessage) => {
+				console.log("evento recibido");
+				this.lanzarNotificacion(alert.show, alert.message, alert.status);
+			}
+		);
+	}
+
+	lanzarNotificacion(isShow, msg, status) {
+		if (isShow) {
+			console.log("notificacion lanzada desde el app component");
+			if ( status === 1 ) {
+				this._notificationsService.success('Exito', msg, {
+					timeOut: 3000,
+					showProgressBar: true,
+					pauseOnHover: true,
+					clickToClose: true
+				});
+			}
+			if ( status === 2 ) {
+				this._notificationsService.error('Error', msg, {
+					timeOut: 3000,
+					showProgressBar: true,
+					pauseOnHover: true,
+					clickToClose: true
+				});
+			}
+		}
+	}
+
 	public setTitle(newTitle: string) {
 		this.titleService.setTitle(newTitle);
 	}

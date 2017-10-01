@@ -3,6 +3,7 @@ import { Paciente } from 'app/models/paciente';
 import { ModalDirective } from 'ngx-bootstrap';
 import { Router, ActivatedRoute } from '@angular/router';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
+import { AlertService } from 'app/services/alert/alert.service';
 
 @Component({
   selector: 'app-editar-paciente',
@@ -25,7 +26,8 @@ export class EditarPacienteComponent implements OnInit {
   constructor(
     private _pacienteService: PacienteService,
     private _router: Router,
-    private _activatedRoute: ActivatedRoute
+    private _activatedRoute: ActivatedRoute,
+    private _alertService: AlertService
   ) {
     this.paciente = new Paciente();
     this.paciente.apoderado = {};
@@ -73,10 +75,12 @@ export class EditarPacienteComponent implements OnInit {
       (value: Paciente) => {
         if ( value.id != null ) {
           this._router.navigateByUrl('/pacientes');
+          this._alertService.showAlert(true, 'Paciente editado', 1);
         }
       },
       error => {
         console.log(error);
+        this._alertService.showAlert(true, 'Algo ha salido mal', 2);
       }
     );
   }

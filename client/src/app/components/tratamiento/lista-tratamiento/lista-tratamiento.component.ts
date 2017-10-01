@@ -28,7 +28,7 @@ export class ListaTratamientoComponent implements OnInit {
         this.id_paciente = params['id'];
         this.obtenerPaciente();
       }
-    )
+    );
 
   }
 

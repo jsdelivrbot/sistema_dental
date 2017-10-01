@@ -28,7 +28,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "examenFacial": {
+      "type": "hasOne",
+      "model": "examenFacial",
+      "foreignKey": "tratamientoId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

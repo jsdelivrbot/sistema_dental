@@ -5,14 +5,17 @@ import { TratamientoRoutingModule } from 'app/components/tratamiento/tratamiento
 import { SharedModule } from 'app/shared/shared.module';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
 import { DetalleTratamientoComponent } from './detalle-tratamiento/detalle-tratamiento.component';
+import { CrearTratamientoComponent } from './crear-tratamiento/crear-tratamiento.component';
+import { EditarTratamientoComponent } from './editar-tratamiento/editar-tratamiento.component';
+import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
 
 @NgModule({
-  providers: [PacienteService],
+  providers: [PacienteService, TratamientoService],
   imports: [
     CommonModule,
     TratamientoRoutingModule,
     SharedModule
   ],
-  declarations: [ListaTratamientoComponent, DetalleTratamientoComponent]
+  declarations: [ListaTratamientoComponent, DetalleTratamientoComponent, CrearTratamientoComponent, EditarTratamientoComponent]
 })
 export class TratamientoModule { }

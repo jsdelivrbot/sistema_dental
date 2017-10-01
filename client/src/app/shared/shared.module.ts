@@ -60,6 +60,8 @@ import {
 import { MomentModule } from 'angular2-moment';
 import {NgxPaginationModule} from 'ngx-pagination';
 import { DetallesPacienteComponent } from './components/detalles-paciente/detalles-paciente.component';
+import { Ng2IziToastModule } from 'ng2-izitoast';
+import { SimpleNotificationsModule } from "angular2-notifications";
 
 @NgModule({
 	imports: [
@@ -103,7 +105,8 @@ import { DetallesPacienteComponent } from './components/detalles-paciente/detall
 		ModalModule.forRoot(),
 		PopoverModule.forRoot(),
 		MomentModule,
-		NgxPaginationModule
+		NgxPaginationModule,
+		Ng2IziToastModule,
 	],
 	declarations: [
 		AppBackdropComponent,
@@ -160,7 +163,8 @@ import { DetallesPacienteComponent } from './components/detalles-paciente/detall
 		SmdFabSpeedDialTriggerComponent,
 		MomentModule,
 		NgxPaginationModule,
-		DetallesPacienteComponent
+		DetallesPacienteComponent,
+		Ng2IziToastModule,
 	]
 })
 export class SharedModule {

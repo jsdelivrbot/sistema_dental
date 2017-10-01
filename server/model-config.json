@@ -43,5 +43,9 @@
   "tratamiento": {
     "dataSource": "db",
     "public": true
+  },
+  "examenFacial": {
+    "dataSource": "db",
+    "public": true
   }
 }

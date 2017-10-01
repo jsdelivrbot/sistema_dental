@@ -1,0 +1,96 @@
+{
+  "name": "examenFacial",
+  "plural": "examenFacial",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "fecha_realizacion": {
+      "type": "date"
+    },
+    "fecha_actualizacion": {
+      "type": "date"
+    },
+    "meso": {
+      "type": "boolean",
+      "default": false
+    },
+    "dolico": {
+      "type": "boolean",
+      "default": false
+    },
+    "braqui": {
+      "type": "boolean",
+      "default": false
+    },
+    "obs_postural": {
+      "type": "string"
+    },
+    "linea_media_facial_der": {
+      "type": "number"
+    },
+    "linea_media_facial_izq": {
+      "type": "number"
+    },
+    "linea_media_dental_der1": {
+      "type": "number"
+    },
+    "linea_media_dental_der2": {
+      "type": "number"
+    },
+    "linea_media_dental_izq1": {
+      "type": "number"
+    },
+    "linea_media_dental_izq2": {
+      "type": "number"
+    },
+    "long_l_sup": {
+      "type": "string"
+    },
+    "ls_ant": {
+      "type": "number"
+    },
+    "ls_post": {
+      "type": "number"
+    },
+    "obs_asimetrias": {
+      "type": "string"
+    },
+    "perfil": {
+      "type": "string"
+    },
+    "frente": {
+      "type": "string"
+    },
+    "nariz": {
+      "type": "string"
+    },
+    "tercio_medio": {
+      "type": "string"
+    },
+    "nl": {
+      "type": "string"
+    },
+    "ml": {
+      "type": "string"
+    },
+    "labios": {
+      "type": "string"
+    },
+    "menton": {
+      "type": "string"
+    },
+    "mc": {
+      "type": "string"
+    },
+    "obs_perfil": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

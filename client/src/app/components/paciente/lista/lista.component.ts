@@ -1,5 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
+import { NotificationsService } from 'angular2-notifications';
+import { AlertService } from 'app/services/alert/alert.service';
 
 @Component({
   selector: 'app-lista',
@@ -17,6 +19,7 @@ export class ListaComponent implements OnInit, OnDestroy {
 
   constructor(
     private _pacienteService: PacienteService,
+    private _alertService: AlertService
   ) {
   }
 

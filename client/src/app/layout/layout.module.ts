@@ -10,6 +10,7 @@ import { RightSidebarComponent } from "./right-sidebar/right-sidebar.component";
 import { SharedModule } from "../shared/shared.module";
 import { ScrollbarDirective } from "../shared/directives/scrollbar.directive";
 import { NavDropDownDirectives } from "../shared/directives/nav-dropdown.directive";
+import { AppModule } from "app/app.module";
 
 
 @NgModule({

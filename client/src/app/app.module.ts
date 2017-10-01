@@ -12,6 +12,10 @@ import { SharedModule } from "./shared/shared.module";
 import { AppRoutingModule } from "./app.routing";
 import { LayoutModule } from "app/layout/layout.module";
 import { HttpClientModule } from "@angular/common/http";
+import { AlertService } from "app/services/alert/alert.service";
+import { ExamenService } from "app/services/examenes/examen.service";
+import { NotificationsService, SimpleNotificationsModule } from "angular2-notifications";
+
 // Application wide providers
 const APP_PROVIDERS = [AppState, GlobalState, Title, {provide: LocationStrategy, useClass: HashLocationStrategy}];
 
@@ -30,12 +34,13 @@ export type StoreType = {
 		ReactiveFormsModule,
 		BrowserAnimationsModule,
 		ServicesModule,
+		SimpleNotificationsModule.forRoot(),
 		SharedModule.forRoot(),
 		AppRoutingModule,
 		HttpClientModule,
 		LayoutModule
 	],
-	providers: [APP_PROVIDERS],
+	providers: [APP_PROVIDERS, AlertService, NotificationsService],
 	bootstrap: [AppComponent]
 })
 export class AppModule {

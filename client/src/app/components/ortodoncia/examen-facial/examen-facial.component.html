@@ -20,7 +20,7 @@
 
       <!-- examen -->
       <div class="">
-        <form #exmaneFacial="ngForm" class="row p-20 m-t-0 p-t-0">
+        <form #exmaneFacial="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
           <!-- examen postural -->
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card">
@@ -30,13 +30,13 @@
               <div class="card-body">
                 <div class="form-group row">
                   <div class="col-sm-4">
-                    <md-checkbox>Meso</md-checkbox>
+                    <md-checkbox name="meso" [(ngModel)]="examen.meso">Meso</md-checkbox>
                   </div>
                   <div class="col-sm-4">
-                    <md-checkbox>Dolico</md-checkbox>
+                    <md-checkbox name="dolico" [(ngModel)]="examen.dolico">Dolico</md-checkbox>
                   </div>
                   <div class="col-sm-4">
-                    <md-checkbox>Braqui</md-checkbox>
+                    <md-checkbox name="braqui" [(ngModel)]="examen.barqui">Braqui</md-checkbox>
                   </div>
                 </div>
                 <div class="form-group row">
@@ -45,7 +45,7 @@
                       <i class="zmdi zmdi-eye"></i>
                       Observaciones:
                     </label>
-                    <textarea class="form-control" name="obs_postural" id="obs_postural" cols="30" rows="21"></textarea>
+                    <textarea class="form-control" name="obs_postural" id="obs_postural" cols="30" rows="21" [(ngModel)]="examen.obs_postural"></textarea>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@
                         <tbody>
                           <tr>
                             <td class="p-0">
-                              <select class="form-control" name="linea_media_facial_der" id="linea_media_facial_der">
+                              <select class="form-control" name="linea_media_facial_der" id="linea_media_facial_der" [(ngModel)]="examen.linea_media_facial_der">
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -81,7 +81,7 @@
                                   </select>
                             </td>
                             <td class="p-0">
-                              <select class="form-control" name="linea_media_facial_izq" id="linea_media_facial_izq">
+                              <select class="form-control" name="linea_media_facial_izq" id="linea_media_facial_izq" [(ngModel)]="examen.linea_media_facial_izq">
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -103,7 +103,7 @@
                         <tbody>
                           <tr>
                             <td class="p-0">
-                              <select class="form-control" name="linea_media_dental_der1" id="linea_media_dental_der1">
+                              <select class="form-control" name="linea_media_dental_der1" id="linea_media_dental_der1" [(ngModel)]="examen.linea_media_dental_der1">
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -112,7 +112,7 @@
                                   </select>
                             </td>
                             <td class="p-0">
-                              <select class="form-control" name="linea_media_dental_izq1" id="linea_media_dental_izq1">
+                              <select class="form-control" name="linea_media_dental_izq1" id="linea_media_dental_izq1" [(ngModel)]="examen.linea_media_dental_izq1">
                                       <option value="0">0</option>
                                       <option value="1">1</option>
                                       <option value="2">2</option>
@@ -123,7 +123,7 @@
                           </tr>
                           <tr>
                             <td class="p-0">
-                              <select class="form-control" name="linea_media_dental_der2" id="linea_media_dental_der2">
+                              <select class="form-control" name="linea_media_dental_der2" id="linea_media_dental_der2" [(ngModel)]="examen.linea_media_dental_der2">
                                       <option value="0">0</option>
                                       <option value="1">1</option>
                                       <option value="2">2</option>
@@ -132,7 +132,7 @@
                                     </select>
                             </td>
                             <td class="p-0">
-                              <select class="form-control" name="linea_media_dental_izq2" id="linea_media_dental_izq2">
+                              <select class="form-control" name="linea_media_dental_izq2" id="linea_media_dental_izq2" [(ngModel)]="examen.linea_media_dental_izq2">
                                         <option value="0">0</option>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -149,7 +149,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                       <!-- long L sup -->
                       <label for="long_l_sup" class="control-label">Long L Sup</label>
-                      <select class="form-control" name="long_l_sup" id="long_l_sup">
+                      <select class="form-control" name="long_l_sup" id="long_l_sup" [(ngModel)]="examen.long_l_sup">
                           <option value="normal">Normal</option>
                           <option value="corto">Corto</option>
                           <option value="largo">Largo</option>
@@ -159,7 +159,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                       <!-- ls_ant -->
                       <label for="ls_ant" class="control-label">LS Ant</label>
-                      <select name="ls_ant" id="ls_sant" class="form-control">
+                      <select name="ls_ant" id="ls_ant" class="form-control" [(ngModel)]="examen.ls_ant">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -177,7 +177,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                       <!-- ls_post -->
                       <label for="ls_post" class="control-label">LS Post</label>
-                      <select name="ls_post" id="ls_post" class="form-control">
+                      <select name="ls_post" id="ls_post" class="form-control" [(ngModel)]="examen.ls_post">
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
@@ -196,7 +196,7 @@
                   <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <label for="obs_asimetrias" class="control-label">Asimetrias</label>
-                      <textarea class="form-control" name="obs_asimetrias" id="obs_asimetrias" cols="30" rows="10"></textarea>
+                      <textarea class="form-control" name="obs_asimetrias" id="obs_asimetrias" cols="30" rows="10" [(ngModel)]="examen.obs_asimetrias"></textarea>
                     </div>
                   </div>
                 </div>
@@ -222,7 +222,7 @@
                               <tr>
                                 <td>Perfil</td>
                                 <td>
-                                  <md-radio-group name="perfil">
+                                  <md-radio-group name="perfil" [(ngModel)]="examen.perfil">
                                     <md-radio-button value="recto">Recto</md-radio-button>
                                     <md-radio-button value="concavo">Concavo</md-radio-button>
                                     <md-radio-button value="convexo">Convexo</md-radio-button>
@@ -232,7 +232,7 @@
                               <tr>
                                 <td>Frente</td>
                                 <td>
-                                  <md-radio-group name="frente">
+                                  <md-radio-group name="frente" [(ngModel)]="examen.frente">
                                     <md-radio-button value="normal">Normal</md-radio-button>
                                     <md-radio-button value="abombada">Abombada</md-radio-button>
                                     <md-radio-button value="inclinada">Inclinada</md-radio-button>
@@ -242,7 +242,7 @@
                               <tr>
                                 <td>Nariz</td>
                                 <td>
-                                  <md-radio-group name="nariz">
+                                  <md-radio-group name="nariz" [(ngModel)]="examen.nariz">
                                     <md-radio-button value="normal">Normal</md-radio-button>
                                     <md-radio-button value="pequeña">Pequeña</md-radio-button>
                                     <md-radio-button value="grande">Grande</md-radio-button>
@@ -258,7 +258,7 @@
                       <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                           <label for="tercio_medio" class="control-label">Tercio 1/2</label>
-                          <select name="tercio_medio" id="tercio_medio" class="form-control">
+                          <select name="tercio_medio" id="tercio_medio" class="form-control" [(ngModel)]="examen.tercio_medio">
                             <option disabled value=""></option>
                             <option value="-">-</option>
                             <option value="+">+</option>
@@ -266,7 +266,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                           <label for="nl" class="control-label">NL</label>
-                          <select name="nl" id="nl" class="form-control">
+                          <select name="nl" id="nl" class="form-control" [(ngModel)]="examen.nl">
                             <option value="normal">Normal</option>
                             <option value="aumentado">Aumentado</option>
                             <option value="disminuido">Disminuido</option>
@@ -274,7 +274,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                           <label for="ml" class="control-label">ML</label>
-                          <select name="ml" id="ml" class="form-control">
+                          <select name="ml" id="ml" class="form-control" [(ngModel)]="examen.ml">
                               <option value="normal">Normal</option>
                               <option value="aumentado">Aumentado</option>
                               <option value="disminuido">Disminuido</option>
@@ -284,7 +284,7 @@
                       <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12">
                           <label for="labios" class="control-label">Labios</label>
-                          <select name="labios" id="labios" class="form-control">
+                          <select name="labios" id="labios" class="form-control" [(ngModel)]="examen.labios">
                             <option value="normal">Normal</option>
                             <option value="incompetente">Incompetente</option>
                             <option value="bitrotrucivo">Bitrotrucivo</option>
@@ -292,7 +292,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                           <label for="menton" class="control-label">Menton</label>
-                          <select name="menton" id="menton" class="form-control">
+                          <select name="menton" id="menton" class="form-control" [(ngModel)]="examen.menton">
                               <option value="normal">Normal</option>
                               <option value="aumentado">Aumentado</option>
                               <option value="disminuido">Disminuido</option>
@@ -300,7 +300,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
                           <label for="mc" class="control-label">MC</label>
-                          <select name="mc" id="mc" class="form-control">
+                          <select name="mc" id="mc" class="form-control" [(ngModel)]="examen.mc">
                               <option value="normal">Normal</option>
                               <option value="aumentado">Aumentado</option>
                               <option value="disminuido">Disminuido</option>
@@ -313,7 +313,7 @@
                             <i class="zmdi zmdi-eye"></i> 
                             Observaciones:
                           </label>
-                      <textarea class="form-control" name="obs_perfil" id="obs_perfil" cols="30" rows="10"></textarea>
+                      <textarea class="form-control" name="obs_perfil" id="obs_perfil" cols="30" rows="10" [(ngModel)]="examen.obs_perfil"></textarea>
                     </div>
                   </div>
                 </div>
@@ -326,7 +326,7 @@
             <div class="card">
               <div class="card-footer">
                 <div class="row">
-                  <button class="btn btn-primary m-auto" mdRipple>
+                  <button type="submit" class="btn btn-primary m-auto" mdRipple>
                         <i class="zmdi zmdi-save"></i>
                         Terminar Exámen
                   </button>
@@ -337,6 +337,12 @@
         </form>
       </div>
       <!-- /examen -->
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        {{ examen | json }}
+      </div>
     </div>
   </md-sidenav-container>
 </div>

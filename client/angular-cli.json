@@ -16,11 +16,13 @@
 			"testTsconfig": "tsconfig.spec.json",
 			"prefix": "app",
 			"styles": [
+				"../node_modules/izitoast/dist/css/iziToast.min.css",				
 				"../node_modules/bootstrap/dist/css/bootstrap.min.css",
 				"../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css",
 				"styles.scss"
 			],
 			"scripts": [
+				"../node_modules/izitoast/dist/js/iziToast.min.js",				
 				"../node_modules/jquery/dist/jquery.js",
 				"../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"
 			],

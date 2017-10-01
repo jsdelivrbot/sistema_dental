@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, ElementRef, OnInit, HostBinding } from '@angular/core';
+import { Component, ViewEncapsulation, ElementRef, OnInit, HostBinding, AfterViewInit, ViewChild } from '@angular/core';
 import { GlobalState } from '../app.state';
 
 import { ConfigService } from '../shared/services/config/config.service';
@@ -9,18 +9,22 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationCancel, Naviga
 	styleUrls: ['./layout.component.scss'],
 	encapsulation: ViewEncapsulation.Emulated,
 })
-export class LayoutComponent implements OnInit {
+export class LayoutComponent implements OnInit, AfterViewInit {
 
 	constructor(
 		public config: ConfigService,
 		private _elementRef: ElementRef,
 		private _state: GlobalState,
-		private _router: Router
+		private _router: Router,
 	) {
 	}
 
 	ngOnInit() {
+	}
+
+	ngAfterViewInit(): void {
 
 	}
+
 
 }

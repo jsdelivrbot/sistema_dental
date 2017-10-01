@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { ListaTratamientoComponent } from 'app/components/tratamiento/lista-tratamiento/lista-tratamiento.component';
 import { DetalleTratamientoComponent } from 'app/components/tratamiento/detalle-tratamiento/detalle-tratamiento.component';
+import { CrearTratamientoComponent } from 'app/components/tratamiento/crear-tratamiento/crear-tratamiento.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'tratamientos', pathMatch: 'full' },
   { path: '',
     children: [
       {path: 'tratamientos', component: ListaTratamientoComponent},
+      {path: 'tratamientos/crear', component: CrearTratamientoComponent},
       {path: 'tratamientos/:id', component: DetalleTratamientoComponent},
       {
         path: 'tratamientos/:id/examenes/ortodoncia',
