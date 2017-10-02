@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Paciente } from 'app/models/paciente';
+import { ActivatedRoute } from '@angular/router';
 import { PacienteService } from 'app/services/pacientes/paciente.service';
 import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
 
 @Component({
-  selector: 'app-detalle-tratamiento',
-  templateUrl: './detalle-tratamiento.component.html',
-  styleUrls: ['./detalle-tratamiento.component.scss']
+  selector: 'app-presupuesto-ortodoncia',
+  templateUrl: './presupuesto-ortodoncia.component.html',
+  styleUrls: ['./presupuesto-ortodoncia.component.scss']
 })
-export class DetalleTratamientoComponent implements OnInit {
-
+export class PresupuestoOrtodonciaComponent implements OnInit {
 
   public title = "Detalle Tratamiento";
   public cargando = true;
@@ -33,6 +32,7 @@ export class DetalleTratamientoComponent implements OnInit {
     )
   }
 
+
   // Obtiene al paciente desde el servicio
   obtenerPaciente() {
     this._pacienteService.getPaciente(this.id_paciente).subscribe(
@@ -47,4 +47,5 @@ export class DetalleTratamientoComponent implements OnInit {
       }
     );
   }
+
 }

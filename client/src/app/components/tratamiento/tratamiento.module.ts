@@ -8,6 +8,7 @@ import { DetalleTratamientoComponent } from './detalle-tratamiento/detalle-trata
 import { CrearTratamientoComponent } from './crear-tratamiento/crear-tratamiento.component';
 import { EditarTratamientoComponent } from './editar-tratamiento/editar-tratamiento.component';
 import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
+import { PresupuestoOrtodonciaComponent } from './presupuesto-ortodoncia/presupuesto-ortodoncia.component';
 
 @NgModule({
   providers: [PacienteService, TratamientoService],
@@ -16,6 +17,6 @@ import { TratamientoService } from 'app/services/tratamientos/tratamiento.servic
     TratamientoRoutingModule,
     SharedModule
   ],
-  declarations: [ListaTratamientoComponent, DetalleTratamientoComponent, CrearTratamientoComponent, EditarTratamientoComponent]
+  declarations: [ListaTratamientoComponent, DetalleTratamientoComponent, CrearTratamientoComponent, EditarTratamientoComponent, PresupuestoOrtodonciaComponent]
 })
 export class TratamientoModule { }

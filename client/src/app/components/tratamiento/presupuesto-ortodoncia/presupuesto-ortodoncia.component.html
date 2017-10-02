@@ -1,0 +1,373 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+							<i class="zmdi zmdi-menu"></i>
+						</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row p-20 p-b-5 m-b-0">
+        <app-detalles-paciente class="col-lg-12" [paciente]="paciente"></app-detalles-paciente>
+      </div>
+
+      <div class="row p-20 p-b-5 p-t-0 m-t-0">
+        <div class="col-lg-12">
+          <form #formPresupuestoOrtodoncia="ngForm">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Opciones del presupuesto</h3>
+              </div>
+
+              <div class="card-body">
+                <div class="form-group row">
+                  <div class="col">
+                    <label for="estudio_diagnostico_ortodoncia" class="control-label">Estudio Diagnóstico Ortodoncia</label><br>
+                    <md-checkbox id="estudio_diagnostico_ortodoncia" name="estudio_diagnostico_ortodoncia">$50.000</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-t-20">
+                  <div class="col-lg-12">
+                    <h4 class="card-title border-bottom">
+                      Ortodoncia Vestibular
+                    </h4>
+                  </div>
+                  <div class="col">
+                    <label for="aparatologia_fija" class="control-label">Costo Aparatología Fija</label><br>
+                    <md-radio-group id="aparatologia_fija" name="aparatologia_fija">
+                      <md-radio-button value="280000">Metálica ($280.000)</md-radio-button>
+                      <md-radio-button value="380000">Ceramicos ($380.000)</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                  <div class="col">
+                    <label for="" class="control-label">Reposición Bracket/Tubo/Banda Metálico</label><br>
+                    <md-checkbox name="reposicion_bracket_metalico" id="reposicion_bracket_metalico">$15.000</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <label for="reposicion_bracket_ceramicos" class="control-label">Reposición Bracket Ceramicos</label><br>
+                    <md-checkbox name="reposicion_bracket_ceramicos" id="reposicion_bracket_ceramicos">$20.000</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col">
+                    <label for="mensualidades_vesitbular" class="control-label">Mensualidades</label>
+                    <select name="mensualidades_vesitbular" id="mensualidades_vesitbular" class="form-control">
+                        <option value="6_12">6 a 12 meses</option>
+                        <option value="12_18">12 a 18 meses</option>
+                        <option value="18_24">18 a 24 meses</option>
+                        <option value="24_30">24 a 30 meses</option>
+                        <option value="30_36">30 a 36 meses</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <md-checkbox (click)="modalMensualidadesVestibular.show()" style="line-height:90px;" id="otra_mensualidad_vestibular" name="otra_mensualidad_vestibular">Otro</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-t-10">
+                  <div class="col-lg-12">
+                    <h4 class="card-title border-bottom">
+                      Ortodoncia Lingual
+                    </h4>
+                  </div>
+                  <div class="col">
+                    <label for="aparatologia_fija_lingual" class="control-label">Costo Aparatología Fija</label><br>
+                    <md-radio-group id="aparatologia_fija_lingual" name="aparatologia_fija_lingual">
+                      <md-radio-button value="850000">Metálica Lingual ($850.000)</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                  <div class="col">
+                    <label for="reposicion_bracket_metalico_lingual" class="control-label">Reposición Bracket/Tubo/Banda Metálico Lingual</label><br>
+                    <md-checkbox name="reposicion_bracket_metalico_lingual" id="reposicion_bracket_metalico_lingual">$25.000</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col">
+                    <label for="mensualidades_lingual" class="control-label">Mensualidades</label>
+                    <select name="mensualidades_lingual" id="mensualidades_lingual" class="form-control">
+                          <option value="6_12">6 a 12 meses</option>
+                          <option value="12_18">12 a 18 meses</option>
+                          <option value="18_24">18 a 24 meses</option>
+                          <option value="24_30">24 a 30 meses</option>
+                          <option value="30_36">30 a 36 meses</option>
+                      </select>
+                  </div>
+                  <div class="col">
+                    <md-checkbox (click)="modalMensualidadesLingual.show()" style="line-height:90px;" id="otra_mensualidad_lingual" name="otra_mensualidad_lingual">Otro</md-checkbox>
+                  </div>
+                </div>
+                <!--extras -->
+                <div class="form-group row m-t-10">
+                  <div class="col-lg-12">
+                    <h4 class="card-title border-bottom">
+                      Extras
+                    </h4>
+                  </div>
+                  <div class="col">
+                    <a (click)="modalExtras.show()" href="javascript:void(0);" class="btn btn-primary">Elegir Extras</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </md-sidenav-container>
+</div>
+
+
+<div div class="modal fade " bsModal id="modalMensualidadesVestibular" #modalMensualidadesVestibular="bs-modal" tabindex="-1"
+  role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-left">Otro tipo de mensualidades</h4>
+        <button (click)="modalMensualidadesVestibular.hide()" aria-label="Close" class="close pull-right" type="button">
+          <span  aria-hidden="true">×</span>
+        </button>
+      </div>
+      <form #formularioAgregarOtraMensulidadVestibular (submit)="agregarOtraMensulidadVestibular()">
+        <div class="modal-body">
+          <!-- Formulario apoderado -->
+
+          <div class="form-group row">
+            <div class="col">
+              <label for="mes_de_vestibular" class="control-label">De:</label>
+              <input type="number" class="form-control" id="mes_de_vestibular" name="mes_de_vestibular" #mesDeVestibular [min]="36" [value]="36">
+            </div>
+            <div class="col">
+              <label for="mes_a_vestibular" class="control-label">A:</label>
+              <input type="number" class="form-control" id="mes_a_vestibular" name="mes_a_vestibular" [min]="++mesDeVestibular.value">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-flat" type="button" (click)="modalMensualidadesVestibular.hide()">Cancelar</button>
+          <button class="btn btn-accent" type="submit">Elegir esta mensualidad</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div div class="modal fade " bsModal id="modalMensualidadesLingual" #modalMensualidadesLingual="bs-modal" tabindex="-1" role="dialog"
+  aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-left">Otro tipo de mensualidades</h4>
+        <button (click)="modalMensualidadesLingual.hide()" aria-label="Close" class="close pull-right" type="button">
+          <span  aria-hidden="true">×</span>
+        </button>
+      </div>
+      <form #formularioAgregarOtraMensulidadLingual (submit)="agregarOtraMensulidadLingual()">
+        <div class="modal-body">
+          <!-- Formulario apoderado -->
+
+          <div class="form-group row">
+            <div class="col">
+              <label for="mes_de_lingual" class="control-label">De:</label>
+              <input type="number" class="form-control" id="mes_de_lingual" name="mes_de_lingual" #mesDeLingual [min]="36" [value]="36">
+            </div>
+            <div class="col">
+              <label for="mes_a_lingual" class="control-label">A:</label>
+              <input type="number" class="form-control" id="mes_a_lingual" name="mes_a_lingual" [min]="++mesDeLingual.value">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-flat" type="button" (click)="modalMensualidadesLingual.hide()">Cancelar</button>
+          <button class="btn btn-accent" type="submit">Elegir esta mensualidad</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div div class="modal fade " bsModal id="modalExtras" #modalExtras="bs-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-left">Seleccionar Extras</h4>
+        <button (click)="modalExtras.hide()" aria-label="Close" class="close pull-right" type="button">
+          <span  aria-hidden="true">×</span>
+        </button>
+      </div>
+      <form #formularioAgregarExtras (submit)="agregarExtras()">
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Seleccionar</th>
+                <th>Extra</th>
+                <th>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Plano Ocusal</td>
+                <td>$50.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Expansor Lento Quadrihelix</td>
+                <td>$60.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Expansor Rápido Hirax</td>
+                <td>$80.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Péndulo</td>
+                <td>$60.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Máscara De Protracción</td>
+                <td>$70.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>OMG</td>
+                <td>$50.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Propulsor Mandibular</td>
+                <td>$70.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Microtornillo De Anclaje Ortodoncico</td>
+                <td>$40.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Arco Transpalatino</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Arco Lingual</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Arco Seccional</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>4 X 2 Superior</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>4 X 2 Inferior</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Retenedor Superior Fijo o Removible</td>
+                <td style="color: red;">1.75UF</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Retenedor Superior Fijo o Removible</td>
+                <td style="color: red;">1.75UF</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Extracción Pza. Temporal</td>
+                <td>$25.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Extracción Simple Pza. Definitiva</td>
+                <td>$25.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Extracción Compleja Pza. Definitiva (No Incliye 3ros Molares)</td>
+                <td>$45.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Composite Fotocurado 1C</td>
+                <td>$40.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Composite Fotocurado 2C</td>
+                <td>$45.000</td>
+              </tr>
+              <tr>
+                <td>
+                  <md-checkbox></md-checkbox>
+                </td>
+                <td>Fase de higiene por sesión</td>
+                <td>$25.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-flat" type="button" (click)="modalExtras.hide()">Cancelar</button>
+          <button class="btn btn-accent" type="submit">Elegir extras</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
