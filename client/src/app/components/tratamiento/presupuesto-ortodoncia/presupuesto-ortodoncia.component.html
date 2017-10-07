@@ -23,14 +23,18 @@
           <form #formPresupuestoOrtodoncia="ngForm">
             <div class="card">
               <div class="card-header border-bottom">
-                <h3 class="card-title">Opciones del presupuesto</h3>
+                <h3 class="card-title">
+                  <i class="zmdi zmdi-money"></i>
+                  Opciones del presupuesto
+                </h3>
               </div>
 
               <div class="card-body">
                 <div class="form-group row">
                   <div class="col">
-                    <label for="estudio_diagnostico_ortodoncia" class="control-label">Estudio Diagnóstico Ortodoncia</label><br>
-                    <md-checkbox id="estudio_diagnostico_ortodoncia" name="estudio_diagnostico_ortodoncia">$50.000</md-checkbox>
+                    <div class="alert alert-info">Los precios de la <strong>consulta inicial ($15.000)</strong> y del <strong>estudio diagnóstico ortodoncia ($50.000)</strong> no están reflejados en el total que se presenta a continuación pero si estarán detallados en el resumen.</div>
+                    <!--<label for="estudio_diagnostico_ortodoncia" class="control-label">Estudio Diagnóstico Ortodoncia</label><br>
+                    <md-checkbox id="estudio_diagnostico_ortodoncia" name="estudio_diagnostico_ortodoncia">$50.000</md-checkbox>-->
                   </div>
                 </div>
                 <div class="form-group row m-t-20">
@@ -111,6 +115,13 @@
                   </div>
                   <div class="col">
                     <a (click)="modalExtras.show()" href="javascript:void(0);" class="btn btn-primary">Elegir Extras</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer border-top">
+                <div class="row">
+                  <div class="col-auto ml-auto">
+                    <div style="font-size:1.375em;">Total: <span style="color: #28bebd;font-weight:bold;">$0</span></div>
                   </div>
                 </div>
               </div>

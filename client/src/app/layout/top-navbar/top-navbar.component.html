@@ -1,37 +1,45 @@
 <nav role="navigation" class="navbar">
-	<ul class="navbar-nav nav-left">
+	<ul class="navbar-nav m-auto">
 		<li class="nav-item hidden-sm">
 			<a md-ripple href="javascript:void(0)" (click)="toggleAppMobileLeftMenuSidebar()" class="nav-link mobile-menu-trigger">
 				<i class="mdi mdi-backburger"></i>
 			</a>
 		</li>
 		<li class="nav-item hidden-sm-down">
-			<a md-ripple href="javascript:void(0)" [routerLink]="['/dashboards']" class="nav-link">
-				<span>Home</span>
+			<a md-ripple href="javascript:void(0)" [routerLink]="['/pacientes']" class="nav-link">
+				<span>
+					<i class="zmdi zmdi-accounts"></i>
+					Pacientes
+				</span>
 			</a>
 		</li>
 		<li class="nav-item dropdown dropdown-lg app_menu_launcher hidden-sm-down" dropdown>
 			<a md-ripple href="javascript:void(0)" class="nav-link" dropdownToggle>
-				<span>Dropdown</span>
+				<span>
+					<i class="zmdi zmdi-account"></i>
+					Paciente actual
+				</span>
 				<span class="caret"></span>
 			</a>
-			<ul class="dropdown-menu dropdown-lg-menu  p-15 min-h-200" *dropdownMenu>
-				<li>
-
+			<ul class="dropdown-menu btn-accent" *dropdownMenu>
+				<li class="p-10 m-b-5">
+					<a href="javascript:void(0);" mdRipple>Lista de tratamientos</a>
+				</li>
+				<li class="p-10 m-b-5">
+					<a href="javascript:void(0);" mdRipple>Tratamiento Actual</a>
 				</li>
 			</ul>
 		</li>
 		<li class="nav-item dropdown mega hidden-sm-down" dropdown>
-			<a md-ripple href="javascript:void(0)" class="nav-link" dropdownToggle>
-				<span>Mega</span>
-				<span class="caret"></span>
+			<a md-ripple href="javascript:void(0)" class="nav-link">
+				<span>
+					<i class="zmdi zmdi-settings"></i>
+					Administración
+				</span>
 			</a>
-			<div class="dropdown-menu dropdown-menu full-width p-15 min-h-200" *dropdownMenu>
-
-			</div>
 		</li>
 	</ul>
-	<ul class="navbar-nav nav-right">
+	<!--ul class="navbar-nav nav-right">
 		<li class="nav-item dropdown avatar-menu hidden-sm-down" dropdown>
 			<a md-ripple href="javascript:void(0)" class="nav-link" dropdownToggle>
 				<span class="meta">
@@ -173,6 +181,6 @@
 				<i [ngClass]="{'mdi-playlist-minus': false, 'mdi-playlist-plus': true}" class="mdi"></i>
 			</a>
 		</li>
-	</ul>
+	</ul-->
 </nav>
 <topbar-search #search></topbar-search>

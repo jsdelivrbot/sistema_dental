@@ -37,7 +37,12 @@
                 Tratamiento Activo
               </h3>
             </div>
-
+            <div *ngIf="!tratamiento_activo" class="card-body">
+              <div class="text-center">
+                <h3>No hay un tratamiento activo</h3>
+                <p>Puede crear uno nuevo presionando el botón "Nuevo Tratamiento"</p>
+              </div>
+            </div>
             <div *ngIf="tratamiento_activo" class="card-body">
               <ul class="list-group border">
                 <li class="list-group-item">
@@ -122,6 +127,11 @@
                 </div>
               </div>
             </div>
+            <div *ngIf="tratamientos_archivados.length == 0" class="card-body">
+              <div class="text-center">
+                <h3>Este paciente no tiene tratamientos anteriores</h3>
+              </div>
+            </div>
             <div *ngIf="tratamientos_archivados.length > 0" class="card-body">
               <ul class="list-group border">
                 <li *ngFor="let tratamiento of tratamientos_archivados | paginate: { itemsPerPage: 3, currentPage: p }" class="list-group-item border-bottom">
@@ -181,7 +191,6 @@
     </md-sidenav>
     <!-- /END Sidenav -->
     <!--  Footer Wrapper -->
-    <footer id="footer_wrapper" class="footer_wrapper"></footer>
   </md-sidenav-container>
   <!-- /END Sidenav component container -->
 </div>

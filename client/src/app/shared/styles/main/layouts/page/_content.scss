@@ -2,7 +2,7 @@
 	position: relative;
 	min-height: 100%;
 	#content_outer_wrapper {
-		padding: 65px 0 0 240px;
+		padding: 65px 0 0 0px;
 		@include transition(all 250ms);
 		.content_inner_wrapper {
 			#content_wrapper {

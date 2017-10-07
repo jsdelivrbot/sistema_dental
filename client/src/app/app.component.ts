@@ -63,6 +63,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 				this.lanzarNotificacion(alert.show, alert.message, alert.status);
 			}
 		);
+
+		this.themesService.setTheme('E');
 	}
 
 	lanzarNotificacion(isShow, msg, status) {

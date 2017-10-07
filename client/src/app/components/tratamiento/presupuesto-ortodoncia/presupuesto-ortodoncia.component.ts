@@ -11,7 +11,7 @@ import { TratamientoService } from 'app/services/tratamientos/tratamiento.servic
 })
 export class PresupuestoOrtodonciaComponent implements OnInit {
 
-  public title = "Detalle Tratamiento";
+  public title = "Presupuesto Ortodoncia";
   public cargando = true;
   private id_paciente: string;
   private id_tratamiento: string;
