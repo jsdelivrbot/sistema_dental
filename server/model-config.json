@@ -47,5 +47,9 @@
   "examenFacial": {
     "dataSource": "db",
     "public": true
+  },
+  "servicio": {
+    "dataSource": "db",
+    "public": true
   }
 }
