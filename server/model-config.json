@@ -48,7 +48,7 @@
     "dataSource": "db",
     "public": true
   },
-  "servicio": {
+  "servicioOrtodoncia": {
     "dataSource": "db",
     "public": true
   }

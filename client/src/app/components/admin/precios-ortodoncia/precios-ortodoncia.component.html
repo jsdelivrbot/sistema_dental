@@ -1,0 +1,73 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+							<i class="zmdi zmdi-menu"></i>
+						</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row p-20">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <div class="row">
+                <div class="col-auto ml-auto">
+                  <a (click)="modalAgregarServicio.show()" mdRipple href="javascript:void(0);" class="btn btn-accent">
+                          <i class="zmdi zmdi-plus"></i> 
+                          Agregar Servicio
+                        </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>CODIGO</th>
+                    <th>SERVICIO</th>
+                    <th>PRECIO</th>
+                    <th>ACCION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let servicio of serviciosOrtodoncia | paginate: { itemsPerPage: 6, currentPage: p }">
+                    <td>{{servicio.codigo}}</td>
+                    <td>{{servicio.nombre}}</td>
+                    <td>${{servicio.precio}}</td>
+                    <td>
+                      <a (click)='editarServicio(servicio)' mdRipple href="javascript:void(0);" class="btn btn-warning btn-sm">
+                        <i class="zmdi zmdi-edit"></i> Editar
+                      </a>
+
+                      <a (click)="eliminarServicio(servicio.id)" mdRipple href="javascript:void(0);" class="btn btn-danger btn-sm">
+                          <i class="zmdi zmdi-delete"></i> Eliminar
+                        </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="col-lg-12 text-center">
+                  <pagination-controls previousLabel="Anterior"
+                  nextLabel="Siguiente" (pageChange)="p = $event"></pagination-controls>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-sidenav-container>
+</div>
+
+<app-modal-agregar-servicio #modalAgregarServicio></app-modal-agregar-servicio>
+<app-modal-editar-servicio #modalEditarServicio></app-modal-editar-servicio>
+<app-modal-eliminar-servicio #modalEliminarServicio></app-modal-eliminar-servicio> 

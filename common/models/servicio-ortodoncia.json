@@ -1,6 +1,6 @@
 {
-  "name": "servicio",
-  "plural": "servicios",
+  "name": "servicioOrtodoncia",
+  "plural": "serviciosOrtodoncia",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {

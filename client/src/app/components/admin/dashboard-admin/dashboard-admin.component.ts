@@ -13,7 +13,12 @@ import { Tratamiento } from 'app/models/tratamiento';
 })
 export class DashboardAdminComponent implements OnInit {
 
+    public title = 'Administracion';
+    public cargando = true;
+
     constructor() {}
 
-    ngOnInit() {}
+    ngOnInit() {
+      this.cargando = false;
+    }
 }
