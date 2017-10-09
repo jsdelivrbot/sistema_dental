@@ -33,4 +33,12 @@ export class PreciosService {
     return this.httpClient.get(this.url + this.port + '/api/serviciosOrtodoncia/findOne?filter={"order":"codigo DESC"}');
   }
 
+  obtenerServiciosOrtodonciaBase() {
+    return this.httpClient.get(this.url + this.port + '/api/serviciosOrtodoncia?filter={"where":{"extra":false}}');
+  }
+
+  obtenerServiciosOrtodonciaExtras() {
+    return this.httpClient.get(this.url + this.port + '/api/serviciosOrtodoncia?filter={"where":{"extra":true}}');
+  }
+
 }

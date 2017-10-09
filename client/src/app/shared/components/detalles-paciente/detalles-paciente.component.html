@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12">
-        <span class="border-bottom"><strong>Historial Médico</strong></span>
+        <span *ngIf="paciente.historial_medico.length > 0" class="border-bottom"><strong>Historial Médico</strong></span>
         <div *ngIf="paciente.historial_medico.length == 0" class="col-auto">
           <div class="alert md-bg-light-blue-50">
             Sin historial médico

@@ -4,6 +4,7 @@ export class Servicio {
     public nombre: string;
     public precio: number;
     public id: string;
+    public extra: boolean;
 
     constructor() {}
 }

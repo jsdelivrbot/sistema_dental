@@ -46,17 +46,17 @@
                   <div class="col">
                     <label for="aparatologia_fija" class="control-label">Costo Aparatología Fija</label><br>
                     <md-radio-group id="aparatologia_fija" name="aparatologia_fija">
-                      <md-radio-button value="280000">Metálica ($280.000)</md-radio-button>
-                      <md-radio-button value="380000">Ceramicos ($380.000)</md-radio-button>
+                      <md-radio-button value="servicios[0].precio">Metálica (${{servicios[0].precio}})</md-radio-button>
+                      <md-radio-button value="servicios[1].precio">Ceramicos (${{servicios[1].precio}})</md-radio-button>
                     </md-radio-group>
                   </div>
                   <div class="col">
                     <label for="" class="control-label">Reposición Bracket/Tubo/Banda Metálico</label><br>
-                    <md-checkbox name="reposicion_bracket_metalico" id="reposicion_bracket_metalico">$15.000</md-checkbox>
+                    <md-checkbox name="reposicion_bracket_metalico" id="reposicion_bracket_metalico">${{servicios[2].precio}}</md-checkbox>
                   </div>
                   <div class="col">
                     <label for="reposicion_bracket_ceramicos" class="control-label">Reposición Bracket Ceramicos</label><br>
-                    <md-checkbox name="reposicion_bracket_ceramicos" id="reposicion_bracket_ceramicos">$20.000</md-checkbox>
+                    <md-checkbox name="reposicion_bracket_ceramicos" id="reposicion_bracket_ceramicos">${{servicios[3].precio}}</md-checkbox>
                   </div>
                 </div>
                 <div class="form-group row">
@@ -83,12 +83,12 @@
                   <div class="col">
                     <label for="aparatologia_fija_lingual" class="control-label">Costo Aparatología Fija</label><br>
                     <md-radio-group id="aparatologia_fija_lingual" name="aparatologia_fija_lingual">
-                      <md-radio-button value="850000">Metálica Lingual ($850.000)</md-radio-button>
+                      <md-radio-button value="servicios[5].precio">Metálica Lingual (${{servicios[5].precio}})</md-radio-button>
                     </md-radio-group>
                   </div>
                   <div class="col">
                     <label for="reposicion_bracket_metalico_lingual" class="control-label">Reposición Bracket/Tubo/Banda Metálico Lingual</label><br>
-                    <md-checkbox name="reposicion_bracket_metalico_lingual" id="reposicion_bracket_metalico_lingual">$25.000</md-checkbox>
+                    <md-checkbox name="reposicion_bracket_metalico_lingual" id="reposicion_bracket_metalico_lingual">${{servicios[6].precio}}</md-checkbox>
                   </div>
                 </div>
                 <div class="form-group row">
@@ -224,155 +224,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr *ngFor="let servicio of serviciosExtras | paginate: { itemsPerPage: 6, currentPage: p }">
                 <td>
-                  <md-checkbox></md-checkbox>
+                  <md-checkbox name="{{servicio.id}}" id="{{servicio.id}}"></md-checkbox>
                 </td>
-                <td>Plano Ocusal</td>
-                <td>$50.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Expansor Lento Quadrihelix</td>
-                <td>$60.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Expansor Rápido Hirax</td>
-                <td>$80.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Péndulo</td>
-                <td>$60.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Máscara De Protracción</td>
-                <td>$70.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>OMG</td>
-                <td>$50.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Propulsor Mandibular</td>
-                <td>$70.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Microtornillo De Anclaje Ortodoncico</td>
-                <td>$40.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Arco Transpalatino</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Arco Lingual</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Arco Seccional</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>4 X 2 Superior</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>4 X 2 Inferior</td>
-                <td>$0</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Retenedor Superior Fijo o Removible</td>
-                <td style="color: red;">1.75UF</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Retenedor Superior Fijo o Removible</td>
-                <td style="color: red;">1.75UF</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Extracción Pza. Temporal</td>
-                <td>$25.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Extracción Simple Pza. Definitiva</td>
-                <td>$25.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Extracción Compleja Pza. Definitiva (No Incliye 3ros Molares)</td>
-                <td>$45.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Composite Fotocurado 1C</td>
-                <td>$40.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Composite Fotocurado 2C</td>
-                <td>$45.000</td>
-              </tr>
-              <tr>
-                <td>
-                  <md-checkbox></md-checkbox>
-                </td>
-                <td>Fase de higiene por sesión</td>
-                <td>$25.000</td>
+                <td>{{servicio.nombre}}</td>
+                <td>${{servicio.precio}}</td>
               </tr>
             </tbody>
           </table>
+          <div class="col-lg-12 text-center">
+              <pagination-controls previousLabel="Anterior"
+              nextLabel="Siguiente" (pageChange)="p = $event"></pagination-controls>
+            </div>
         </div>
         <div class="modal-footer">
           <button class="btn btn-default btn-flat" type="button" (click)="modalExtras.hide()">Cancelar</button>
