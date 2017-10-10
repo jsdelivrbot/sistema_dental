@@ -81,8 +81,18 @@
               <h3 class="card-title">Presupuesto</h3>
             </div>
             <div class="card-body">
-              <div class="p-10 p-t-0 border-bottom"><a href="javascript:void(0)">Odontología General</a></div>
-              <div class="p-10"><a [routerLink]="['presupuesto/ortodoncia']" href="javascript:void(0)">Ortodoncia</a></div>
+              <div class="p-10 p-t-0 border-bottom"><a href="javascript:void(0)" class="row">Odontología General</a></div>
+              <div *ngIf="!prespuestoOrtodonciaRealizado"  class="p-10">
+                  <a [routerLink]="['presupuesto/ortodoncia']" href="javascript:void(0)" class="row">
+                      Ortodoncia
+                  </a>
+              </div>
+                <div *ngIf="prespuestoOrtodonciaRealizado"  class="p-10">
+                    <a [routerLink]="['presupuesto/ortodoncia']" href="javascript:void(0)" class="row">
+                        <span class="mr-auto">Ortodoncia</span>
+                        <span class="label label-success">Realizado</span>
+                    </a>
+                </div>
               <!--div class="p-10 p-b-0"><a href="javascript:void(0)">Completo</a></div-->
             </div>
           </div>

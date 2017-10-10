@@ -20,7 +20,7 @@
 
       <div class="row p-20 p-b-5 p-t-0 m-t-0">
         <div class="col-lg-12">
-          <form #formPresupuestoOrtodoncia="ngForm">
+          <form #formPresupuestoOrtodoncia="ngForm" (submit)="onSubmit()">
             <div class="card">
               <div class="card-header border-bottom">
                 <h3 class="card-title">
@@ -45,29 +45,29 @@
                   </div>
                   <div class="col">
                     <label for="aparatologia_fija" class="control-label">Costo Aparatología Fija</label><br>
-                    <md-radio-group id="aparatologia_fija" name="aparatologia_fija">
-                      <md-radio-button value="servicios[0].precio">Metálica (${{servicios[0].precio}})</md-radio-button>
-                      <md-radio-button value="servicios[1].precio">Ceramicos (${{servicios[1].precio}})</md-radio-button>
+                    <md-radio-group (change)="calcularTotal()" [(ngModel)]="presupuesto.aparatologiaFijaVestibular"  id="aparatologia_fija" name="aparatologia_fija">
+                      <md-radio-button [value]="servicios[0].precio">Metálica (${{servicios[0].precio}})</md-radio-button>
+                      <md-radio-button [value]="servicios[1].precio">Ceramicos (${{servicios[1].precio}})</md-radio-button>
                     </md-radio-group>
                   </div>
                   <div class="col">
                     <label for="" class="control-label">Reposición Bracket/Tubo/Banda Metálico</label><br>
-                    <md-checkbox name="reposicion_bracket_metalico" id="reposicion_bracket_metalico">${{servicios[2].precio}}</md-checkbox>
+                    <md-checkbox (change)="reposicionBracketMetalicoVestibular($event, servicios[2].precio)" name="reposicion_bracket_metalico" id="reposicion_bracket_metalico">${{servicios[2].precio}}</md-checkbox>
                   </div>
                   <div class="col">
                     <label for="reposicion_bracket_ceramicos" class="control-label">Reposición Bracket Ceramicos</label><br>
-                    <md-checkbox name="reposicion_bracket_ceramicos" id="reposicion_bracket_ceramicos">${{servicios[3].precio}}</md-checkbox>
+                    <md-checkbox (change)="reposicionBracketCeramicoVestibular($event, servicios[3].precio)" name="reposicion_bracket_ceramicos" id="reposicion_bracket_ceramicos">${{servicios[3].precio}}</md-checkbox>
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col">
                     <label for="mensualidades_vesitbular" class="control-label">Mensualidades</label>
-                    <select name="mensualidades_vesitbular" id="mensualidades_vesitbular" class="form-control">
-                        <option value="6_12">6 a 12 meses</option>
-                        <option value="12_18">12 a 18 meses</option>
-                        <option value="18_24">18 a 24 meses</option>
-                        <option value="24_30">24 a 30 meses</option>
-                        <option value="30_36">30 a 36 meses</option>
+                    <select (change)="mensualidadVestibular($event)"  [(ngModel)]="mesesVestibular" name="mensualidades_vesitbular" id="mensualidades_vesitbular" class="form-control">
+                        <option [value]="[6, 12]">6 a 12 meses</option>
+                        <option [value]="[12, 18]">12 a 18 meses</option>
+                        <option [value]="[18, 24]">18 a 24 meses</option>
+                        <option [value]="[24, 30]">24 a 30 meses</option>
+                        <option [value]="[30, 36]">30 a 36 meses</option>
                     </select>
                   </div>
                   <div class="col">
@@ -82,24 +82,24 @@
                   </div>
                   <div class="col">
                     <label for="aparatologia_fija_lingual" class="control-label">Costo Aparatología Fija</label><br>
-                    <md-radio-group id="aparatologia_fija_lingual" name="aparatologia_fija_lingual">
-                      <md-radio-button value="servicios[5].precio">Metálica Lingual (${{servicios[5].precio}})</md-radio-button>
+                    <md-radio-group (change)="calcularTotal()" [(ngModel)]="presupuesto.aparatologiaFijaLingual" id="aparatologia_fija_lingual" name="aparatologia_fija_lingual">
+                      <md-radio-button [value]="servicios[5].precio">Metálica Lingual (${{servicios[5].precio}})</md-radio-button>
                     </md-radio-group>
                   </div>
                   <div class="col">
                     <label for="reposicion_bracket_metalico_lingual" class="control-label">Reposición Bracket/Tubo/Banda Metálico Lingual</label><br>
-                    <md-checkbox name="reposicion_bracket_metalico_lingual" id="reposicion_bracket_metalico_lingual">${{servicios[6].precio}}</md-checkbox>
+                    <md-checkbox (change)="reposicionBracketMetalicoLingual($event, servicios[6].precio)" name="reposicion_bracket_metalico_lingual" id="reposicion_bracket_metalico_lingual">${{servicios[6].precio}}</md-checkbox>
                   </div>
                 </div>
                 <div class="form-group row">
                   <div class="col">
                     <label for="mensualidades_lingual" class="control-label">Mensualidades</label>
-                    <select name="mensualidades_lingual" id="mensualidades_lingual" class="form-control">
-                          <option value="6_12">6 a 12 meses</option>
-                          <option value="12_18">12 a 18 meses</option>
-                          <option value="18_24">18 a 24 meses</option>
-                          <option value="24_30">24 a 30 meses</option>
-                          <option value="30_36">30 a 36 meses</option>
+                    <select (change)="mensualidadLingual($event)"  [(ngModel)]="mesesLingual" name="mensualidades_lingual" id="mensualidades_lingual" class="form-control">
+                          <option [value]="[6, 12]">6 a 12 meses</option>
+                          <option [value]="[12, 18]">12 a 18 meses</option>
+                          <option [value]="[18, 24]">18 a 24 meses</option>
+                          <option [value]="[24, 30]">24 a 30 meses</option>
+                          <option [value]="[30, 36]">30 a 36 meses</option>
                       </select>
                   </div>
                   <div class="col">
@@ -113,6 +113,12 @@
                       Extras
                     </h4>
                   </div>
+                  <div class="col-lg-12">
+                      <md-checkbox>Retenedor superior fijo o removible estampado termolaminado (1.75 UF)</md-checkbox>
+                  </div>
+                  <div class="col-lg-12">
+                      <md-checkbox>Retenedor inferior fijo o removible circunferencial acrílico (1.75 UF)</md-checkbox>
+                  </div>
                   <div class="col">
                     <a (click)="modalExtras.show()" href="javascript:void(0);" class="btn btn-primary">Elegir Extras</a>
                   </div>
@@ -120,8 +126,14 @@
               </div>
               <div class="card-footer border-top">
                 <div class="row">
-                  <div class="col-auto ml-auto">
-                    <div style="font-size:1.375em;">Total: <span style="color: #28bebd;font-weight:bold;">$0</span></div>
+                  <div class="col-auto m-auto">
+                      <button class="btn btn-primary">
+                          <i class="zmdi zmdi-save"></i>
+                          Guardar
+                      </button>
+                  </div>
+                  <div class="col-auto" style="line-height: 68px;">
+                    <div style="font-size:2rem;">Total: <span style="color: #28bebd;font-weight:bold;">de {{total1 | currency:'USD':true:'1.0-1'}} a {{total2 | currency:'USD':true:'1.0-1'}}</span></div>
                   </div>
                 </div>
               </div>
@@ -130,6 +142,11 @@
         </div>
       </div>
     </div>
+      <!--div class="row">
+          <div class="col-lg-12">
+              {{ presupuesto | json  }}
+          </div>
+      </div-->
   </md-sidenav-container>
 </div>
 
@@ -224,23 +241,22 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let servicio of serviciosExtras | paginate: { itemsPerPage: 6, currentPage: p }">
+              <tr *ngFor="let servicio of serviciosExtras">
                 <td>
-                  <md-checkbox name="{{servicio.id}}" id="{{servicio.id}}"></md-checkbox>
+                  <md-checkbox (change)="aniadirExtras($event, servicio)" name="{{servicio.id}}" id="{{servicio.id}}"></md-checkbox>
                 </td>
                 <td>{{servicio.nombre}}</td>
                 <td>${{servicio.precio}}</td>
               </tr>
             </tbody>
           </table>
-          <div class="col-lg-12 text-center">
+          <!--div class="col-lg-12 text-center">
               <pagination-controls previousLabel="Anterior"
               nextLabel="Siguiente" (pageChange)="p = $event"></pagination-controls>
-            </div>
+            </div-->
         </div>
         <div class="modal-footer">
-          <button class="btn btn-default btn-flat" type="button" (click)="modalExtras.hide()">Cancelar</button>
-          <button class="btn btn-accent" type="submit">Elegir extras</button>
+          <button class="btn btn-accent btn-flat" type="button" (click)="modalExtras.hide()">Listo</button>
         </div>
       </form>
     </div>

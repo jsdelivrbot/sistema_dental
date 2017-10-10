@@ -25,6 +25,9 @@
     },
     "fecha_actualizacion": {
       "type": "date"
+    },
+    "presupuestos": {
+      "type": "object"
     }
   },
   "validations": [],

@@ -14,13 +14,17 @@ export class TratamientoService {
     this.port = ":3000";
   }
 
+  obtenerTratamiento(id_tratamiento) {
+    return this.httpClient.get(this.url + this.port + '/api/tratamientos/' + id_tratamiento);
+  }
+
   obtenerTratamientoActivo(id_paciente) {
-    const params = new HttpParams().set('filter', '{"where": {"archivado":"false"}}')
+    const params = new HttpParams().set('filter', '{"where": {"archivado":"false"}}');
     return this.httpClient.get(this.url + this.port + '/api/pacientes/' + id_paciente + '/tratamientos', {params: params});
   }
 
   obtenerListaDeTratamientosArchivados(id_paciente) {
-    const params = new HttpParams().set('filter', '{"where": {"archivado":"true"}}')
+    const params = new HttpParams().set('filter', '{"where": {"archivado":"true"}}');
     return this.httpClient.get(this.url + this.port + '/api/pacientes/' + id_paciente + '/tratamientos', {params: params});
   }
 
@@ -36,5 +40,9 @@ export class TratamientoService {
   archivarTratamiento(tratamiento: Tratamiento) {
     tratamiento.archivado = true;
     return this.httpClient.patch(this.url + this.port + '/api/tratamientos/' + tratamiento.id, tratamiento);
+  }
+
+  editarTratamiento(tratamiento: Tratamiento) {
+      return this.httpClient.patch(this.url + this.port + '/api/tratamientos/' + tratamiento.id, tratamiento);
   }
 }

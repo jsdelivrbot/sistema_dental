@@ -7,6 +7,10 @@ export class Tratamiento {
     public fecha_actualizacion: Date;
     public id: string;
     public pacienteId: string;
+    public presupuestos = {
+        "ortodoncia": {},
+        "odontologia_general": {}
+    };
 
     constructor() {
     }
