@@ -1,3 +1,8 @@
+export class ResumenPresupuestoOrtodoncia {
+  public nombre: string;
+  public precio: number;
+}
+
 export class PresupuestoOrtodoncia {
 
     public aparatologiaFijaVestibular: number;
@@ -11,7 +16,10 @@ export class PresupuestoOrtodoncia {
     public mensualidad1Lingual: number;
     public mensualidad2Lingual: number;
 
+    public total1: number;
+    public total2: number;
     public extras: Array<any>;
+    public resumen: Array<ResumenPresupuestoOrtodoncia>;
 
     constructor() {
         this.aparatologiaFijaVestibular = 0;
@@ -24,6 +32,10 @@ export class PresupuestoOrtodoncia {
         this.mensualidad1Lingual = 0;
         this.mensualidad2Lingual = 0;
 
+        this.total1 = 0;
+        this.total2 = 0;
+
         this.extras = new Array<any>();
+        this.resumen = new Array<ResumenPresupuestoOrtodoncia>();
     }
 }

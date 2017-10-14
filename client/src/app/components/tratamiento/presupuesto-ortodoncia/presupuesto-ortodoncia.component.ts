@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Paciente} from 'app/models/paciente';
 import {ActivatedRoute, Router} from '@angular/router';
 import {PacienteService} from 'app/services/pacientes/paciente.service';
@@ -6,8 +6,9 @@ import {TratamientoService} from 'app/services/tratamientos/tratamiento.service'
 import {PreciosService} from 'app/services/precios/precios.service';
 import {AlertService} from 'app/services/alert/alert.service';
 import {Servicio} from 'app/models/servicio';
-import {PresupuestoOrtodoncia} from "../../../models/presupuesto-ortodoncia";
+import {PresupuestoOrtodoncia, ResumenPresupuestoOrtodoncia} from "../../../models/presupuesto-ortodoncia";
 import {Tratamiento} from "../../../models/tratamiento";
+import {ModalDirective} from "ngx-bootstrap";
 
 @Component({
     selector: 'app-presupuesto-ortodoncia',
@@ -15,6 +16,9 @@ import {Tratamiento} from "../../../models/tratamiento";
     styleUrls: ['./presupuesto-ortodoncia.component.scss']
 })
 export class PresupuestoOrtodonciaComponent implements OnInit {
+
+    @ViewChild('modalMensualidadesVestibular') modalVestibular: ModalDirective;
+    @ViewChild('modalMensualidadesLingual') modalLingual: ModalDirective;
 
     public title = "Presupuesto Ortodoncia";
     public cargando = true;
@@ -24,11 +28,29 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
     public servicios: Array<Servicio>;
     public serviciosExtras: Array<Servicio>;
     public presupuesto: PresupuestoOrtodoncia;
+    public resumenPresupuesto: ResumenPresupuestoOrtodoncia;
 
     public mesesVestibular: any;
     public mesesLingual: any;
     public total1 = 0;
     public total2 = 0;
+    public desde: number;
+    public hasta: number;
+
+    public mesesVestibularArray = [
+      { value: [6,12],  str: "6 a 12 meses" },
+      { value: [12,18], str: "12 a 18 meses" },
+      { value: [18,24], str: "18 a 24 meses" },
+      { value: [24,30], str: "24 a 30 meses" },
+      { value: [30,36], str: "30 a 36 meses" }
+    ];
+    public mesesLingualArray = [
+      { value: [6,12],  str: "6 a 12 meses" },
+      { value: [12,18], str: "12 a 18 meses" },
+      { value: [18,24], str: "18 a 24 meses" },
+      { value: [24,30], str: "24 a 30 meses" },
+      { value: [30,36], str: "30 a 36 meses" }
+    ];
 
     public tratamiento: Tratamiento;
 
@@ -39,6 +61,7 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
                 private _preciosService: PreciosService,
                 private _alertService: AlertService) {
         this.presupuesto = new PresupuestoOrtodoncia();
+        this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
     }
 
     ngOnInit() {
@@ -75,12 +98,16 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
     }
     // agrega otra opcion de mensualidad vestibular
     agregarOtraMensulidadVestibular() {
-
+      let mensualidad = {value: [this.desde, this.hasta], str: this.desde + " a " + this.hasta + " meses"};
+      this.mesesVestibularArray.push(mensualidad);
+      this.modalVestibular.hide();
     }
 
     // agrega otra opcion de mensualidad lingual
     agregarOtraMensulidadLingual() {
-
+      let mensualidad = {value: [this.desde, this.hasta], str: this.desde + " a " + this.hasta + " meses"};
+      this.mesesLingualArray.push(mensualidad);
+      this.modalLingual.hide();
     }
 
     //obtiene el tratamiento actual
@@ -125,21 +152,40 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
         );
     }
 
-    reposicionBracketMetalicoVestibular(event, precio) {
+    reposicionBracketMetalicoVestibular(event, servicio) {
+        this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
+        this.resumenPresupuesto.nombre = servicio.nombre;
+        this.resumenPresupuesto.precio = servicio.precio;
+
         if (event.checked) {
-            this.presupuesto.reposicionBracketMetalicoVestibular = precio;
+            this.presupuesto.reposicionBracketMetalicoVestibular = servicio.precio;
+            this.presupuesto.resumen.push(this.resumenPresupuesto);
         } else {
             this.presupuesto.reposicionBracketMetalicoVestibular = 0;
+            this.presupuesto.resumen.filter(function (value, index) {
+              if ( value.nombre.indexOf(this.resumenPresupuesto.nombre) != -1 ) {
+                this.presupuesto.resumen.splice(index, 1);
+              }
+            }, this);
         }
-
         this.calcularTotal();
     }
 
-    reposicionBracketCeramicoVestibular(event, precio) {
+    reposicionBracketCeramicoVestibular(event, servicio) {
+      this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
+      this.resumenPresupuesto.nombre = servicio.nombre;
+        this.resumenPresupuesto.precio = servicio.precio;
+
         if (event.checked) {
-            this.presupuesto.reposicionBracketCeramicosVestibular = precio;
+            this.presupuesto.reposicionBracketCeramicosVestibular = servicio.precio;
+            this.presupuesto.resumen.push(this.resumenPresupuesto);
         } else {
             this.presupuesto.reposicionBracketCeramicosVestibular = 0;
+            this.presupuesto.resumen.filter(function (value, index) {
+              if ( value.nombre.indexOf(this.resumenPresupuesto.nombre) != -1 ) {
+                this.presupuesto.resumen.splice(index, 1);
+              }
+            }, this);
         }
 
         this.calcularTotal();
@@ -156,13 +202,33 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
         this.presupuesto.mensualidad2Vestibular = valor * mesFin;
 
         this.calcularTotal();
+
+        this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
+        this.resumenPresupuesto.nombre = mesInicio + " a " + mesFin + " meses";
+        this.resumenPresupuesto.precio = valor;
+        this.presupuesto.resumen.filter(function (value, index) {
+          if ( value.nombre.indexOf("meses") != -1 ){
+              this.presupuesto.resumen.splice(index, 1);
+          }
+        }, this);
+        this.presupuesto.resumen.push(this.resumenPresupuesto);
     }
 
-    reposicionBracketMetalicoLingual(event, precio) {
+    reposicionBracketMetalicoLingual(event, servicio) {
+        this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
+        this.resumenPresupuesto.nombre = servicio.nombre;
+        this.resumenPresupuesto.precio = servicio.precio;
+
         if (event.checked) {
-            this.presupuesto.reposicionBracketMetalicoLingual = precio;
+            this.presupuesto.reposicionBracketMetalicoLingual = servicio.precio;
+            this.presupuesto.resumen.push(this.resumenPresupuesto);
         } else {
             this.presupuesto.reposicionBracketMetalicoLingual = 0;
+            this.presupuesto.resumen.filter(function (value, index) {
+              if ( value.nombre.indexOf(this.resumenPresupuesto.nombre) != -1 ) {
+                this.presupuesto.resumen.splice(index, 1);
+              }
+            }, this);
         }
 
         this.calcularTotal();
@@ -179,6 +245,16 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
         this.presupuesto.mensualidad2Lingual = valor * mesFin;
 
         this.calcularTotal();
+
+        this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
+        this.resumenPresupuesto.nombre = mesInicio + " a " + mesFin + " meses";
+        this.resumenPresupuesto.precio = valor;
+        this.presupuesto.resumen.filter(function (value, index) {
+          if ( value.nombre.indexOf("meses") != -1 ){
+            this.presupuesto.resumen.splice(index, 1);
+          }
+        }, this);
+        this.presupuesto.resumen.push(this.resumenPresupuesto);
     }
 
     aniadirExtras(event, extra) {
@@ -188,8 +264,39 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
             let index = this.presupuesto.extras.indexOf(extra);
             this.presupuesto.extras.splice(index, 1);
         }
-
         this.calcularTotal();
+    }
+
+    aparatologiaFijaVestibular(event) {
+      this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
+      this.resumenPresupuesto.nombre = event.value.nombre;
+      this.resumenPresupuesto.precio = event.value.precio;
+
+      this.presupuesto.resumen.filter(function (value, index) {
+        if ( value.nombre.indexOf("fija") != -1 ) {
+          this.presupuesto.resumen.splice(index, 1);
+        }
+      }, this);
+
+      this.presupuesto.resumen.push(this.resumenPresupuesto);
+      this.presupuesto.aparatologiaFijaVestibular = event.value.precio;
+      this.calcularTotal();
+    }
+
+    aparatologiaFijaLingual(event) {
+      this.resumenPresupuesto = new ResumenPresupuestoOrtodoncia();
+      this.resumenPresupuesto.nombre = event.value.nombre;
+      this.resumenPresupuesto.precio = event.value.precio;
+
+      this.presupuesto.resumen.filter(function (value, index) {
+        if ( value.nombre.indexOf("lingual") != -1 ) {
+          this.presupuesto.resumen.splice(index, 1);
+        }
+      }, this);
+
+      this.presupuesto.resumen.push(this.resumenPresupuesto);
+      this.presupuesto.aparatologiaFijaLingual = event.value.precio;
+      this.calcularTotal();
     }
 
     calcularTotal() {
@@ -207,6 +314,8 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
             this.total1 += valor;
             this.total2 += valor;
         }
+
+      console.log(this.presupuesto.resumen);
     }
 
     onSubmit() {
@@ -218,6 +327,8 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
             };
         }
 
+        this.presupuesto.total1 = this.total1;
+        this.presupuesto.total2 = this.total2;
         this.tratamiento.presupuestos.ortodoncia = this.presupuesto;
 
         this._tratamientoService.editarTratamiento(this.tratamiento).subscribe(
