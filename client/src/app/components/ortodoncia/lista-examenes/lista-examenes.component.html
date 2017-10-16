@@ -80,6 +80,58 @@
                 </li>
                 <li class="list-group-item border">
                   <span class="float-left" style="line-height: 192px;">
+                      <div class="avatar">
+                        <img src="/assets/img/icons/d3.png" class="rounded max-w-100">
+                      </div>
+                  </span>
+                  <div class="list-group-item-body">
+                    <div class="list-group-item-heading m-b-20">
+                      <div class="border-bottom row">
+                        <div class="col-auto mr-auto">
+                          <a class="link" href="javascript:void(0)">
+                            <h4 style="line-height: 68px;">
+                              Exámen Funcional
+                              <span *ngIf="examenes_realizados.examenFuncional.realizado" class="label label-success">Realizado</span>
+                              <span *ngIf="!examenes_realizados.examenFuncional.realizado" class="label label-warning">No Realizado</span>
+                            </h4>
+                          </a>
+                        </div>
+                        <div *ngIf="!examenes_realizados.examenFuncional.realizado" class="col-auto">
+                          <a [routerLink]="['../examen-funcional']" class="btn btn-primary" mdRipple>
+                            Realizar Exámen
+                          </a>
+                        </div>
+                        <div *ngIf="examenes_realizados.examenFuncional.realizado" class="col-auto">
+                          <a [routerLink]="['../examen-funcional/editar']" class="btn btn-primary" mdRipple>
+                              Actualizar Exámen
+                            </a>
+                        </div>
+                        <!--div class="col-auto">
+                          <button class="btn btn-primary">
+                                      <i class="zmdi zmdi-archive"></i> Archivar
+                                    </button>
+                        </div-->
+                      </div>
+                    </div>
+                    <div class="list-group-item-text">
+                      <div class="row">
+                        <div class="col-auto mr-auto">
+                          <div *ngIf="examenes_realizados.examenFuncional.realizado" class="alert md-bg-light-blue-50">
+                            <md-icon class="mat-icon material-icons align-middle">date_range</md-icon> Última actualizacion {{examenes_realizados.examenFuncional.fecha_actualizacion
+                            | date: 'dd/MM/yyyy'}}
+                          </div>
+                        </div>
+                        <!--div class="col-auto">
+                          <a href="javascript:void(0)" class="btn btn-primary btn-flat border-bottom m-0">
+                                <i class="zmdi zmdi-time-restore"></i> Ver historial de exámen facial
+                              </a>
+                        </div-->
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item border">
+                  <span class="float-left" style="line-height: 192px;">
                         <div class="avatar">
                           <img src="/assets/img/icons/d14.png" class="rounded max-w-100">
                         </div>

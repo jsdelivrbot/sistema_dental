@@ -36,6 +36,11 @@
       "type": "hasOne",
       "model": "examenFacial",
       "foreignKey": "tratamientoId"
+    },
+    "examenFuncional": {
+      "type": "hasOne",
+      "model": "examenFuncional",
+      "foreignKey": "tratamientoId"
     }
   },
   "acls": [],

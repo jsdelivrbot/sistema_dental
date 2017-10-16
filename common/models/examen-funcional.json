@@ -1,0 +1,148 @@
+{
+  "name": "examenFuncional",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "lengua": {
+      "type": "boolean",
+      "default": false
+    },
+    "labio": {
+      "type": "boolean",
+      "default": false
+    },
+    "dedo": {
+      "type": "boolean",
+      "default": false
+    },
+    "bruxismo": {
+      "type": "boolean",
+      "default": false
+    },
+    "funcion_labial": {
+      "type": "string"
+    },
+    "tono_musc": {
+      "type": "string"
+    },
+    "resp_oral": {
+      "type": "boolean",
+      "default": false
+    },
+    "ojeras": {
+      "type": "boolean",
+      "default": false
+    },
+    "gingivitis": {
+      "type": "boolean",
+      "default": false
+    },
+    "labios_resecos": {
+      "type": "boolean",
+      "default": false
+    },
+    "obs_habitos": {
+      "type": "string"
+    },
+    "labial": {
+      "type": "boolean",
+      "default": false
+    },
+    "lingual": {
+      "type": "boolean",
+      "default": false
+    },
+    "max": {
+      "type": "boolean",
+      "default": false
+    },
+    "mand": {
+      "type": "boolean",
+      "default": false
+    },
+    "obs_frenillos": {
+      "type": "string"
+    },
+    "atm_der_dolor": {
+      "type": "string"
+    },
+    "atm_der_ruido": {
+      "type": "string"
+    },
+    "atm_der_crepitacion": {
+      "type": "string"
+    },
+    "atm_izq_dolor": {
+      "type": "string"
+    },
+    "atm_izq": {
+      "type": "string"
+    },
+    "atm_izq_crepitacion": {
+      "type": "string"
+    },
+    "polo_lateral_der": {
+      "type": "number",
+      "default": 0
+    },
+    "polo_lateral_izq": {
+      "type": "number"
+    },
+    "sinovial_anterior1": {
+      "type": "number"
+    },
+    "sinovial_anterior2": {
+      "type": "number"
+    },
+    "sinovial_anterior3": {
+      "type": "number"
+    },
+    "sinovial_anterior4": {
+      "type": "number"
+    },
+    "sinovial_posterior1": {
+      "type": "number"
+    },
+    "sinovial_posterior2": {
+      "type": "number"
+    },
+    "sinovial_posterior3": {
+      "type": "number"
+    },
+    "sinovial_posterior4": {
+      "type": "number"
+    },
+    "apertura": {
+      "type": "number"
+    },
+    "lat_der": {
+      "type": "number"
+    },
+    "lat_izq": {
+      "type": "number"
+    },
+    "prostrusion": {
+      "type": "number"
+    },
+    "rc_oc": {
+      "type": "string"
+    },
+    "palpacion_musc": {
+      "type": "string"
+    },
+    "fecha_realizacion": {
+      "type": "date",
+      "required": true
+    },
+    "fecha_actualizacion": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

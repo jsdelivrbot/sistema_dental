@@ -10,9 +10,10 @@ import { EditarTratamientoComponent } from './editar-tratamiento/editar-tratamie
 import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
 import { PresupuestoOrtodonciaComponent } from './presupuesto-ortodoncia/presupuesto-ortodoncia.component';
 import { PreciosService } from 'app/services/precios/precios.service';
+import {UtilService} from "../../services/util/util.service";
 
 @NgModule({
-  providers: [PacienteService, TratamientoService, PreciosService],
+  providers: [PacienteService, TratamientoService, PreciosService, UtilService],
   imports: [
     CommonModule,
     TratamientoRoutingModule,

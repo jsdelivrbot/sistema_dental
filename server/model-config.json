@@ -51,5 +51,13 @@
   "servicioOrtodoncia": {
     "dataSource": "db",
     "public": true
+  },
+  "reporte": {
+    "dataSource": null,
+    "public": true
+  },
+  "examenFuncional": {
+    "dataSource": "db",
+    "public": true
   }
 }

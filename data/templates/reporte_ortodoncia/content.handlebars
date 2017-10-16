@@ -1,0 +1,204 @@
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css">
+    <style>
+        .page-break {
+            display: block;
+            page-break-before: always;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo">
+        <h1 style="text-align: center;">LOGO</h1>
+    </div>
+
+    <table style="font-size: 12px;">
+        <tr>
+            <td>
+                <div>DR. JORGE BAEZA DAZA</div>
+                <div>Ortodoncia y Ortopedia Dentofacial</div>
+                <div>Maestría en Ortodoncia - Universidad Intercontinental de México</div>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- titulo -->
+    <h4 style="text-align: center; font-weight: bold;">ESTUDIO DIAGNOSTICO Y CONSENTIMIENTO INFORMADO</h4>
+
+    <!-- datos paciente -->
+    <table style="font-size: 12px;">
+        <tr>
+            <td>
+                <img src='{#image 23695606}' width="120">
+            </td>
+            <td style="padding-left: 70px;">
+                <div style="margin-bottom: 10px;">
+                    <strong>PACIENTE:</strong> RAFAEL PIRES DA RISA DUARTE - 35 años</div>
+                <div style="margin-bottom: 10px;">
+                    <strong>FECHA:</strong> 04 DE SEPTIEMBRE DE 2017</div>
+                <div>
+                    <strong>MOTIVO DE CONSULTA:</strong> "
+                    <i>ENDEREZAR MIS DIENTES</i>"</div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- lista de problemas -->
+    <h5>LISTA DE PROBLEMAS</h5>
+    <ul style="font-size: 12px;" class="numeric-list">
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">PERFIL RECTO ANTEINCLINADO ( FRENTE INCLINADA Y BIPROTRUSION ESQUELETICA )</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">MALOCLUSION ESQUELETICA CLASE I Y 333 DENTAL ( II MOLAR IZQUIERDA )</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">PATRON ESQUELETICO BRAQUIFACIAL SEVERO ( +5.4 )</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">INCISIVOS SUPERIORES LIGERAMENTE RETRUIDOS / ARCOS MAZILAR ESPACIADO +2 mm y MANDIBULAR +4 A 5 mm</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">MORDIDA ABIERTA ANTERIOR 2.5 mm ( SMV:0 mm / SMH:-1 mm )/ MORDIDA BORDE A BORDE POSTERIOR</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">BOLTON: PENDIENTE</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">INTERACCIONES: 3º MOLARES: 1.8 Y 3 / CARIES: 1.5(MOD),4.5(D) / 2.8 (INDICACION DE EXTRAER)</li>
+    </ul>
+
+    <!-- PLAN DE TRATAMIENTO -->
+    <h5>PLAN DE TRATAMIENTO</h5>
+    <ul style="font-size: 12px;" class="numeric-list">
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">CIRUGIA BUCAL: 2.8</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">ODONTOLOGIA RESTAURADORA: SEGUN ODONTOGRAMA</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">BRACKETS METALICOS: ALINEACION, NIVELACION, CIERRE DE ESPACIOS Y TERMINACION</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">MODERADO ANCLAJE MAXILAR ( TPL PARA TORQUE ) Y MODERADO MANDIBULAR ( A.L PARA TORQUE )</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">FASE DE RETENCION ( 1 AÑO DE SUPERVISION PROFESIONAL HONORARIOS PROFESIONALES SIN COSTO ).
+            <u>NO INCLUYE COSTOS DE RETENEDOR ESTAMPADO SUP ( PLANO OCLUSAL CON CARACTERISTICAS ORGANICAS Y CIRCUNFERENCIAL ACRILICO INFERIOR )</u>
+        </li>
+    </ul>
+
+    <div class="page-break"></div>
+
+    <!-- PRESUPUESTOS -->
+
+    <table style="font-size: 12px;" class="table striped hovered border">
+        <thead>
+            <tr>
+                <th style="padding:0px;" colspan="2">
+                    <h5 style="text-align: center;">PRESUPUESTO ORTODONCIA</h5>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>(*)CONSULTA INICIAL</td>
+                <td>$15000</td>
+            </tr>
+            <tr>
+                <td>(*)ESTUDIO DIAGNOSTICO ORTODONCIA</td>
+                <td>$50000</td>
+            </tr>
+            {{#each ortodoncia.resumen}}
+            <tr>
+                <td>{{nombre}}</td>
+                <td>${{formatear precio}}</td>
+            </tr>
+            {{/each}}
+            <!--tr>
+                <td>REPOSICION BRACKET/ TUBO / BANDA METÁLICO</td>
+                <td>$15000</td>
+            </tr>
+            <tr>
+                <td>REPOSICION BRACKET CERAMICOS</td>
+                <td>$20000</td>
+            </tr>
+            <tr>
+                <td>MENSUALIDADES ( DE 6 A 12 MESES )</td>
+                <td>*$50.000</td>
+            </tr-->
+            <tr>
+                <td style="float: right;"><strong>TOTAL</strong></td>
+                <td style="color: #036362;font-weight:bold;">${{formatear ortodoncia.total1}} A ${{formatear ortodoncia.total2}}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th style="padding:0px;" colspan="2">
+                    <h5 style="text-align: center;">EXTRAS</h5>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each ortodoncia.extras}}
+            <tr>
+                <td>{{nombre}}</td>
+                <td>${{formatear precio}}</td>
+            </tr>
+            {{/each}}
+            <!--tr>
+                <td>Expansor Lento Quadrihelix</td>
+                <td>$60.000</td>
+            </tr>
+            <tr>
+                <td>Expansor Rápido Hirax</td>
+                <td>$80.000</td>
+            </tr-->
+        </tbody>
+    </table>
+    <p style="font-size: 12px;">(*) LOS PRECIOS DE LA CONSULTA INICIAL ($15.000) Y DEL ESTUDIO DIAGNÓSTICO DE ORTODONCIA ($50.000) NO ESTÁN REFLEJADOS EN EL TOTAL PERO QUEDAN DEATALLADOS A MODO DE INFORMACIÓN.</p>
+
+    <p style="font-size: 12px;">(**) MENSUALIDADES: CORRESPONDIENTE A
+        <u>1 CUOTA O PAGO POR MES. INDEPENDIENTE DEL Nº DE CONTROLES O VISITAS MENSUALES</u> SIENDO UNA FACILIDAD DE PAGO DEL TOTAL CONVENIDO.</p>
+    <p style="font-size: 12px;">(ACORDANDO COMO FECHA DE PAGO DE LAS MENSUALIDADES EL _________________ DE CADA MES).</p>
+    <p style="font-size: 12px;">B.CONTADO: PAGO ANTICIPADO: 1 MENSUALIDAD 5% DE DESCUENTO / 3 O MAS MENSUALIDADES ANTICIPADAS: 10% DE DESCUENTO.</p>
+    <p style="font-size: 12px;">C. OTRA A CONVENIR</p>
+    <ul style="font-size: 12px;" class="simple-list">
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">____ 2 APARATOS DE RETENCION, COSTO ADICIONAL, CANCELADOS AL MOMENTO DEL RETIRO DE APARATOLOGIA FIJA 3.5 UF TOTAL</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">____ CADA EXTRACCION SIMPLE $25.000 (NO INCLUYE 3º MOLARES)/ ____ CADA OBTURACION EN RESINA DE FOTOCURADO: $50.000 (EXCEPTO REHABILITACIONES COMPLEJAS)</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">____ CADA MICROTORNILLO DE ANCLAJE ORTODONCICO $40.000 (INCLUYE COSTO Y CIRUGIA DE INSTALACION)</li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">____ BRACKETS ESTETICO O METALICO / 3M UNITEK $_____________, MOD _____________ CADA BKT ESTETICO DE REPOSICION $_____________</li>
+    </ul>
+    <!-- NOTAS -->
+    <h5>NOTA:</h5>
+    <ul style="font-size: 12px;" class="numeric-list">
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">
+            (
+            <strong>A</strong>) EL INCUMPLIMIENTO POR EL PACIENTE EN LA ASISTENCIA REGULAR A CONTROLES CORDADOS, EN EL (
+            <strong>B</strong>) PAGO DE LAS MENSUALIDADES SEGUN FECHA CONVENIDA (
+            <u>RECARGO 2% POR MES DE ATRASO</u> ) COMO EL (
+            <strong>C</strong>) NO USO DE LOS APARATOS INDICADOS ( EXTRAORALES, ACTIVACIONES ESPECIFICAS, NO USO DE ELASTICOS Y RETENEDORES ) Y (
+            <strong>D</strong>) MALA HIGIENE ORAL REITERADA PUEDE FACULTAR AL PROFESIONAL PARA SUSPENDER EL TRATAMIENTO, LIBERANDO DE TODA RESPONSABILIDAD POSTERIOR.
+        </li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">
+            LA REPOSICION DE BRACKETS Y BANDAS TIENE UN COSTO DE $10.000 POR EVENTO (
+            <u>3 PRIMEROS EVENTOS SIN COSTO</u> ).
+        </li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">
+            LA PERDIDA O ROTURO DE APARATOS ORTODONCICOS TIENE COSTO ( A CONVENIR OPORTUNAMENTE ), SIENDO RESPONSABILIDAD DEL PACIENTE SUS CAUSAS Y CONSECUENCIAS ( EVITAR ALIMENTOS DUROS Y PEGAJOSOS ).
+        </li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">
+            ESTE PRESUPUESTO NO CONTEMPLA TRATAMIENTOS DE OTRAS ESPECIALIDADES ODONTOLOGICAS.
+        </li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">
+            SI EL PLAN DE TRATAMIENTO SE ENTERARA EN UN TIEMPO MENOR A LO ESTIMADO INCIALMENTE, EL PAGO SE REDUCIRA HASTA EL MES DE TERMINO.
+        </li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">
+            SEGUN PUNTO 1(
+            <u>A</u>) DE NOTAS, EN CASO QUE TRATAMIENTO SE EXTENDIERA MAS DE LO ESTIMADO INCIALMENTE, PAGARA EL 50% DEL VALOR DE LAS MENSUALIDADES EXTRAS
+
+        </li>
+    </ul>
+
+    <!-- FIRMAS -->
+    <table>
+        <tr style="text-align: center;">
+            <td style="padding-left: 50px;">
+                <div>_______________________________________________________</div>
+                <div style="text-align: center;">DR. JORGE BAEZA DAZA</div>
+            </td>
+            <td style="padding-left: 30px;">
+                <div>_______________________________________________________</div>
+                <div style="text-align: center;">PACIENTE O APODERADO RESPONSABLE</div>
+            </td>
+        </tr>
+    </table>
+    <p style="font-size: 12px;">LA FIRMA DEL PRESENTE INFORME ES PARA DAR FE DE LO EXPLICADO, ESTIPULANDOSE SOLO COMO UN CONSENTIMIENTO INFORMADO ENTRE LAS PARTES RESPONSABLES, CADUCANDO AUTOMATICAMENTE SI EL TRATAMIENTO NO SE INICIA.</p>
+
+</body>
+
+</html>

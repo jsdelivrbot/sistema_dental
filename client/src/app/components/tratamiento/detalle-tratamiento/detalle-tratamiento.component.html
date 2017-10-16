@@ -35,7 +35,7 @@
               <div class="p-t-10 p-b-5">
                 <a [routerLink]="['examenes/ortodoncia']" href="javascript:void(0)">
                   <img src="/assets/img/icons/d1.png" alt="ortodoncia" class="rounded circle max-w-20">
-                  Ortodoncia              
+                  Ortodoncia
                 </a>
               </div>
             </div>
@@ -88,8 +88,11 @@
                   </a>
               </div>
                 <div *ngIf="prespuestoOrtodonciaRealizado"  class="p-10">
-                    <a [routerLink]="['presupuesto/ortodoncia']" href="javascript:void(0)" class="row">
-                        <span class="mr-auto">Ortodoncia</span>
+                    <a (click)="imprimirOrtodoncia()" href="javascript:void(0)" class="row">
+                        <span class="mr-auto">
+                          <i class="zmdi zmdi-print"></i>
+                          Revisar Documento - Ortodoncia
+                        </span>
                         <span class="label label-success">Realizado</span>
                     </a>
                 </div>

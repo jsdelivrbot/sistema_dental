@@ -1,0 +1,47 @@
+{
+    "ortodoncia": {
+        "aparatologiaFijaVestibular": 380000,
+        "reposicionBracketCeramicosVestibular": 20000,
+        "reposicionBracketMetalicoVestibular": 15000,
+        "mensualidad1Vestibular": 1800000,
+        "mensualidad2Vestibular": 2100000,
+        "aparatologiaFijaLingual": 0,
+        "reposicionBracketMetalicoLingual": 0,
+        "mensualidad1Lingual": 0,
+        "mensualidad2Lingual": 0,
+        "total1": 2385000,
+        "total2": 2685000,
+        "extras": [{
+            "codigo": "014",
+            "nombre": "OMG",
+            "precio": 50000,
+            "extra": true,
+            "id": "59d9aa2f60129c1081fe55d5"
+        }, {
+            "codigo": "012",
+            "nombre": "Péndulo",
+            "precio": 60000,
+            "extra": true,
+            "id": "59d9aa1160129c1081fe55d3"
+        }, {
+            "codigo": "010",
+            "nombre": "Expansor Lento Quadrihelix",
+            "precio": 60000,
+            "extra": true,
+            "id": "59d9a9ec60129c1081fe55d1"
+        }],
+        "resumen": [{
+            "nombre": "aparatologia fija ceramicos",
+            "precio": 380000
+        }, {
+            "nombre": "reposicion bracket/tubo/banda metalico",
+            "precio": 15000
+        }, {
+            "nombre": "reposicion bracket ceramicos",
+            "precio": 20000
+        }, {
+            "nombre": "36 a 42 meses",
+            "precio": 50000
+        }]
+    }
+}
