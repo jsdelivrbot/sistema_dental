@@ -78,7 +78,7 @@
     "atm_izq_dolor": {
       "type": "string"
     },
-    "atm_izq": {
+    "atm_izq_ruido": {
       "type": "string"
     },
     "atm_izq_crepitacion": {
