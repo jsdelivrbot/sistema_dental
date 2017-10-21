@@ -6,6 +6,8 @@ import { ExamenFacialComponent } from 'app/components/ortodoncia/examen-facial/e
 import { EditarExamenFacialComponent } from 'app/components/ortodoncia/editar-examen-facial/editar-examen-facial.component';
 import {ExamenFuncionalComponent} from "./examen-funcional/examen-funcional.component";
 import {EditarExamenFuncionalComponent} from "./editar-examen-funcional/editar-examen-funcional.component";
+import {ExamenDentalComponent} from "./examen-dental/examen-dental.component";
+import {EditarExamenDentalComponent} from "./editar-examen-dental/editar-examen-dental.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'lista-examenes', pathMatch: 'full' },
@@ -14,7 +16,8 @@ const routes: Routes = [
   { path: 'examen-facial/editar', component: EditarExamenFacialComponent },
   { path: 'examen-funcional', component: ExamenFuncionalComponent },
   { path: 'examen-funcional/editar', component: EditarExamenFuncionalComponent },
-  { path: 'examen-dental' },
+  { path: 'examen-dental', component: ExamenDentalComponent },
+  { path: 'examen-dental/editar', component: EditarExamenDentalComponent },
   { path: 'relaciones-dentales' },
 ];
 

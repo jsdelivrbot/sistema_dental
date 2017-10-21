@@ -59,5 +59,9 @@
   "examenFuncional": {
     "dataSource": "db",
     "public": true
+  },
+  "examenDental": {
+    "dataSource": "db",
+    "public": true
   }
 }

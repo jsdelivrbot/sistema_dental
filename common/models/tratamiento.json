@@ -41,6 +41,11 @@
       "type": "hasOne",
       "model": "examenFuncional",
       "foreignKey": "tratamientoId"
+    },
+    "examenDental": {
+      "type": "hasOne",
+      "model": "examenDental",
+      "foreignKey": "tratamientoId"
     }
   },
   "acls": [],

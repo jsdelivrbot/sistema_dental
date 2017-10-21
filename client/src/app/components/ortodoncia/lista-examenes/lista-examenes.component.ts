@@ -4,6 +4,8 @@ import { PacienteService } from 'app/services/pacientes/paciente.service';
 import { ActivatedRoute } from '@angular/router';
 import { ExamenService } from 'app/services/examenes/examen.service';
 import { TratamientoService } from 'app/services/tratamientos/tratamiento.service';
+import {ExamenFuncional} from "../../../models/examen-funcional";
+import {ExamenDental} from "../../../models/examen-dental";
 
 @Component({
   selector: 'app-lista-examenes',
@@ -46,6 +48,22 @@ export class ListaExamenesComponent implements OnInit, AfterViewInit {
               this.examenes_realizados.examenFacial.realizado = true;
               this.examenes_realizados.examenFacial.fecha_actualizacion = result.fecha_actualizacion;
               console.log(this.examenes_realizados.examenFacial.fecha_actualizacion);
+            }
+          }
+        );
+        this._tratamientoService.examenFuncionalReaizado(this.id_tratamiento).subscribe(
+          (result: ExamenFuncional) => {
+            if ( result.id != null ) {
+              this.examenes_realizados.examenFuncional.realizado = true;
+              this.examenes_realizados.examenFuncional.fecha_actualizacion = result.fecha_actualizacion.toString();
+            }
+          }
+        );
+        this._tratamientoService.examenDentalRealizado(this.id_tratamiento).subscribe(
+          (result: ExamenDental) => {
+            if ( result.id != null ) {
+              this.examenes_realizados.examenDental.realizado = true;
+              this.examenes_realizados.examenDental.fecha_actualizacion = result.fecha_actualizacion.toString();
             }
           }
         );

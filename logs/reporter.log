@@ -6537,3 +6537,374 @@ Error: ENOENT: no such file or directory, open 'C:\Users\Alink\Desktop\sistema_d
 2017-10-16T00:49:55.178Z - info: Verifying license key free
 2017-10-16T00:49:55.189Z - info: Using free license
 2017-10-16T00:49:55.191Z - info: reporter initialized
+2017-10-21T16:32:42.212Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-21T16:32:42.213Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-21T16:32:42.218Z - info: Searching for available extensions in /Users/Nicolas/Desktop/dental/
+2017-10-21T16:32:42.228Z - info: Extensions location cache not found, crawling directories
+2017-10-21T16:33:00.198Z - info: Found 30 extensions
+2017-10-21T16:33:00.276Z - debug: Writing extension locations cache to /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/extensions/locations.json
+2017-10-21T16:33:00.279Z - debug: Discovered 30 extensions
+2017-10-21T16:33:00.282Z - info: Using extension import-export
+2017-10-21T16:33:00.544Z - info: Using extension tags
+2017-10-21T16:33:00.547Z - info: Using extension templates
+2017-10-21T16:33:00.552Z - info: Using extension jsrender
+2017-10-21T16:33:00.555Z - info: Using extension authentication
+2017-10-21T16:33:00.799Z - info: Using extension cli
+2017-10-21T16:33:00.801Z - info: Using extension handlebars
+2017-10-21T16:33:00.804Z - info: Using extension debug
+2017-10-21T16:33:00.806Z - info: Using extension express
+2017-10-21T16:33:00.916Z - info: Using extension fop-pdf
+2017-10-21T16:33:00.931Z - info: Using extension phantom-pdf
+2017-10-21T16:33:01.003Z - info: Using extension fs-store
+2017-10-21T16:33:01.625Z - info: Using extension authorization
+2017-10-21T16:33:01.637Z - info: Using extension images
+2017-10-21T16:33:01.649Z - info: Using extension child-templates
+2017-10-21T16:33:01.655Z - info: Using extension browser-client
+2017-10-21T16:33:01.657Z - info: Using extension licensing
+2017-10-21T16:33:01.770Z - info: Using extension data
+2017-10-21T16:33:01.772Z - info: Using extension text
+2017-10-21T16:33:01.773Z - info: Using extension reports
+2017-10-21T16:33:01.797Z - info: Using extension resources
+2017-10-21T16:33:01.807Z - info: Using extension base
+2017-10-21T16:33:01.808Z - info: Using extension studio
+2017-10-21T16:33:01.939Z - info: Using extension html-to-xlsx
+2017-10-21T16:33:02.060Z - info: Using extension scripts
+2017-10-21T16:33:02.064Z - info: Using extension assets
+2017-10-21T16:33:02.101Z - info: Using extension scheduling
+2017-10-21T16:33:02.161Z - info: Using extension xlsx
+2017-10-21T16:33:02.403Z - info: Using extension sample-template
+2017-10-21T16:33:02.405Z - debug: Creating samples is disabled
+2017-10-21T16:33:02.405Z - info: Using extension public-templates
+2017-10-21T16:33:02.421Z - info: Initializing fs storage at /Users/Nicolas/Desktop/dental/data
+2017-10-21T16:33:02.679Z - info: Creating default express app.
+2017-10-21T16:33:02.826Z - info: jsreport server successfully started on http port: 2000
+2017-10-21T16:33:02.840Z - info: Verifying license key free
+2017-10-21T16:33:02.843Z - info: Using free license
+2017-10-21T16:33:02.847Z - info: reporter initialized
+2017-10-21T16:37:03.484Z - info: Logging in user admin
+2017-10-21T16:37:07.499Z - debug: OData query on assets
+2017-10-21T16:37:07.509Z - debug: OData query on templates
+2017-10-21T16:37:07.512Z - debug: OData query on tags
+2017-10-21T16:37:07.515Z - debug: OData query on images
+2017-10-21T16:37:07.518Z - debug: OData query on data
+2017-10-21T16:37:07.521Z - debug: OData query on scripts
+2017-10-21T16:37:07.585Z - debug: OData query on xlsxTemplates
+2017-10-21T16:37:07.640Z - debug: OData query on users
+2017-10-21T16:37:07.647Z - debug: OData query on schedules
+2017-10-21T16:37:07.667Z - debug: OData query on settings
+2017-10-21T16:37:08.878Z - debug: OData query on templates
+2017-10-21T16:37:09.404Z - debug: OData query on settings
+2017-10-21T16:37:14.731Z - debug: OData query on templates
+2017-10-21T16:37:14.742Z - debug: OData query on templates
+2017-10-21T16:37:15.115Z - debug: OData query on settings
+2017-10-21T16:37:17.189Z - info: Starting rendering request 1 (user: admin) requestId=1
+2017-10-21T16:37:17.199Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=1
+2017-10-21T16:37:17.203Z - debug: Adding sample data SyEl27baW requestId=1
+2017-10-21T16:37:17.217Z - debug: Resources not defined for this template. requestId=1
+2017-10-21T16:37:17.220Z - debug: Base url not specified, skipping its injection. requestId=1
+2017-10-21T16:37:17.224Z - debug: Rendering engine handlebars requestId=1
+2017-10-21T16:37:18.000Z - debug: Compiled template not found in the cache, compiling timestamp=Sat Oct 21 2017 13:37:17 GMT-0300 (CLST), requestId=1
+2017-10-21T16:37:18.007Z - debug: Replaced images ["23695606"] requestId=1
+2017-10-21T16:37:18.009Z - debug: Executing recipe phantom-pdf requestId=1
+2017-10-21T16:37:18.011Z - debug: Starting child request to render pdf footer requestId=1
+2017-10-21T16:37:18.019Z - info: Starting rendering request 2 (user: admin) requestId=2
+2017-10-21T16:37:18.021Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=2
+2017-10-21T16:37:18.021Z - debug: Inline data specified. requestId=2
+2017-10-21T16:37:18.025Z - debug: Resources not defined for this template. requestId=2
+2017-10-21T16:37:18.025Z - debug: Base url not specified, skipping its injection. requestId=2
+2017-10-21T16:37:18.026Z - debug: Rendering engine handlebars requestId=2
+2017-10-21T16:37:18.582Z - debug: Compiled template not found in the cache, compiling timestamp=Sat Oct 21 2017 13:37:18 GMT-0300 (CLST), requestId=2
+2017-10-21T16:37:18.583Z - debug: Replaced images [] requestId=2
+2017-10-21T16:37:18.584Z - debug: Executing recipe html requestId=2
+2017-10-21T16:37:18.585Z - debug: Skipping storing report. requestId=2
+2017-10-21T16:37:18.587Z - info: Rendering request 2 finished in 568 ms requestId=2
+2017-10-21T16:37:18.895Z - error: Error when processing render request Error during rendering report: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/1a920080-b67e-11e7-954b-afc2f0fbe4cesettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra Error: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/1a920080-b67e-11e7-954b-afc2f0fbe4cesettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra
+    at ChildProcess.exithandler (child_process.js:270:12)
+    at emitTwo (events.js:125:13)
+    at ChildProcess.emit (events.js:213:7)
+    at maybeClose (internal/child_process.js:927:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5) requestId=1
+2017-10-21T16:37:18.901Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/1a920080-b67e-11e7-954b-afc2f0fbe4cesettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra Error: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/1a920080-b67e-11e7-954b-afc2f0fbe4cesettings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra
+    at ChildProcess.exithandler (child_process.js:270:12)
+    at emitTwo (events.js:125:13)
+    at ChildProcess.emit (events.js:213:7)
+    at maybeClose (internal/child_process.js:927:16)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+2017-10-21T16:43:29.072Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-21T16:43:29.073Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-21T16:43:29.078Z - info: Searching for available extensions in /Users/Nicolas/Desktop/dental/
+2017-10-21T16:43:29.097Z - info: Extensions location cache /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/extensions/locations.json contains older information, crawling
+2017-10-21T16:43:47.248Z - info: Found 30 extensions
+2017-10-21T16:43:47.314Z - debug: Writing extension locations cache to /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/extensions/locations.json
+2017-10-21T16:43:47.317Z - debug: Discovered 30 extensions
+2017-10-21T16:43:47.320Z - info: Using extension import-export
+2017-10-21T16:43:47.582Z - info: Using extension tags
+2017-10-21T16:43:47.586Z - info: Using extension templates
+2017-10-21T16:43:47.592Z - info: Using extension jsrender
+2017-10-21T16:43:47.600Z - info: Using extension authentication
+2017-10-21T16:43:47.782Z - info: Using extension cli
+2017-10-21T16:43:47.784Z - info: Using extension handlebars
+2017-10-21T16:43:47.787Z - info: Using extension debug
+2017-10-21T16:43:47.789Z - info: Using extension express
+2017-10-21T16:43:47.901Z - info: Using extension fop-pdf
+2017-10-21T16:43:47.911Z - info: Using extension phantom-pdf
+2017-10-21T16:43:47.979Z - info: Using extension fs-store
+2017-10-21T16:43:48.585Z - info: Using extension authorization
+2017-10-21T16:43:48.598Z - info: Using extension images
+2017-10-21T16:43:48.611Z - info: Using extension child-templates
+2017-10-21T16:43:48.615Z - info: Using extension browser-client
+2017-10-21T16:43:48.618Z - info: Using extension licensing
+2017-10-21T16:43:48.718Z - info: Using extension data
+2017-10-21T16:43:48.724Z - info: Using extension text
+2017-10-21T16:43:48.726Z - info: Using extension reports
+2017-10-21T16:43:48.750Z - info: Using extension resources
+2017-10-21T16:43:48.754Z - info: Using extension base
+2017-10-21T16:43:48.761Z - info: Using extension studio
+2017-10-21T16:43:48.901Z - info: Using extension html-to-xlsx
+2017-10-21T16:43:49.068Z - info: Using extension scripts
+2017-10-21T16:43:49.071Z - info: Using extension assets
+2017-10-21T16:43:49.087Z - info: Using extension scheduling
+2017-10-21T16:43:49.167Z - info: Using extension xlsx
+2017-10-21T16:43:49.472Z - info: Using extension sample-template
+2017-10-21T16:43:49.476Z - debug: Creating samples is disabled
+2017-10-21T16:43:49.476Z - info: Using extension public-templates
+2017-10-21T16:43:49.497Z - info: Initializing fs storage at /Users/Nicolas/Desktop/dental/data
+2017-10-21T16:43:49.808Z - info: Creating default express app.
+2017-10-21T16:43:50.045Z - info: jsreport server successfully started on http port: 2000
+2017-10-21T16:43:50.073Z - info: Verifying license key free
+2017-10-21T16:43:50.079Z - info: Using free license
+2017-10-21T16:43:50.084Z - info: reporter initialized
+2017-10-21T16:43:57.048Z - debug: OData query on templates
+2017-10-21T16:43:57.054Z - debug: OData query on tags
+2017-10-21T16:43:57.058Z - debug: OData query on images
+2017-10-21T16:43:57.061Z - debug: OData query on data
+2017-10-21T16:43:57.065Z - debug: OData query on scripts
+2017-10-21T16:43:57.068Z - debug: OData query on assets
+2017-10-21T16:43:57.133Z - debug: OData query on xlsxTemplates
+2017-10-21T16:43:57.136Z - debug: OData query on users
+2017-10-21T16:43:57.140Z - debug: OData query on schedules
+2017-10-21T16:43:57.145Z - debug: OData query on settings
+2017-10-21T16:43:57.516Z - debug: OData query on templates
+2017-10-21T16:44:01.097Z - info: Starting rendering request 1 (user: admin) requestId=1
+2017-10-21T16:44:01.101Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=1
+2017-10-21T16:44:01.103Z - debug: Adding sample data SyEl27baW requestId=1
+2017-10-21T16:44:01.110Z - debug: Resources not defined for this template. requestId=1
+2017-10-21T16:44:01.113Z - debug: Base url not specified, skipping its injection. requestId=1
+2017-10-21T16:44:01.117Z - debug: Rendering engine handlebars requestId=1
+2017-10-21T16:44:02.157Z - debug: Compiled template not found in the cache, compiling timestamp=Sat Oct 21 2017 13:44:02 GMT-0300 (CLST), requestId=1
+2017-10-21T16:44:02.164Z - debug: Replaced images ["23695606"] requestId=1
+2017-10-21T16:44:02.167Z - debug: Executing recipe phantom-pdf requestId=1
+2017-10-21T16:44:02.168Z - debug: Starting child request to render pdf footer requestId=1
+2017-10-21T16:44:02.174Z - info: Starting rendering request 2 (user: admin) requestId=2
+2017-10-21T16:44:02.177Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=2
+2017-10-21T16:44:02.178Z - debug: Inline data specified. requestId=2
+2017-10-21T16:44:02.180Z - debug: Resources not defined for this template. requestId=2
+2017-10-21T16:44:02.181Z - debug: Base url not specified, skipping its injection. requestId=2
+2017-10-21T16:44:02.182Z - debug: Rendering engine handlebars requestId=2
+2017-10-21T16:44:03.032Z - debug: Compiled template not found in the cache, compiling timestamp=Sat Oct 21 2017 13:44:02 GMT-0300 (CLST), requestId=2
+2017-10-21T16:44:03.033Z - debug: Replaced images [] requestId=2
+2017-10-21T16:44:03.034Z - debug: Executing recipe html requestId=2
+2017-10-21T16:44:03.037Z - debug: Skipping storing report. requestId=2
+2017-10-21T16:44:03.043Z - info: Rendering request 2 finished in 869 ms requestId=2
+2017-10-21T16:44:03.387Z - error: Error when processing render request Error during rendering report: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/0ba453b0-b67f-11e7-94f1-e1c4fbb20d92settings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra Error: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/0ba453b0-b67f-11e7-94f1-e1c4fbb20d92settings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra
+    at ChildProcess.exithandler (child_process.js:270:12)
+    at emitTwo (events.js:125:13)
+    at ChildProcess.emit (events.js:213:7)
+    at maybeClose (internal/child_process.js:927:16)
+    at Socket.stream.socket.on (internal/child_process.js:348:11)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at Pipe._handle.close [as _onclose] (net.js:545:12) requestId=1
+2017-10-21T16:44:03.391Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/0ba453b0-b67f-11e7-94f1-e1c4fbb20d92settings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra Error: Command failed: /Users/Nicolas/Desktop/dental/node_modules/phantomjs/lib/phantom/bin/phantomjs --ignore-ssl-errors=yes --web-security=false --ssl-protocol=any /Users/Nicolas/Desktop/dental/node_modules/jsreport-phantom-pdf/node_modules/phantom-html-to-pdf/lib/scripts/standaloneScript.js /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/0ba453b0-b67f-11e7-94f1-e1c4fbb20d92settings.html
+, Segmentation fault error: if you are using macOS Sierra with phantomjs < 2 remember that phantomjs < 2 does not work there and has bugs (https://github.com/ariya/phantomjs/issues/14558), try to upgrade to phantom 2 if using macOS Sierra
+    at ChildProcess.exithandler (child_process.js:270:12)
+    at emitTwo (events.js:125:13)
+    at ChildProcess.emit (events.js:213:7)
+    at maybeClose (internal/child_process.js:927:16)
+    at Socket.stream.socket.on (internal/child_process.js:348:11)
+    at emitOne (events.js:115:13)
+    at Socket.emit (events.js:210:7)
+    at Pipe._handle.close [as _onclose] (net.js:545:12)
+2017-10-21T19:14:16.794Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-21T19:14:16.795Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-21T19:14:16.799Z - info: Searching for available extensions in /Users/Nicolas/Desktop/dental/
+2017-10-21T19:14:16.815Z - info: Extensions location cache contains up to date information, skipping crawling in /Users/Nicolas/Desktop/dental/node_modules/
+2017-10-21T19:14:25.763Z - info: Found 30 extensions
+2017-10-21T19:14:25.809Z - debug: Writing extension locations cache to /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/extensions/locations.json
+2017-10-21T19:14:25.813Z - debug: Discovered 30 extensions
+2017-10-21T19:14:25.815Z - info: Using extension import-export
+2017-10-21T19:14:26.101Z - info: Using extension tags
+2017-10-21T19:14:26.104Z - info: Using extension templates
+2017-10-21T19:14:26.109Z - info: Using extension jsrender
+2017-10-21T19:14:26.111Z - info: Using extension authentication
+2017-10-21T19:14:26.289Z - info: Using extension cli
+2017-10-21T19:14:26.290Z - info: Using extension handlebars
+2017-10-21T19:14:26.294Z - info: Using extension debug
+2017-10-21T19:14:26.295Z - info: Using extension express
+2017-10-21T19:14:26.407Z - info: Using extension fop-pdf
+2017-10-21T19:14:26.417Z - info: Using extension phantom-pdf
+2017-10-21T19:14:26.480Z - info: Using extension fs-store
+2017-10-21T19:14:27.000Z - info: Using extension authorization
+2017-10-21T19:14:27.010Z - info: Using extension images
+2017-10-21T19:14:27.020Z - info: Using extension child-templates
+2017-10-21T19:14:27.026Z - info: Using extension browser-client
+2017-10-21T19:14:27.029Z - info: Using extension licensing
+2017-10-21T19:14:27.123Z - info: Using extension data
+2017-10-21T19:14:27.125Z - info: Using extension text
+2017-10-21T19:14:27.127Z - info: Using extension reports
+2017-10-21T19:14:27.139Z - info: Using extension resources
+2017-10-21T19:14:27.143Z - info: Using extension base
+2017-10-21T19:14:27.144Z - info: Using extension studio
+2017-10-21T19:14:27.244Z - info: Using extension html-to-xlsx
+2017-10-21T19:14:27.361Z - info: Using extension scripts
+2017-10-21T19:14:27.372Z - info: Using extension assets
+2017-10-21T19:14:27.387Z - info: Using extension scheduling
+2017-10-21T19:14:27.447Z - info: Using extension xlsx
+2017-10-21T19:14:27.681Z - info: Using extension sample-template
+2017-10-21T19:14:27.685Z - debug: Creating samples is disabled
+2017-10-21T19:14:27.685Z - info: Using extension public-templates
+2017-10-21T19:14:27.700Z - info: Initializing fs storage at /Users/Nicolas/Desktop/dental/data
+2017-10-21T19:14:27.931Z - info: Creating default express app.
+2017-10-21T19:14:28.081Z - info: jsreport server successfully started on http port: 2000
+2017-10-21T19:14:28.094Z - info: Verifying license key free
+2017-10-21T19:14:28.098Z - info: Using free license
+2017-10-21T19:14:28.102Z - info: reporter initialized
+2017-10-21T19:50:35.708Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-21T19:50:35.709Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-21T19:50:35.713Z - info: Searching for available extensions in /Users/Nicolas/Desktop/dental/
+2017-10-21T19:50:35.729Z - info: Extensions location cache contains up to date information, skipping crawling in /Users/Nicolas/Desktop/dental/node_modules/
+2017-10-21T19:50:44.238Z - info: Found 30 extensions
+2017-10-21T19:50:44.279Z - debug: Writing extension locations cache to /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/extensions/locations.json
+2017-10-21T19:50:44.281Z - debug: Discovered 30 extensions
+2017-10-21T19:50:44.282Z - info: Using extension import-export
+2017-10-21T19:50:44.514Z - info: Using extension tags
+2017-10-21T19:50:44.519Z - info: Using extension templates
+2017-10-21T19:50:44.525Z - info: Using extension jsrender
+2017-10-21T19:50:44.527Z - info: Using extension authentication
+2017-10-21T19:50:44.700Z - info: Using extension cli
+2017-10-21T19:50:44.701Z - info: Using extension handlebars
+2017-10-21T19:50:44.704Z - info: Using extension debug
+2017-10-21T19:50:44.705Z - info: Using extension express
+2017-10-21T19:50:44.798Z - info: Using extension fop-pdf
+2017-10-21T19:50:44.818Z - info: Using extension phantom-pdf
+2017-10-21T19:50:44.880Z - info: Using extension fs-store
+2017-10-21T19:50:45.387Z - info: Using extension authorization
+2017-10-21T19:50:45.398Z - info: Using extension images
+2017-10-21T19:50:45.409Z - info: Using extension child-templates
+2017-10-21T19:50:45.414Z - info: Using extension browser-client
+2017-10-21T19:50:45.417Z - info: Using extension licensing
+2017-10-21T19:50:45.507Z - info: Using extension data
+2017-10-21T19:50:45.509Z - info: Using extension text
+2017-10-21T19:50:45.510Z - info: Using extension reports
+2017-10-21T19:50:45.525Z - info: Using extension resources
+2017-10-21T19:50:45.528Z - info: Using extension base
+2017-10-21T19:50:45.530Z - info: Using extension studio
+2017-10-21T19:50:45.626Z - info: Using extension html-to-xlsx
+2017-10-21T19:50:45.737Z - info: Using extension scripts
+2017-10-21T19:50:45.739Z - info: Using extension assets
+2017-10-21T19:50:45.752Z - info: Using extension scheduling
+2017-10-21T19:50:45.807Z - info: Using extension xlsx
+2017-10-21T19:50:46.048Z - info: Using extension sample-template
+2017-10-21T19:50:46.052Z - debug: Creating samples is disabled
+2017-10-21T19:50:46.052Z - info: Using extension public-templates
+2017-10-21T19:50:46.070Z - info: Initializing fs storage at /Users/Nicolas/Desktop/dental/data
+2017-10-21T19:50:46.326Z - info: Creating default express app.
+2017-10-21T19:50:46.470Z - info: jsreport server successfully started on http port: 2000
+2017-10-21T19:50:46.481Z - info: Verifying license key free
+2017-10-21T19:50:46.485Z - info: Using free license
+2017-10-21T19:50:46.488Z - info: reporter initialized
+2017-10-21T19:53:03.408Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-21T19:53:03.409Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-21T19:53:03.412Z - info: Searching for available extensions in /Users/Nicolas/Desktop/dental/
+2017-10-21T19:53:03.438Z - info: Extensions location cache contains up to date information, skipping crawling in /Users/Nicolas/Desktop/dental/node_modules/
+2017-10-21T19:53:12.206Z - info: Found 30 extensions
+2017-10-21T19:53:12.240Z - debug: Writing extension locations cache to /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/extensions/locations.json
+2017-10-21T19:53:12.242Z - debug: Discovered 30 extensions
+2017-10-21T19:53:12.244Z - info: Using extension import-export
+2017-10-21T19:53:12.452Z - info: Using extension tags
+2017-10-21T19:53:12.455Z - info: Using extension templates
+2017-10-21T19:53:12.459Z - info: Using extension jsrender
+2017-10-21T19:53:12.460Z - info: Using extension authentication
+2017-10-21T19:53:12.617Z - info: Using extension cli
+2017-10-21T19:53:12.618Z - info: Using extension handlebars
+2017-10-21T19:53:12.620Z - info: Using extension debug
+2017-10-21T19:53:12.622Z - info: Using extension express
+2017-10-21T19:53:12.706Z - info: Using extension fop-pdf
+2017-10-21T19:53:12.714Z - info: Using extension phantom-pdf
+2017-10-21T19:53:12.769Z - info: Using extension fs-store
+2017-10-21T19:53:13.233Z - info: Using extension authorization
+2017-10-21T19:53:13.243Z - info: Using extension images
+2017-10-21T19:53:13.253Z - info: Using extension child-templates
+2017-10-21T19:53:13.258Z - info: Using extension browser-client
+2017-10-21T19:53:13.260Z - info: Using extension licensing
+2017-10-21T19:53:13.360Z - info: Using extension data
+2017-10-21T19:53:13.362Z - info: Using extension text
+2017-10-21T19:53:13.363Z - info: Using extension reports
+2017-10-21T19:53:13.374Z - info: Using extension resources
+2017-10-21T19:53:13.377Z - info: Using extension base
+2017-10-21T19:53:13.379Z - info: Using extension studio
+2017-10-21T19:53:13.468Z - info: Using extension html-to-xlsx
+2017-10-21T19:53:13.573Z - info: Using extension scripts
+2017-10-21T19:53:13.576Z - info: Using extension assets
+2017-10-21T19:53:13.590Z - info: Using extension scheduling
+2017-10-21T19:53:13.639Z - info: Using extension xlsx
+2017-10-21T19:53:13.875Z - info: Using extension sample-template
+2017-10-21T19:53:13.877Z - debug: Creating samples is disabled
+2017-10-21T19:53:13.877Z - info: Using extension public-templates
+2017-10-21T19:53:13.892Z - info: Initializing fs storage at /Users/Nicolas/Desktop/dental/data
+2017-10-21T19:53:14.110Z - info: Creating default express app.
+2017-10-21T19:53:14.247Z - info: jsreport server successfully started on http port: 2000
+2017-10-21T19:53:14.257Z - info: Verifying license key free
+2017-10-21T19:53:14.262Z - info: Using free license
+2017-10-21T19:53:14.266Z - info: reporter initialized
+2017-10-21T21:55:21.247Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-21T21:55:21.249Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-21T21:55:21.254Z - info: Searching for available extensions in /Users/Nicolas/Desktop/dental/
+2017-10-21T21:55:21.289Z - info: Extensions location cache contains up to date information, skipping crawling in /Users/Nicolas/Desktop/dental/node_modules/
+2017-10-21T21:55:30.752Z - info: Found 30 extensions
+2017-10-21T21:55:30.792Z - debug: Writing extension locations cache to /var/folders/1w/dl1f4dm113d2_80mhkn07m780000gn/T/jsreport-temp/extensions/locations.json
+2017-10-21T21:55:30.794Z - debug: Discovered 30 extensions
+2017-10-21T21:55:30.795Z - info: Using extension import-export
+2017-10-21T21:55:31.055Z - info: Using extension tags
+2017-10-21T21:55:31.060Z - info: Using extension templates
+2017-10-21T21:55:31.070Z - info: Using extension jsrender
+2017-10-21T21:55:31.078Z - info: Using extension authentication
+2017-10-21T21:55:31.304Z - info: Using extension cli
+2017-10-21T21:55:31.305Z - info: Using extension handlebars
+2017-10-21T21:55:31.309Z - info: Using extension debug
+2017-10-21T21:55:31.310Z - info: Using extension express
+2017-10-21T21:55:31.414Z - info: Using extension fop-pdf
+2017-10-21T21:55:31.425Z - info: Using extension phantom-pdf
+2017-10-21T21:55:31.494Z - info: Using extension fs-store
+2017-10-21T21:55:31.981Z - info: Using extension authorization
+2017-10-21T21:55:31.992Z - info: Using extension images
+2017-10-21T21:55:32.005Z - info: Using extension child-templates
+2017-10-21T21:55:32.011Z - info: Using extension browser-client
+2017-10-21T21:55:32.014Z - info: Using extension licensing
+2017-10-21T21:55:32.109Z - info: Using extension data
+2017-10-21T21:55:32.110Z - info: Using extension text
+2017-10-21T21:55:32.112Z - info: Using extension reports
+2017-10-21T21:55:32.127Z - info: Using extension resources
+2017-10-21T21:55:32.130Z - info: Using extension base
+2017-10-21T21:55:32.132Z - info: Using extension studio
+2017-10-21T21:55:32.235Z - info: Using extension html-to-xlsx
+2017-10-21T21:55:32.360Z - info: Using extension scripts
+2017-10-21T21:55:32.362Z - info: Using extension assets
+2017-10-21T21:55:32.377Z - info: Using extension scheduling
+2017-10-21T21:55:32.426Z - info: Using extension xlsx
+2017-10-21T21:55:32.659Z - info: Using extension sample-template
+2017-10-21T21:55:32.663Z - debug: Creating samples is disabled
+2017-10-21T21:55:32.663Z - info: Using extension public-templates
+2017-10-21T21:55:32.679Z - info: Initializing fs storage at /Users/Nicolas/Desktop/dental/data
+2017-10-21T21:55:32.918Z - info: Creating default express app.
+2017-10-21T21:55:33.198Z - info: jsreport server successfully started on http port: 2000
+2017-10-21T21:55:33.211Z - info: Verifying license key free
+2017-10-21T21:55:33.212Z - info: Using free license
+2017-10-21T21:55:33.214Z - info: reporter initialized

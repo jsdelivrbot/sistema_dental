@@ -28,27 +28,27 @@ boot(app, __dirname, function(err) {
     app.start();
 });
 
-//starts default express.js application containing jsreport studio and api
+// starts default express.js application containing jsreport studio and api
 require('jsreport')(
   {
     httpPort: 2000,
-    "blobStorage": "fileSystem",
-    "connectionString": { "name": "fs" },
-    "scripts": {
-      "allowedModules": ["http"]
+    'blobStorage': 'fileSystem',
+    'connectionString': {'name': 'fs'},
+    'scripts': {
+      'allowedModules': ['http'],
     },
-    "authentication" : {
-      "cookieSession": {
-        "secret": "dasd321as56d1sd5s61vdv32"
+    'authentication': {
+      'cookieSession': {
+        'secret': 'dasd321as56d1sd5s61vdv32',
       },
-      "admin": {
-        "username" : "admin",
-        "password": "password"
-      }
+      'admin': {
+        'username': 'admin',
+        'password': 'password',
+      },
     },
-    "studio": {
-      "entityTreeOrder": ["templates", "data", "scripts", "assets", "images"]
-    }
+    'studio': {
+      'entityTreeOrder': ['templates', 'data', 'scripts', 'assets', 'images'],
+    },
   }
-  ).init();
+).init();
 

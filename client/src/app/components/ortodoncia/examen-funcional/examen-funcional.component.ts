@@ -4,6 +4,7 @@ import {ActivatedRoute, Router} from "@angular/router";
 import {PacienteService} from "../../../services/pacientes/paciente.service";
 import {ExamenService} from "../../../services/examenes/examen.service";
 import {AlertService} from "../../../services/alert/alert.service";
+import {ExamenFuncional} from "../../../models/examen-funcional";
 
 @Component({
   selector: 'app-examen-funcional',
@@ -15,7 +16,7 @@ export class ExamenFuncionalComponent implements OnInit {
   public title = "Exámen Funcional";
   public cargando = true;
   public paciente: Paciente;
-  public examen: any;
+  public examen: ExamenFuncional;
   private id_paciente: string;
   private id_tratamiento: string;
 
@@ -25,7 +26,9 @@ export class ExamenFuncionalComponent implements OnInit {
     private _examenService: ExamenService,
     private _alertService: AlertService,
     private _router: Router,
-  ) { }
+  ) {
+    this.examen = new ExamenFuncional();
+  }
 
   ngOnInit() {
     // id paciente
@@ -57,7 +60,20 @@ export class ExamenFuncionalComponent implements OnInit {
 
   // guardar examen
   onSubmit() {
-
+    this.examen.fecha_realizacion = new Date();
+    this.examen.fecha_actualizacion = new Date();
+    this._examenService.guardarExamenFuncional(this.examen, this.id_tratamiento).subscribe(
+      (result: any) => {
+        if ( result.id != null ) {
+          this._router.navigate(['../lista-examenes'], {relativeTo: this._activatedRoute});
+          this._alertService.showAlert(true, "Exámen Funcional Creado", 1);
+        }
+      },
+      error => {
+        console.log(error);
+        this._alertService.showAlert(true, 'Algo ha salido mal', 2);
+      }
+    )
   }
 
 }

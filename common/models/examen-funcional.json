@@ -124,7 +124,7 @@
     "lat_izq": {
       "type": "number"
     },
-    "prostrusion": {
+    "protrusion": {
       "type": "number"
     },
     "rc_oc": {

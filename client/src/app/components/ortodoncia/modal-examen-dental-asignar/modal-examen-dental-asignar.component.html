@@ -1,0 +1,21 @@
+<div div class="modal fade " bsModal id="modalAsignar" #modalAsignar="bs-modal" tabindex="-1" role="dialog"
+     aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-left">Asignar</h4>
+        <button (click)="modalAsignar.hide()" aria-label="Close" class="close pull-right" type="button">
+          <span  aria-hidden="true">×</span>
+        </button>
+      </div>
+      <form #asignar (submit)="onSubmit()">
+        <div class="modal-body">
+          <md-checkbox *ngFor="let opcion of opciones" name="{{opcion.nombre}}" [(ngModel)]="opcion.marcado">{{opcion.nombre}}</md-checkbox>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="submit" class="btn btn-success float-right">Asignar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
