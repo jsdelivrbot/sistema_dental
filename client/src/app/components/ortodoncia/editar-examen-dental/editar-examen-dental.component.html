@@ -1,3 +1,207 @@
-<p>
-  editar-examen-dental works!
-</p>
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando">
+  <div id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+    <!--// Sidenav component container-->
+    <md-sidenav-container class="sidenav-container">
+      <div class="content min-h-900">
+        <header class="header-wrapper header-sm shadow-none">
+          <h1>{{title}}</h1>
+          <ul class="actions icons top-right">
+            <li>
+              <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+                <i class="zmdi zmdi-menu"></i>
+              </a>
+            </li>
+          </ul>
+        </header>
+
+        <div class="row p-20 p-b-5 m-b-0">
+          <app-detalles-paciente class="col-lg-12" [paciente]="paciente"></app-detalles-paciente>
+        </div>
+
+        <!-- examen -->
+        <div class="">
+          <div class="col-lg-12 text-center font-weight-bold">
+            <p class="font-weight-bold"><strong>A: Ausente | C : Carie | D: Decalcificado | E: Extraido | F: Faceta | Fo: Forma | I: Impactado | R: Rotado | S: Supernumerario | T: Tamaño | PMS/LATS</strong> </p>
+          </div>
+          <form #editarExamenDental="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title"></h3>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <!-- lado derecho -->
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d55" class="control-label">55</label><textarea class="form-control" name="d55" id="d55" cols="4" rows="2" [(ngModel)]="examen.d55"></textarea></td>
+                              <td class="p-0"><label for="d54" class="control-label">54</label><textarea class="form-control" name="d54" id="d54" cols="4" rows="2"  [(ngModel)]="examen.d54"></textarea></td>
+                              <td class="p-0"><label for="d53" class="control-label">53</label><textarea class="form-control" name="d53" id="d53" cols="4" rows="2"  [(ngModel)]="examen.d53"></textarea></td>
+                              <td class="p-0"><label for="d52" class="control-label">52</label><textarea class="form-control" name="d52" id="d52" cols="4" rows="2" [(ngModel)]="examen.d52"></textarea></td>
+                              <td class="p-0"><label for="d51" class="control-label">51</label><textarea class="form-control" name="d51" id="d51" cols="4" rows="2" [(ngModel)]="examen.d51"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d18" class="control-label">18</label><textarea class="form-control" name="d18" id="d18" cols="4" rows="2" [(ngModel)]="examen.d18"></textarea></td>
+                              <td class="p-0"><label for="d17" class="control-label">17</label><textarea class="form-control" name="d17" id="d17" cols="4" rows="2"  [(ngModel)]="examen.d17"></textarea></td>
+                              <td class="p-0"><label for="d16" class="control-label">16</label><textarea class="form-control" name="d16" id="d16" cols="4" rows="2"  [(ngModel)]="examen.d16"></textarea></td>
+                              <td class="p-0"><label for="d15" class="control-label">15</label><textarea class="form-control" name="d15" id="d15" cols="4" rows="2"  [(ngModel)]="examen.d15"></textarea></td>
+                              <td class="p-0"><label for="d14" class="control-label">14</label><textarea class="form-control" name="d14" id="d14" cols="4" rows="2"  [(ngModel)]="examen.d14"></textarea></td>
+                              <td class="p-0"><label for="d13" class="control-label">13</label><textarea class="form-control" name="d13" id="d13" cols="4" rows="2"  [(ngModel)]="examen.d13"></textarea></td>
+                              <td class="p-0"><label for="d12" class="control-label">12</label><textarea class="form-control" name="d12" id="d12" cols="4" rows="2"  [(ngModel)]="examen.d12"></textarea></td>
+                              <td class="p-0"><label for="d11" class="control-label">11</label><textarea class="form-control" name="d11" id="d11" cols="4" rows="2"  [(ngModel)]="examen.d11"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d48" class="control-label">48</label><textarea class="form-control" name="d48" id="d48" cols="4" rows="2" [(ngModel)]="examen.d48"></textarea></td>
+                              <td class="p-0"><label for="d47" class="control-label">47</label><textarea class="form-control" name="d47" id="d47" cols="4" rows="2"  [(ngModel)]="examen.d47"></textarea></td>
+                              <td class="p-0"><label for="d46" class="control-label">46</label><textarea class="form-control" name="d46" id="d46" cols="4" rows="2"  [(ngModel)]="examen.d46"></textarea></td>
+                              <td class="p-0"><label for="d45" class="control-label">45</label><textarea class="form-control" name="d45" id="d45" cols="4" rows="2"  [(ngModel)]="examen.d45"></textarea></td>
+                              <td class="p-0"><label for="d44" class="control-label">44</label><textarea class="form-control" name="d44" id="d44" cols="4" rows="2"  [(ngModel)]="examen.d44"></textarea></td>
+                              <td class="p-0"><label for="d43" class="control-label">43</label><textarea class="form-control" name="d43" id="d43" cols="4" rows="2"  [(ngModel)]="examen.d43"></textarea></td>
+                              <td class="p-0"><label for="d42" class="control-label">42</label><textarea class="form-control" name="d42" id="d42" cols="4" rows="2"  [(ngModel)]="examen.d42"></textarea></td>
+                              <td class="p-0"><label for="d41" class="control-label">41</label><textarea class="form-control" name="d41" id="d41" cols="4" rows="2"  [(ngModel)]="examen.d41"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d85" class="control-label">85</label><textarea class="form-control" name="d85" id="d85" cols="4" rows="2" [(ngModel)]="examen.d85"></textarea></td>
+                              <td class="p-0"><label for="d84" class="control-label">84</label><textarea class="form-control" name="d84" id="d84" cols="4" rows="2"  [(ngModel)]="examen.d84"></textarea></td>
+                              <td class="p-0"><label for="d83" class="control-label">83</label><textarea class="form-control" name="d83" id="d83" cols="4" rows="2"  [(ngModel)]="examen.d83"></textarea></td>
+                              <td class="p-0"><label for="d82" class="control-label">82</label><textarea class="form-control" name="d82" id="d82" cols="4" rows="2"  [(ngModel)]="examen.d82"></textarea></td>
+                              <td class="p-0"><label for="d81" class="control-label">81</label><textarea class="form-control" name="d81" id="d81" cols="4" rows="2"  [(ngModel)]="examen.d81"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /lado derecho -->
+
+                    <!-- lado izquierdo -->
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d61" class="control-label">61</label><textarea class="form-control" name="d61" id="d61" cols="4" rows="2" [(ngModel)]="examen.d61"></textarea></td>
+                              <td class="p-0"><label for="d62" class="control-label">62</label><textarea class="form-control" name="d62" id="d62" cols="4" rows="2"  [(ngModel)]="examen.d62"></textarea></td>
+                              <td class="p-0"><label for="d63" class="control-label">63</label><textarea class="form-control" name="d63" id="d63" cols="4" rows="2"  [(ngModel)]="examen.d63"></textarea></td>
+                              <td class="p-0"><label for="d64" class="control-label">64</label><textarea class="form-control" name="d64" id="d64" cols="4" rows="2"  [(ngModel)]="examen.d64"></textarea></td>
+                              <td class="p-0"><label for="d65" class="control-label">65</label><textarea class="form-control" name="d65" id="d65" cols="4" rows="2"  [(ngModel)]="examen.d65"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d21" class="control-label">21</label><textarea class="form-control" name="d21" id="d21" cols="4" rows="2" [(ngModel)]="examen.d21"></textarea></td>
+                              <td class="p-0"><label for="d22" class="control-label">22</label><textarea class="form-control" name="d22" id="d22" cols="4" rows="2"  [(ngModel)]="examen.d22"></textarea></td>
+                              <td class="p-0"><label for="d23" class="control-label">23</label><textarea class="form-control" name="d23" id="d23" cols="4" rows="2"  [(ngModel)]="examen.d23"></textarea></td>
+                              <td class="p-0"><label for="d24" class="control-label">24</label><textarea class="form-control" name="d24" id="d24" cols="4" rows="2"  [(ngModel)]="examen.d24"></textarea></td>
+                              <td class="p-0"><label for="d25" class="control-label">25</label><textarea class="form-control" name="d25" id="d25" cols="4" rows="2"  [(ngModel)]="examen.d25"></textarea></td>
+                              <td class="p-0"><label for="d26" class="control-label">26</label><textarea class="form-control" name="d26" id="d26" cols="4" rows="2"  [(ngModel)]="examen.d26"></textarea></td>
+                              <td class="p-0"><label for="d27" class="control-label">27</label><textarea class="form-control" name="d27" id="d27" cols="4" rows="2"  [(ngModel)]="examen.d27"></textarea></td>
+                              <td class="p-0"><label for="d28" class="control-label">28</label><textarea class="form-control" name="d28" id="d28" cols="4" rows="2"  [(ngModel)]="examen.d28"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d31" class="control-label">31</label><textarea class="form-control" name="d31" id="d31" cols="4" rows="2" [(ngModel)]="examen.d31"></textarea></td>
+                              <td class="p-0"><label for="d32" class="control-label">32</label><textarea class="form-control" name="d32" id="d32" cols="4" rows="2"  [(ngModel)]="examen.d32"></textarea></td>
+                              <td class="p-0"><label for="d33" class="control-label">33</label><textarea class="form-control" name="d33" id="d33" cols="4" rows="2"  [(ngModel)]="examen.d33"></textarea></td>
+                              <td class="p-0"><label for="d34" class="control-label">34</label><textarea class="form-control" name="d34" id="d34" cols="4" rows="2"  [(ngModel)]="examen.d34"></textarea></td>
+                              <td class="p-0"><label for="d35" class="control-label">35</label><textarea class="form-control" name="d35" id="d35" cols="4" rows="2"  [(ngModel)]="examen.d35"></textarea></td>
+                              <td class="p-0"><label for="d36" class="control-label">36</label><textarea class="form-control" name="d36" id="d36" cols="4" rows="2"  [(ngModel)]="examen.d36"></textarea></td>
+                              <td class="p-0"><label for="d37" class="control-label">37</label><textarea class="form-control" name="d37" id="d37" cols="4" rows="2"  [(ngModel)]="examen.d37"></textarea></td>
+                              <td class="p-0"><label for="d38" class="control-label">38</label><textarea class="form-control" name="d38" id="d38" cols="4" rows="2"  [(ngModel)]="examen.d38"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="form-group row m-b-10">
+                        <div class="col">
+                          <table class="table">
+                            <tbody>
+                            <tr>
+                              <td class="p-0"><label for="d71" class="control-label">71</label><textarea class="form-control" name="d71" id="d71" cols="4" rows="2" [(ngModel)]="examen.d71"></textarea></td>
+                              <td class="p-0"><label for="d72" class="control-label">72</label><textarea class="form-control" name="d72" id="d72" cols="4" rows="2"  [(ngModel)]="examen.d72"></textarea></td>
+                              <td class="p-0"><label for="d73" class="control-label">73</label><textarea class="form-control" name="d73" id="d73" cols="4" rows="2"  [(ngModel)]="examen.d73"></textarea></td>
+                              <td class="p-0"><label for="d74" class="control-label">74</label><textarea class="form-control" name="d74" id="d74" cols="4" rows="2"  [(ngModel)]="examen.d74"></textarea></td>
+                              <td class="p-0"><label for="d75" class="control-label">75</label><textarea class="form-control" name="d75" id="d75" cols="4" rows="2"  [(ngModel)]="examen.d75"></textarea></td>
+                            </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /lado izquierdo -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-footer">
+                  <div class="row">
+                    <button type="submit" class="btn btn-primary m-auto" mdRipple>
+                      <i class="zmdi zmdi-save"></i>
+                      Terminar Exámen
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </md-sidenav-container>
+  </div>
+  <div class="col-lg-12">
+    {{examen | json}}
+  </div>
+  <app-modal-examen-dental-asignar #modalAsignar></app-modal-examen-dental-asignar>
+</div>

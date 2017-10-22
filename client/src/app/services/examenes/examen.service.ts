@@ -4,6 +4,7 @@ import { ExamenFacial } from 'app/models/examen-facial';
 import { Subject } from 'rxjs/Subject';
 import {ExamenFuncional} from "../../models/examen-funcional";
 import {ExamenDental} from "../../models/examen-dental";
+import {RelacionesDentales} from "../../models/relaciones-dentales";
 
 @Injectable()
 export class ExamenService {
@@ -33,7 +34,6 @@ export class ExamenService {
   }
 
   editarExamenFacial(examen: ExamenFacial) {
-    console.log(examen);
     return this.httpClient.patch(this.url + this.port + '/api/examenFacial', examen);
   }
 
@@ -43,14 +43,25 @@ export class ExamenService {
   }
 
   editarExamenFuncional(examen: ExamenFuncional) {
-    console.log(examen);
     return this.httpClient.patch(this.url + this.port + '/api/examenFuncionals', examen);
   }
 
   guardarExamenDental(examen: ExamenDental, id_tratamiento: string) {
     examen.tratamientoId = id_tratamiento;
-    console.log(JSON.stringify(examen));
     return this.httpClient.post(this.url + this.port + '/api/examenDental', examen);
+  }
+
+  editarExamenDental(examen: ExamenDental) {
+    return this.httpClient.patch(this.url + this.port + '/api/examenDental', examen);
+  }
+
+  guardarRelacionesDentales(examen: RelacionesDentales, id_tratamiento: string) {
+    examen.tratamientoId = id_tratamiento;
+    return this.httpClient.post(this.url + this.port + '/api/relacionesDentales', examen);
+  }
+
+  editarRelacionesDentales(examen: RelacionesDentales) {
+    return this.httpClient.patch(this.url + this.port + '/api/relacionesDentales', examen);
   }
 
 }

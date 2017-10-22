@@ -63,5 +63,9 @@
   "examenDental": {
     "dataSource": "db",
     "public": true
+  },
+  "relacionesDentales": {
+    "dataSource": "db",
+    "public": true
   }
 }

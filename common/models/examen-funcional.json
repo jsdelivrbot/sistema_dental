@@ -85,35 +85,35 @@
       "type": "string"
     },
     "polo_lateral_der": {
-      "type": "number",
+      "type": "string",
       "default": 0
     },
     "polo_lateral_izq": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_anterior1": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_anterior2": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_anterior3": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_anterior4": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_posterior1": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_posterior2": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_posterior3": {
-      "type": "number"
+      "type": "string"
     },
     "sinovial_posterior4": {
-      "type": "number"
+      "type": "string"
     },
     "apertura": {
       "type": "number"

@@ -46,6 +46,11 @@
       "type": "hasOne",
       "model": "examenDental",
       "foreignKey": "tratamientoId"
+    },
+    "relacionesDentales": {
+      "type": "hasOne",
+      "model": "relacionesDentales",
+      "foreignKey": "tratamientoId"
     }
   },
   "acls": [],

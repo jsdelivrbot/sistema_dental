@@ -14,6 +14,8 @@ import { EditarExamenFuncionalComponent } from './editar-examen-funcional/editar
 import { ExamenDentalComponent } from './examen-dental/examen-dental.component';
 import { EditarExamenDentalComponent } from './editar-examen-dental/editar-examen-dental.component';
 import { ModalExamenDentalAsignarComponent } from './modal-examen-dental-asignar/modal-examen-dental-asignar.component';
+import { RelacionesDentalesComponent } from './relaciones-dentales/relaciones-dentales.component';
+import { EditarRelacionesDentalesComponent } from './editar-relaciones-dentales/editar-relaciones-dentales.component';
 
 @NgModule({
   imports: [
@@ -22,6 +24,6 @@ import { ModalExamenDentalAsignarComponent } from './modal-examen-dental-asignar
     SharedModule
   ],
   providers: [PacienteService, ExamenService, TratamientoService, PreciosService],
-  declarations: [ListaExamenesComponent, ExamenFacialComponent, EditarExamenFacialComponent, ExamenFuncionalComponent, EditarExamenFuncionalComponent, ExamenDentalComponent, EditarExamenDentalComponent, ModalExamenDentalAsignarComponent]
+  declarations: [ListaExamenesComponent, ExamenFacialComponent, EditarExamenFacialComponent, ExamenFuncionalComponent, EditarExamenFuncionalComponent, ExamenDentalComponent, EditarExamenDentalComponent, ModalExamenDentalAsignarComponent, RelacionesDentalesComponent, EditarRelacionesDentalesComponent]
 })
 export class OrtodonciaModule { }

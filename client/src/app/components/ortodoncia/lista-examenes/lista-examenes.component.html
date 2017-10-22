@@ -201,14 +201,14 @@
                           </a>
                         </div>
                         <div *ngIf="!examenes_realizados.relacionesDentales.realizado" class="col-auto">
-                          <button class="btn btn-primary" mdRipple>
-                              Realizar Exámen
-                            </button>
+                          <a [routerLink]="['../relaciones-dentales']" class="btn btn-primary" mdRipple>
+                            Realizar Exámen
+                          </a>
                         </div>
                         <div *ngIf="examenes_realizados.relacionesDentales.realizado" class="col-auto">
-                          <button class="btn btn-primary" mdRipple>
-                              Actualizar Exámen
-                          </button>
+                          <a [routerLink]="['../relaciones-dentales/editar']" class="btn btn-primary" mdRipple>
+                            Actualizar Exámen
+                          </a>
                         </div>
                         <!--div class="col-auto">
                           <button class="btn btn-primary">

@@ -20,7 +20,7 @@
 
       <!-- examen -->
       <div class="">
-        <form #exmaneFacial="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
+        <form #exmaneFuncional="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card">
               <div class="card-header border-bottom">
@@ -49,12 +49,15 @@
                     <label for="funcion_labial" class="control-label">Función Labial</label>
                     <select class="form-control" name="funcion_labial" id="funcion_labial" [(ngModel)]="examen.funcion_labial">
                       <option value="normal">Normal</option>
+                      <option value="incompetente">Incompetente</option>
                     </select>
                   </div>
                   <div class="col">
                     <label for="tono_musc" class="control-label">Tono Musc</label>
                     <select name="tono_musc" id="tono_musc" class="form-control" [(ngModel)]="examen.tono_musc">
                       <option value="normal">Normal</option>
+                      <option value="hipertonico">Hipertonico</option>
+                      <option value="hipotonico">Hipotonico</option>
                     </select>
                   </div>
                 </div>
@@ -139,12 +142,18 @@
                     <label for="polo_lateral_der" class="control-label">Polo lateral derecho</label>
                     <select name="polo_lateral_der" id="polo_lateral_der" class="form-control" [(ngModel)]="examen.polo_lateral_der">
                       <option value="0">0</option>
+                      <option value="+">+</option>
+                      <option value="++">++</option>
+                      <option value="+++">+++</option>
                     </select>
                   </div>
                   <div class="col">
                     <label for="polo_lateral_izq" class="control-label">Polo lateral izquierdo</label>
                     <select name="polo_lateral_izq" id="polo_lateral_izq" class="form-control" [(ngModel)]="examen.polo_lateral_izq">
                       <option value="0">0</option>
+                      <option value="+">+</option>
+                      <option value="++">++</option>
+                      <option value="+++">+++</option>
                     </select>
                   </div>
                 </div>
@@ -157,11 +166,13 @@
                           <td class="p-0">
                             <select class="form-control" name="sinovial_anterior1" id="sinovial_anterior1" [(ngModel)]="examen.sinovial_anterior1">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                           <td class="p-0">
                             <select class="form-control" name="sinovial_anterior2" id="sinovial_anterior2" [(ngModel)]="examen.sinovial_anterior2">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                         </tr>
@@ -169,11 +180,13 @@
                           <td class="p-0">
                             <select class="form-control" name="sinovial_anterior3" id="sinovial_anterior3" [(ngModel)]="examen.sinovial_anterior3">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                           <td class="p-0">
                             <select class="form-control" name="sinovial_anterior4" id="sinovial_anterior4" [(ngModel)]="examen.sinovial_anterior4">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                         </tr>
@@ -188,11 +201,13 @@
                           <td class="p-0">
                             <select class="form-control" name="sinovial_posterior1" id="sinovial_posterior1" [(ngModel)]="examen.sinovial_posterior1">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                           <td class="p-0">
                             <select class="form-control" name="sinovial_posterior2" id="sinovial_posterior2" [(ngModel)]="examen.sinovial_posterior2">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                         </tr>
@@ -200,11 +215,13 @@
                           <td class="p-0">
                             <select class="form-control" name="sinovial_posterior3" id="sinovial_posterior3" [(ngModel)]="examen.sinovial_posterior3">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                           <td class="p-0">
                             <select class="form-control" name="sinovial_posterior4" id="sinovial_posterior4" [(ngModel)]="examen.sinovial_posterior4">
                               <option value="0">0</option>
+                              <option value="+">+</option>
                             </select>
                           </td>
                         </tr>
@@ -254,25 +271,25 @@
                   <div class="col">
                     <label for="apertura" class="control-label">Apertura</label>
                     <select name="apertura" id="apertura" class="form-control" [(ngModel)]="examen.apertura">
-                      <option value="0">0</option>
+                      <option *ngFor="let item of apertura; let i = index" value="{{i}}">{{i}}</option>
                     </select>
                   </div>
                   <div class="col">
                     <label for="lat_der" class="control-label">Lat Der</label>
                     <select name="lat_der" id="lat_der" class="form-control" [(ngModel)]="examen.lat_der">
-                      <option value="0">0</option>
+                      <option *ngFor="let item of laterales; let i = index" value="{{i}}">{{i}}</option>
                     </select>
                   </div>
                   <div class="col">
                     <label for="lat_izq" class="control-label">Lat Izq</label>
                     <select name="lat_izq" id="lat_izq" class="form-control" [(ngModel)]="examen.lat_izq">
-                      <option value="0">0</option>
+                      <option *ngFor="let item of laterales; let i = index" value="{{i}}">{{i}}</option>
                     </select>
                   </div>
                   <div class="col">
                     <label for="protrusion" class="control-label">Protrusión</label>
                     <select name="protrusion" id="protrusion" class="form-control" [(ngModel)]="examen.protrusion">
-                      <option value="0">0</option>
+                      <option *ngFor="let item of prostrusion; let i = index" value="{{i}}">{{i}}</option>
                     </select>
                   </div>
                 </div>

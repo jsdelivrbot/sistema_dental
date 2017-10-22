@@ -45,6 +45,10 @@ export class TratamientoService {
     return this.httpClient.get(this.url + this.port + '/api/tratamientos/' + id_tratamiento + '/examenDental');
   }
 
+  relacionesDentalesRealizado(id_tratamiento) {
+    return this.httpClient.get(this.url + this.port + '/api/tratamientos/' + id_tratamiento + '/relacionesDentales');
+  }
+
   archivarTratamiento(tratamiento: Tratamiento) {
     tratamiento.archivado = true;
     return this.httpClient.patch(this.url + this.port + '/api/tratamientos/' + tratamiento.id, tratamiento);

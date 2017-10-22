@@ -1,38 +1,38 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
-import {ExamenDental} from "../../../models/examen-dental";
+import { Component, OnInit } from '@angular/core';
+import {RelacionesDentales} from "../../../models/relaciones-dentales";
 import {Paciente} from "../../../models/paciente";
-import {ModalExamenDentalAsignarComponent} from "../modal-examen-dental-asignar/modal-examen-dental-asignar.component";
 import {ActivatedRoute, Router} from "@angular/router";
 import {PacienteService} from "../../../services/pacientes/paciente.service";
 import {ExamenService} from "../../../services/examenes/examen.service";
 import {AlertService} from "../../../services/alert/alert.service";
-import {TratamientoService} from "../../../services/tratamientos/tratamiento.service";
 
 @Component({
-  selector: 'app-editar-examen-dental',
-  templateUrl: './editar-examen-dental.component.html',
-  styleUrls: ['./editar-examen-dental.component.scss']
+  selector: 'app-relaciones-dentales',
+  templateUrl: './relaciones-dentales.component.html',
+  styleUrls: ['./relaciones-dentales.component.scss']
 })
-export class EditarExamenDentalComponent implements OnInit {
+export class RelacionesDentalesComponent implements OnInit {
 
-  public title = "Exámen Dental";
+  public title = "Relaciones Dentales";
   public cargando = true;
   public paciente: Paciente;
-  public examen: ExamenDental;
+  public examen: RelacionesDentales;
   private id_paciente: string;
   private id_tratamiento: string;
-
-  @ViewChild('modalAsignar') modalAsignar: ModalExamenDentalAsignarComponent;
+  public max_select = new Array<number>(21);
+  public smh = new Array<number>(21);
+  public smv = new Array<number>(21);
+  public ma = new Array<number>(11);
+  public mc = new Array<number>(7);
 
   constructor(
     private _activatedRoute: ActivatedRoute,
     private _pacienteService: PacienteService,
-    private _tratamientoService: TratamientoService,
     private _examenService: ExamenService,
     private _alertService: AlertService,
     private _router: Router,
   ) {
-    this.examen = new ExamenDental();
+    this.examen = new RelacionesDentales();
   }
 
   ngOnInit() {
@@ -48,7 +48,6 @@ export class EditarExamenDentalComponent implements OnInit {
     this._activatedRoute.parent.params.subscribe(
       params => {
         this.id_tratamiento = params['id'];
-        this.obtenerExamen();
       }
     );
   }
@@ -58,28 +57,21 @@ export class EditarExamenDentalComponent implements OnInit {
       (value: Paciente) => {
         if ( value.id != null ) {
           this.paciente = value;
+          this.cargando = false;
         }
       }
     )
   }
 
-  obtenerExamen() {
-    this._tratamientoService.examenDentalRealizado(this.id_tratamiento).subscribe(
-      (result: ExamenDental) => {
-        this.examen = result;
-        this.cargando = false;
-      }
-    );
-  }
-
-  // Editar el examen
+  // guardar examen
   onSubmit() {
+    this.examen.fecha_realizacion = new Date();
     this.examen.fecha_actualizacion = new Date();
-    this._examenService.editarExamenDental(this.examen).subscribe(
-      (result: ExamenDental) => {
+    this._examenService.guardarRelacionesDentales(this.examen, this.id_tratamiento).subscribe(
+      (result: any) => {
         if ( result.id != null ) {
-          this._router.navigate(['../../'], {relativeTo: this._activatedRoute});
-          this._alertService.showAlert(true,  'Exámen Funcional Actualizado', 1);
+          this._router.navigate(['../lista-examenes'], {relativeTo: this._activatedRoute});
+          this._alertService.showAlert(true, "Relaciones Dentales Creado", 1);
         }
       },
       error => {
@@ -88,4 +80,5 @@ export class EditarExamenDentalComponent implements OnInit {
       }
     )
   }
+
 }

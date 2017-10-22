@@ -19,6 +19,9 @@ export class ExamenFuncionalComponent implements OnInit {
   public examen: ExamenFuncional;
   private id_paciente: string;
   private id_tratamiento: string;
+  public apertura = new Array<number>(71);
+  public laterales = new Array<number>(21);
+  public prostrusion = new Array<number>(14);
 
   constructor(
     private _activatedRoute: ActivatedRoute,

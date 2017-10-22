@@ -8,6 +8,8 @@ import {ExamenFuncionalComponent} from "./examen-funcional/examen-funcional.comp
 import {EditarExamenFuncionalComponent} from "./editar-examen-funcional/editar-examen-funcional.component";
 import {ExamenDentalComponent} from "./examen-dental/examen-dental.component";
 import {EditarExamenDentalComponent} from "./editar-examen-dental/editar-examen-dental.component";
+import {RelacionesDentalesComponent} from "./relaciones-dentales/relaciones-dentales.component";
+import {EditarRelacionesDentalesComponent} from "./editar-relaciones-dentales/editar-relaciones-dentales.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'lista-examenes', pathMatch: 'full' },
@@ -18,7 +20,8 @@ const routes: Routes = [
   { path: 'examen-funcional/editar', component: EditarExamenFuncionalComponent },
   { path: 'examen-dental', component: ExamenDentalComponent },
   { path: 'examen-dental/editar', component: EditarExamenDentalComponent },
-  { path: 'relaciones-dentales' },
+  { path: 'relaciones-dentales', component: RelacionesDentalesComponent },
+  { path: 'relaciones-dentales/editar', component: EditarRelacionesDentalesComponent },
 ];
 
 @NgModule({
