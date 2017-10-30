@@ -6,6 +6,7 @@ import {TratamientoService} from 'app/services/tratamientos/tratamiento.service'
 import {Tratamiento} from "../../../models/tratamiento";
 import {AlertService} from "../../../services/alert/alert.service";
 import {UtilService} from "../../../services/util/util.service";
+import {PlanTratamiento} from "../../../models/plan-tratamiento";
 
 @Component({
   selector: 'app-detalle-tratamiento',
@@ -22,16 +23,24 @@ export class DetalleTratamientoComponent implements OnInit {
   public paciente: Paciente;
   public tratamiento: Tratamiento;
   public prespuestoOrtodonciaRealizado: boolean;
+  public examenes_realizados: boolean;
+  public planTratamientoRealizado: boolean;
+  public planTratamiento: PlanTratamiento;
 
   constructor(private _activatedRoute: ActivatedRoute,
               private _pacienteService: PacienteService,
               private _tratamientoService: TratamientoService,
               private _alertService: AlertService,
-              private _utilService: UtilService) {
+              private _utilService: UtilService
+  ) {
     this.prespuestoOrtodonciaRealizado = false;
+    this.planTratamiento = new PlanTratamiento();
   }
 
   ngOnInit() {
+    this.examenes_realizados = true;
+    this.planTratamientoRealizado = false;
+
     this._activatedRoute.parent.params.subscribe(
       params => {
         this.id_paciente = params['id'];
@@ -43,6 +52,8 @@ export class DetalleTratamientoComponent implements OnInit {
       params => {
         this.id_tratamiento = params['id'];
         this.obtenerTratamiento();
+        this.comprobarExamenesRealizados();
+        this.comprobarPlanTratamiento();
       }
     );
   }
@@ -53,7 +64,7 @@ export class DetalleTratamientoComponent implements OnInit {
       (value: Paciente) => {
         if (value.id != null) {
           this.paciente = value;
-          this.cargando = false;
+
         }
       },
       error => {
@@ -78,8 +89,95 @@ export class DetalleTratamientoComponent implements OnInit {
     );
   }
 
+  comprobarExamenesRealizados() {
+    this._tratamientoService.examenDentalRealizado(this.id_tratamiento).subscribe(
+      (result: any) => {
+        if (result.id != null) {
+          this._tratamientoService.examenFacialRealizado(this.id_tratamiento).subscribe(
+            (result: any) => {
+              if (result.id != null) {
+                this._tratamientoService.examenFuncionalReaizado(this.id_tratamiento).subscribe(
+                  (result: any) => {
+                    if (result.id != null) {
+                      this._tratamientoService.relacionesDentalesRealizado(this.id_tratamiento).subscribe(
+                        (result: any) => {
+                          if(result.id != null) {
+                            this.cargando = false;
+                          }else{
+                            this.examenes_realizados = false;
+                            this.cargando = false;
+                          }
+                        },
+                        error => {
+                          if (error.statusText.indexOf('Not Found') == 0) {
+                            this.examenes_realizados = false;
+                            this.cargando = false;
+                          }
+                        }
+                      );
+                    }else{
+                      this.examenes_realizados = false;
+                      this.cargando = false;
+                    }
+                  },
+                  error => {
+                    if (error.statusText.indexOf('Not Found') == 0) {
+                      this.examenes_realizados = false;
+                      this.cargando = false;
+                    }
+                  }
+                );
+              }else{
+                this.examenes_realizados = false;
+                this.cargando = false;
+              }
+            },
+            error => {
+              if (error.statusText.indexOf('Not Found') == 0) {
+                this.examenes_realizados = false;
+                this.cargando = false;
+              }
+            }
+          );
+        }else{
+          this.examenes_realizados = false;
+          this.cargando = false;
+        }
+      },
+      error => {
+        if (error.statusText.indexOf('Not Found') == 0) {
+          this.examenes_realizados = false;
+          this.cargando = false;
+        }
+      }
+    );
+  }
+
+  comprobarPlanTratamiento() {
+    this._tratamientoService.planTratamientoRealizado(this.id_tratamiento).subscribe(
+      (result: PlanTratamiento) => {
+        if ( result.id != null ) {
+          this.planTratamientoRealizado = true;
+          this.planTratamiento = result;
+        }
+      }
+    );
+  }
+
   // manda a llamar el servicio para imprimir el presupuesto de ortodoncia
   imprimirOrtodoncia() {
-
+    this._tratamientoService.imprimirPresupuestoOrtodoncia(this.tratamiento).subscribe(
+      (result: any) => {
+        console.log(result);
+        let file = new Blob([result._body], { type: 'application/pdf' });
+        let fileURL = URL.createObjectURL(file);
+        console.log(file);
+        console.log(fileURL);
+        window.open(fileURL, '_blank');
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 }

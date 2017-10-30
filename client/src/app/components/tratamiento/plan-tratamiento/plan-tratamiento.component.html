@@ -1,0 +1,422 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando">
+  <div id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+    <!--// Sidenav component container-->
+    <md-sidenav-container class="sidenav-container">
+      <div class="content min-h-900">
+        <header class="header-wrapper header-sm shadow-none">
+          <h1>{{title}}</h1>
+          <ul class="actions icons top-right">
+            <li>
+              <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+                <i class="zmdi zmdi-menu"></i>
+              </a>
+            </li>
+          </ul>
+        </header>
+
+        <div class="row p-20 p-b-5 m-b-0">
+          <app-detalles-paciente class="col-lg-12" [paciente]="paciente" [tratamiento]="tratamiento"></app-detalles-paciente>
+        </div>
+
+        <!-- examen -->
+        <div class="">
+          <form #planDeTratamiento="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">Resumen</h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <md-checkbox name="en_observacion" [(ngModel)]="planTratamiento.en_observacion">En observación</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <md-checkbox name="ortodoncia" [(ngModel)]="planTratamiento.ortodoncia">Ortodoncia</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <md-checkbox name="ortognatica" [(ngModel)]="planTratamiento.ortognatica">Ortognatica</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <md-checkbox name="compromiso" [(ngModel)]="planTratamiento.compromiso">Compromiso</md-checkbox>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="pronostico" class="control-label">Pronóstico</label>
+                      <md-radio-group name="pronostico" id="pronostico" [(ngModel)]="planTratamiento.pronostico">
+                        <md-radio-button value="favorable">Favorable</md-radio-button>
+                        <md-radio-button value="desfavorable">Desfavorable</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="labio_ph" class="control-label">Labio PH</label>
+                      <input type="text" class="form-control" name="labio_ph" id="labio_ph" [(ngModel)]="planTratamiento.labio_ph">
+                    </div>
+                    <div class="col">
+                      <label for="sindrome" class="control-label">Sindrome</label>
+                      <input type="text" class="form-control" name="sindrome" id="sindrome" [(ngModel)]="planTratamiento.sindrome">
+                    </div>
+                    <div class="col">
+                      <label for="observaciones" class="control-label">Observaciones</label>
+                      <input type="text" class="form-control" name="observaciones" id="observaciones" [(ngModel)]="planTratamiento.observaciones">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="tecnica" class="control-label">Técnica</label>
+                      <input type="text" class="form-control" name="tecnica" id="tecnica" [(ngModel)]="planTratamiento.tecnica">
+                    </div>
+                    <div class="col">
+                      <label for="brakets" class="control-label">Brakets</label>
+                      <input type="text" class="form-control" name="brakets" id="brakets" [(ngModel)]="planTratamiento.brakets">
+                    </div>
+                    <div class="col">
+                      <label for="slot" class="control-label">Slot</label>
+                      <input type="text" class="form-control" name="slot" id="slot" [(ngModel)]="planTratamiento.slot">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <md-radio-group name="extra" id="extra" [(ngModel)]="planTratamiento.extra">
+                        <md-radio-button value="sin_extra">Sin extra</md-radio-button>
+                        <md-radio-button value="con_extra">Con extra</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                    <div class="col">
+                      <md-checkbox name="erup_guiada" [(ngModel)]="planTratamiento.erup_guiada">Erup guiada</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <md-checkbox name="extr_seriada" [(ngModel)]="planTratamiento.extr_seriada">Extr seriada</md-checkbox>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">Observaciones</h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><label>55</label><br><md-checkbox name="d55" id="d55" [(ngModel)]="planTratamiento.d55"></md-checkbox></td>
+                            <td><label>54</label><br><md-checkbox name="d54" [(ngModel)]="planTratamiento.d54"></md-checkbox></td>
+                            <td><label>53</label><br><md-checkbox name="d53" [(ngModel)]="planTratamiento.d53"></md-checkbox></td>
+                            <td><label>52</label><br><md-checkbox name="d52" [(ngModel)]="planTratamiento.d52"></md-checkbox></td>
+                            <td><label>51</label><br><md-checkbox name="d51" [(ngModel)]="planTratamiento.d51"></md-checkbox></td>
+                            <td></td>
+                            <td></td>
+                            <td><label>61</label><br><md-checkbox name="d61" [(ngModel)]="planTratamiento.d61"></md-checkbox></td>
+                            <td><label>62</label><br><md-checkbox name="d62" [(ngModel)]="planTratamiento.d62"></md-checkbox></td>
+                            <td><label>63</label><br><md-checkbox name="d63" [(ngModel)]="planTratamiento.d63"></md-checkbox></td>
+                            <td><label>64</label><br><md-checkbox name="d64" [(ngModel)]="planTratamiento.d64"></md-checkbox></td>
+                            <td><label>65</label><br><md-checkbox name="d65" [(ngModel)]="planTratamiento.d65"></md-checkbox></td>
+                          </tr>
+                          <tr>
+                            <td><label>18</label><br><md-checkbox name="d18" [(ngModel)]="planTratamiento.d18"></md-checkbox></td>
+                            <td><label>17</label><br><md-checkbox name="d17" [(ngModel)]="planTratamiento.d17"></md-checkbox></td>
+                            <td><label>16</label><br><md-checkbox name="d16" [(ngModel)]="planTratamiento.d16"></md-checkbox></td>
+                            <td><label>15</label><br><md-checkbox name="d15" [(ngModel)]="planTratamiento.d15"></md-checkbox></td>
+                            <td><label>14</label><br><md-checkbox name="d14" [(ngModel)]="planTratamiento.d14"></md-checkbox></td>
+                            <td><label>13</label><br><md-checkbox name="d13" [(ngModel)]="planTratamiento.d13"></md-checkbox></td>
+                            <td><label>12</label><br><md-checkbox name="d12" [(ngModel)]="planTratamiento.d12"></md-checkbox></td>
+                            <td><label>11</label><br><md-checkbox name="d11" [(ngModel)]="planTratamiento.d11"></md-checkbox></td>
+                            <td></td>
+                            <td></td>
+                            <td><label>21</label><br><md-checkbox name="d21" [(ngModel)]="planTratamiento.d21"></md-checkbox></td>
+                            <td><label>22</label><br><md-checkbox name="d22" [(ngModel)]="planTratamiento.d22"></md-checkbox></td>
+                            <td><label>23</label><br><md-checkbox name="d23" [(ngModel)]="planTratamiento.d23"></md-checkbox></td>
+                            <td><label>24</label><br><md-checkbox name="d24" [(ngModel)]="planTratamiento.d24"></md-checkbox></td>
+                            <td><label>25</label><br><md-checkbox name="d25" [(ngModel)]="planTratamiento.d25"></md-checkbox></td>
+                            <td><label>26</label><br><md-checkbox name="d26" [(ngModel)]="planTratamiento.d26"></md-checkbox></td>
+                            <td><label>27</label><br><md-checkbox name="d27" [(ngModel)]="planTratamiento.d27"></md-checkbox></td>
+                            <td><label>28</label><br><md-checkbox name="d28" [(ngModel)]="planTratamiento.d28"></md-checkbox></td>
+                          </tr>
+                          <tr>
+                            <td><label>48</label><br><md-checkbox name="d48" [(ngModel)]="planTratamiento.d48"></md-checkbox></td>
+                            <td><label>47</label><br><md-checkbox name="d47" [(ngModel)]="planTratamiento.d47"></md-checkbox></td>
+                            <td><label>46</label><br><md-checkbox name="d46" [(ngModel)]="planTratamiento.d46"></md-checkbox></td>
+                            <td><label>45</label><br><md-checkbox name="d45" [(ngModel)]="planTratamiento.d45"></md-checkbox></td>
+                            <td><label>44</label><br><md-checkbox name="d44" [(ngModel)]="planTratamiento.d44"></md-checkbox></td>
+                            <td><label>43</label><br><md-checkbox name="d43" [(ngModel)]="planTratamiento.d43"></md-checkbox></td>
+                            <td><label>42</label><br><md-checkbox name="d42" [(ngModel)]="planTratamiento.d42"></md-checkbox></td>
+                            <td><label>41</label><br><md-checkbox name="d41" [(ngModel)]="planTratamiento.d41"></md-checkbox></td>
+                            <td></td>
+                            <td></td>
+                            <td><label>31</label><br><md-checkbox name="d31" [(ngModel)]="planTratamiento.d31"></md-checkbox></td>
+                            <td><label>32</label><br><md-checkbox name="d32" [(ngModel)]="planTratamiento.d32"></md-checkbox></td>
+                            <td><label>33</label><br><md-checkbox name="d33" [(ngModel)]="planTratamiento.d33"></md-checkbox></td>
+                            <td><label>34</label><br><md-checkbox name="d34" [(ngModel)]="planTratamiento.d34"></md-checkbox></td>
+                            <td><label>35</label><br><md-checkbox name="d35" [(ngModel)]="planTratamiento.d35"></md-checkbox></td>
+                            <td><label>36</label><br><md-checkbox name="d36" [(ngModel)]="planTratamiento.d36"></md-checkbox></td>
+                            <td><label>37</label><br><md-checkbox name="d37" [(ngModel)]="planTratamiento.d37"></md-checkbox></td>
+                            <td><label>38</label><br><md-checkbox name="d38" [(ngModel)]="planTratamiento.d38"></md-checkbox></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><label>85</label><br><md-checkbox name="d85" [(ngModel)]="planTratamiento.d85"></md-checkbox></td>
+                            <td><label>84</label><br><md-checkbox name="d84" [(ngModel)]="planTratamiento.d84"></md-checkbox></td>
+                            <td><label>83</label><br><md-checkbox name="d83" [(ngModel)]="planTratamiento.d83"></md-checkbox></td>
+                            <td><label>82</label><br><md-checkbox name="d82" [(ngModel)]="planTratamiento.d82"></md-checkbox></td>
+                            <td><label>81</label><br><md-checkbox name="d81" [(ngModel)]="planTratamiento.d81"></md-checkbox></td>
+                            <td></td>
+                            <td></td>
+                            <td><label>71</label><br><md-checkbox name="d71" [(ngModel)]="planTratamiento.d71"></md-checkbox></td>
+                            <td><label>72</label><br><md-checkbox name="d72" [(ngModel)]="planTratamiento.d72"></md-checkbox></td>
+                            <td><label>73</label><br><md-checkbox name="d73" [(ngModel)]="planTratamiento.d73"></md-checkbox></td>
+                            <td><label>74</label><br><md-checkbox name="d74" [(ngModel)]="planTratamiento.d74"></md-checkbox></td>
+                            <td><label>75</label><br><md-checkbox name="d75" [(ngModel)]="planTratamiento.d75"></md-checkbox></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="obs_dientes" class="control-label">Observaciones</label>
+                      <textarea name="obs_dientes" id="obs_dientes" cols="30" rows="5" class="form-control" [(ngModel)]="planTratamiento.obs_dientes"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">Fase 1</h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="cirugia" class="control-label">Cirugía</label>
+                      <textarea name="cirugia" id="cirugia" cols="30" rows="5" class="form-control" [(ngModel)]="planTratamiento.cirugia_fase1"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="ortopedia_transversal" class="control-label">Ortopedia Transversal</label>
+                      <input type="text" class="form-control" name="ortopedia_transversal" id="ortopedia_transversal" [(ngModel)]="planTratamiento.ortopedia_transversal">
+                    </div>
+                    <div class="col">
+                      <label for="ortopedia_ap" class="control-label">Ortopedia AP</label>
+                      <input type="text" class="form-control" name="ortopedia_ap" id="ortopedia_ap" [(ngModel)]="planTratamiento.ortopedia_ap">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="ortopedia_vertical" class="control-label">Ortopedia Vertical</label>
+                      <input type="text" class="form-control" name="ortopedia_vertical" id="ortopedia_vertical" [(ngModel)]="planTratamiento.ortopedia_vertical">
+                    </div>
+                    <div class="col">
+                      <label for="aparatos_fijos" class="control-label">Aparatos Fijos</label>
+                      <input type="text" class="form-control" name="aparatos_fijos" id="aparatos_fijos" [(ngModel)]="planTratamiento.aparatos_fijos">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">Fase 2</h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="cirugia_fase2" class="control-label">Cirugía</label>
+                      <textarea name="cirugia_fase2" id="cirugia_fase2" cols="30" rows="5"
+                                class="form-control" [(ngModel)]="planTratamiento.cirugia_fase2"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <md-checkbox name="forma_arco" [(ngModel)]="planTratamiento.forma_arco">Forma de arco</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <md-radio-group name="directo" id="directo" [(ngModel)]="planTratamiento.directo">
+                        <md-radio-button class="p-10" value="directo">Directo</md-radio-button>
+                        <md-radio-button class="p-10" value="indirecto">Indirecto</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label class="control-label">BKT Caninos</label>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="p-0"><input type="text" class="form-control" name="bkt_caninos1" [(ngModel)]="planTratamiento.bkt_caninos1"></td>
+                            <td class="p-0"><input type="text" class="form-control" name="bkt_caninos2" [(ngModel)]="planTratamiento.bkt_caninos2"></td>
+                          </tr>
+                          <tr>
+                            <td class="p-0"><input type="text" class="form-control" name="bkt_caninos3" [(ngModel)]="planTratamiento.bkt_caninos3"></td>
+                            <td class="p-0"><input type="text" class="form-control" name="bkt_caninos4" [(ngModel)]="planTratamiento.bkt_caninos4"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col">
+                      <label class="control-label">Bandas</label>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="p-0"><input type="text" class="form-control" name="bandas1" [(ngModel)]="planTratamiento.bandas1"></td>
+                            <td class="p-0"><input type="text" class="form-control" name="bandas2" [(ngModel)]="planTratamiento.bandas2"></td>
+                          </tr>
+                          <tr>
+                            <td class="p-0"><input type="text" class="form-control" name="bandas3" [(ngModel)]="planTratamiento.bandas3"></td>
+                            <td class="p-0"><input type="text" class="form-control" name="bandas4" [(ngModel)]="planTratamiento.bandas4"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col">
+                      <label class="control-label">Tubos</label>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="p-0"><input type="text" class="form-control" name="tubos1" [(ngModel)]="planTratamiento.tubos1"></td>
+                            <td class="p-0"><input type="text" class="form-control" name="tubos2" [(ngModel)]="planTratamiento.tubos2"></td>
+                          </tr>
+                          <tr>
+                            <td class="p-0"><input type="text" class="form-control" name="tubos3" [(ngModel)]="planTratamiento.tubos3"></td>
+                            <td class="p-0"><input type="text" class="form-control" name="tubos4" [(ngModel)]="planTratamiento.tubos4"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">Fase 3</h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="cirugia_fase3" class="control-label">Cirugía</label>
+                      <textarea name="cirugia_fase3" id="cirugia_fase3" cols="30" rows="5"
+                                class="form-control" [(ngModel)]="planTratamiento.cirugia_fase3"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <md-checkbox name="cirugia" [(ngModel)]="planTratamiento.cirugia">Cirugía</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <md-checkbox name="perio" [(ngModel)]="planTratamiento.perio">Perio</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <md-checkbox name="protesis" [(ngModel)]="planTratamiento.protesis">Protesis</md-checkbox>
+                    </div>
+                    <div class="col">
+                      <label for="otros" class="control-label">Otros</label>
+                      <input type="text" class="form-control" name="otros" id="otros" [(ngModel)]="planTratamiento.otros_fase3">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="card">
+                        <div class="card-header border-bottom">
+                          <h4 class="card-title">Maxilar</h4>
+                        </div>
+                        <div class="card-body">
+                          <div class="form-group row m-b-10">
+                            <div class="col">
+                              <md-radio-group name="max_anclaje" id="max_anclaje" [(ngModel)]="planTratamiento.max_anclaje">
+                                <md-radio-button value="sin_anclaje">Sin anclaje</md-radio-button>
+                                <md-radio-button value="con_anclaje">Con anclaje</md-radio-button>
+                              </md-radio-group>
+                            </div>
+                            <div class="col">
+                              <md-checkbox name="max_min" [(ngModel)]="planTratamiento.max_min">Min</md-checkbox>
+                            </div>
+                            <div class="col">
+                              <md-checkbox name="max_mod" [(ngModel)]="planTratamiento.max_mod">Mod</md-checkbox>
+                            </div>
+                            <div class="col">
+                              <md-checkbox name="max_max" [(ngModel)]="planTratamiento.max_max">Max</md-checkbox>
+                            </div>
+                          </div>
+                          <div class="form-group row m-b-10">
+                            <div class="col">
+                              <label for="obs_maxilar" class="control-label">Observaciones</label>
+                              <textarea name="obs_maxilar" id="obs_maxilar" cols="30" rows="5"
+                                        class="form-control" [(ngModel)]="planTratamiento.max_obs"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="card">
+                        <div class="card-header border-bottom">
+                          <h4 class="card-title">Mandibular</h4>
+                        </div>
+                        <div class="card-body">
+                          <div class="form-group row m-b-10">
+                            <div class="col">
+                              <md-radio-group name="man_anclaje" id="man_anclaje" [(ngModel)]="planTratamiento.man_anclaje">
+                                <md-radio-button value="sin_anclaje">Sin anclaje</md-radio-button>
+                                <md-radio-button value="con_anclaje">Con anclaje</md-radio-button>
+                              </md-radio-group>
+                            </div>
+                            <div class="col">
+                              <md-checkbox name="man_min" [(ngModel)]="planTratamiento.man_min">Min</md-checkbox>
+                            </div>
+                            <div class="col">
+                              <md-checkbox name="man_mod" [(ngModel)]="planTratamiento.man_mod">Mod</md-checkbox>
+                            </div>
+                            <div class="col">
+                              <md-checkbox name="man_max" [(ngModel)]="planTratamiento.man_max">Max</md-checkbox>
+                            </div>
+                          </div>
+                          <div class="form-group row m-b-10">
+                            <div class="col">
+                              <label for="obs_mandibular" class="control-label">Observaciones</label>
+                              <textarea name="obs_mandibular" id="obs_mandibular" cols="30" rows="5"
+                                        class="form-control" [(ngModel)]="planTratamiento.man_obs"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-footer">
+                  <div class="row">
+                    <button type="submit" class="btn btn-primary m-auto" mdRipple>
+                      <i class="zmdi zmdi-save"></i>
+                      Terminar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </md-sidenav-container>
+  </div>
+</div>

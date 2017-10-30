@@ -1,3 +1,4 @@
+import {Paciente} from "./paciente";
 export class Tratamiento {
 
     public nombre: string;
@@ -11,6 +12,7 @@ export class Tratamiento {
         "ortodoncia": {},
         "odontologia_general": {}
     };
+    public paciente: Paciente;
 
     constructor() {
     }

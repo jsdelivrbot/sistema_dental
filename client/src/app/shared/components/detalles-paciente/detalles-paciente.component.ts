@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Paciente } from 'app/models/paciente';
+import {Tratamiento} from "../../../models/tratamiento";
 
 @Component({
   selector: 'app-detalles-paciente',
@@ -9,6 +10,7 @@ import { Paciente } from 'app/models/paciente';
 export class DetallesPacienteComponent implements OnInit {
 
   @Input('paciente') paciente: Paciente;
+  @Input('tratamiento') tratamiento: Tratamiento;
 
   constructor() { }
 

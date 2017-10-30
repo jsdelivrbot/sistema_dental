@@ -67,5 +67,13 @@
   "relacionesDentales": {
     "dataSource": "db",
     "public": true
+  },
+  "listadoDeProblemas": {
+    "dataSource": "db",
+    "public": true
+  },
+  "planficacionDeTratamiento": {
+    "dataSource": "db",
+    "public": true
   }
 }

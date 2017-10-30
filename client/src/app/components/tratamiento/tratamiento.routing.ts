@@ -5,6 +5,10 @@ import { ListaTratamientoComponent } from 'app/components/tratamiento/lista-trat
 import { DetalleTratamientoComponent } from 'app/components/tratamiento/detalle-tratamiento/detalle-tratamiento.component';
 import { CrearTratamientoComponent } from 'app/components/tratamiento/crear-tratamiento/crear-tratamiento.component';
 import { PresupuestoOrtodonciaComponent } from 'app/components/tratamiento/presupuesto-ortodoncia/presupuesto-ortodoncia.component';
+import {ListadoProblemasComponent} from "./listado-problemas/listado-problemas.component";
+import {EditarListadoProblemasComponent} from "./editar-listado-problemas/editar-listado-problemas.component";
+import {PlanTratamientoComponent} from "./plan-tratamiento/plan-tratamiento.component";
+import {EditarPlanTratamientoComponent} from "./editar-plan-tratamiento/editar-plan-tratamiento.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'tratamientos', pathMatch: 'full' },
@@ -14,6 +18,10 @@ const routes: Routes = [
       {path: 'tratamientos/crear', component: CrearTratamientoComponent},
       {path: 'tratamientos/:id', component: DetalleTratamientoComponent},
       {path: 'tratamientos/:id/presupuesto/ortodoncia', component: PresupuestoOrtodonciaComponent},
+      {path: 'tratamientos/:id/listado-de-problemas', component: ListadoProblemasComponent},
+      {path: 'tratamientos/:id/listado-de-problemas/edit', component: EditarListadoProblemasComponent},
+      {path: 'tratamientos/:id/plan-tratamiento', component: PlanTratamientoComponent},
+      {path: 'tratamientos/:id/plan-tratamiento/edit', component: EditarPlanTratamientoComponent},
       {
         path: 'tratamientos/:id/examenes/ortodoncia',
         loadChildren: 'app/components/ortodoncia/ortodoncia.module#OrtodonciaModule'

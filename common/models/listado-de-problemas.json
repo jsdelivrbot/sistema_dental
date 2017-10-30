@@ -1,0 +1,148 @@
+{
+  "name": "listadoDeProblemas",
+  "plural": "listadoDeProblemas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "motivacion": {
+      "type": "string"
+    },
+    "frontal": {
+      "type": "string"
+    },
+    "tercio_medio": {
+      "type": "string"
+    },
+    "linea_media1": {
+      "type": "number"
+    },
+    "linea_media2": {
+      "type": "number"
+    },
+    "linea_media3": {
+      "type": "number"
+    },
+    "linea_media4": {
+      "type": "number"
+    },
+    "p_oclusal": {
+      "type": "string"
+    },
+    "longitud_labio_superior": {
+      "type": "string"
+    },
+    "linea_sonrisa_anterior": {
+      "type": "string"
+    },
+    "linea_sonrisa_posterior": {
+      "type": "string"
+    },
+    "perfil": {
+      "type": "string"
+    },
+    "frente": {
+      "type": "string"
+    },
+    "nariz": {
+      "type": "string"
+    },
+    "anl": {
+      "type": "string"
+    },
+    "aml": {
+      "type": "string"
+    },
+    "labios": {
+      "type": "string"
+    },
+    "menton": {
+      "type": "string"
+    },
+    "dist_mc": {
+      "type": "string"
+    },
+    "funcion": {
+      "type": "string"
+    },
+    "biotipo": {
+      "type": "string"
+    },
+    "vert": {
+      "type": "string"
+    },
+    "oseo": {
+      "type": "string"
+    },
+    "dental": {
+      "type": "string"
+    },
+    "maxilar": {
+      "type": "string"
+    },
+    "maxilar_forma": {
+      "type": "string"
+    },
+    "mandibular": {
+      "type": "string"
+    },
+    "mandibular_forma": {
+      "type": "string"
+    },
+    "inc_sups": {
+      "type": "string"
+    },
+    "superior": {
+      "type": "string"
+    },
+    "inc_infs": {
+      "type": "string"
+    },
+    "inferior": {
+      "type": "string"
+    },
+    "labio_sup_inf": {
+      "type": "string"
+    },
+    "smv": {
+      "type": "string"
+    },
+    "smh": {
+      "type": "string"
+    },
+    "bolton_exc_ant_sup": {
+      "type": "string"
+    },
+    "exc_ant_inf": {
+      "type": "string"
+    },
+    "pendiente": {
+      "type": "string"
+    },
+    "resumen_odontograma": {
+      "type": "string"
+    },
+    "resumen_denticion": {
+      "type": "string"
+    },
+    "resumen_tejidos_blandos": {
+      "type": "string"
+    },
+    "resumen_examenes_complementarios": {
+      "type": "string"
+    },
+    "fecha_creacion": {
+      "type": "date"
+    },
+    "fecha_actualizacion": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

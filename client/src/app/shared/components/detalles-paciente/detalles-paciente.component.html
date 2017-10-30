@@ -37,6 +37,15 @@
             <span id="direccion">{{ paciente.direccion }}</span>
           </div>
         </div>
+        <div *ngIf="tratamiento" class="form-group row">
+          <div class="col">
+            <label for="motivo_consulta" class="control-label">
+              <i class="zmdi zmdi-pin"></i>
+              Motivo de consulta:
+            </label>
+            <span id="motivo_consulta">{{ tratamiento.descripcion }}</span>
+          </div>
+        </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12 border border-top-0 border-bottom-0 border-left-0">
         <div *ngIf="!paciente.apoderado.nombre">

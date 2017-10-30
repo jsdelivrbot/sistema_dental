@@ -11,6 +11,10 @@ import { TratamientoService } from 'app/services/tratamientos/tratamiento.servic
 import { PresupuestoOrtodonciaComponent } from './presupuesto-ortodoncia/presupuesto-ortodoncia.component';
 import { PreciosService } from 'app/services/precios/precios.service';
 import {UtilService} from "../../services/util/util.service";
+import { ListadoProblemasComponent } from './listado-problemas/listado-problemas.component';
+import { EditarListadoProblemasComponent } from './editar-listado-problemas/editar-listado-problemas.component';
+import { PlanTratamientoComponent } from './plan-tratamiento/plan-tratamiento.component';
+import { EditarPlanTratamientoComponent } from './editar-plan-tratamiento/editar-plan-tratamiento.component';
 
 @NgModule({
   providers: [PacienteService, TratamientoService, PreciosService, UtilService],
@@ -19,6 +23,6 @@ import {UtilService} from "../../services/util/util.service";
     TratamientoRoutingModule,
     SharedModule
   ],
-  declarations: [ListaTratamientoComponent, DetalleTratamientoComponent, CrearTratamientoComponent, EditarTratamientoComponent, PresupuestoOrtodonciaComponent]
+  declarations: [ListaTratamientoComponent, DetalleTratamientoComponent, CrearTratamientoComponent, EditarTratamientoComponent, PresupuestoOrtodonciaComponent, ListadoProblemasComponent, EditarListadoProblemasComponent, PlanTratamientoComponent, EditarPlanTratamientoComponent]
 })
 export class TratamientoModule { }

@@ -7043,3 +7043,1133 @@ Error: ENOENT: no such file or directory, open 'C:\Users\Alink\Desktop\sistema_d
 2017-10-22T01:43:15.251Z - info: Verifying license key free
 2017-10-22T01:43:15.254Z - info: Using free license
 2017-10-22T01:43:15.259Z - info: reporter initialized
+2017-10-22T21:25:07.014Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-22T21:25:07.015Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-22T21:25:07.020Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-22T21:25:07.046Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2017-10-22T21:25:19.365Z - info: Found 30 extensions
+2017-10-22T21:25:19.396Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-22T21:25:19.399Z - debug: Discovered 30 extensions
+2017-10-22T21:25:19.401Z - info: Using extension import-export
+2017-10-22T21:25:19.803Z - info: Using extension tags
+2017-10-22T21:25:19.807Z - info: Using extension templates
+2017-10-22T21:25:19.893Z - info: Using extension jsrender
+2017-10-22T21:25:19.894Z - info: Using extension authentication
+2017-10-22T21:25:20.204Z - info: Using extension cli
+2017-10-22T21:25:20.207Z - info: Using extension handlebars
+2017-10-22T21:25:20.211Z - info: Using extension debug
+2017-10-22T21:25:20.214Z - info: Using extension express
+2017-10-22T21:25:20.443Z - info: Using extension fop-pdf
+2017-10-22T21:25:20.534Z - info: Using extension phantom-pdf
+2017-10-22T21:25:20.689Z - info: Using extension fs-store
+2017-10-22T21:25:21.320Z - info: Using extension authorization
+2017-10-22T21:25:21.411Z - info: Using extension images
+2017-10-22T21:25:21.502Z - info: Using extension child-templates
+2017-10-22T21:25:21.579Z - info: Using extension browser-client
+2017-10-22T21:25:21.584Z - info: Using extension licensing
+2017-10-22T21:25:21.809Z - info: Using extension data
+2017-10-22T21:25:21.887Z - info: Using extension text
+2017-10-22T21:25:21.889Z - info: Using extension reports
+2017-10-22T21:25:21.987Z - info: Using extension resources
+2017-10-22T21:25:22.066Z - info: Using extension base
+2017-10-22T21:25:22.068Z - info: Using extension studio
+2017-10-22T21:25:22.318Z - info: Using extension html-to-xlsx
+2017-10-22T21:25:22.551Z - info: Using extension scripts
+2017-10-22T21:25:22.630Z - info: Using extension assets
+2017-10-22T21:25:22.739Z - info: Using extension scheduling
+2017-10-22T21:25:22.897Z - info: Using extension xlsx
+2017-10-22T21:25:23.411Z - info: Using extension sample-template
+2017-10-22T21:25:23.513Z - debug: Creating samples is disabled
+2017-10-22T21:25:23.514Z - info: Using extension public-templates
+2017-10-22T21:25:23.614Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2017-10-22T21:25:23.790Z - info: Creating default express app.
+2017-10-22T21:25:24.001Z - info: jsreport server successfully started on http port: 2000
+2017-10-22T21:25:24.013Z - info: Verifying license key free
+2017-10-22T21:25:24.017Z - info: Using free license
+2017-10-22T21:25:24.024Z - info: reporter initialized
+2017-10-23T01:40:00.806Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-23T01:40:00.808Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-23T01:40:00.814Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-23T01:40:00.838Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2017-10-23T01:40:23.699Z - info: Found 30 extensions
+2017-10-23T01:40:23.733Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-23T01:40:23.736Z - debug: Discovered 30 extensions
+2017-10-23T01:40:23.737Z - info: Using extension import-export
+2017-10-23T01:40:24.166Z - info: Using extension tags
+2017-10-23T01:40:24.171Z - info: Using extension templates
+2017-10-23T01:40:24.260Z - info: Using extension jsrender
+2017-10-23T01:40:24.262Z - info: Using extension authentication
+2017-10-23T01:40:24.602Z - info: Using extension cli
+2017-10-23T01:40:24.603Z - info: Using extension handlebars
+2017-10-23T01:40:24.608Z - info: Using extension debug
+2017-10-23T01:40:24.610Z - info: Using extension express
+2017-10-23T01:40:24.846Z - info: Using extension fop-pdf
+2017-10-23T01:40:24.944Z - info: Using extension phantom-pdf
+2017-10-23T01:40:25.106Z - info: Using extension fs-store
+2017-10-23T01:40:25.705Z - info: Using extension authorization
+2017-10-23T01:40:25.810Z - info: Using extension images
+2017-10-23T01:40:25.911Z - info: Using extension child-templates
+2017-10-23T01:40:25.999Z - info: Using extension browser-client
+2017-10-23T01:40:26.005Z - info: Using extension licensing
+2017-10-23T01:40:26.241Z - info: Using extension data
+2017-10-23T01:40:26.327Z - info: Using extension text
+2017-10-23T01:40:26.329Z - info: Using extension reports
+2017-10-23T01:40:26.441Z - info: Using extension resources
+2017-10-23T01:40:26.523Z - info: Using extension base
+2017-10-23T01:40:26.526Z - info: Using extension studio
+2017-10-23T01:40:26.796Z - info: Using extension html-to-xlsx
+2017-10-23T01:40:27.067Z - info: Using extension scripts
+2017-10-23T01:40:27.157Z - info: Using extension assets
+2017-10-23T01:40:27.271Z - info: Using extension scheduling
+2017-10-23T01:40:27.424Z - info: Using extension xlsx
+2017-10-23T01:40:27.978Z - info: Using extension sample-template
+2017-10-23T01:40:28.068Z - debug: Creating samples is disabled
+2017-10-23T01:40:28.069Z - info: Using extension public-templates
+2017-10-23T01:40:28.195Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2017-10-23T01:40:28.336Z - info: Creating default express app.
+2017-10-23T01:40:28.541Z - info: jsreport server successfully started on http port: 2000
+2017-10-23T01:40:28.552Z - info: Verifying license key free
+2017-10-23T01:40:28.555Z - info: Using free license
+2017-10-23T01:40:28.559Z - info: reporter initialized
+2017-10-23T01:56:18.844Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-23T01:56:18.846Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-23T01:56:18.851Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-23T01:56:18.878Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2017-10-23T01:56:39.007Z - info: Found 30 extensions
+2017-10-23T01:56:39.059Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-23T01:56:39.061Z - debug: Discovered 30 extensions
+2017-10-23T01:56:39.063Z - info: Using extension import-export
+2017-10-23T01:56:39.494Z - info: Using extension tags
+2017-10-23T01:56:39.499Z - info: Using extension templates
+2017-10-23T01:56:39.586Z - info: Using extension jsrender
+2017-10-23T01:56:39.588Z - info: Using extension authentication
+2017-10-23T01:56:39.907Z - info: Using extension cli
+2017-10-23T01:56:39.909Z - info: Using extension handlebars
+2017-10-23T01:56:39.914Z - info: Using extension debug
+2017-10-23T01:56:39.916Z - info: Using extension express
+2017-10-23T01:56:40.142Z - info: Using extension fop-pdf
+2017-10-23T01:56:40.236Z - info: Using extension phantom-pdf
+2017-10-23T01:56:40.401Z - info: Using extension fs-store
+2017-10-23T01:56:40.992Z - info: Using extension authorization
+2017-10-23T01:56:41.114Z - info: Using extension images
+2017-10-23T01:56:41.217Z - info: Using extension child-templates
+2017-10-23T01:56:41.310Z - info: Using extension browser-client
+2017-10-23T01:56:41.315Z - info: Using extension licensing
+2017-10-23T01:56:41.550Z - info: Using extension data
+2017-10-23T01:56:41.634Z - info: Using extension text
+2017-10-23T01:56:41.636Z - info: Using extension reports
+2017-10-23T01:56:41.749Z - info: Using extension resources
+2017-10-23T01:56:41.836Z - info: Using extension base
+2017-10-23T01:56:41.839Z - info: Using extension studio
+2017-10-23T01:56:42.119Z - info: Using extension html-to-xlsx
+2017-10-23T01:56:42.388Z - info: Using extension scripts
+2017-10-23T01:56:42.478Z - info: Using extension assets
+2017-10-23T01:56:42.593Z - info: Using extension scheduling
+2017-10-23T01:56:42.748Z - info: Using extension xlsx
+2017-10-23T01:56:43.297Z - info: Using extension sample-template
+2017-10-23T01:56:43.385Z - debug: Creating samples is disabled
+2017-10-23T01:56:43.385Z - info: Using extension public-templates
+2017-10-23T01:56:43.495Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2017-10-23T01:56:43.689Z - info: Creating default express app.
+2017-10-23T01:56:44.026Z - info: jsreport server successfully started on http port: 2000
+2017-10-23T01:56:44.046Z - info: Verifying license key free
+2017-10-23T01:56:44.064Z - info: Using free license
+2017-10-23T01:56:44.071Z - info: reporter initialized
+2017-10-27T20:45:50.900Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-27T20:45:50.901Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-27T20:45:50.908Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-27T20:45:50.935Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2017-10-27T20:46:10.997Z - info: Found 30 extensions
+2017-10-27T20:46:11.027Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-27T20:46:11.029Z - debug: Discovered 30 extensions
+2017-10-27T20:46:11.031Z - info: Using extension import-export
+2017-10-27T20:46:11.443Z - info: Using extension tags
+2017-10-27T20:46:11.448Z - info: Using extension templates
+2017-10-27T20:46:11.534Z - info: Using extension jsrender
+2017-10-27T20:46:11.536Z - info: Using extension authentication
+2017-10-27T20:46:11.870Z - info: Using extension cli
+2017-10-27T20:46:11.872Z - info: Using extension handlebars
+2017-10-27T20:46:11.877Z - info: Using extension debug
+2017-10-27T20:46:11.879Z - info: Using extension express
+2017-10-27T20:46:12.099Z - info: Using extension fop-pdf
+2017-10-27T20:46:12.189Z - info: Using extension phantom-pdf
+2017-10-27T20:46:12.347Z - info: Using extension fs-store
+2017-10-27T20:46:12.913Z - info: Using extension authorization
+2017-10-27T20:46:13.009Z - info: Using extension images
+2017-10-27T20:46:13.101Z - info: Using extension child-templates
+2017-10-27T20:46:13.180Z - info: Using extension browser-client
+2017-10-27T20:46:13.185Z - info: Using extension licensing
+2017-10-27T20:46:13.408Z - info: Using extension data
+2017-10-27T20:46:13.490Z - info: Using extension text
+2017-10-27T20:46:13.493Z - info: Using extension reports
+2017-10-27T20:46:13.599Z - info: Using extension resources
+2017-10-27T20:46:13.681Z - info: Using extension base
+2017-10-27T20:46:13.683Z - info: Using extension studio
+2017-10-27T20:46:13.937Z - info: Using extension html-to-xlsx
+2017-10-27T20:46:14.193Z - info: Using extension scripts
+2017-10-27T20:46:14.273Z - info: Using extension assets
+2017-10-27T20:46:14.377Z - info: Using extension scheduling
+2017-10-27T20:46:14.525Z - info: Using extension xlsx
+2017-10-27T20:46:15.054Z - info: Using extension sample-template
+2017-10-27T20:46:15.139Z - debug: Creating samples is disabled
+2017-10-27T20:46:15.140Z - info: Using extension public-templates
+2017-10-27T20:46:15.238Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2017-10-27T20:46:15.402Z - info: Creating default express app.
+2017-10-27T20:46:15.606Z - info: jsreport server successfully started on http port: 2000
+2017-10-27T20:46:15.618Z - info: Verifying license key free
+2017-10-27T20:46:15.625Z - info: Using free license
+2017-10-27T20:46:15.627Z - info: reporter initialized
+2017-10-27T21:45:29.749Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-27T21:45:29.750Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-27T21:45:29.756Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-27T21:45:29.788Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2017-10-27T21:45:50.366Z - info: Found 30 extensions
+2017-10-27T21:45:50.397Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-27T21:45:50.399Z - debug: Discovered 30 extensions
+2017-10-27T21:45:50.401Z - info: Using extension import-export
+2017-10-27T21:45:50.830Z - info: Using extension tags
+2017-10-27T21:45:50.835Z - info: Using extension templates
+2017-10-27T21:45:50.929Z - info: Using extension jsrender
+2017-10-27T21:45:50.931Z - info: Using extension authentication
+2017-10-27T21:45:51.300Z - info: Using extension cli
+2017-10-27T21:45:51.302Z - info: Using extension handlebars
+2017-10-27T21:45:51.307Z - info: Using extension debug
+2017-10-27T21:45:51.309Z - info: Using extension express
+2017-10-27T21:45:51.547Z - info: Using extension fop-pdf
+2017-10-27T21:45:51.639Z - info: Using extension phantom-pdf
+2017-10-27T21:45:51.802Z - info: Using extension fs-store
+2017-10-27T21:45:52.389Z - info: Using extension authorization
+2017-10-27T21:45:52.481Z - info: Using extension images
+2017-10-27T21:45:52.573Z - info: Using extension child-templates
+2017-10-27T21:45:52.656Z - info: Using extension browser-client
+2017-10-27T21:45:52.661Z - info: Using extension licensing
+2017-10-27T21:45:52.899Z - info: Using extension data
+2017-10-27T21:45:52.981Z - info: Using extension text
+2017-10-27T21:45:52.983Z - info: Using extension reports
+2017-10-27T21:45:53.082Z - info: Using extension resources
+2017-10-27T21:45:53.184Z - info: Using extension base
+2017-10-27T21:45:53.186Z - info: Using extension studio
+2017-10-27T21:45:53.470Z - info: Using extension html-to-xlsx
+2017-10-27T21:45:53.743Z - info: Using extension scripts
+2017-10-27T21:45:53.834Z - info: Using extension assets
+2017-10-27T21:45:53.944Z - info: Using extension scheduling
+2017-10-27T21:45:54.111Z - info: Using extension xlsx
+2017-10-27T21:45:54.630Z - info: Using extension sample-template
+2017-10-27T21:45:54.726Z - debug: Creating samples is disabled
+2017-10-27T21:45:54.727Z - info: Using extension public-templates
+2017-10-27T21:45:54.831Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2017-10-27T21:45:55.011Z - info: Creating default express app.
+2017-10-27T21:45:55.214Z - info: jsreport server successfully started on http port: 2000
+2017-10-27T21:45:55.225Z - info: Verifying license key free
+2017-10-27T21:45:55.233Z - info: Using free license
+2017-10-27T21:45:55.235Z - info: reporter initialized
+2017-10-29T00:22:02.775Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-29T00:22:02.777Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-29T00:22:02.783Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-29T00:22:02.810Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2017-10-29T00:22:26.086Z - info: Found 30 extensions
+2017-10-29T00:22:26.122Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-29T00:22:26.124Z - debug: Discovered 30 extensions
+2017-10-29T00:22:26.126Z - info: Using extension import-export
+2017-10-29T00:22:26.685Z - info: Using extension tags
+2017-10-29T00:22:26.691Z - info: Using extension templates
+2017-10-29T00:22:26.794Z - info: Using extension jsrender
+2017-10-29T00:22:26.796Z - info: Using extension authentication
+2017-10-29T00:22:27.190Z - info: Using extension cli
+2017-10-29T00:22:27.194Z - info: Using extension handlebars
+2017-10-29T00:22:27.200Z - info: Using extension debug
+2017-10-29T00:22:27.202Z - info: Using extension express
+2017-10-29T00:22:27.462Z - info: Using extension fop-pdf
+2017-10-29T00:22:27.571Z - info: Using extension phantom-pdf
+2017-10-29T00:22:27.759Z - info: Using extension fs-store
+2017-10-29T00:22:28.440Z - info: Using extension authorization
+2017-10-29T00:22:28.547Z - info: Using extension images
+2017-10-29T00:22:28.659Z - info: Using extension child-templates
+2017-10-29T00:22:28.758Z - info: Using extension browser-client
+2017-10-29T00:22:28.765Z - info: Using extension licensing
+2017-10-29T00:22:29.033Z - info: Using extension data
+2017-10-29T00:22:29.129Z - info: Using extension text
+2017-10-29T00:22:29.132Z - info: Using extension reports
+2017-10-29T00:22:29.260Z - info: Using extension resources
+2017-10-29T00:22:29.359Z - info: Using extension base
+2017-10-29T00:22:29.362Z - info: Using extension studio
+2017-10-29T00:22:29.685Z - info: Using extension html-to-xlsx
+2017-10-29T00:22:29.996Z - info: Using extension scripts
+2017-10-29T00:22:30.092Z - info: Using extension assets
+2017-10-29T00:22:30.214Z - info: Using extension scheduling
+2017-10-29T00:22:30.376Z - info: Using extension xlsx
+2017-10-29T00:22:30.970Z - info: Using extension sample-template
+2017-10-29T00:22:31.066Z - debug: Creating samples is disabled
+2017-10-29T00:22:31.066Z - info: Using extension public-templates
+2017-10-29T00:22:31.205Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2017-10-29T00:22:31.367Z - info: Creating default express app.
+2017-10-29T00:22:31.592Z - info: jsreport server successfully started on http port: 2000
+2017-10-29T00:22:31.604Z - info: Verifying license key free
+2017-10-29T00:22:31.606Z - info: Using free license
+2017-10-29T00:22:31.608Z - info: reporter initialized
+2017-10-30T01:19:14.418Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-30T01:19:14.420Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-30T01:19:14.426Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-30T01:19:14.441Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2017-10-30T01:19:43.197Z - info: Found 30 extensions
+2017-10-30T01:19:43.264Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-30T01:22:11.932Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2017-10-30T01:22:11.933Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2017-10-30T01:22:11.938Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2017-10-30T01:22:11.959Z - info: Extensions location cache not found, crawling directories
+2017-10-30T01:22:31.655Z - info: Found 30 extensions
+2017-10-30T01:22:31.685Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2017-10-30T01:22:31.687Z - debug: Discovered 30 extensions
+2017-10-30T01:22:31.689Z - info: Using extension import-export
+2017-10-30T01:22:32.100Z - info: Using extension tags
+2017-10-30T01:22:32.104Z - info: Using extension templates
+2017-10-30T01:22:32.187Z - info: Using extension jsrender
+2017-10-30T01:22:32.188Z - info: Using extension authentication
+2017-10-30T01:22:32.514Z - info: Using extension cli
+2017-10-30T01:22:32.516Z - info: Using extension handlebars
+2017-10-30T01:22:32.519Z - info: Using extension debug
+2017-10-30T01:22:32.523Z - info: Using extension express
+2017-10-30T01:22:32.740Z - info: Using extension fop-pdf
+2017-10-30T01:22:32.830Z - info: Using extension phantom-pdf
+2017-10-30T01:22:32.998Z - info: Using extension fs-store
+2017-10-30T01:22:33.571Z - info: Using extension authorization
+2017-10-30T01:22:33.675Z - info: Using extension images
+2017-10-30T01:22:33.773Z - info: Using extension child-templates
+2017-10-30T01:22:33.862Z - info: Using extension browser-client
+2017-10-30T01:22:33.866Z - info: Using extension licensing
+2017-10-30T01:22:34.106Z - info: Using extension data
+2017-10-30T01:22:34.190Z - info: Using extension text
+2017-10-30T01:22:34.193Z - info: Using extension reports
+2017-10-30T01:22:34.304Z - info: Using extension resources
+2017-10-30T01:22:34.391Z - info: Using extension base
+2017-10-30T01:22:34.394Z - info: Using extension studio
+2017-10-30T01:22:34.661Z - info: Using extension html-to-xlsx
+2017-10-30T01:22:34.937Z - info: Using extension scripts
+2017-10-30T01:22:35.035Z - info: Using extension assets
+2017-10-30T01:22:35.150Z - info: Using extension scheduling
+2017-10-30T01:22:35.315Z - info: Using extension xlsx
+2017-10-30T01:22:35.853Z - info: Using extension sample-template
+2017-10-30T01:22:35.931Z - debug: Creating samples is disabled
+2017-10-30T01:22:35.931Z - info: Using extension public-templates
+2017-10-30T01:22:36.025Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2017-10-30T01:22:36.176Z - info: Creating default express app.
+2017-10-30T01:22:36.363Z - info: jsreport server successfully started on http port: 2000
+2017-10-30T01:22:36.375Z - info: Verifying license key free
+2017-10-30T01:22:36.383Z - info: Using free license
+2017-10-30T01:22:36.387Z - info: reporter initialized
+2017-10-30T01:26:51.474Z - debug: OData query on templates
+2017-10-30T01:26:51.479Z - debug: OData query on tags
+2017-10-30T01:26:51.486Z - debug: OData query on images
+2017-10-30T01:26:51.493Z - debug: OData query on data
+2017-10-30T01:26:51.498Z - debug: OData query on scripts
+2017-10-30T01:26:51.507Z - debug: OData query on assets
+2017-10-30T01:26:51.550Z - debug: OData query on xlsxTemplates
+2017-10-30T01:26:51.573Z - debug: OData query on users
+2017-10-30T01:26:51.576Z - debug: OData query on schedules
+2017-10-30T01:26:51.597Z - debug: OData query on settings
+2017-10-30T01:26:51.922Z - debug: OData query on templates
+2017-10-30T01:26:52.064Z - debug: OData query on settings
+2017-10-30T01:26:57.780Z - debug: OData query on templates
+2017-10-30T01:26:57.793Z - debug: OData query on templates
+2017-10-30T01:26:57.993Z - debug: OData query on settings
+2017-10-30T03:30:45.798Z - debug: OData query on data
+2017-10-30T03:30:57.887Z - debug: API logging in user admin
+2017-10-30T03:30:57.891Z - info: Starting rendering request 1 (user: admin) requestId=1
+2017-10-30T03:30:57.928Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=1
+2017-10-30T03:30:57.929Z - debug: Inline data specified. requestId=1
+2017-10-30T03:30:58.020Z - debug: Resources not defined for this template. requestId=1
+2017-10-30T03:30:58.081Z - debug: Base url not specified, skipping its injection. requestId=1
+2017-10-30T03:30:58.099Z - debug: Rendering engine handlebars requestId=1
+2017-10-30T03:30:58.524Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:30:58 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=1
+2017-10-30T03:30:58.565Z - debug: Replaced images ["23695606"] requestId=1
+2017-10-30T03:30:58.567Z - debug: Executing recipe phantom-pdf requestId=1
+2017-10-30T03:30:58.584Z - debug: Starting child request to render pdf footer requestId=1
+2017-10-30T03:30:58.592Z - info: Starting rendering request 2 (user: admin) requestId=2
+2017-10-30T03:30:58.595Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=2
+2017-10-30T03:30:58.595Z - debug: Inline data specified. requestId=2
+2017-10-30T03:30:58.597Z - debug: Resources not defined for this template. requestId=2
+2017-10-30T03:30:58.597Z - debug: Base url not specified, skipping its injection. requestId=2
+2017-10-30T03:30:58.598Z - debug: Rendering engine handlebars requestId=2
+2017-10-30T03:30:58.866Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:30:58 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=2
+2017-10-30T03:30:58.867Z - debug: Replaced images [] requestId=2
+2017-10-30T03:30:58.868Z - debug: Executing recipe html requestId=2
+2017-10-30T03:30:58.869Z - debug: Skipping storing report. requestId=2
+2017-10-30T03:30:58.903Z - info: Rendering request 2 finished in 311 ms requestId=2
+2017-10-30T03:31:05.863Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 00:31:04 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=1
+2017-10-30T03:31:05.864Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Cbf091270-bd22-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 00:31:04 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=1
+2017-10-30T03:31:05.865Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 00:31:04 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=1
+2017-10-30T03:31:05.866Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 00:31:04 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=1
+2017-10-30T03:31:05.870Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=1
+2017-10-30T03:31:05.871Z - debug: Skipping storing report. requestId=1
+2017-10-30T03:31:05.883Z - info: Rendering request 1 finished in 7992 ms requestId=1
+2017-10-30T03:31:19.673Z - debug: API logging in user admin
+2017-10-30T03:31:19.675Z - info: Starting rendering request 3 (user: admin) requestId=3
+2017-10-30T03:31:19.676Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=3
+2017-10-30T03:31:19.677Z - debug: Inline data specified. requestId=3
+2017-10-30T03:31:19.681Z - debug: Resources not defined for this template. requestId=3
+2017-10-30T03:31:19.682Z - debug: Base url not specified, skipping its injection. requestId=3
+2017-10-30T03:31:19.683Z - debug: Rendering engine handlebars requestId=3
+2017-10-30T03:31:20.014Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:31:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=3
+2017-10-30T03:31:20.018Z - debug: Replaced images ["23695606"] requestId=3
+2017-10-30T03:31:20.019Z - debug: Executing recipe phantom-pdf requestId=3
+2017-10-30T03:31:20.020Z - debug: Starting child request to render pdf footer requestId=3
+2017-10-30T03:31:20.024Z - info: Starting rendering request 4 (user: admin) requestId=4
+2017-10-30T03:31:20.025Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=4
+2017-10-30T03:31:20.025Z - debug: Inline data specified. requestId=4
+2017-10-30T03:31:20.027Z - debug: Resources not defined for this template. requestId=4
+2017-10-30T03:31:20.028Z - debug: Base url not specified, skipping its injection. requestId=4
+2017-10-30T03:31:20.028Z - debug: Rendering engine handlebars requestId=4
+2017-10-30T03:31:20.318Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:31:20 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=4
+2017-10-30T03:31:20.319Z - debug: Replaced images [] requestId=4
+2017-10-30T03:31:20.320Z - debug: Executing recipe html requestId=4
+2017-10-30T03:31:20.320Z - debug: Skipping storing report. requestId=4
+2017-10-30T03:31:20.321Z - info: Rendering request 4 finished in 298 ms requestId=4
+2017-10-30T03:31:22.001Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 00:31:20 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=3
+2017-10-30T03:31:22.001Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Ccbc3bd30-bd22-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 00:31:20 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=3
+2017-10-30T03:31:22.002Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 00:31:20 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=3
+2017-10-30T03:31:22.002Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 00:31:20 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=3
+2017-10-30T03:31:22.004Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=3
+2017-10-30T03:31:22.005Z - debug: Skipping storing report. requestId=3
+2017-10-30T03:31:22.009Z - info: Rendering request 3 finished in 2334 ms requestId=3
+2017-10-30T03:32:18.538Z - debug: API logging in user admin
+2017-10-30T03:32:18.540Z - info: Starting rendering request 5 (user: admin) requestId=5
+2017-10-30T03:32:18.541Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=5
+2017-10-30T03:32:18.542Z - debug: Inline data specified. requestId=5
+2017-10-30T03:32:18.545Z - debug: Resources not defined for this template. requestId=5
+2017-10-30T03:32:18.546Z - debug: Base url not specified, skipping its injection. requestId=5
+2017-10-30T03:32:18.548Z - debug: Rendering engine handlebars requestId=5
+2017-10-30T03:32:18.835Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:32:18 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=5
+2017-10-30T03:32:18.837Z - debug: Replaced images ["23695606"] requestId=5
+2017-10-30T03:32:18.839Z - debug: Executing recipe phantom-pdf requestId=5
+2017-10-30T03:32:18.840Z - debug: Starting child request to render pdf footer requestId=5
+2017-10-30T03:32:18.843Z - info: Starting rendering request 6 (user: admin) requestId=6
+2017-10-30T03:32:18.844Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=6
+2017-10-30T03:32:18.844Z - debug: Inline data specified. requestId=6
+2017-10-30T03:32:18.845Z - debug: Resources not defined for this template. requestId=6
+2017-10-30T03:32:18.846Z - debug: Base url not specified, skipping its injection. requestId=6
+2017-10-30T03:32:18.847Z - debug: Rendering engine handlebars requestId=6
+2017-10-30T03:32:19.104Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=6
+2017-10-30T03:32:19.104Z - debug: Replaced images [] requestId=6
+2017-10-30T03:32:19.105Z - debug: Executing recipe html requestId=6
+2017-10-30T03:32:19.106Z - debug: Skipping storing report. requestId=6
+2017-10-30T03:32:19.107Z - info: Rendering request 6 finished in 265 ms requestId=6
+2017-10-30T03:32:20.815Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 00:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=5
+2017-10-30T03:32:20.816Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Ceecd9e40-bd22-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 00:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=5
+2017-10-30T03:32:20.816Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 00:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=5
+2017-10-30T03:32:20.818Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 00:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=5
+2017-10-30T03:32:20.819Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=5
+2017-10-30T03:32:20.820Z - debug: Skipping storing report. requestId=5
+2017-10-30T03:32:20.823Z - info: Rendering request 5 finished in 2284 ms requestId=5
+2017-10-30T03:33:31.761Z - debug: OData query on templates
+2017-10-30T03:33:34.326Z - info: Starting rendering request 7 (user: admin) requestId=7
+2017-10-30T03:33:34.327Z - info: Rendering template {shortid:ByRo2r-6W, recipe:phantom-pdf,engine:handlebars} requestId=7
+2017-10-30T03:33:34.328Z - debug: Data item not defined for this template. requestId=7
+2017-10-30T03:33:34.329Z - debug: Resources not defined for this template. requestId=7
+2017-10-30T03:33:34.330Z - debug: Base url not specified, skipping its injection. requestId=7
+2017-10-30T03:33:34.330Z - debug: Rendering engine handlebars requestId=7
+2017-10-30T03:33:34.654Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:33:34 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=7
+2017-10-30T03:33:34.655Z - debug: Replaced images ["23695606"] requestId=7
+2017-10-30T03:33:34.656Z - debug: Executing recipe phantom-pdf requestId=7
+2017-10-30T03:33:36.445Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 00:33:35 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=7
+2017-10-30T03:33:36.446Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C1bd5a220-bd23-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 00:33:35 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=7
+2017-10-30T03:33:36.447Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 00:33:35 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=7
+2017-10-30T03:33:36.447Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 00:33:35 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=7
+2017-10-30T03:33:36.448Z - debug: phantom-pdf recipe finished with 1 pages generated requestId=7
+2017-10-30T03:33:36.449Z - debug: Skipping storing report. requestId=7
+2017-10-30T03:33:36.453Z - info: Rendering request 7 finished in 2127 ms requestId=7
+2017-10-30T03:34:02.173Z - info: Starting rendering request 8 (user: admin) requestId=8
+2017-10-30T03:34:02.175Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=8
+2017-10-30T03:34:02.175Z - debug: Inline data specified. requestId=8
+2017-10-30T03:34:02.177Z - debug: Resources not defined for this template. requestId=8
+2017-10-30T03:34:02.177Z - debug: Base url not specified, skipping its injection. requestId=8
+2017-10-30T03:34:02.178Z - debug: Rendering engine handlebars requestId=8
+2017-10-30T03:34:02.520Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:34:02 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=8
+2017-10-30T03:34:02.521Z - debug: Replaced images ["23695606"] requestId=8
+2017-10-30T03:34:02.523Z - debug: Executing recipe phantom-pdf requestId=8
+2017-10-30T03:34:02.524Z - debug: Starting child request to render pdf footer requestId=8
+2017-10-30T03:34:02.527Z - info: Starting rendering request 9 (user: admin) requestId=9
+2017-10-30T03:34:02.528Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=9
+2017-10-30T03:34:02.529Z - debug: Inline data specified. requestId=9
+2017-10-30T03:34:02.531Z - debug: Resources not defined for this template. requestId=9
+2017-10-30T03:34:02.532Z - debug: Base url not specified, skipping its injection. requestId=9
+2017-10-30T03:34:02.532Z - debug: Rendering engine handlebars requestId=9
+2017-10-30T03:34:02.860Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 00:34:02 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=9
+2017-10-30T03:34:02.861Z - debug: Replaced images [] requestId=9
+2017-10-30T03:34:02.862Z - debug: Executing recipe html requestId=9
+2017-10-30T03:34:02.863Z - debug: Skipping storing report. requestId=9
+2017-10-30T03:34:02.863Z - info: Rendering request 9 finished in 337 ms requestId=9
+2017-10-30T03:34:04.615Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 00:34:03 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=8
+2017-10-30T03:34:04.616Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C2ca58700-bd23-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 00:34:03 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=8
+2017-10-30T03:34:04.616Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 00:34:03 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=8
+2017-10-30T03:34:04.617Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 00:34:03 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=8
+2017-10-30T03:34:04.618Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=8
+2017-10-30T03:34:04.619Z - debug: Skipping storing report. requestId=8
+2017-10-30T03:34:04.625Z - info: Rendering request 8 finished in 2452 ms requestId=8
+2017-10-30T03:52:31.236Z - info: Starting rendering request 10 (user: null) requestId=10
+2017-10-30T03:52:31.252Z - error: Error when processing render request Error during rendering report: Unauthorized Error: Unauthorized
+    at EmbeddedCollection.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-public-templates\lib\main.js:257:19)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\lib\listenerCollection.js:171:33
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\lib\listenerCollection.js:151:16
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=10
+2017-10-30T03:55:32.235Z - debug: OData query on templates
+2017-10-30T03:55:32.245Z - debug: OData query on tags
+2017-10-30T03:55:32.258Z - debug: OData query on images
+2017-10-30T03:55:32.260Z - debug: OData query on data
+2017-10-30T03:55:32.265Z - debug: OData query on scripts
+2017-10-30T03:55:32.268Z - debug: OData query on assets
+2017-10-30T03:55:32.279Z - debug: OData query on xlsxTemplates
+2017-10-30T03:55:32.280Z - debug: OData query on users
+2017-10-30T03:55:32.283Z - debug: OData query on schedules
+2017-10-30T03:55:32.295Z - debug: OData query on settings
+2017-10-30T03:55:32.443Z - debug: OData query on templates
+2017-10-30T03:56:18.688Z - info: Starting rendering request 11 (user: null) requestId=11
+2017-10-30T03:56:18.693Z - error: Error when processing render request Error during rendering report: Unauthorized Error: Unauthorized
+    at EmbeddedCollection.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-public-templates\lib\main.js:257:19)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\lib\listenerCollection.js:171:33
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\lib\listenerCollection.js:151:16
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=11
+2017-10-30T03:56:55.656Z - info: Starting rendering request 12 (user: null) requestId=12
+2017-10-30T03:56:55.674Z - error: Error when processing render request Error during rendering report: Unauthorized Error: Unauthorized
+    at EmbeddedCollection.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-public-templates\lib\main.js:257:19)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\lib\listenerCollection.js:171:33
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\lib\listenerCollection.js:151:16
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=12
+2017-10-30T04:00:56.640Z - debug: API logging in user admin
+2017-10-30T04:00:56.644Z - info: Starting rendering request 13 (user: admin) requestId=13
+2017-10-30T04:00:56.648Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=13
+2017-10-30T04:00:56.649Z - debug: Inline data specified. requestId=13
+2017-10-30T04:00:56.659Z - debug: Resources not defined for this template. requestId=13
+2017-10-30T04:00:56.663Z - debug: Base url not specified, skipping its injection. requestId=13
+2017-10-30T04:00:56.667Z - debug: Rendering engine handlebars requestId=13
+2017-10-30T04:00:57.021Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:00:56 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=13
+2017-10-30T04:00:57.027Z - debug: Replaced images ["23695606"] requestId=13
+2017-10-30T04:00:57.030Z - debug: Executing recipe phantom-pdf requestId=13
+2017-10-30T04:00:57.033Z - debug: Starting child request to render pdf footer requestId=13
+2017-10-30T04:00:57.037Z - info: Starting rendering request 14 (user: admin) requestId=14
+2017-10-30T04:00:57.039Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=14
+2017-10-30T04:00:57.040Z - debug: Inline data specified. requestId=14
+2017-10-30T04:00:57.041Z - debug: Resources not defined for this template. requestId=14
+2017-10-30T04:00:57.042Z - debug: Base url not specified, skipping its injection. requestId=14
+2017-10-30T04:00:57.043Z - debug: Rendering engine handlebars requestId=14
+2017-10-30T04:00:57.325Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:00:57 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=14
+2017-10-30T04:00:57.328Z - debug: Replaced images [] requestId=14
+2017-10-30T04:00:57.330Z - debug: Executing recipe html requestId=14
+2017-10-30T04:00:57.331Z - debug: Skipping storing report. requestId=14
+2017-10-30T04:00:57.334Z - info: Rendering request 14 finished in 296 ms requestId=14
+2017-10-30T04:01:03.775Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:01:02 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=13
+2017-10-30T04:01:03.775Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Ceef2b5a0-bd26-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:01:02 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=13
+2017-10-30T04:01:03.776Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:01:02 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=13
+2017-10-30T04:01:03.776Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:01:02 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=13
+2017-10-30T04:01:03.780Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=13
+2017-10-30T04:01:03.781Z - debug: Skipping storing report. requestId=13
+2017-10-30T04:01:03.787Z - info: Rendering request 13 finished in 7144 ms requestId=13
+2017-10-30T04:02:14.956Z - debug: API logging in user admin
+2017-10-30T04:02:14.957Z - info: Starting rendering request 15 (user: admin) requestId=15
+2017-10-30T04:02:14.959Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=15
+2017-10-30T04:02:14.960Z - debug: Inline data specified. requestId=15
+2017-10-30T04:02:14.963Z - debug: Resources not defined for this template. requestId=15
+2017-10-30T04:02:14.964Z - debug: Base url not specified, skipping its injection. requestId=15
+2017-10-30T04:02:14.965Z - debug: Rendering engine handlebars requestId=15
+2017-10-30T04:02:15.257Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:02:15 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=15
+2017-10-30T04:02:15.259Z - debug: Replaced images ["23695606"] requestId=15
+2017-10-30T04:02:15.260Z - debug: Executing recipe phantom-pdf requestId=15
+2017-10-30T04:02:15.261Z - debug: Starting child request to render pdf footer requestId=15
+2017-10-30T04:02:15.285Z - info: Starting rendering request 16 (user: admin) requestId=16
+2017-10-30T04:02:15.287Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=16
+2017-10-30T04:02:15.287Z - debug: Inline data specified. requestId=16
+2017-10-30T04:02:15.288Z - debug: Resources not defined for this template. requestId=16
+2017-10-30T04:02:15.289Z - debug: Base url not specified, skipping its injection. requestId=16
+2017-10-30T04:02:15.290Z - debug: Rendering engine handlebars requestId=16
+2017-10-30T04:02:15.550Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:02:15 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=16
+2017-10-30T04:02:15.551Z - debug: Replaced images [] requestId=16
+2017-10-30T04:02:15.552Z - debug: Executing recipe html requestId=16
+2017-10-30T04:02:15.552Z - debug: Skipping storing report. requestId=16
+2017-10-30T04:02:15.553Z - info: Rendering request 16 finished in 268 ms requestId=16
+2017-10-30T04:02:17.263Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:02:16 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=15
+2017-10-30T04:02:17.264Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C1d918620-bd27-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:02:16 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=15
+2017-10-30T04:02:17.266Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:02:16 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=15
+2017-10-30T04:02:17.267Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:02:16 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=15
+2017-10-30T04:02:17.268Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=15
+2017-10-30T04:02:17.269Z - debug: Skipping storing report. requestId=15
+2017-10-30T04:02:17.272Z - info: Rendering request 15 finished in 2315 ms requestId=15
+2017-10-30T04:03:45.583Z - debug: API logging in user admin
+2017-10-30T04:03:45.584Z - info: Starting rendering request 17 (user: admin) requestId=17
+2017-10-30T04:03:45.585Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=17
+2017-10-30T04:03:45.586Z - debug: Inline data specified. requestId=17
+2017-10-30T04:03:45.588Z - debug: Resources not defined for this template. requestId=17
+2017-10-30T04:03:45.589Z - debug: Base url not specified, skipping its injection. requestId=17
+2017-10-30T04:03:45.590Z - debug: Rendering engine handlebars requestId=17
+2017-10-30T04:03:45.884Z - error: Error when processing render request Error during rendering report: Cannot read property 'toLocaleString' of undefined TypeError: Cannot read property 'toLocaleString' of undefined
+    at Object.formatear (evalmachine.<anonymous>:2:18)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:8:76)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=17
+2017-10-30T04:03:45.886Z - error: Error during processing request: http://localhost:2000/api/report details: Error during rendering report: Cannot read property 'toLocaleString' of undefined TypeError: Cannot read property 'toLocaleString' of undefined
+    at Object.formatear (evalmachine.<anonymous>:2:18)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:8:76)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-10-30T04:07:21.834Z - debug: API logging in user admin
+2017-10-30T04:07:21.835Z - info: Starting rendering request 18 (user: admin) requestId=18
+2017-10-30T04:07:21.837Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=18
+2017-10-30T04:07:21.838Z - debug: Inline data specified. requestId=18
+2017-10-30T04:07:21.839Z - debug: Resources not defined for this template. requestId=18
+2017-10-30T04:07:21.840Z - debug: Base url not specified, skipping its injection. requestId=18
+2017-10-30T04:07:21.841Z - debug: Rendering engine handlebars requestId=18
+2017-10-30T04:07:22.134Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:07:22 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=18
+2017-10-30T04:07:22.136Z - debug: Replaced images ["23695606"] requestId=18
+2017-10-30T04:07:22.137Z - debug: Executing recipe phantom-pdf requestId=18
+2017-10-30T04:07:22.138Z - debug: Starting child request to render pdf footer requestId=18
+2017-10-30T04:07:22.141Z - info: Starting rendering request 19 (user: admin) requestId=19
+2017-10-30T04:07:22.144Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=19
+2017-10-30T04:07:22.144Z - debug: Inline data specified. requestId=19
+2017-10-30T04:07:22.145Z - debug: Resources not defined for this template. requestId=19
+2017-10-30T04:07:22.146Z - debug: Base url not specified, skipping its injection. requestId=19
+2017-10-30T04:07:22.146Z - debug: Rendering engine handlebars requestId=19
+2017-10-30T04:07:22.424Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:07:22 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=19
+2017-10-30T04:07:22.425Z - debug: Replaced images [] requestId=19
+2017-10-30T04:07:22.427Z - debug: Executing recipe html requestId=19
+2017-10-30T04:07:22.427Z - debug: Skipping storing report. requestId=19
+2017-10-30T04:07:22.429Z - info: Rendering request 19 finished in 288 ms requestId=19
+2017-10-30T04:07:24.267Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:07:23 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=18
+2017-10-30T04:07:24.268Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Cd47aeed0-bd27-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:07:23 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=18
+2017-10-30T04:07:24.268Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:07:23 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=18
+2017-10-30T04:07:24.269Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:07:23 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=18
+2017-10-30T04:07:24.270Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=18
+2017-10-30T04:07:24.271Z - debug: Skipping storing report. requestId=18
+2017-10-30T04:07:24.274Z - info: Rendering request 18 finished in 2438 ms requestId=18
+2017-10-30T04:07:45.864Z - debug: API logging in user admin
+2017-10-30T04:07:45.865Z - info: Starting rendering request 20 (user: admin) requestId=20
+2017-10-30T04:07:45.866Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=20
+2017-10-30T04:07:45.867Z - debug: Inline data specified. requestId=20
+2017-10-30T04:07:45.870Z - debug: Resources not defined for this template. requestId=20
+2017-10-30T04:07:45.871Z - debug: Base url not specified, skipping its injection. requestId=20
+2017-10-30T04:07:45.872Z - debug: Rendering engine handlebars requestId=20
+2017-10-30T04:07:46.156Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:07:46 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=20
+2017-10-30T04:07:46.157Z - debug: Replaced images ["23695606"] requestId=20
+2017-10-30T04:07:46.159Z - debug: Executing recipe phantom-pdf requestId=20
+2017-10-30T04:07:46.160Z - debug: Starting child request to render pdf footer requestId=20
+2017-10-30T04:07:46.162Z - info: Starting rendering request 21 (user: admin) requestId=21
+2017-10-30T04:07:46.163Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=21
+2017-10-30T04:07:46.163Z - debug: Inline data specified. requestId=21
+2017-10-30T04:07:46.202Z - debug: Resources not defined for this template. requestId=21
+2017-10-30T04:07:46.203Z - debug: Base url not specified, skipping its injection. requestId=21
+2017-10-30T04:07:46.204Z - debug: Rendering engine handlebars requestId=21
+2017-10-30T04:07:46.468Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:07:46 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=21
+2017-10-30T04:07:46.469Z - debug: Replaced images [] requestId=21
+2017-10-30T04:07:46.470Z - debug: Executing recipe html requestId=21
+2017-10-30T04:07:46.470Z - debug: Skipping storing report. requestId=21
+2017-10-30T04:07:46.471Z - info: Rendering request 21 finished in 309 ms requestId=21
+2017-10-30T04:07:48.187Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:07:47 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=20
+2017-10-30T04:07:48.188Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Ce2d4caa0-bd27-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:07:47 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=20
+2017-10-30T04:07:48.188Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:07:47 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=20
+2017-10-30T04:07:48.189Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:07:47 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=20
+2017-10-30T04:07:48.190Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=20
+2017-10-30T04:07:48.191Z - debug: Skipping storing report. requestId=20
+2017-10-30T04:07:48.195Z - info: Rendering request 20 finished in 2330 ms requestId=20
+2017-10-30T04:08:42.415Z - debug: API logging in user admin
+2017-10-30T04:08:42.416Z - info: Starting rendering request 22 (user: admin) requestId=22
+2017-10-30T04:08:42.417Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=22
+2017-10-30T04:08:42.417Z - debug: Inline data specified. requestId=22
+2017-10-30T04:08:42.419Z - debug: Resources not defined for this template. requestId=22
+2017-10-30T04:08:42.421Z - debug: Base url not specified, skipping its injection. requestId=22
+2017-10-30T04:08:42.422Z - debug: Rendering engine handlebars requestId=22
+2017-10-30T04:08:42.706Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:08:42 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=22
+2017-10-30T04:08:42.708Z - debug: Replaced images ["23695606"] requestId=22
+2017-10-30T04:08:42.710Z - debug: Executing recipe phantom-pdf requestId=22
+2017-10-30T04:08:42.711Z - debug: Starting child request to render pdf footer requestId=22
+2017-10-30T04:08:42.715Z - info: Starting rendering request 23 (user: admin) requestId=23
+2017-10-30T04:08:42.716Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=23
+2017-10-30T04:08:42.717Z - debug: Inline data specified. requestId=23
+2017-10-30T04:08:42.718Z - debug: Resources not defined for this template. requestId=23
+2017-10-30T04:08:42.719Z - debug: Base url not specified, skipping its injection. requestId=23
+2017-10-30T04:08:42.719Z - debug: Rendering engine handlebars requestId=23
+2017-10-30T04:08:43.029Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:08:43 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=23
+2017-10-30T04:08:43.030Z - debug: Replaced images [] requestId=23
+2017-10-30T04:08:43.031Z - debug: Executing recipe html requestId=23
+2017-10-30T04:08:43.032Z - debug: Skipping storing report. requestId=23
+2017-10-30T04:08:43.032Z - info: Rendering request 23 finished in 317 ms requestId=23
+2017-10-30T04:08:44.724Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:08:43 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=22
+2017-10-30T04:08:44.724Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C048647a0-bd28-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:08:43 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=22
+2017-10-30T04:08:44.725Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:08:43 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=22
+2017-10-30T04:08:44.726Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:08:43 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=22
+2017-10-30T04:08:44.727Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=22
+2017-10-30T04:08:44.728Z - debug: Skipping storing report. requestId=22
+2017-10-30T04:08:44.732Z - info: Rendering request 22 finished in 2316 ms requestId=22
+2017-10-30T04:09:24.742Z - debug: API logging in user admin
+2017-10-30T04:09:24.743Z - info: Starting rendering request 24 (user: admin) requestId=24
+2017-10-30T04:09:24.744Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=24
+2017-10-30T04:09:24.744Z - debug: Inline data specified. requestId=24
+2017-10-30T04:09:24.746Z - debug: Resources not defined for this template. requestId=24
+2017-10-30T04:09:24.746Z - debug: Base url not specified, skipping its injection. requestId=24
+2017-10-30T04:09:24.747Z - debug: Rendering engine handlebars requestId=24
+2017-10-30T04:09:25.040Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:09:25 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=24
+2017-10-30T04:09:25.041Z - debug: Replaced images ["23695606"] requestId=24
+2017-10-30T04:09:25.044Z - debug: Executing recipe phantom-pdf requestId=24
+2017-10-30T04:09:25.045Z - debug: Starting child request to render pdf footer requestId=24
+2017-10-30T04:09:25.047Z - info: Starting rendering request 25 (user: admin) requestId=25
+2017-10-30T04:09:25.048Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=25
+2017-10-30T04:09:25.048Z - debug: Inline data specified. requestId=25
+2017-10-30T04:09:25.050Z - debug: Resources not defined for this template. requestId=25
+2017-10-30T04:09:25.051Z - debug: Base url not specified, skipping its injection. requestId=25
+2017-10-30T04:09:25.051Z - debug: Rendering engine handlebars requestId=25
+2017-10-30T04:09:25.312Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:09:25 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=25
+2017-10-30T04:09:25.312Z - debug: Replaced images [] requestId=25
+2017-10-30T04:09:25.313Z - debug: Executing recipe html requestId=25
+2017-10-30T04:09:25.314Z - debug: Skipping storing report. requestId=25
+2017-10-30T04:09:25.315Z - info: Rendering request 25 finished in 268 ms requestId=25
+2017-10-30T04:09:27.022Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:09:25 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=24
+2017-10-30T04:09:27.023Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C1dba0040-bd28-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:09:25 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=24
+2017-10-30T04:09:27.023Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:09:25 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=24
+2017-10-30T04:09:27.024Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:09:25 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=24
+2017-10-30T04:09:27.025Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=24
+2017-10-30T04:09:27.026Z - debug: Skipping storing report. requestId=24
+2017-10-30T04:09:27.029Z - info: Rendering request 24 finished in 2287 ms requestId=24
+2017-10-30T04:11:50.893Z - debug: API logging in user admin
+2017-10-30T04:11:50.893Z - info: Starting rendering request 26 (user: admin) requestId=26
+2017-10-30T04:11:50.894Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=26
+2017-10-30T04:11:50.895Z - debug: Inline data specified. requestId=26
+2017-10-30T04:11:50.898Z - debug: Resources not defined for this template. requestId=26
+2017-10-30T04:11:50.899Z - debug: Base url not specified, skipping its injection. requestId=26
+2017-10-30T04:11:50.899Z - debug: Rendering engine handlebars requestId=26
+2017-10-30T04:11:51.183Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:11:51 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=26
+2017-10-30T04:11:51.186Z - debug: Replaced images ["23695606"] requestId=26
+2017-10-30T04:11:51.187Z - debug: Executing recipe phantom-pdf requestId=26
+2017-10-30T04:11:51.188Z - debug: Starting child request to render pdf footer requestId=26
+2017-10-30T04:11:51.190Z - info: Starting rendering request 27 (user: admin) requestId=27
+2017-10-30T04:11:51.192Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=27
+2017-10-30T04:11:51.193Z - debug: Inline data specified. requestId=27
+2017-10-30T04:11:51.194Z - debug: Resources not defined for this template. requestId=27
+2017-10-30T04:11:51.194Z - debug: Base url not specified, skipping its injection. requestId=27
+2017-10-30T04:11:51.195Z - debug: Rendering engine handlebars requestId=27
+2017-10-30T04:11:51.456Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:11:51 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=27
+2017-10-30T04:11:51.457Z - debug: Replaced images [] requestId=27
+2017-10-30T04:11:51.458Z - debug: Executing recipe html requestId=27
+2017-10-30T04:11:51.459Z - debug: Skipping storing report. requestId=27
+2017-10-30T04:11:51.460Z - info: Rendering request 27 finished in 270 ms requestId=27
+2017-10-30T04:11:53.188Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:11:52 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=26
+2017-10-30T04:11:53.189Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C74d5f550-bd28-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:11:52 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=26
+2017-10-30T04:11:53.189Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:11:52 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=26
+2017-10-30T04:11:53.190Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:11:52 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=26
+2017-10-30T04:11:53.191Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=26
+2017-10-30T04:11:53.191Z - debug: Skipping storing report. requestId=26
+2017-10-30T04:11:53.194Z - info: Rendering request 26 finished in 2301 ms requestId=26
+2017-10-30T04:13:07.252Z - debug: API logging in user admin
+2017-10-30T04:13:07.253Z - info: Starting rendering request 28 (user: admin) requestId=28
+2017-10-30T04:13:07.254Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=28
+2017-10-30T04:13:07.254Z - debug: Inline data specified. requestId=28
+2017-10-30T04:13:07.256Z - debug: Resources not defined for this template. requestId=28
+2017-10-30T04:13:07.256Z - debug: Base url not specified, skipping its injection. requestId=28
+2017-10-30T04:13:07.257Z - debug: Rendering engine handlebars requestId=28
+2017-10-30T04:13:07.545Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:13:07 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=28
+2017-10-30T04:13:07.549Z - debug: Replaced images ["23695606"] requestId=28
+2017-10-30T04:13:07.550Z - debug: Executing recipe phantom-pdf requestId=28
+2017-10-30T04:13:07.551Z - debug: Starting child request to render pdf footer requestId=28
+2017-10-30T04:13:07.553Z - info: Starting rendering request 29 (user: admin) requestId=29
+2017-10-30T04:13:07.554Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=29
+2017-10-30T04:13:07.555Z - debug: Inline data specified. requestId=29
+2017-10-30T04:13:07.556Z - debug: Resources not defined for this template. requestId=29
+2017-10-30T04:13:07.557Z - debug: Base url not specified, skipping its injection. requestId=29
+2017-10-30T04:13:07.558Z - debug: Rendering engine handlebars requestId=29
+2017-10-30T04:13:07.822Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:13:07 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=29
+2017-10-30T04:13:07.823Z - debug: Replaced images [] requestId=29
+2017-10-30T04:13:07.824Z - debug: Executing recipe html requestId=29
+2017-10-30T04:13:07.825Z - debug: Skipping storing report. requestId=29
+2017-10-30T04:13:07.825Z - info: Rendering request 29 finished in 272 ms requestId=29
+2017-10-30T04:13:09.473Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:13:08 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=28
+2017-10-30T04:13:09.474Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Ca25a5520-bd28-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:13:08 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=28
+2017-10-30T04:13:09.474Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:13:08 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=28
+2017-10-30T04:13:09.475Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:13:08 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=28
+2017-10-30T04:13:09.476Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=28
+2017-10-30T04:13:09.477Z - debug: Skipping storing report. requestId=28
+2017-10-30T04:13:09.480Z - info: Rendering request 28 finished in 2228 ms requestId=28
+2017-10-30T04:13:38.980Z - debug: API logging in user admin
+2017-10-30T04:13:38.981Z - info: Starting rendering request 30 (user: admin) requestId=30
+2017-10-30T04:13:38.982Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=30
+2017-10-30T04:13:38.983Z - debug: Inline data specified. requestId=30
+2017-10-30T04:13:38.985Z - debug: Resources not defined for this template. requestId=30
+2017-10-30T04:13:38.985Z - debug: Base url not specified, skipping its injection. requestId=30
+2017-10-30T04:13:38.987Z - debug: Rendering engine handlebars requestId=30
+2017-10-30T04:13:39.279Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:13:39 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=30
+2017-10-30T04:13:39.282Z - debug: Replaced images ["23695606"] requestId=30
+2017-10-30T04:13:39.284Z - debug: Executing recipe phantom-pdf requestId=30
+2017-10-30T04:13:39.285Z - debug: Starting child request to render pdf footer requestId=30
+2017-10-30T04:13:39.288Z - info: Starting rendering request 31 (user: admin) requestId=31
+2017-10-30T04:13:39.290Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=31
+2017-10-30T04:13:39.290Z - debug: Inline data specified. requestId=31
+2017-10-30T04:13:39.292Z - debug: Resources not defined for this template. requestId=31
+2017-10-30T04:13:39.293Z - debug: Base url not specified, skipping its injection. requestId=31
+2017-10-30T04:13:39.293Z - debug: Rendering engine handlebars requestId=31
+2017-10-30T04:13:39.559Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:13:39 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=31
+2017-10-30T04:13:39.560Z - debug: Replaced images [] requestId=31
+2017-10-30T04:13:39.561Z - debug: Executing recipe html requestId=31
+2017-10-30T04:13:39.562Z - debug: Skipping storing report. requestId=31
+2017-10-30T04:13:39.562Z - info: Rendering request 31 finished in 274 ms requestId=31
+2017-10-30T04:13:41.213Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:13:40 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=30
+2017-10-30T04:13:41.214Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Cb54551d0-bd28-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:13:40 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=30
+2017-10-30T04:13:41.215Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:13:40 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=30
+2017-10-30T04:13:41.215Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:13:40 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=30
+2017-10-30T04:13:41.217Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=30
+2017-10-30T04:13:41.218Z - debug: Skipping storing report. requestId=30
+2017-10-30T04:13:41.223Z - info: Rendering request 30 finished in 2242 ms requestId=30
+2017-10-30T04:18:54.149Z - debug: API logging in user admin
+2017-10-30T04:18:54.150Z - info: Starting rendering request 32 (user: admin) requestId=32
+2017-10-30T04:18:54.151Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=32
+2017-10-30T04:18:54.152Z - debug: Inline data specified. requestId=32
+2017-10-30T04:18:54.156Z - debug: Resources not defined for this template. requestId=32
+2017-10-30T04:18:54.157Z - debug: Base url not specified, skipping its injection. requestId=32
+2017-10-30T04:18:54.158Z - debug: Rendering engine handlebars requestId=32
+2017-10-30T04:18:54.461Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:18:54 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=32
+2017-10-30T04:18:54.463Z - debug: Replaced images ["23695606"] requestId=32
+2017-10-30T04:18:54.464Z - debug: Executing recipe phantom-pdf requestId=32
+2017-10-30T04:18:54.465Z - debug: Starting child request to render pdf footer requestId=32
+2017-10-30T04:18:54.469Z - info: Starting rendering request 33 (user: admin) requestId=33
+2017-10-30T04:18:54.470Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=33
+2017-10-30T04:18:54.471Z - debug: Inline data specified. requestId=33
+2017-10-30T04:18:54.472Z - debug: Resources not defined for this template. requestId=33
+2017-10-30T04:18:54.472Z - debug: Base url not specified, skipping its injection. requestId=33
+2017-10-30T04:18:54.473Z - debug: Rendering engine handlebars requestId=33
+2017-10-30T04:18:54.751Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:18:54 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=33
+2017-10-30T04:18:54.752Z - debug: Replaced images [] requestId=33
+2017-10-30T04:18:54.753Z - debug: Executing recipe html requestId=33
+2017-10-30T04:18:54.753Z - debug: Skipping storing report. requestId=33
+2017-10-30T04:18:54.754Z - info: Rendering request 33 finished in 285 ms requestId=33
+2017-10-30T04:18:56.613Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:18:55 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=32
+2017-10-30T04:18:56.613Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C71237f30-bd29-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:18:55 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=32
+2017-10-30T04:18:56.614Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:18:55 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=32
+2017-10-30T04:18:56.614Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:18:55 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=32
+2017-10-30T04:18:56.616Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=32
+2017-10-30T04:18:56.616Z - debug: Skipping storing report. requestId=32
+2017-10-30T04:18:56.621Z - info: Rendering request 32 finished in 2471 ms requestId=32
+2017-10-30T04:19:21.808Z - debug: API logging in user admin
+2017-10-30T04:19:21.810Z - info: Starting rendering request 34 (user: admin) requestId=34
+2017-10-30T04:19:21.815Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=34
+2017-10-30T04:19:21.815Z - debug: Inline data specified. requestId=34
+2017-10-30T04:19:21.816Z - debug: Resources not defined for this template. requestId=34
+2017-10-30T04:19:21.817Z - debug: Base url not specified, skipping its injection. requestId=34
+2017-10-30T04:19:21.818Z - debug: Rendering engine handlebars requestId=34
+2017-10-30T04:19:22.121Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:19:22 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=34
+2017-10-30T04:19:22.123Z - debug: Replaced images ["23695606"] requestId=34
+2017-10-30T04:19:22.125Z - debug: Executing recipe phantom-pdf requestId=34
+2017-10-30T04:19:22.125Z - debug: Starting child request to render pdf footer requestId=34
+2017-10-30T04:19:22.128Z - info: Starting rendering request 35 (user: admin) requestId=35
+2017-10-30T04:19:22.130Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=35
+2017-10-30T04:19:22.130Z - debug: Inline data specified. requestId=35
+2017-10-30T04:19:22.134Z - debug: Resources not defined for this template. requestId=35
+2017-10-30T04:19:22.135Z - debug: Base url not specified, skipping its injection. requestId=35
+2017-10-30T04:19:22.135Z - debug: Rendering engine handlebars requestId=35
+2017-10-30T04:19:22.422Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:19:22 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=35
+2017-10-30T04:19:22.423Z - debug: Replaced images [] requestId=35
+2017-10-30T04:19:22.424Z - debug: Executing recipe html requestId=35
+2017-10-30T04:19:22.424Z - debug: Skipping storing report. requestId=35
+2017-10-30T04:19:22.425Z - info: Rendering request 35 finished in 298 ms requestId=35
+2017-10-30T04:19:24.077Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:19:22 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=34
+2017-10-30T04:19:24.077Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C81a1c1a0-bd29-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:19:23 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=34
+2017-10-30T04:19:24.078Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:19:23 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=34
+2017-10-30T04:19:24.078Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:19:23 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=34
+2017-10-30T04:19:24.079Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=34
+2017-10-30T04:19:24.080Z - debug: Skipping storing report. requestId=34
+2017-10-30T04:19:24.084Z - info: Rendering request 34 finished in 2275 ms requestId=34
+2017-10-30T04:27:58.280Z - debug: API logging in user admin
+2017-10-30T04:27:58.283Z - info: Starting rendering request 36 (user: admin) requestId=36
+2017-10-30T04:27:58.286Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=36
+2017-10-30T04:27:58.287Z - debug: Inline data specified. requestId=36
+2017-10-30T04:27:58.299Z - debug: Resources not defined for this template. requestId=36
+2017-10-30T04:27:58.302Z - debug: Base url not specified, skipping its injection. requestId=36
+2017-10-30T04:27:58.306Z - debug: Rendering engine handlebars requestId=36
+2017-10-30T04:27:58.607Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:27:58 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=36
+2017-10-30T04:27:58.613Z - debug: Replaced images ["23695606"] requestId=36
+2017-10-30T04:27:58.615Z - debug: Executing recipe phantom-pdf requestId=36
+2017-10-30T04:27:58.618Z - debug: Starting child request to render pdf footer requestId=36
+2017-10-30T04:27:58.624Z - info: Starting rendering request 37 (user: admin) requestId=37
+2017-10-30T04:27:58.627Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=37
+2017-10-30T04:27:58.627Z - debug: Inline data specified. requestId=37
+2017-10-30T04:27:58.629Z - debug: Resources not defined for this template. requestId=37
+2017-10-30T04:27:58.629Z - debug: Base url not specified, skipping its injection. requestId=37
+2017-10-30T04:27:58.630Z - debug: Rendering engine handlebars requestId=37
+2017-10-30T04:27:58.919Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:27:58 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=37
+2017-10-30T04:27:58.920Z - debug: Replaced images [] requestId=37
+2017-10-30T04:27:58.921Z - debug: Executing recipe html requestId=37
+2017-10-30T04:27:58.922Z - debug: Skipping storing report. requestId=37
+2017-10-30T04:27:58.926Z - info: Rendering request 37 finished in 301 ms requestId=37
+2017-10-30T04:28:00.769Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:27:59 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=36
+2017-10-30T04:28:00.770Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Cb57e2a30-bd2a-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:27:59 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=36
+2017-10-30T04:28:00.770Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:27:59 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=36
+2017-10-30T04:28:00.771Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:27:59 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=36
+2017-10-30T04:28:00.773Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=36
+2017-10-30T04:28:00.774Z - debug: Skipping storing report. requestId=36
+2017-10-30T04:28:00.782Z - info: Rendering request 36 finished in 2499 ms requestId=36
+2017-10-30T04:28:37.187Z - debug: API logging in user admin
+2017-10-30T04:28:37.188Z - info: Starting rendering request 38 (user: admin) requestId=38
+2017-10-30T04:28:37.190Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=38
+2017-10-30T04:28:37.190Z - debug: Inline data specified. requestId=38
+2017-10-30T04:28:37.192Z - debug: Resources not defined for this template. requestId=38
+2017-10-30T04:28:37.193Z - debug: Base url not specified, skipping its injection. requestId=38
+2017-10-30T04:28:37.193Z - debug: Rendering engine handlebars requestId=38
+2017-10-30T04:28:37.489Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:28:37 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=38
+2017-10-30T04:28:37.490Z - debug: Replaced images ["23695606"] requestId=38
+2017-10-30T04:28:37.492Z - debug: Executing recipe phantom-pdf requestId=38
+2017-10-30T04:28:37.493Z - debug: Starting child request to render pdf footer requestId=38
+2017-10-30T04:28:37.495Z - info: Starting rendering request 39 (user: admin) requestId=39
+2017-10-30T04:28:37.497Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=39
+2017-10-30T04:28:37.497Z - debug: Inline data specified. requestId=39
+2017-10-30T04:28:37.498Z - debug: Resources not defined for this template. requestId=39
+2017-10-30T04:28:37.499Z - debug: Base url not specified, skipping its injection. requestId=39
+2017-10-30T04:28:37.499Z - debug: Rendering engine handlebars requestId=39
+2017-10-30T04:28:37.785Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:28:37 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=39
+2017-10-30T04:28:37.786Z - debug: Replaced images [] requestId=39
+2017-10-30T04:28:37.787Z - debug: Executing recipe html requestId=39
+2017-10-30T04:28:37.789Z - debug: Skipping storing report. requestId=39
+2017-10-30T04:28:37.790Z - info: Rendering request 39 finished in 294 ms requestId=39
+2017-10-30T04:28:39.472Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:28:38 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=38
+2017-10-30T04:28:39.472Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Ccca7baf0-bd2a-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:28:38 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=38
+2017-10-30T04:28:39.473Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:28:38 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=38
+2017-10-30T04:28:39.473Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:28:38 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=38
+2017-10-30T04:28:39.475Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=38
+2017-10-30T04:28:39.475Z - debug: Skipping storing report. requestId=38
+2017-10-30T04:28:39.479Z - info: Rendering request 38 finished in 2290 ms requestId=38
+2017-10-30T04:29:08.124Z - debug: API logging in user admin
+2017-10-30T04:29:08.125Z - info: Starting rendering request 40 (user: admin) requestId=40
+2017-10-30T04:29:08.126Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=40
+2017-10-30T04:29:08.127Z - debug: Inline data specified. requestId=40
+2017-10-30T04:29:08.128Z - debug: Resources not defined for this template. requestId=40
+2017-10-30T04:29:08.128Z - debug: Base url not specified, skipping its injection. requestId=40
+2017-10-30T04:29:08.129Z - debug: Rendering engine handlebars requestId=40
+2017-10-30T04:29:08.445Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:29:08 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=40
+2017-10-30T04:29:08.447Z - debug: Replaced images ["23695606"] requestId=40
+2017-10-30T04:29:08.448Z - debug: Executing recipe phantom-pdf requestId=40
+2017-10-30T04:29:08.449Z - debug: Starting child request to render pdf footer requestId=40
+2017-10-30T04:29:08.451Z - info: Starting rendering request 41 (user: admin) requestId=41
+2017-10-30T04:29:08.452Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=41
+2017-10-30T04:29:08.452Z - debug: Inline data specified. requestId=41
+2017-10-30T04:29:08.453Z - debug: Resources not defined for this template. requestId=41
+2017-10-30T04:29:08.454Z - debug: Base url not specified, skipping its injection. requestId=41
+2017-10-30T04:29:08.455Z - debug: Rendering engine handlebars requestId=41
+2017-10-30T04:29:08.739Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:29:08 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=41
+2017-10-30T04:29:08.740Z - debug: Replaced images [] requestId=41
+2017-10-30T04:29:08.741Z - debug: Executing recipe html requestId=41
+2017-10-30T04:29:08.742Z - debug: Skipping storing report. requestId=41
+2017-10-30T04:29:08.743Z - info: Rendering request 41 finished in 292 ms requestId=41
+2017-10-30T04:29:10.391Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:29:09 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=40
+2017-10-30T04:29:10.392Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Cdf1aa170-bd2a-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:29:09 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=40
+2017-10-30T04:29:10.392Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:29:09 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=40
+2017-10-30T04:29:10.393Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:29:09 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=40
+2017-10-30T04:29:10.394Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=40
+2017-10-30T04:29:10.394Z - debug: Skipping storing report. requestId=40
+2017-10-30T04:29:10.397Z - info: Rendering request 40 finished in 2273 ms requestId=40
+2017-10-30T04:32:14.608Z - debug: API logging in user admin
+2017-10-30T04:32:14.609Z - info: Starting rendering request 42 (user: admin) requestId=42
+2017-10-30T04:32:14.611Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=42
+2017-10-30T04:32:14.612Z - debug: Inline data specified. requestId=42
+2017-10-30T04:32:14.614Z - debug: Resources not defined for this template. requestId=42
+2017-10-30T04:32:14.615Z - debug: Base url not specified, skipping its injection. requestId=42
+2017-10-30T04:32:14.616Z - debug: Rendering engine handlebars requestId=42
+2017-10-30T04:32:14.990Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:32:14 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=42
+2017-10-30T04:32:14.992Z - debug: Replaced images ["23695606"] requestId=42
+2017-10-30T04:32:14.993Z - debug: Executing recipe phantom-pdf requestId=42
+2017-10-30T04:32:14.994Z - debug: Starting child request to render pdf footer requestId=42
+2017-10-30T04:32:14.997Z - info: Starting rendering request 43 (user: admin) requestId=43
+2017-10-30T04:32:14.999Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=43
+2017-10-30T04:32:15.000Z - debug: Inline data specified. requestId=43
+2017-10-30T04:32:15.002Z - debug: Resources not defined for this template. requestId=43
+2017-10-30T04:32:15.004Z - debug: Base url not specified, skipping its injection. requestId=43
+2017-10-30T04:32:15.005Z - debug: Rendering engine handlebars requestId=43
+2017-10-30T04:32:15.283Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:32:15 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=43
+2017-10-30T04:32:15.284Z - debug: Replaced images [] requestId=43
+2017-10-30T04:32:15.285Z - debug: Executing recipe html requestId=43
+2017-10-30T04:32:15.286Z - debug: Skipping storing report. requestId=43
+2017-10-30T04:32:15.287Z - info: Rendering request 43 finished in 289 ms requestId=43
+2017-10-30T04:32:20.739Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=42
+2017-10-30T04:32:20.739Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C4e4b2380-bd2b-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=42
+2017-10-30T04:32:20.740Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=42
+2017-10-30T04:32:20.740Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:32:19 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=42
+2017-10-30T04:32:20.743Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=42
+2017-10-30T04:32:20.743Z - debug: Skipping storing report. requestId=42
+2017-10-30T04:32:20.746Z - info: Rendering request 42 finished in 6138 ms requestId=42
+2017-10-30T04:36:48.187Z - debug: API logging in user admin
+2017-10-30T04:36:48.188Z - info: Starting rendering request 44 (user: admin) requestId=44
+2017-10-30T04:36:48.191Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=44
+2017-10-30T04:36:48.192Z - debug: Inline data specified. requestId=44
+2017-10-30T04:36:48.195Z - debug: Resources not defined for this template. requestId=44
+2017-10-30T04:36:48.196Z - debug: Base url not specified, skipping its injection. requestId=44
+2017-10-30T04:36:48.197Z - debug: Rendering engine handlebars requestId=44
+2017-10-30T04:36:48.502Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:36:48 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=44
+2017-10-30T04:36:48.504Z - debug: Replaced images ["23695606"] requestId=44
+2017-10-30T04:36:48.506Z - debug: Executing recipe phantom-pdf requestId=44
+2017-10-30T04:36:48.507Z - debug: Starting child request to render pdf footer requestId=44
+2017-10-30T04:36:48.509Z - info: Starting rendering request 45 (user: admin) requestId=45
+2017-10-30T04:36:48.512Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=45
+2017-10-30T04:36:48.512Z - debug: Inline data specified. requestId=45
+2017-10-30T04:36:48.514Z - debug: Resources not defined for this template. requestId=45
+2017-10-30T04:36:48.515Z - debug: Base url not specified, skipping its injection. requestId=45
+2017-10-30T04:36:48.515Z - debug: Rendering engine handlebars requestId=45
+2017-10-30T04:36:48.806Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:36:48 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=45
+2017-10-30T04:36:48.808Z - debug: Replaced images [] requestId=45
+2017-10-30T04:36:48.808Z - debug: Executing recipe html requestId=45
+2017-10-30T04:36:48.808Z - debug: Skipping storing report. requestId=45
+2017-10-30T04:36:48.810Z - info: Rendering request 45 finished in 300 ms requestId=45
+2017-10-30T04:36:50.549Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:36:49 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=44
+2017-10-30T04:36:50.550Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5Cf1536fb0-bd2b-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:36:49 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=44
+2017-10-30T04:36:50.551Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:36:49 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=44
+2017-10-30T04:36:50.551Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:36:49 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=44
+2017-10-30T04:36:50.553Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=44
+2017-10-30T04:36:50.553Z - debug: Skipping storing report. requestId=44
+2017-10-30T04:36:50.557Z - info: Rendering request 44 finished in 2369 ms requestId=44
+2017-10-30T04:37:26.771Z - debug: API logging in user admin
+2017-10-30T04:37:26.772Z - info: Starting rendering request 46 (user: admin) requestId=46
+2017-10-30T04:37:26.773Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=46
+2017-10-30T04:37:26.774Z - debug: Inline data specified. requestId=46
+2017-10-30T04:37:26.776Z - debug: Resources not defined for this template. requestId=46
+2017-10-30T04:37:26.777Z - debug: Base url not specified, skipping its injection. requestId=46
+2017-10-30T04:37:26.778Z - debug: Rendering engine handlebars requestId=46
+2017-10-30T04:37:27.098Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:37:27 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=46
+2017-10-30T04:37:27.100Z - debug: Replaced images ["23695606"] requestId=46
+2017-10-30T04:37:27.101Z - debug: Executing recipe phantom-pdf requestId=46
+2017-10-30T04:37:27.102Z - debug: Starting child request to render pdf footer requestId=46
+2017-10-30T04:37:27.105Z - info: Starting rendering request 47 (user: admin) requestId=47
+2017-10-30T04:37:27.106Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=47
+2017-10-30T04:37:27.106Z - debug: Inline data specified. requestId=47
+2017-10-30T04:37:27.108Z - debug: Resources not defined for this template. requestId=47
+2017-10-30T04:37:27.109Z - debug: Base url not specified, skipping its injection. requestId=47
+2017-10-30T04:37:27.110Z - debug: Rendering engine handlebars requestId=47
+2017-10-30T04:37:27.383Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:37:27 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=47
+2017-10-30T04:37:27.384Z - debug: Replaced images [] requestId=47
+2017-10-30T04:37:27.385Z - debug: Executing recipe html requestId=47
+2017-10-30T04:37:27.386Z - debug: Skipping storing report. requestId=47
+2017-10-30T04:37:27.387Z - info: Rendering request 47 finished in 283 ms requestId=47
+2017-10-30T04:37:29.034Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:37:27 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=46
+2017-10-30T04:37:29.035Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C0851d1c0-bd2c-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:37:27 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=46
+2017-10-30T04:37:29.035Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:37:27 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=46
+2017-10-30T04:37:29.035Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:37:27 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=46
+2017-10-30T04:37:29.037Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=46
+2017-10-30T04:37:29.037Z - debug: Skipping storing report. requestId=46
+2017-10-30T04:37:29.041Z - info: Rendering request 46 finished in 2269 ms requestId=46
+2017-10-30T04:38:56.588Z - debug: API logging in user admin
+2017-10-30T04:38:56.589Z - info: Starting rendering request 48 (user: admin) requestId=48
+2017-10-30T04:38:56.590Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=48
+2017-10-30T04:38:56.591Z - debug: Inline data specified. requestId=48
+2017-10-30T04:38:56.592Z - debug: Resources not defined for this template. requestId=48
+2017-10-30T04:38:56.593Z - debug: Base url not specified, skipping its injection. requestId=48
+2017-10-30T04:38:56.594Z - debug: Rendering engine handlebars requestId=48
+2017-10-30T04:38:56.917Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:38:56 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=48
+2017-10-30T04:38:56.918Z - debug: Replaced images ["23695606"] requestId=48
+2017-10-30T04:38:56.919Z - debug: Executing recipe phantom-pdf requestId=48
+2017-10-30T04:38:56.920Z - debug: Starting child request to render pdf footer requestId=48
+2017-10-30T04:38:56.923Z - info: Starting rendering request 49 (user: admin) requestId=49
+2017-10-30T04:38:56.924Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=49
+2017-10-30T04:38:56.924Z - debug: Inline data specified. requestId=49
+2017-10-30T04:38:56.927Z - debug: Resources not defined for this template. requestId=49
+2017-10-30T04:38:56.928Z - debug: Base url not specified, skipping its injection. requestId=49
+2017-10-30T04:38:56.929Z - debug: Rendering engine handlebars requestId=49
+2017-10-30T04:38:57.227Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:38:57 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=49
+2017-10-30T04:38:57.227Z - debug: Replaced images [] requestId=49
+2017-10-30T04:38:57.228Z - debug: Executing recipe html requestId=49
+2017-10-30T04:38:57.229Z - debug: Skipping storing report. requestId=49
+2017-10-30T04:38:57.230Z - info: Rendering request 49 finished in 307 ms requestId=49
+2017-10-30T04:38:58.935Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:38:57 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=48
+2017-10-30T04:38:58.936Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C3dde9ee0-bd2c-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:38:57 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=48
+2017-10-30T04:38:58.936Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:38:57 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=48
+2017-10-30T04:38:58.937Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:38:57 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=48
+2017-10-30T04:38:58.938Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=48
+2017-10-30T04:38:58.939Z - debug: Skipping storing report. requestId=48
+2017-10-30T04:38:58.942Z - info: Rendering request 48 finished in 2352 ms requestId=48
+2017-10-30T04:39:16.401Z - debug: API logging in user admin
+2017-10-30T04:39:16.403Z - info: Starting rendering request 50 (user: admin) requestId=50
+2017-10-30T04:39:16.404Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=50
+2017-10-30T04:39:16.405Z - debug: Inline data specified. requestId=50
+2017-10-30T04:39:16.406Z - debug: Resources not defined for this template. requestId=50
+2017-10-30T04:39:16.407Z - debug: Base url not specified, skipping its injection. requestId=50
+2017-10-30T04:39:16.407Z - debug: Rendering engine handlebars requestId=50
+2017-10-30T04:39:16.732Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:39:16 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=50
+2017-10-30T04:39:16.733Z - debug: Replaced images ["23695606"] requestId=50
+2017-10-30T04:39:16.735Z - debug: Executing recipe phantom-pdf requestId=50
+2017-10-30T04:39:16.737Z - debug: Starting child request to render pdf footer requestId=50
+2017-10-30T04:39:16.739Z - info: Starting rendering request 51 (user: admin) requestId=51
+2017-10-30T04:39:16.740Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=51
+2017-10-30T04:39:16.741Z - debug: Inline data specified. requestId=51
+2017-10-30T04:39:16.742Z - debug: Resources not defined for this template. requestId=51
+2017-10-30T04:39:16.743Z - debug: Base url not specified, skipping its injection. requestId=51
+2017-10-30T04:39:16.743Z - debug: Rendering engine handlebars requestId=51
+2017-10-30T04:39:17.024Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:39:17 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=51
+2017-10-30T04:39:17.025Z - debug: Replaced images [] requestId=51
+2017-10-30T04:39:17.026Z - debug: Executing recipe html requestId=51
+2017-10-30T04:39:17.026Z - debug: Skipping storing report. requestId=51
+2017-10-30T04:39:17.027Z - info: Rendering request 51 finished in 289 ms requestId=51
+2017-10-30T04:39:18.760Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:39:17 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=50
+2017-10-30T04:39:18.760Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C49ab8e40-bd2c-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:39:17 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=50
+2017-10-30T04:39:18.761Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:39:17 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=50
+2017-10-30T04:39:18.763Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:39:17 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=50
+2017-10-30T04:39:18.764Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=50
+2017-10-30T04:39:18.764Z - debug: Skipping storing report. requestId=50
+2017-10-30T04:39:18.768Z - info: Rendering request 50 finished in 2364 ms requestId=50
+2017-10-30T04:40:12.246Z - debug: API logging in user admin
+2017-10-30T04:40:12.247Z - info: Starting rendering request 52 (user: admin) requestId=52
+2017-10-30T04:40:12.248Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf,engine:handlebars} requestId=52
+2017-10-30T04:40:12.248Z - debug: Inline data specified. requestId=52
+2017-10-30T04:40:12.250Z - debug: Resources not defined for this template. requestId=52
+2017-10-30T04:40:12.251Z - debug: Base url not specified, skipping its injection. requestId=52
+2017-10-30T04:40:12.251Z - debug: Rendering engine handlebars requestId=52
+2017-10-30T04:40:12.569Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:40:12 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=52
+2017-10-30T04:40:12.572Z - debug: Replaced images ["23695606"] requestId=52
+2017-10-30T04:40:12.573Z - debug: Executing recipe phantom-pdf requestId=52
+2017-10-30T04:40:12.574Z - debug: Starting child request to render pdf footer requestId=52
+2017-10-30T04:40:12.576Z - info: Starting rendering request 53 (user: admin) requestId=53
+2017-10-30T04:40:12.577Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html,engine:handlebars} requestId=53
+2017-10-30T04:40:12.578Z - debug: Inline data specified. requestId=53
+2017-10-30T04:40:12.579Z - debug: Resources not defined for this template. requestId=53
+2017-10-30T04:40:12.580Z - debug: Base url not specified, skipping its injection. requestId=53
+2017-10-30T04:40:12.581Z - debug: Rendering engine handlebars requestId=53
+2017-10-30T04:40:12.867Z - debug: Compiled template not found in the cache, compiling timestamp=Mon Oct 30 2017 01:40:12 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=53
+2017-10-30T04:40:12.867Z - debug: Replaced images [] requestId=53
+2017-10-30T04:40:12.868Z - debug: Executing recipe html requestId=53
+2017-10-30T04:40:12.869Z - debug: Skipping storing report. requestId=53
+2017-10-30T04:40:12.869Z - info: Rendering request 53 finished in 293 ms requestId=53
+2017-10-30T04:40:14.529Z - debug: Converting in dedicated phantomjs 1.9.8 timestamp=Mon Oct 30 2017 01:40:13 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=52
+2017-10-30T04:40:14.529Z - debug: Request file:///C%3A%5CUsers%5CAlink%5CAppData%5CLocal%5CTemp%5Cjsreport-temp%5C6af45e60-bd2c-11e7-99e9-99bc95ae10c3html.html timestamp=Mon Oct 30 2017 01:40:13 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=52
+2017-10-30T04:40:14.530Z - debug: Request https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css timestamp=Mon Oct 30 2017 01:40:13 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=52
+2017-10-30T04:40:14.530Z - debug: Request data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAFyklEQVR4nOzWUW2EQBhG0b... timestamp=Mon Oct 30 2017 01:40:13 GMT-0300 (Hora verano Sudamérica Pacífico), requestId=52
+2017-10-30T04:40:14.531Z - debug: phantom-pdf recipe finished with 2 pages generated requestId=52
+2017-10-30T04:40:14.532Z - debug: Skipping storing report. requestId=52
+2017-10-30T04:40:14.535Z - info: Rendering request 52 finished in 2288 ms requestId=52

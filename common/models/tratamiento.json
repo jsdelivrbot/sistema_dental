@@ -51,6 +51,21 @@
       "type": "hasOne",
       "model": "relacionesDentales",
       "foreignKey": "tratamientoId"
+    },
+    "listadoDeProblemas": {
+      "type": "hasOne",
+      "model": "listadoDeProblemas",
+      "foreignKey": "tratamientoId"
+    },
+    "paciente": {
+      "type": "belongsTo",
+      "model": "paciente",
+      "foreignKey": ""
+    },
+    "planificacionDeTratamiento": {
+      "type": "hasOne",
+      "model": "planficacionDeTratamiento",
+      "foreignKey": "tratamientoId"
     }
   },
   "acls": [],

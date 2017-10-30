@@ -1,0 +1,352 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando">
+  <div id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+    <!--// Sidenav component container-->
+    <md-sidenav-container class="sidenav-container">
+      <div class="content min-h-900">
+        <header class="header-wrapper header-sm shadow-none">
+          <h1>{{title}}</h1>
+          <ul class="actions icons top-right">
+            <li>
+              <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+                <i class="zmdi zmdi-menu"></i>
+              </a>
+            </li>
+          </ul>
+        </header>
+
+        <div class="row p-20 p-b-5 m-b-0">
+          <app-detalles-paciente class="col-lg-12" [paciente]="paciente" [tratamiento]="tratamiento"></app-detalles-paciente>
+        </div>
+
+        <!-- examen -->
+        <div class="">
+          <form #listadoDeProblemas="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">
+
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="motivacion" class="control-label">Motivación</label>
+                      <input type="text" class="form-control" name="motivacion" id="motivacion" [(ngModel)]="listadoProblemas.motivacion">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="frontal" class="control-label">Frontal</label>
+                      <input type="text" class="form-control" name="frontal" id="frontal" [(ngModel)]="listadoProblemas.frontal">
+                    </div>
+                    <div class="col">
+                      <label for="tercio_medio" class="control-label">Tercio 1/2</label>
+                      <input type="text" class="form-control" name="tercio_medio" id="tercio_medio" [(ngModel)]="listadoProblemas.tercio_medio">
+                    </div>
+                    <div class="col">
+                      <label for="p_oclusal" class="control-label">P. Ocl</label>
+                      <input type="text" class="form-control" name="p_oclusal" id="p_oclusal" [(ngModel)]="listadoProblemas.p_oclusal">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="longitud_labio_sup" class="control-label">Longitud labio SUP</label>
+                      <input type="text" class="form-control" name="longitud_labio_sup" id="longitud_labio_sup" [(ngModel)]="listadoProblemas.longitud_labio_superior">
+                    </div>
+                    <div class="col">
+                      <label for="linea_sonrisa_anterior" class="control-label">Línea sonrisa anterior</label>
+                      <input type="text" class="form-control" name="linea_sonrisa_anterior" id="linea_sonrisa_anterior" [(ngModel)]="listadoProblemas.linea_sonrisa_anterior">
+                    </div>
+                    <div class="col">
+                      <label for="linea_sonrisa_posterior" class="control-label">Línea sonrisa posterior</label>
+                      <input type="text" class="form-control" name="linea_sonrisa_posterior" id="linea_sonrisa_posterior" [(ngModel)]="listadoProblemas.linea_sonrisa_posterior">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label class="control-label">Línea medias dentales</label>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="p-0">
+                              <select name="linea_media1" id="linea_media1" class="form-control" [(ngModel)]="listadoProblemas.linea_media1">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                            </td>
+                            <td class="p-0">
+                              <select name="linea_media2" id="linea_media2" class="form-control" [(ngModel)]="listadoProblemas.linea_media2">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="p-0">
+                              <select name="linea_media3" id="linea_media3" class="form-control" [(ngModel)]="listadoProblemas.linea_media3">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                            </td>
+                            <td class="p-0">
+                              <select name="linea_media4" id="linea_media4" class="form-control" [(ngModel)]="listadoProblemas.linea_media4">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="card p-b-100">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">
+
+                  </h3>
+                </div>
+                <div class="card-body p-b-10">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="perfil" class="control-label">Perfil</label>
+                      <input type="text" name="perfil" id="perfil" [(ngModel)]="listadoProblemas.perfil" class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="frente" class="control-label">Frente</label>
+                      <input type="text" name="frente" id="frente" [(ngModel)]="listadoProblemas.frente" class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="nariz" class="control-label">Nariz</label>
+                      <input type="text" name="nariz" id="nariz" [(ngModel)]="listadoProblemas.nariz" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="labios" class="control-label">Labios</label>
+                      <input type="text" name="labios" id="labios" [(ngModel)]="listadoProblemas.labios" class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="menton" class="control-label">Mentón</label>
+                      <input type="text" name="menton" id="menton" [(ngModel)]="listadoProblemas.menton" class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="dist_mc" class="control-label">Dist MC</label>
+                      <input type="text" name="dist_mc" id="dist_mc" [(ngModel)]="listadoProblemas.dist_mc" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-50">
+                    <div class="col">
+                      <label for="anl" class="control-label">A NL</label>
+                      <input type="text" name="anl" id="anl" [(ngModel)]="listadoProblemas.anl" class="form-control">
+                    </div>
+                    <div class="col">
+                      <label for="aml" class="control-label">A ML</label>
+                      <input type="text" name="aml" id="aml" [(ngModel)]="listadoProblemas.aml" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="card-header border-bottom">
+                  <h3 class="card-title">
+
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="funcion" class="control-label">Función</label>
+                      <textarea name="funcion" id="funcion" cols="30" rows="2" class="form-control" [(ngModel)]="listadoProblemas.funcion"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="biotipo" class="control-label">Biotipo</label>
+                      <select class="form-control" name="biotipo" id="biotipo" [(ngModel)]="listadoProblemas.biotipo">
+                        <option value="normal">Normal</option>
+                        <option value="meso">Meso</option>
+                        <option value="dolico">Dólico</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="vert" class="control-label">Vert</label>
+                      <input type="text" class="form-control" name="vert" id="vert" [(ngModel)]="listadoProblemas.vert">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="oseo" class="control-label">Óseo</label>
+                      <select type="text" class="form-control" name="oseo" id="oseo" [(ngModel)]="listadoProblemas.oseo">
+                        <option value="0">0</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="dental" class="control-label">Dental</label>
+                      <input type="text" class="form-control" name="dental" id="dental" [(ngModel)]="listadoProblemas.dental">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="maxilar" class="control-label">Maxilar</label>
+                      <select name="maxilar" id="maxilar" [(ngModel)]="listadoProblemas.maxilar" class="form-control">
+                        <option value="normal">Normal</option>
+                        <option value="pro">Pro</option>
+                        <option value="retro">Retro</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="maxilar_forma" class="control-label">Forma</label>
+                      <select name="maxilar_forma" id="maxilar_forma" class="form-control" [(ngModel)]="listadoProblemas.maxilar_forma">
+                        <option value="ovoide">Ovoide</option>
+                        <option value="cuadrada">Cuadrada</option>
+                        <option value="rectangular">Rectangular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="mandibular" class="control-label">Mandibular</label>
+                      <select name="mandibular" id="mandibular" class="form-control" [(ngModel)]="listadoProblemas.mandibular">
+                        <option value="normal">Normal</option>
+                        <option value="pro">Pro</option>
+                        <option value="retro">Retro</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="mandibular_forma" class="control-label">Forma</label>
+                      <select name="mandibular_forma" id="mandibular_forma" class="form-control" [(ngModel)]="listadoProblemas.mandibular_forma">
+                        <option value="ovoide">Ovoide</option>
+                        <option value="cuadrada">Cuadrada</option>
+                        <option value="rectangular">Rectangular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="inc_sups" class="control-label">Inc sups</label>
+                      <select name="inc_sups" id="inc_sups" class="form-control" [(ngModel)]="listadoProblemas.inc_sups">
+                        <option value="normal">Normal</option>
+                        <option value="pro">Pro</option>
+                        <option value="retro">Retro</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="superior" class="control-label">Superior</label>
+                      <input type="text" class="form-control" name="superior" id="superior" [(ngModel)]="listadoProblemas.superior">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="inc_infs" class="control-label">Inc infs</label>
+                      <select name="inc_infs" id="inc_infs" class="form-control" [(ngModel)]="listadoProblemas.inc_infs">
+                        <option value="normal">Normal</option>
+                        <option value="pro">Pro</option>
+                        <option value="retro">Retro</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="inferior" class="control-label">Inferior</label>
+                      <input type="text" class="form-control" name="inferior" id="inferior" [(ngModel)]="listadoProblemas.inferior">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="labio_sup_inf" class="control-label">Labio Sup/Inf</label>
+                      <input type="text" class="form-control" name="labio_sup_inf" id="labio_sup_inf" [(ngModel)]="listadoProblemas.labio_sup_inf">
+                    </div>
+                    <div class="col">
+                      <label for="smv" class="contol-label">SMV</label>
+                      <input type="text" class="form-control" name="smv" id="smv" [(ngModel)]="listadoProblemas.smv">
+                    </div>
+                    <div class="col">
+                      <label for="smh" class="contol-label">SMH</label>
+                      <input type="text" class="form-control" name="smh" id="smh" [(ngModel)]="listadoProblemas.smh">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="bolton_exc_ant_sup" class="control-label">Bolton axc ant-sup</label>
+                      <input type="text" class="form-control" name="bolton_exc_ant_sup" id="bolton_exc_ant_sup" [(ngModel)]="listadoProblemas.bolton_exc_ant_sup">
+                    </div>
+                    <div class="col">
+                      <label for="exc_ant_inf" class="control-label">Exc ant-inf</label>
+                      <input type="text" class="form-control" name="exc_ant_inf" id="exc_ant_inf" [(ngModel)]="listadoProblemas.exc_ant_inf">
+                    </div>
+                    <div class="col">
+                      <label for="pendiente" class="control-label">Pendiente</label>
+                      <input type="text" class="form-control" name="pendiente" id="pendiente" [(ngModel)]="listadoProblemas.pendiente">
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="resumen_odontograma" class="control-label">Resumen de odontograma</label>
+                      <textarea name="resumen_odontograma" id="resumen_odontograma" cols="30" rows="4"
+                                class="form-control" [(ngModel)]="listadoProblemas.resumen_odontograma"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="resumen_denticion" class="control-label">Resumen dentición</label>
+                      <textarea name="resumen_denticion" id="resumen_denticion" cols="30" rows="4"
+                                class="form-control" [(ngModel)]="listadoProblemas.resumen_denticion"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="resumen_tejidos_blandos" class="control-label">Resumen tejidos blandos</label>
+                      <textarea name="resumen_tejidos_blandos" id="resumen_tejidos_blandos" cols="30" rows="4"
+                                class="form-control" [(ngModel)]="listadoProblemas.resumen_tejidos_blandos"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row m-b-10">
+                    <div class="col">
+                      <label for="resumen_examenes_complementarios" class="control-label">Resumen exámenes complementarios</label>
+                      <textarea name="resumen_examenes_complementarios" id="resumen_examenes_complementarios" cols="30"
+                                rows="4"
+                                class="form-control" [(ngModel)]="listadoProblemas.resumen_examenes_complementarios"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="card">
+                <div class="card-footer">
+                  <div class="row">
+                    <button type="submit" class="btn btn-primary m-auto" mdRipple>
+                      <i class="zmdi zmdi-save"></i>
+                      Guardar Listado de Problemas
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </md-sidenav-container>
+  </div>
+</div>
