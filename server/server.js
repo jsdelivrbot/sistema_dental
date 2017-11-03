@@ -34,6 +34,10 @@ require('jsreport')(
     httpPort: 2000,
     'blobStorage': 'fileSystem',
     'connectionString': {'name': 'fs'},
+    'assets': {
+      'allowedFiles': "static/**.css",
+      'publicAccessEnabled': true
+    },
     'scripts': {
       'allowedModules': ['http'],
     },

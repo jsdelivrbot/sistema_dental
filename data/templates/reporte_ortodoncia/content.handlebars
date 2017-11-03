@@ -2,7 +2,9 @@
 
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro.min.css">
+    <style>
+        {#asset metro.css @encoding=utf8}
+    </style>
     <style>
         .page-break {
             display: block;
@@ -76,7 +78,7 @@
 
     <!-- PRESUPUESTOS -->
 
-    <table style="font-size: 12px;" class="table striped hovered border">
+    <table style="font-size: 12px;" class="table">
         <thead>
             <tr>
                 <th style="padding:0px;" colspan="2">
@@ -113,7 +115,7 @@
             </tr-->
             <tr>
                 <td style="float: right;"><strong>TOTAL</strong></td>
-                <td style="color: #036362;font-weight:bold;">${{formatear ortodoncia.total1}} A ${{formatear ortodoncia.total2}}</td>
+                <td style="color: #036362;font-weight:bold;">${{formatear ortodoncia.total1}} A ${{formatear ortodoncia.total2}} <strong>+EXTRAS</strong></td>
             </tr>
         </tbody>
         <thead>

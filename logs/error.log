@@ -372,3 +372,298 @@ Error: ENOENT: no such file or directory, open 'C:\Users\Alink\Desktop\sistema_d
     at ContextifyScript.Script.runInContext (vm.js:35:29)
     at ContextifyScript.Script.runInNewContext (vm.js:41:15)
     at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-03T00:19:52.364Z - error: uncaughtException: failed to connect to server [localhost:27017] on first connect [MongoError: connection 0 to localhost:27017 timed out] date=Thu Nov 02 2017 21:19:52 GMT-0300 (Hora verano Sudamérica Pacífico), pid=7500, uid=null, gid=null, cwd=C:\Users\Alink\Desktop\sistema_dental, execPath=C:\Program Files\nodejs\node.exe, version=v6.10.0, argv=[C:\Program Files\nodejs\node.exe, C:\Users\Alink\Desktop\sistema_dental], rss=131366912, heapTotal=116412416, heapUsed=89095248, external=17875500, loadavg=[0, 0, 0], uptime=2719007.1535848, trace=[column=35, file=C:\Users\Alink\Desktop\sistema_dental\node_modules\mongodb-core\lib\topologies\server.js, function=null, line=336, method=null, native=false, column=13, file=events.js, function=emitOne, line=96, method=null, native=false, column=7, file=events.js, function=Pool.emit, line=188, method=emit, native=false, column=12, file=C:\Users\Alink\Desktop\sistema_dental\node_modules\mongodb-core\lib\connection\pool.js, function=null, line=280, method=null, native=false, column=16, file=events.js, function=Connection.g, line=291, method=g, native=false, column=13, file=events.js, function=emitTwo, line=106, method=null, native=false, column=7, file=events.js, function=Connection.emit, line=191, method=emit, native=false, column=10, file=C:\Users\Alink\Desktop\sistema_dental\node_modules\mongodb-core\lib\connection\connection.js, function=null, line=197, method=null, native=false, column=16, file=events.js, function=Socket.g, line=291, method=g, native=false, column=13, file=events.js, function=emitNone, line=86, method=null, native=false, column=7, file=events.js, function=Socket.emit, line=185, method=emit, native=false, column=8, file=net.js, function=Socket._onTimeout, line=339, method=_onTimeout, native=false, column=14, file=timers.js, function=ontimeout, line=365, method=null, native=false, column=5, file=timers.js, function=tryOnTimeout, line=237, method=null, native=false, column=5, file=timers.js, function=Timer.listOnTimeout, line=207, method=listOnTimeout, native=false], stack=[MongoError: failed to connect to server [localhost:27017] on first connect [MongoError: connection 0 to localhost:27017 timed out],     at Pool.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\mongodb-core\lib\topologies\server.js:336:35),     at emitOne (events.js:96:13),     at Pool.emit (events.js:188:7),     at Connection.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\mongodb-core\lib\connection\pool.js:280:12),     at Connection.g (events.js:291:16),     at emitTwo (events.js:106:13),     at Connection.emit (events.js:191:7),     at Socket.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\mongodb-core\lib\connection\connection.js:197:10),     at Socket.g (events.js:291:16),     at emitNone (events.js:86:13),     at Socket.emit (events.js:185:7),     at Socket._onTimeout (net.js:339:8),     at ontimeout (timers.js:365:14),     at tryOnTimeout (timers.js:237:5),     at Timer.listOnTimeout (timers.js:207:5)]
+2017-11-03T00:52:17.063Z - error: Error when processing render request Error during rendering report: Asset /metro.min.css not found Error: Asset /metro.min.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=17
+2017-11-03T00:52:17.066Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Asset /metro.min.css not found Error: Asset /metro.min.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T00:52:25.378Z - error: Error when processing render request Error during rendering report: Asset assets/metro.min.css not found Error: Asset assets/metro.min.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=18
+2017-11-03T00:52:25.380Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Asset assets/metro.min.css not found Error: Asset assets/metro.min.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T00:52:26.353Z - error: Error when processing render request Error during rendering report: Asset assets/metro.min.css not found Error: Asset assets/metro.min.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=19
+2017-11-03T00:52:26.355Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Asset assets/metro.min.css not found Error: Asset assets/metro.min.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T00:56:31.582Z - error: Error when processing render request Error during rendering report: Asset  not found Error: Asset  not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=44
+2017-11-03T00:56:31.583Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Asset  not found Error: Asset  not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T00:58:35.490Z - error: Error when processing render request Error during rendering report: Asset  not found Error: Asset  not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=1
+2017-11-03T00:58:35.492Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Asset  not found Error: Asset  not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T01:00:37.012Z - error: Error when processing render request Error during rendering report: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string Error: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string
+    at convert (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:50:15)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:63:26
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:718:13
+    at async.forEachOf.async.eachOf (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:233:13)
+    at _parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:717:9)
+    at Object.async.parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:731:9)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:71:11)
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\node_modules\bluebird\js\release\util.js:16:23)
+    at ret (eval at makeNodePromisifiedEval (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-images\node_modules\bluebird\js\release\promisify.js:1:0), <anonymous>:13:39)
+    at evaluateAssets (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:66:10)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:267:14
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=4
+2017-11-03T01:00:37.013Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string Error: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string
+    at convert (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:50:15)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:63:26
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:718:13
+    at async.forEachOf.async.eachOf (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:233:13)
+    at _parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:717:9)
+    at Object.async.parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:731:9)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:71:11)
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\node_modules\bluebird\js\release\util.js:16:23)
+    at ret (eval at makeNodePromisifiedEval (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-images\node_modules\bluebird\js\release\promisify.js:1:0), <anonymous>:13:39)
+    at evaluateAssets (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:66:10)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:267:14
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T01:00:49.247Z - error: Error when processing render request Error during rendering report: Asset encoded as dataURI needs to have file extension jpeg|jpg|gif|png|svg|woff|tff|otf|woff2|eot Error: Asset encoded as dataURI needs to have file extension jpeg|jpg|gif|png|svg|woff|tff|otf|woff2|eot
+    at convert (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:54:15)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:63:26
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:718:13
+    at async.forEachOf.async.eachOf (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:233:13)
+    at _parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:717:9)
+    at Object.async.parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:731:9)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:71:11)
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\node_modules\bluebird\js\release\util.js:16:23)
+    at ret (eval at makeNodePromisifiedEval (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-images\node_modules\bluebird\js\release\promisify.js:1:0), <anonymous>:13:39)
+    at evaluateAssets (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:66:10)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:267:14
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=5
+2017-11-03T01:00:49.249Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Asset encoded as dataURI needs to have file extension jpeg|jpg|gif|png|svg|woff|tff|otf|woff2|eot Error: Asset encoded as dataURI needs to have file extension jpeg|jpg|gif|png|svg|woff|tff|otf|woff2|eot
+    at convert (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:54:15)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:63:26
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:718:13
+    at async.forEachOf.async.eachOf (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:233:13)
+    at _parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:717:9)
+    at Object.async.parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:731:9)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:71:11)
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\node_modules\bluebird\js\release\util.js:16:23)
+    at ret (eval at makeNodePromisifiedEval (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-images\node_modules\bluebird\js\release\promisify.js:1:0), <anonymous>:13:39)
+    at evaluateAssets (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:66:10)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:267:14
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T01:00:55.388Z - error: Error when processing render request Error during rendering report: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string Error: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string
+    at convert (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:50:15)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:63:26
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:718:13
+    at async.forEachOf.async.eachOf (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:233:13)
+    at _parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:717:9)
+    at Object.async.parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:731:9)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:71:11)
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\node_modules\bluebird\js\release\util.js:16:23)
+    at ret (eval at makeNodePromisifiedEval (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-images\node_modules\bluebird\js\release\promisify.js:1:0), <anonymous>:13:39)
+    at evaluateAssets (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:66:10)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:267:14
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=6
+2017-11-03T01:00:55.390Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string Error: Unsupported asset encoding param value css, supported values are base64, utf8, link, dataURI and string
+    at convert (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:50:15)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:63:26
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:718:13
+    at async.forEachOf.async.eachOf (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:233:13)
+    at _parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:717:9)
+    at Object.async.parallel (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\node_modules\async\lib\async.js:731:9)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\async-replace\async-replace.js:71:11)
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\node_modules\bluebird\js\release\util.js:16:23)
+    at ret (eval at makeNodePromisifiedEval (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-images\node_modules\bluebird\js\release\promisify.js:1:0), <anonymous>:13:39)
+    at evaluateAssets (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:66:10)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:267:14
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-03T01:06:41.470Z - error: Error when processing render request Error during rendering report: Asset bootstrap.min.css/content.css not found Error: Asset bootstrap.min.css/content.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5) requestId=15
+2017-11-03T01:06:41.471Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Asset bootstrap.min.css/content.css not found Error: Asset bootstrap.min.css/content.css not found
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-assets\lib\assets.js:149:15
+    at tryCatcher (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\Users\Alink\Desktop\sistema_dental\node_modules\listener-collection\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)

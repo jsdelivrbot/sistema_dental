@@ -309,11 +309,11 @@ export class PresupuestoOrtodonciaComponent implements OnInit {
         this.total1 += this.presupuesto.mensualidad1Vestibular + this.presupuesto.mensualidad1Lingual;
         this.total2 += this.presupuesto.mensualidad2Vestibular + this.presupuesto.mensualidad2Lingual;
 
-        for ( let i = 0; i < this.presupuesto.extras.length; i++ ) {
+        /*for ( let i = 0; i < this.presupuesto.extras.length; i++ ) {
             let valor = this.presupuesto.extras[i].precio;
             this.total1 += valor;
             this.total2 += valor;
-        }
+        }*/
 
       console.log(this.presupuesto.resumen);
     }
