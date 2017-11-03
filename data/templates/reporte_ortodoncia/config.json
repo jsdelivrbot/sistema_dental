@@ -3,12 +3,13 @@
     "recipe": "phantom-pdf",
     "engine": "handlebars",
     "modificationDate": {
-        "$$date": 1509671695569
+        "$$date": 1509743788683
     },
     "_id": "dEVbQMXBwglKkpE6",
     "phantom": {
         "headerHeight": "",
-        "margin": "{\"top\":\"10px\",\"left\":\"50px\",\"right\":\"50px\",\"bottom\":\"10px\"}"
+        "margin": "{\"top\":\"10px\",\"left\":\"50px\",\"right\":\"50px\",\"bottom\":\"10px\"}",
+        "phantomjsVersion": "2.1.1"
     },
     "data": {
         "shortid": "SyEl27baW"

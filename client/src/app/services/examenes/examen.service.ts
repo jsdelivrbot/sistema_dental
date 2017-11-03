@@ -18,6 +18,7 @@ export class ExamenService {
   //public creadoEmitido$ = this.emitCreado.asObservable();
 
   constructor(private httpClient: HttpClient) {
+    //this.url = "http://192.168.50.7";
     this.url = "http://localhost";
     this.port = ":3000";
   }
