@@ -4,6 +4,7 @@ import { Tratamiento } from 'app/models/tratamiento';
 import { Observer } from 'rxjs/Observer';
 import {PlanTratamiento} from "../../models/plan-tratamiento";
 import {Http, Headers, ResponseContentType} from "@angular/http";
+import {ListadoProblemas} from "../../models/listado-problemas";
 
 @Injectable()
 export class TratamientoService {
@@ -76,7 +77,7 @@ export class TratamientoService {
     return this.httpClient.get(this.url + this.port + '/api/tratamientos/' + id_tratamiento + '/planificacionDeTratamiento');
   }
 
-  imprimirPresupuestoOrtodoncia(tratamiento: Tratamiento) {
+  imprimirPresupuestoOrtodoncia(tratamiento: Tratamiento, planTratamiento: PlanTratamiento, listadoProblemas: ListadoProblemas) {
     const url = `${this.url}:2000/api/report`;
     const headers = new Headers();
     headers.set('Content-Type', 'application/json');
@@ -84,11 +85,28 @@ export class TratamientoService {
     const data = {
       'template':{"shortid":"BJ_drYgTb"},
       'data': {
+        'listado_problemas': listadoProblemas,
+        'plan_tratamiento': planTratamiento,
         'ortodoncia': tratamiento.presupuestos.ortodoncia
       }
     };
     console.log(tratamiento.presupuestos.ortodoncia);
     console.log(JSON.stringify(data));
     return this.http.post(url, JSON.stringify(data) , {responseType: ResponseContentType.ArrayBuffer, headers: headers});
+  }
+
+  editarPlanTratamiento(planTratamiento: PlanTratamiento) {
+    const url = `${this.url + this.port}/api/planificacionDeTratamiento/${planTratamiento.id}`;
+    return this.httpClient.patch(url, planTratamiento);
+  }
+
+  guardarListadoDeProblemas(listadoProblemas: ListadoProblemas) {
+    const url = `${this.url + this.port}/api/listadoDeProblemas`;
+    return this.httpClient.post(url , listadoProblemas);
+  }
+
+  obtenerListadoProblemas(idTratamiento: string) {
+    const url = `${this.url + this.port}/api/tratamientos/${idTratamiento}/listadoDeProblemas`;
+    return this.httpClient.get(url);
   }
 }

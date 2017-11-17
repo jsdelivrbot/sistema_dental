@@ -73,12 +73,12 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card">
             <div class="card-header border-bottom">
-              <h4 *ngIf="!planTratamiento" class="card-title">
+              <h4 *ngIf="!planTratamientoRealizado" class="card-title">
                 <a href="javascript:void(0);" [routerLink]="['plan-tratamiento']">
                   Plan de tratamiento
                 </a>
               </h4>
-              <h4 *ngIf="planTratamiento" class="card-title">
+              <h4 *ngIf="planTratamientoRealizado" class="card-title">
                 <a href="javascript:void(0);" [routerLink]="['plan-tratamiento/edit']">
                   Plan de tratamiento
                 </a>

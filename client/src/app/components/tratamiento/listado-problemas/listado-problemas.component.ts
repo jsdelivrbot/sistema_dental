@@ -76,4 +76,22 @@ export class ListadoProblemasComponent implements OnInit {
     );
   }
 
+  onSubmit() {
+    this.listadoProblemas.fecha_actualizacion = new Date();
+    this.listadoProblemas.tratamientoId = this.id_tratamiento;
+
+    this._tratamientoService.guardarListadoDeProblemas(this.listadoProblemas).subscribe(
+      (result: ListadoProblemas) => {
+        if (result.id != null) {
+          this._alertService.showAlert(true, 'Listado de problemas actualizado', 1);
+          this._router.navigate(['../'], {relativeTo: this._activatedRoute});
+        }
+      },
+      error => {
+        console.log(error);
+        this._alertService.showAlert(true, 'Algo ha salido mal', 2);
+      }
+    );
+  }
+
 }

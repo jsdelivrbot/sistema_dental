@@ -14,7 +14,7 @@ import {PlanTratamiento} from "../../../models/plan-tratamiento";
 })
 export class PlanTratamientoComponent implements OnInit {
 
-  public title = "Listado de problemas";
+  public title = "Plan de tratamiento";
   public cargando = true;
   private id_paciente: string;
   private id_tratamiento: string;

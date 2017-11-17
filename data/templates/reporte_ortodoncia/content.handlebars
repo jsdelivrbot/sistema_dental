@@ -13,6 +13,9 @@
             display: block;
             page-break-before: always;
         }
+        .row{
+            margin-top: .5rem;
+        }
     </style>
 </head>
 
@@ -54,8 +57,379 @@
     </table>
 
     <!-- lista de problemas -->
-    <h5>LISTA DE PROBLEMAS</h5>
-    <ul style="font-size: 12px;" class="numeric-list">
+    <h5 style="margin-bottom: 0px; padding-bottom: 0px;">LISTA DE PROBLEMAS</h5><hr>
+        <ul class="" style="margin-top: 0px; padding-left: 0px;">
+             {{#if listado_problemas.motivacion}}
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    <div class="cell auto-size">
+                         <p>Motivación: {{listado_problemas.motivacion}}</p>
+                    </div>
+                </div>
+            </li>
+             {{/if}}
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.frontal}}
+                    <div class="cell auto-size no-margin-bottom">
+                        <span>Frontal:</span> <span >{{listado_problemas.frontal}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.tercio_medio}} 
+                    <div class="cell auto-size">
+                        <span>Tercio 1/2:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.tercio_medio}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.linea_media1}}
+                    <div class="cell auto-size">
+                        <span>L. Medias dentales:</span> 
+                        <span>{{listado_problemas.linea_media1}} | {{listado_problemas.linea_media2}}</span><br>
+                        <span style="visibility: hidden;">L. Medias dentales:</span>
+                        <span style="border-top: 1px solid;">{{listado_problemas.linea_media3}} | {{listado_problemas.linea_media4}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.p_oclusal}} 
+                    <div class="cell auto-size">
+                        <span>P.Ocl:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.p_oclusal}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.longitud_labio_sup}}
+                    <div class="cell auto-size">
+                        <span>L. Labio sup:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.longitud_labio_sup}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.linea_sonrisa_anterior}}
+                    <div class="cell auto-size">
+                        <span>L. Sonrisa anterior:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.linea_sonrisa_anterior}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.linea_sonrisa_posterior}}
+                    <div class="cell auto-size">
+                        <span>L. Sonrisa posterior:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.linea_sonrisa_posterior}}</span>
+                    </div>
+                    {{/if}}
+                </div>    
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.perfil}}
+                    <div class="cell auto-size">
+                        <span>Perfil:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.perfil}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.frente}}
+                    <div class="cell auto-size">
+                        <span>Frente:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.frente}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.nariz}}
+                    <div class="cell auto-size">
+                        <span>Nariz:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.nariz}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.anl}}
+                    <div class="cell auto-size">
+                        <span>ANL:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.anl}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.aml}}
+                    <div class="cell auto-size">
+                        <span>AML:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.aml}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.labios}}
+                    <div class="cell auto-size">
+                        <span>Labios:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.labios}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.menton}}
+                    <div class="cell auto-size">
+                        <span>Mentón:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.menton}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.dist_mc}}
+                    <div class="cell auto-size">
+                        <span>Dist MC:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.dist_mc}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.funcion}}
+                    <div class="cell auto-size">
+                        <span>Función:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.funcion}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.biotipo}}
+                    <div class="cell auto-size">
+                        <span>Biotipo:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.biotipo}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.vert}}
+                    <div class="cell auto-size">
+                        <span>VERT:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.vert}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.oseo}}
+                    <div class="cell auto-size">
+                        <span>Oseo:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.oseo}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.dental}}
+                    <div class="cell auto-size">
+                        <span>Dental:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.dental}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.maxilar}}
+                    <div class="cell auto-size">
+                        <span>Maxila:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.maxilar}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.maxilar_forma}}
+                    <div class="cell auto-size">
+                        <span>Forma:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.maxilar_forma}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.mandibular}}
+                    <div class="cell auto-size">
+                        <span>Mandibula:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.mandibular}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.mandibular_forma}}
+                    <div class="cell auto-size">
+                        <span>Forma:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.mandibular_forma}}</span>
+                    </div>
+                    {{/if}}
+                </div>       
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.inc_sups}}
+                    <div class="cell auto-size">
+                        <span>Inc sups:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.inc_sups}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.superior}}
+                    <div class="cell auto-size">
+                        <span>Superior:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.superior}}</span>
+                    </div>
+                    {{/if}}
+                </div>  
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.inc_infs}}
+                    <div class="cell auto-size">
+                        <span>Inc infs:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.inc_infs}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.inferior}}
+                    <div class="cell auto-size">
+                        <span>Inferior:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.inferior}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.labio_sup_inf}}
+                    <div class="cell auto-size">
+                        <span>Labio Sup/Inf:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.labio_sup_inf}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.smv}}
+                    <div class="cell auto-size">
+                        <span>SMV:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.smv}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.smh}}
+                    <div class="cell auto-size">
+                        <span>SMH:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.smh}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.bolton_exc_ant_sup}}
+                    <div class="cell auto-size">
+                        <span>Bolton exc ant-sup:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.bolton_exc_ant_sup}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if listado_problemas.exc_ant_inf}}
+                    <div class="cell auto-size">
+                        <span>exc ant-inf:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.exc_ant_inf}}</span>
+                    </div>
+                    {{/if}}
+                </div>    
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+                <div class="row" style="margin-top: 0px;">
+                    {{#if listado_problemas.pendiente}}
+                    <div class="cell auto-size">
+                        <span>Pendiente:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.pendiente}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </li>
+            <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
+               <div class="row" style="margin-top: 0px;">
+                   {{#if listado_problemas.resumen_odontograma}}
+                    <div class="cell auto-size">
+                        <span>Otros:</span> <span style="border-bottom: 1px solid;">{{listado_problemas.resumen_odontograma}}</span>
+                    </div>
+                    {{/if}}
+                </div> 
+            </li>
+        </ul>
+    <!--div class="flex-grid">
+        <div class="row">
+            <div class="cell auto-size no-margin-bottom" style="border-bottom: 1px solid;">
+                <span>2.- Frontal:</span> <span >algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Tercio 1/2:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>L. Medias dentales:</span> 
+                <span>4 | 0</span><br>
+                <span style="visibility: hidden;">L. Medias dentales:</span>
+                <span style="border-top: 1px solid;">0 | 0</span>
+            </div>
+            <div class="cell auto-size">
+                <span>P.Ocl:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>L. Labio sup:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>L. Sonrisa anterior:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>L. Sonrisa posterior:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>3.- Perfil:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Frente:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Nariz:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>ANL:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>AML:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Labios:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Mentón:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Dist MC:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>4.- Función:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>5.- Biotipo:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>VERT:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>6.- Oseo:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>7.- Dental:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>8.- Maxila:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Forma:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>9.- Mandibula:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Forma:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>10.- Inc sups:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Superior:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>11.- Inc infs:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>Inferior:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>12.- Labio Sup/Inf:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>13.- SMV:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>14.- SMH:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>15.- Bolton exc ant-sup:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+            <div class="cell auto-size">
+                <span>exc ant-inf:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>Pendiente:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell auto-size">
+                <span>16.- Otros:</span> <span style="border-bottom: 1px solid;">algo</span>
+            </div>
+        </div>
+    </div--!>
+    <!--ul style="font-size: 12px;" class="numeric-list">
         <li style="padding: 0px; padding-left: 15px; margin:0px;">PERFIL RECTO ANTEINCLINADO ( FRENTE INCLINADA Y BIPROTRUSION ESQUELETICA )</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">MALOCLUSION ESQUELETICA CLASE I Y 333 DENTAL ( II MOLAR IZQUIERDA )</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">PATRON ESQUELETICO BRAQUIFACIAL SEVERO ( +5.4 )</li>
@@ -63,11 +437,588 @@
         <li style="padding: 0px; padding-left: 15px; margin:0px;">MORDIDA ABIERTA ANTERIOR 2.5 mm ( SMV:0 mm / SMH:-1 mm )/ MORDIDA BORDE A BORDE POSTERIOR</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">BOLTON: PENDIENTE</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">INTERACCIONES: 3º MOLARES: 1.8 Y 3 / CARIES: 1.5(MOD),4.5(D) / 2.8 (INDICACION DE EXTRAER)</li>
-    </ul>
+    </ul-->
 
     <!-- PLAN DE TRATAMIENTO -->
-    <h5>PLAN DE TRATAMIENTO</h5>
-    <ul style="font-size: 12px;" class="numeric-list">
+    <h5>PLAN DE TRATAMIENTO</h5><hr>
+    <div class="flex-grid">
+        <div class="row">
+            {{#if plan_tratamiento.en_observacion}}
+            <div class="cell auto-size">
+                <span>1.- En observación:</span> <span style="border-bottom: 1px solid; color: red;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.ortodoncia}}
+            <div class="cell auto-size">
+                <span>Ortodoncia:</span> <span style="border-bottom: 1px solid; color: red;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.ortognatica}}
+            <div class="cell auto-size">
+                <span>Ortognatica:</span> <span style="border-bottom: 1px solid; color: red;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.compromiso}}
+            <div class="cell auto-size">
+                <span>Compromiso:</span> <span style="border-bottom: 1px solid; color: red;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.pronostico}}
+            <div class="cell auto-size">
+                <span>2.- Pronóstico:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.pronostico}}</span>
+            </div>
+            {{/if}}
+        </div>
+        <div class="row">
+            {{#if plan_tratamiento.labio_ph}}
+            <div class="cell auto-size">
+                <span>3.- Labio PH:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.labio_ph}}</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.sindrome}}
+            <div class="cell auto-size">
+                <span>4.- Sindrome:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.sindrome}}</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.observaciones}}
+            <div class="cell auto-size">
+                <span>5.- Observaciones:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.observaciones}}</span>
+            </div>
+            {{/if}}
+        </div>
+        <div class="row">
+            {{#if plan_tratamiento.tecnica}}
+            <div class="cell auto-size">
+                <span>6.- Técnica:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.tecnica}}</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.brakets}}
+            <div class="cell auto-size">
+                <span>Brackets:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.brakets}}</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.slot}}
+            <div class="cell auto-size">
+                <span>Slot:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.slot}}</span>
+            </div>
+            {{/if}}
+        </div>
+        <div class="row">
+            {{#if_eq plan_tratamiento.extra "con_extra" }}
+            <div class="cell auto-size">
+                <span>7.-</span> <span style="border-bottom: 1px solid;">CON EXTRA</span>
+            </div>
+            {{/if_eq}}
+            {{#if plan_tratamiento.erup_guiada}}
+            <div class="cell auto-size">
+                <span>Erup. Guiada:</span> <span style="border-bottom: 1px solid;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.extr_seriada}}
+            <div class="cell auto-size">
+                <span>Extr. Seriada:</span> <span style="border-bottom: 1px solid;">X</span>
+            </div>
+            {{/if}}
+        </div>
+        <hr>
+        <div class="row">
+            <div class="cell size6 padding10" style="border-right: 1px solid;">
+                <div class="row">
+                    {{#if plan_tratamiento.cirugia_fase1}}
+                    <div class="cell size12">
+                        <span>Cirugia:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.cirugia_fase1}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="row">
+                    {{#if plan_tratamiento.ortopedia_transversal}}
+                    <div class="cell size12">
+                        <span>Ortopedia Transversal:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.ortopedia_transversal}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="row">
+                    {{#if plan_tratamiento.ortopedia_ap}}
+                    <div class="cell size12">
+                        <span>Ortopedia AP:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.ortopedia_ap}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="row">
+                    {{#if plan_tratamiento.ortopedia_vertical}}
+                    <div class="cell size12">
+                        <span>Ortopedia Vertical:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.ortopedia_vertical}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="row">
+                    {{#if plan_tratamiento.aparatos_fijos}}
+                    <div class="cell size12">
+                        <span>Aparatos Fijos:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.aparatos_fijos}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="cell size6 padding10">
+                <table style="margin: 0 auto;">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            {{#if plan_tratamiento.d55}}
+                                <td style="color:red;">55</td>
+                            {{else}}
+                                <td>55</td>
+                            {{/if}}
+                             {{#if plan_tratamiento.d54}}
+                                <td style="color:red;">54</td>
+                            {{else}}
+                                <td>54</td>
+                            {{/if}}
+                             {{#if plan_tratamiento.d53}}
+                                <td style="color:red;">53</td>
+                            {{else}}
+                                <td>53</td>
+                            {{/if}}
+                             {{#if plan_tratamiento.d52}}
+                                <td style="color:red;">52</td>
+                            {{else}}
+                                <td>52</td>
+                            {{/if}}
+                             {{#if plan_tratamiento.d51}}
+                                <td style="color:red;">51</td>
+                            {{else}}
+                                <td>51</td>
+                            {{/if}}
+                            <td> </td>
+                            {{#if plan_tratamiento.d61}}
+                                <td style="color:red;">61</td>
+                            {{else}}
+                                <td>61</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d62}}
+                                <td style="color:red;">62</td>
+                            {{else}}
+                                <td>62</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d63}}
+                                <td style="color:red;">63</td>
+                            {{else}}
+                                <td>63</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d64}}
+                                <td style="color:red;">64</td>
+                            {{else}}
+                                <td>64</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d65}}
+                                <td style="color:red;">65</td>
+                            {{else}}
+                                <td>65</td>
+                            {{/if}}
+                        </tr>
+                        <tr style="border-bottom: 1px solid;">
+                            {{#if plan_tratamiento.d18}}
+                                <td style="color:red;">18</td>
+                            {{else}}
+                                <td>18</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d17}}
+                                <td style="color:red;">17</td>
+                            {{else}}
+                                <td>17</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d16}}
+                                <td style="color:red;">16</td>
+                            {{else}}
+                                <td>16</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d15}}
+                                <td style="color:red;">15</td>
+                            {{else}}
+                                <td>15</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d14}}
+                                <td style="color:red;">14</td>
+                            {{else}}
+                                <td>14</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d13}}
+                                <td style="color:red;">13</td>
+                            {{else}}
+                                <td>13</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d12}}
+                                <td style="color:red;">12</td>
+                            {{else}}
+                                <td>12</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d11}}
+                                <td style="color:red;">11</td>
+                            {{else}}
+                                <td>11</td>
+                            {{/if}}
+                            <td> </td>
+                            {{#if plan_tratamiento.d21}}
+                                <td style="color:red;">21</td>
+                            {{else}}
+                                <td>21</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d22}}
+                                <td style="color:red;">22</td>
+                            {{else}}
+                                <td>22</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d23}}
+                                <td style="color:red;">23</td>
+                            {{else}}
+                                <td>23</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d24}}
+                                <td style="color:red;">24</td>
+                            {{else}}
+                                <td>24</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d25}}
+                                <td style="color:red;">25</td>
+                            {{else}}
+                                <td>25</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d26}}
+                                <td style="color:red;">26</td>
+                            {{else}}
+                                <td>26</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d27}}
+                                <td style="color:red;">27</td>
+                            {{else}}
+                                <td>27</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d28}}
+                                <td style="color:red;">28</td>
+                            {{else}}
+                                <td>28</td>
+                            {{/if}}
+                        </tr>
+                        
+                        <tr>
+                            {{#if plan_tratamiento.d48}}
+                                <td style="color:red;">48</td>
+                            {{else}}
+                                <td>48</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d47}}
+                                <td style="color:red;">47</td>
+                            {{else}}
+                                <td>47</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d46}}
+                                <td style="color:red;">46</td>
+                            {{else}}
+                                <td>46</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d45}}
+                                <td style="color:red;">45</td>
+                            {{else}}
+                                <td>45</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d44}}
+                                <td style="color:red;">44</td>
+                            {{else}}
+                                <td>44</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d43}}
+                                <td style="color:red;">43</td>
+                            {{else}}
+                                <td>43</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d42}}
+                                <td style="color:red;">42</td>
+                            {{else}}
+                                <td>42</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d41}}
+                                <td style="color:red;">41</td>
+                            {{else}}
+                                <td>41</td>
+                            {{/if}}
+                            <td> </td>
+                            {{#if plan_tratamiento.d31}}
+                                <td style="color:red;">31</td>
+                            {{else}}
+                                <td>31</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d32}}
+                                <td style="color:red;">32</td>
+                            {{else}}
+                                <td>32</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d33}}
+                                <td style="color:red;">33</td>
+                            {{else}}
+                                <td>33</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d34}}
+                                <td style="color:red;">34</td>
+                            {{else}}
+                                <td>34</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d35}}
+                                <td style="color:red;">35</td>
+                            {{else}}
+                                <td>35</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d36}}
+                                <td style="color:red;">36</td>
+                            {{else}}
+                                <td>36</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d37}}
+                                <td style="color:red;">37</td>
+                            {{else}}
+                                <td>37</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d38}}
+                                <td style="color:red;">38</td>
+                            {{else}}
+                                <td>38</td>
+                            {{/if}}
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            {{#if plan_tratamiento.d85}}
+                                <td style="color:red;">85</td>
+                            {{else}}
+                                <td>85</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d84}}
+                                <td style="color:red;">84</td>
+                            {{else}}
+                                <td>84</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d83}}
+                                <td style="color:red;">83</td>
+                            {{else}}
+                                <td>83</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d82}}
+                                <td style="color:red;">82</td>
+                            {{else}}
+                                <td>82</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d81}}
+                                <td style="color:red;">81</td>
+                            {{else}}
+                                <td>81</td>
+                            {{/if}}
+                            <td> </td>
+                            {{#if plan_tratamiento.d71}}
+                                <td style="color:red;">71</td>
+                            {{else}}
+                                <td>71</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d72}}
+                                <td style="color:red;">72</td>
+                            {{else}}
+                                <td>72</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d73}}
+                                <td style="color:red;">73</td>
+                            {{else}}
+                                <td>73</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d74}}
+                                <td style="color:red;">74</td>
+                            {{else}}
+                                <td>74</td>
+                            {{/if}}
+                            {{#if plan_tratamiento.d75}}
+                                <td style="color:red;">75</td>
+                            {{else}}
+                                <td>75</td>
+                            {{/if}}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="cell size6 padding10"  style="border-right: 1px solid;">
+                <div class="row">
+                    {{#if plan_tratamiento.cirugia_fase2}}
+                    <div class="cell size12">
+                         <span>Cirugia:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.cirugia_fase2}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="row">
+                    {{#if plan_tratamiento.forma_arco}}
+                    <div class="cell size12">
+                         <span>Forma de arco:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.directo}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="cell size6 padding10">
+                <div class="row">
+                    {{#if plan_tratamiento.bkt_caninos1}}
+                    <div class="cell size4" style="text-align: center;">
+                        <label>BKT Caninos</label>
+                        <table style="margin: 0 auto;">
+                            <tbody>
+                                <tr style="border-bottom: 1px solid;">
+                                    <td style="border-right: 1px solid;">{{plan_tratamiento.bkt_caninos1}}</td>
+                                    <td>{{plan_tratamiento.bkt_caninos2}}</td>
+                                </tr>
+                                 <tr>
+                                    <td style="border-right: 1px solid;">{{plan_tratamiento.bkt_caninos3}}</td>
+                                    <td>{{plan_tratamiento.bkt_caninos4}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.bandas1}}
+                    <div class="cell size4" style="text-align: center;">
+                        <label>Bandas</label>
+                        <table style="margin: 0 auto;">
+                            <tbody>
+                                <tr style="border-bottom: 1px solid;">
+                                    <td style="border-right: 1px solid;">{{plan_tratamiento.bandas1}}</td>
+                                    <td>{{plan_tratamiento.bandas2}}</td>
+                                </tr>
+                                 <tr>
+                                    <td style="border-right: 1px solid;">{{plan_tratamiento.bandas3}}</td>
+                                    <td>{{plan_tratamiento.bandas4}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.tubos1}}
+                    <div class="cell size4" style="text-align: center;">
+                        <label>Tubos</label>
+                        <table style="margin: 0 auto;">
+                            <tbody>
+                                <tr style="border-bottom: 1px solid;">
+                                    <td style="border-right: 1px solid;">{{plan_tratamiento.tubos1}}</td>
+                                    <td>{{plan_tratamiento.tubos2}}</td>
+                                </tr>
+                                 <tr>
+                                    <td style="border-right: 1px solid;">{{plan_tratamiento.tubos3}}</td>
+                                    <td>{{plan_tratamiento.tubos4}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            {{#if plan_tratamiento.cirugia_fase3}}
+            <div class="cell auto-size">
+                <span>Cirugía:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.cirugia_fase3}}</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.cirugia}}
+            <div class="cell auto-size">
+                <span>C:</span> <span style="border-bottom: 1px solid;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.perio}}
+            <div class="cell auto-size">
+                <span>Perio:</span> <span style="border-bottom: 1px solid;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.protesis}}
+            <div class="cell auto-size">
+                <span>Protesis:</span> <span style="border-bottom: 1px solid;">X</span>
+            </div>
+            {{/if}}
+            {{#if plan_tratamiento.otros_fase3}}
+            <div class="cell auto-size">
+                <span>Otros:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.otros_fase3}}</span>
+            </div>
+            {{/if}}
+        </div>
+        <div class="row">
+            <div class="cell size6 padding10" style="border-right: 1px solid;">
+                <h6 style="font-weight: bold; text-align: center;">Maxilar</h6>
+                <div class="row">
+                    {{#if plan_tratamiento.max_anclaje}}
+                    <div class="cell auto-size">
+                        <span>Anclaje:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.max_anclaje}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.max_min}}
+                    <div class="cell auto-size">
+                        <span>Min:</span> <span style="border-bottom: 1px solid;">X</span>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.max_mod}}
+                    <div class="cell auto-size">
+                        <span>Mod:</span> <span style="border-bottom: 1px solid;">X</span>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.max_max}}
+                    <div class="cell auto-size">
+                        <span>Max:</span> <span style="border-bottom: 1px solid;">X</span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="row">
+                    {{#if plan_tratamiento.max_obs}}
+                    <div class="cell auto-size">
+                        <p style="text-align:justify;" class="text-dashed">
+                            {{plan_tratamiento.max_obs}}
+                        </p>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="cell size6 padding10">
+                <h6 style="font-weight: bold; text-align: center;">Mandibular</h6>
+                <div class="row">
+                    {{#if plan_tratamiento.man_anclaje}}
+                    <div class="cell auto-size">
+                        <span>Anclaje:</span> <span style="border-bottom: 1px solid;">{{plan_tratamiento.man_anclaje}}</span>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.man_min}}
+                    <div class="cell auto-size">
+                        <span>Min:</span> <span style="border-bottom: 1px solid;">X</span>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.man_mod}}
+                    <div class="cell auto-size">
+                        <span>Mod:</span> <span style="border-bottom: 1px solid;">X</span>
+                    </div>
+                    {{/if}}
+                    {{#if plan_tratamiento.man_max}}
+                    <div class="cell auto-size">
+                        <span>Max:</span> <span style="border-bottom: 1px solid;">X</span>
+                    </div>
+                    {{/if}}
+                </div>
+                <div class="row">
+                    {{#if plan_tratamiento.man_obs}}
+                    <div class="cell auto-size">
+                        <p style="text-align:justify;" class="text-dashed">
+                            {{plan_tratamiento.man_obs}}
+                        </p>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ul style="font-size: 12px;" class="numeric-list">
         <li style="padding: 0px; padding-left: 15px; margin:0px;">CIRUGIA BUCAL: 2.8</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">ODONTOLOGIA RESTAURADORA: SEGUN ODONTOGRAMA</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">BRACKETS METALICOS: ALINEACION, NIVELACION, CIERRE DE ESPACIOS Y TERMINACION</li>
@@ -75,12 +1026,12 @@
         <li style="padding: 0px; padding-left: 15px; margin:0px;">FASE DE RETENCION ( 1 AÑO DE SUPERVISION PROFESIONAL HONORARIOS PROFESIONALES SIN COSTO ).
             <u>NO INCLUYE COSTOS DE RETENEDOR ESTAMPADO SUP ( PLANO OCLUSAL CON CARACTERISTICAS ORGANICAS Y CIRCUNFERENCIAL ACRILICO INFERIOR )</u>
         </li>
-    </ul>
+    </ul-->
 
     <div class="page-break"></div>
 
     <!-- PRESUPUESTOS -->
-
+    <p>A. FORMA DE PAGO</p>
     <table class="table">
         <thead>
             <tr>
@@ -152,12 +1103,13 @@
     <p>(ACORDANDO COMO FECHA DE PAGO DE LAS MENSUALIDADES EL _________________ DE CADA MES).</p>
     <p>B.CONTADO: PAGO ANTICIPADO: 1 MENSUALIDAD 5% DE DESCUENTO / 3 O MAS MENSUALIDADES ANTICIPADAS: 10% DE DESCUENTO.</p>
     <p>C. OTRA A CONVENIR</p>
-    <ul class="simple-list">
+    <div style="border-bottom: 1px solid; margin-top: 20px;"></div>
+    <!--ul class="simple-list">
         <li style="padding: 0px; padding-left: 15px; margin:0px;">____ 2 APARATOS DE RETENCION, COSTO ADICIONAL, CANCELADOS AL MOMENTO DEL RETIRO DE APARATOLOGIA FIJA 3.5 UF TOTAL</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">____ CADA EXTRACCION SIMPLE $25.000 (NO INCLUYE 3º MOLARES)/ ____ CADA OBTURACION EN RESINA DE FOTOCURADO: $50.000 (EXCEPTO REHABILITACIONES COMPLEJAS)</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">____ CADA MICROTORNILLO DE ANCLAJE ORTODONCICO $40.000 (INCLUYE COSTO Y CIRUGIA DE INSTALACION)</li>
         <li style="padding: 0px; padding-left: 15px; margin:0px;">____ BRACKETS ESTETICO O METALICO / 3M UNITEK $_____________, MOD _____________ CADA BKT ESTETICO DE REPOSICION $_____________</li>
-    </ul>
+    </ul-->
     <!-- NOTAS -->
     <h5>NOTA:</h5>
     <ul class="numeric-list">
@@ -186,6 +1138,9 @@
             SEGUN PUNTO 1(
             <u>A</u>) DE NOTAS, EN CASO QUE TRATAMIENTO SE EXTENDIERA MAS DE LO ESTIMADO INCIALMENTE, PAGARA EL 50% DEL VALOR DE LAS MENSUALIDADES EXTRAS
 
+        </li>
+        <li style="padding: 0px; padding-left: 15px; margin:0px;">
+           LA ESTABILIDAD DE LOS RESULTADOS DEL TRATAMIENTO DE ORTODONCIA FINALIZADO DEPENDERÁ FUNDAMENTALMENTE DEL GRADO DE CONTENCIÓN MANTENIDO EN EL TIEMPO POR PARTE DEL PACIENTE.
         </li>
     </ul>
 

@@ -667,3 +667,281 @@ Error: ENOENT: no such file or directory, open 'C:\Users\Alink\Desktop\sistema_d
     at runCallback (timers.js:651:20)
     at tryOnImmediate (timers.js:624:5)
     at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-11-12T20:11:20.886Z - error: Error when processing render request Error during rendering report: Parse error on line 16115:
+...blemas.linea_media1 || listado_problemas
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS' Error: Parse error on line 16115:
+...blemas.linea_media1 || listado_problemas
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=66
+2017-11-12T20:11:20.890Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Parse error on line 16115:
+...blemas.linea_media1 || listado_problemas
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS' Error: Parse error on line 16115:
+...blemas.linea_media1 || listado_problemas
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T20:11:34.768Z - error: Error when processing render request Error during rendering report: Parse error on line 16115:
+...blemas.linea_media1 | listado_problemas.
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS' Error: Parse error on line 16115:
+...blemas.linea_media1 | listado_problemas.
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=67
+2017-11-12T20:11:34.770Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Parse error on line 16115:
+...blemas.linea_media1 | listado_problemas.
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS' Error: Parse error on line 16115:
+...blemas.linea_media1 | listado_problemas.
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'CLOSE_BLOCK_PARAMS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T20:11:53.514Z - error: Error when processing render request Error during rendering report: Cannot read property 'hash' of undefined TypeError: Cannot read property 'hash' of undefined
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\if.js:16:17)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:10:32)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=68
+2017-11-12T20:11:53.516Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Cannot read property 'hash' of undefined TypeError: Cannot read property 'hash' of undefined
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\if.js:16:17)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:10:32)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T20:13:49.218Z - error: Error when processing render request Error during rendering report: Cannot read property 'hash' of undefined TypeError: Cannot read property 'hash' of undefined
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\if.js:16:17)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:10:32)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=69
+2017-11-12T20:13:49.221Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Cannot read property 'hash' of undefined TypeError: Cannot read property 'hash' of undefined
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\if.js:16:17)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:10:32)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T20:16:48.064Z - error: Error when processing render request Error during rendering report: Missing helper: "or" Error: Missing helper: "or"
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\helper-missing.js:19:13)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:10:197)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=70
+2017-11-12T20:16:48.065Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Missing helper: "or" Error: Missing helper: "or"
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\helper-missing.js:19:13)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:10:197)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T22:21:33.882Z - error: Error when processing render request Error during rendering report: Parse error on line 16539:
+...f plan_tratamiento == 'con_extra'}}   
+-----------------------^
+Expecting 'OPEN_SEXPR', 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS' Error: Parse error on line 16539:
+...f plan_tratamiento == 'con_extra'}}   
+-----------------------^
+Expecting 'OPEN_SEXPR', 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=77
+2017-11-12T22:21:33.883Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Parse error on line 16539:
+...f plan_tratamiento == 'con_extra'}}   
+-----------------------^
+Expecting 'OPEN_SEXPR', 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS' Error: Parse error on line 16539:
+...f plan_tratamiento == 'con_extra'}}   
+-----------------------^
+Expecting 'OPEN_SEXPR', 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'EQUALS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T22:22:20.440Z - error: Error when processing render request Error during rendering report: Parse error on line 16950:
+...                 {{#/if}}             
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'SEP' Error: Parse error on line 16950:
+...                 {{#/if}}             
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'SEP'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=78
+2017-11-12T22:22:20.442Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Parse error on line 16950:
+...                 {{#/if}}             
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'SEP' Error: Parse error on line 16950:
+...                 {{#/if}}             
+-----------------------^
+Expecting 'ID', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', got 'SEP'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T22:22:35.188Z - error: Error when processing render request Error during rendering report: Cannot read property 'includeZero' of undefined TypeError: Cannot read property 'includeZero' of undefined
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\if.js:16:22)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:69:32)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=79
+2017-11-12T22:22:35.190Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Cannot read property 'includeZero' of undefined TypeError: Cannot read property 'includeZero' of undefined
+    at Object.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\helpers\if.js:16:22)
+    at Object.eval (eval at createFunctionContext (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:254:23), <anonymous>:69:32)
+    at main (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:173:32)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\runtime.js:176:12)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:525:21)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T22:33:47.664Z - error: Error when processing render request Error during rendering report: Parse error on line 16539:
+...n_tratamiento.extra == "con_extra" }} 
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'EQUALS' Error: Parse error on line 16539:
+...n_tratamiento.extra == "con_extra" }} 
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'EQUALS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17) requestId=82
+2017-11-12T22:33:47.666Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Parse error on line 16539:
+...n_tratamiento.extra == "con_extra" }} 
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'EQUALS' Error: Parse error on line 16539:
+...n_tratamiento.extra == "con_extra" }} 
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'EQUALS'
+    at Object.parseError (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:267:19)
+    at Object.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:336:30)
+    at HandlebarsEnvironment.parse (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:46:43)
+    at compileInput (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:514:19)
+    at ret (C:\Users\Alink\Desktop\sistema_dental\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:523:18)
+    at C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-handlebars\lib\handlebarsEngine.js:25:14
+    at evalmachine.<anonymous>:1:41
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at ContextifyScript.Script.runInNewContext (vm.js:41:15)
+    at Object.exports.runInNewContext (vm.js:72:17)
+2017-11-12T22:37:09.159Z - error: Error when processing render request Error during rendering report: Unexpected token } in JSON at position 106 SyntaxError: Unexpected token } in JSON at position 106
+    at Object.parse (native)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-core\lib\render\resolveReferences.js:4:17)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-core\lib\render\engineScript.js:96:17)
+    at process.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:744:12)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9) requestId=87
+2017-11-12T22:37:09.160Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: Unexpected token } in JSON at position 106 SyntaxError: Unexpected token } in JSON at position 106
+    at Object.parse (native)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-core\lib\render\resolveReferences.js:4:17)
+    at module.exports (C:\Users\Alink\Desktop\sistema_dental\node_modules\jsreport-core\lib\render\engineScript.js:96:17)
+    at process.<anonymous> (C:\Users\Alink\Desktop\sistema_dental\node_modules\script-manager\lib\worker-processes.js:48:36)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:744:12)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)

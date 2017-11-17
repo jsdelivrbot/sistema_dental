@@ -7,6 +7,7 @@ import {Tratamiento} from "../../../models/tratamiento";
 import {AlertService} from "../../../services/alert/alert.service";
 import {UtilService} from "../../../services/util/util.service";
 import {PlanTratamiento} from "../../../models/plan-tratamiento";
+import {ListadoProblemas} from "../../../models/listado-problemas";
 
 @Component({
   selector: 'app-detalle-tratamiento',
@@ -26,6 +27,7 @@ export class DetalleTratamientoComponent implements OnInit {
   public examenes_realizados: boolean;
   public planTratamientoRealizado: boolean;
   public planTratamiento: PlanTratamiento;
+  public listadoProblemas: ListadoProblemas;
 
   constructor(private _activatedRoute: ActivatedRoute,
               private _pacienteService: PacienteService,
@@ -35,6 +37,7 @@ export class DetalleTratamientoComponent implements OnInit {
   ) {
     this.prespuestoOrtodonciaRealizado = false;
     this.planTratamiento = new PlanTratamiento();
+    this.listadoProblemas = new ListadoProblemas();
   }
 
   ngOnInit() {
@@ -102,7 +105,9 @@ export class DetalleTratamientoComponent implements OnInit {
                       this._tratamientoService.relacionesDentalesRealizado(this.id_tratamiento).subscribe(
                         (result: any) => {
                           if(result.id != null) {
+                            // todos los examenes realizados
                             this.cargando = false;
+                            this.obtenerListadoProblemas();
                           }else{
                             this.examenes_realizados = false;
                             this.cargando = false;
@@ -164,9 +169,22 @@ export class DetalleTratamientoComponent implements OnInit {
     );
   }
 
+  obtenerListadoProblemas() {
+    this._tratamientoService.obtenerListadoProblemas(this.id_tratamiento).subscribe(
+      (result: ListadoProblemas) => {
+        if(result.id != null) {
+          this.listadoProblemas = result;
+        }
+      },
+      error => {
+        console.log(error);
+      }
+    );
+  }
+
   // manda a llamar el servicio para imprimir el presupuesto de ortodoncia
   imprimirOrtodoncia() {
-    this._tratamientoService.imprimirPresupuestoOrtodoncia(this.tratamiento).subscribe(
+    this._tratamientoService.imprimirPresupuestoOrtodoncia(this.tratamiento, this.planTratamiento, this.listadoProblemas).subscribe(
       (result: any) => {
         console.log(result);
         let file = new Blob([result._body], { type: 'application/pdf' });
