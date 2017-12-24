@@ -75,5 +75,9 @@
   "planficacionDeTratamiento": {
     "dataSource": "db",
     "public": true
+  },
+  "examenOdontologiaGeneral": {
+    "dataSource": "db",
+    "public": true
   }
 }

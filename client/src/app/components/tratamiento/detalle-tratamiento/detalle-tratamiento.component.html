@@ -26,12 +26,7 @@
               <h3 class="card-title">Exámenes</h3>
             </div>
             <div class="card-body">
-              <div class="p-t-5 p-b-10 border-bottom">
-                <a href="javascript:void(0)">
-                  <img src="/assets/img/icons/d2.png" alt="ondontologia_general" class="rounded circle max-w-20">
-                  Odontologia General
-                </a>
-              </div>
+
               <div class="p-t-10 p-b-5">
                 <a [routerLink]="['examenes/ortodoncia']" href="javascript:void(0)">
                   <img src="/assets/img/icons/d1.png" alt="ortodoncia" class="rounded circle max-w-20">
@@ -103,7 +98,6 @@
               <h3 class="card-title">Presupuesto</h3>
             </div>
             <div class="card-body">
-              <div class="p-10 p-t-0 border-bottom"><a href="javascript:void(0)" class="row">Odontología General</a></div>
               <div *ngIf="!prespuestoOrtodonciaRealizado"  class="p-10">
                   <a [routerLink]="['presupuesto/ortodoncia']" href="javascript:void(0)" class="row">
                       Ortodoncia
@@ -125,6 +119,35 @@
         <!-- /presupuesto -->
       </div>
 
+
+      <div class="row p-20 m-t-0">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Exámen Odontología Gnral.</h3>
+            </div>
+            <div class="card-body">
+              <div class="p-t-5 p-b-10x">
+                <a href="javascript:void(0)" [routerLink]="['odontologia-general/examen-general']">
+                  <img src="/assets/img/icons/d2.png" alt="ondontologia_general" class="rounded circle max-w-20">
+                  Odontologia General
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Presupuesto</h3>
+            </div>
+            <div class="card-body">
+              <div class="p-10 p-t-0"><a href="javascript:void(0)" class="row">Odontología General</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </md-sidenav-container>
 </div>

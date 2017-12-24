@@ -25,6 +25,10 @@ const routes: Routes = [
       {
         path: 'tratamientos/:id/examenes/ortodoncia',
         loadChildren: 'app/components/ortodoncia/ortodoncia.module#OrtodonciaModule'
+      } ,
+      {
+        path: 'tratamientos/:id/odontologia-general',
+        loadChildren: 'app/components/odontologia-general/odontologia-general.module#OdontologiaGeneralModule'
       }
     ]
   }

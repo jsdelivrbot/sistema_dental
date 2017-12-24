@@ -1,0 +1,145 @@
+{
+  "name": "examenOdontologiaGeneral",
+  "plural": "examenOdontologiaGeneral",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "hia_dental_actual": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_dental_actual_txt": {
+      "type": "string"
+    },
+    "hia_dental_pasada": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_dental_pasada_txt": {
+      "type": "string"
+    },
+    "hia_dental_higiene_oral": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_dental_higiene_oral_txt": {
+      "type": "string"
+    },
+    "hia_dental_habitos": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_dental_habitos_txt": {
+      "type": "string"
+    },
+    "hia_medica_ant_familiares": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_medica_ant_familiares_txt": {
+      "type": "string"
+    },
+    "hia_medica_ant_personales": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_medica_ant_personales_txt": {
+      "type": "string"
+    },
+    "hia_medica_enfermedades": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_medica_enfermedades_txt": {
+      "type": "string"
+    },
+    "hia_medica_interconsulta": {
+      "type": "boolean",
+      "default": false
+    },
+    "hia_medica_interconsulta_txt": {
+      "type": "string"
+    },
+    "examen_clinico_extraoral": {
+      "type": "boolean",
+      "default": false
+    },
+    "examen_clinico_extraoral_txt": {
+      "type": "string"
+    },
+    "examen_clinico_intraoral": {
+      "type": "boolean",
+      "default": false
+    },
+    "examen_clinico_intraoral_txt": {
+      "type": "string"
+    },
+    "examen_clinico_periodonto": {
+      "type": "boolean",
+      "default": false
+    },
+    "examen_clinico_periodonto_txt": {
+      "type": "string"
+    },
+    "examen_dentario": {
+      "type": [
+        "object"
+      ]
+    },
+    "oclusion": {
+      "type": "string"
+    },
+    "implantes": {
+      "type": "string"
+    },
+    "prot_fija_plural": {
+      "type": "string"
+    },
+    "prot_removible": {
+      "type": "string"
+    },
+    "oclusionTipo": {
+      "type": "string"
+    },
+    "smv": {
+      "type": "string"
+    },
+    "smh": {
+      "type": "string"
+    },
+    "facetas_abfracciones": {
+      "type": "string"
+    },
+    "mic_rc": {
+      "type": "string"
+    },
+    "lat_der_t": {
+      "type": "string"
+    },
+    "lat_derb": {
+      "type": "string"
+    },
+    "lat_der_hb": {
+      "type": "string"
+    },
+    "lat_izq_t": {
+      "type": "string"
+    },
+    "lat_izq_b": {
+      "type": "string"
+    },
+    "lat_izq_hb": {
+      "type": "string"
+    },
+    "radiologico": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
