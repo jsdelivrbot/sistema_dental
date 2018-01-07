@@ -15660,3 +15660,223 @@ Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SE
 2017-12-24T01:40:48.703Z - info: Verifying license key free
 2017-12-24T01:40:48.716Z - info: Using free license
 2017-12-24T01:40:48.722Z - info: reporter initialized
+2018-01-06T18:00:54.094Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2018-01-06T18:00:54.095Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-06T18:00:54.100Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2018-01-06T18:00:54.106Z - info: Extensions location cache not found, crawling directories
+2018-01-06T18:01:11.209Z - info: Found 30 extensions
+2018-01-06T18:01:11.250Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2018-01-06T18:01:11.261Z - debug: Discovered 30 extensions
+2018-01-06T18:01:11.263Z - info: Using extension import-export
+2018-01-06T18:01:11.654Z - info: Using extension tags
+2018-01-06T18:01:11.658Z - info: Using extension templates
+2018-01-06T18:01:11.737Z - info: Using extension jsrender
+2018-01-06T18:01:11.738Z - info: Using extension authentication
+2018-01-06T18:01:12.057Z - info: Using extension cli
+2018-01-06T18:01:12.058Z - info: Using extension handlebars
+2018-01-06T18:01:12.062Z - info: Using extension debug
+2018-01-06T18:01:12.064Z - info: Using extension express
+2018-01-06T18:01:12.281Z - info: Using extension fop-pdf
+2018-01-06T18:01:12.385Z - info: Using extension phantom-pdf
+2018-01-06T18:01:12.539Z - info: Using extension fs-store
+2018-01-06T18:01:13.104Z - info: Using extension authorization
+2018-01-06T18:01:13.201Z - info: Using extension images
+2018-01-06T18:01:13.300Z - info: Using extension child-templates
+2018-01-06T18:01:13.396Z - info: Using extension browser-client
+2018-01-06T18:01:13.401Z - info: Using extension licensing
+2018-01-06T18:01:13.626Z - info: Using extension data
+2018-01-06T18:01:13.705Z - info: Using extension text
+2018-01-06T18:01:13.707Z - info: Using extension reports
+2018-01-06T18:01:13.803Z - info: Using extension resources
+2018-01-06T18:01:13.881Z - info: Using extension base
+2018-01-06T18:01:13.884Z - info: Using extension studio
+2018-01-06T18:01:14.141Z - info: Using extension html-to-xlsx
+2018-01-06T18:01:14.368Z - info: Using extension scripts
+2018-01-06T18:01:14.453Z - info: Using extension assets
+2018-01-06T18:01:14.559Z - info: Using extension scheduling
+2018-01-06T18:01:14.711Z - info: Using extension xlsx
+2018-01-06T18:01:15.221Z - info: Using extension sample-template
+2018-01-06T18:01:15.295Z - debug: Creating samples is disabled
+2018-01-06T18:01:15.296Z - info: Using extension public-templates
+2018-01-06T18:01:15.386Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2018-01-06T18:01:15.572Z - info: Creating default express app.
+2018-01-06T18:01:15.757Z - info: jsreport server successfully started on http port: 2000
+2018-01-06T18:01:15.770Z - info: Verifying license key free
+2018-01-06T18:01:15.771Z - info: Using free license
+2018-01-06T18:01:15.773Z - info: reporter initialized
+2018-01-06T18:16:32.703Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2018-01-06T18:16:32.704Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-06T18:16:32.709Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2018-01-06T18:16:32.737Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2018-01-06T18:16:52.915Z - info: Found 30 extensions
+2018-01-06T18:16:52.968Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2018-01-06T18:16:52.974Z - debug: Discovered 30 extensions
+2018-01-06T18:16:52.975Z - info: Using extension import-export
+2018-01-06T18:16:53.450Z - info: Using extension tags
+2018-01-06T18:16:53.454Z - info: Using extension templates
+2018-01-06T18:16:53.548Z - info: Using extension jsrender
+2018-01-06T18:16:53.549Z - info: Using extension authentication
+2018-01-06T18:16:53.886Z - info: Using extension cli
+2018-01-06T18:16:53.888Z - info: Using extension handlebars
+2018-01-06T18:16:53.893Z - info: Using extension debug
+2018-01-06T18:16:53.895Z - info: Using extension express
+2018-01-06T18:16:54.134Z - info: Using extension fop-pdf
+2018-01-06T18:16:54.241Z - info: Using extension phantom-pdf
+2018-01-06T18:16:54.406Z - info: Using extension fs-store
+2018-01-06T18:16:55.026Z - info: Using extension authorization
+2018-01-06T18:16:55.130Z - info: Using extension images
+2018-01-06T18:16:55.228Z - info: Using extension child-templates
+2018-01-06T18:16:55.319Z - info: Using extension browser-client
+2018-01-06T18:16:55.325Z - info: Using extension licensing
+2018-01-06T18:16:55.570Z - info: Using extension data
+2018-01-06T18:16:55.667Z - info: Using extension text
+2018-01-06T18:16:55.669Z - info: Using extension reports
+2018-01-06T18:16:55.777Z - info: Using extension resources
+2018-01-06T18:16:55.868Z - info: Using extension base
+2018-01-06T18:16:55.870Z - info: Using extension studio
+2018-01-06T18:16:56.155Z - info: Using extension html-to-xlsx
+2018-01-06T18:16:56.431Z - info: Using extension scripts
+2018-01-06T18:16:56.527Z - info: Using extension assets
+2018-01-06T18:16:56.641Z - info: Using extension scheduling
+2018-01-06T18:16:56.803Z - info: Using extension xlsx
+2018-01-06T18:16:57.359Z - info: Using extension sample-template
+2018-01-06T18:16:57.475Z - debug: Creating samples is disabled
+2018-01-06T18:16:57.476Z - info: Using extension public-templates
+2018-01-06T18:16:57.575Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2018-01-06T18:16:57.787Z - info: Creating default express app.
+2018-01-06T18:16:58.002Z - info: jsreport server successfully started on http port: 2000
+2018-01-06T18:16:58.025Z - info: Verifying license key free
+2018-01-06T18:16:58.043Z - info: Using free license
+2018-01-06T18:16:58.046Z - info: reporter initialized
+2018-01-06T18:18:33.707Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2018-01-06T18:18:33.708Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-06T18:18:33.713Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2018-01-06T18:18:33.738Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2018-01-06T18:18:46.407Z - info: Found 30 extensions
+2018-01-06T18:18:46.429Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2018-01-06T18:18:46.433Z - debug: Discovered 30 extensions
+2018-01-06T18:18:46.435Z - info: Using extension import-export
+2018-01-06T18:18:46.713Z - info: Using extension tags
+2018-01-06T18:18:46.716Z - info: Using extension templates
+2018-01-06T18:18:46.805Z - info: Using extension jsrender
+2018-01-06T18:18:46.806Z - info: Using extension authentication
+2018-01-06T18:18:47.022Z - info: Using extension cli
+2018-01-06T18:18:47.023Z - info: Using extension handlebars
+2018-01-06T18:18:47.026Z - info: Using extension debug
+2018-01-06T18:18:47.027Z - info: Using extension express
+2018-01-06T18:18:47.199Z - info: Using extension fop-pdf
+2018-01-06T18:18:47.276Z - info: Using extension phantom-pdf
+2018-01-06T18:18:47.403Z - info: Using extension fs-store
+2018-01-06T18:18:47.846Z - info: Using extension authorization
+2018-01-06T18:18:47.905Z - info: Using extension images
+2018-01-06T18:18:47.968Z - info: Using extension child-templates
+2018-01-06T18:18:48.030Z - info: Using extension browser-client
+2018-01-06T18:18:48.034Z - info: Using extension licensing
+2018-01-06T18:18:48.162Z - info: Using extension data
+2018-01-06T18:18:48.232Z - info: Using extension text
+2018-01-06T18:18:48.234Z - info: Using extension reports
+2018-01-06T18:18:48.308Z - info: Using extension resources
+2018-01-06T18:18:48.365Z - info: Using extension base
+2018-01-06T18:18:48.366Z - info: Using extension studio
+2018-01-06T18:18:48.566Z - info: Using extension html-to-xlsx
+2018-01-06T18:18:48.744Z - info: Using extension scripts
+2018-01-06T18:18:48.818Z - info: Using extension assets
+2018-01-06T18:18:48.928Z - info: Using extension scheduling
+2018-01-06T18:18:49.065Z - info: Using extension xlsx
+2018-01-06T18:18:49.490Z - info: Using extension sample-template
+2018-01-06T18:18:49.549Z - debug: Creating samples is disabled
+2018-01-06T18:18:49.550Z - info: Using extension public-templates
+2018-01-06T18:18:49.647Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2018-01-06T18:18:49.827Z - info: Creating default express app.
+2018-01-06T18:18:50.025Z - info: jsreport server successfully started on http port: 2000
+2018-01-06T18:18:50.048Z - info: Verifying license key free
+2018-01-06T18:18:50.051Z - info: Using free license
+2018-01-06T18:18:50.054Z - info: reporter initialized
+2018-01-06T22:09:07.192Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2018-01-06T22:09:07.193Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-06T22:09:07.199Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2018-01-06T22:09:07.221Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2018-01-06T22:09:27.648Z - info: Found 30 extensions
+2018-01-06T22:09:27.695Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2018-01-06T22:09:27.698Z - debug: Discovered 30 extensions
+2018-01-06T22:09:27.700Z - info: Using extension import-export
+2018-01-06T22:09:28.179Z - info: Using extension tags
+2018-01-06T22:09:28.184Z - info: Using extension templates
+2018-01-06T22:09:28.279Z - info: Using extension jsrender
+2018-01-06T22:09:28.281Z - info: Using extension authentication
+2018-01-06T22:09:28.631Z - info: Using extension cli
+2018-01-06T22:09:28.633Z - info: Using extension handlebars
+2018-01-06T22:09:28.638Z - info: Using extension debug
+2018-01-06T22:09:28.641Z - info: Using extension express
+2018-01-06T22:09:28.880Z - info: Using extension fop-pdf
+2018-01-06T22:09:28.989Z - info: Using extension phantom-pdf
+2018-01-06T22:09:29.149Z - info: Using extension fs-store
+2018-01-06T22:09:29.758Z - info: Using extension authorization
+2018-01-06T22:09:29.854Z - info: Using extension images
+2018-01-06T22:09:29.954Z - info: Using extension child-templates
+2018-01-06T22:09:30.045Z - info: Using extension browser-client
+2018-01-06T22:09:30.050Z - info: Using extension licensing
+2018-01-06T22:09:30.298Z - info: Using extension data
+2018-01-06T22:09:30.399Z - info: Using extension text
+2018-01-06T22:09:30.401Z - info: Using extension reports
+2018-01-06T22:09:30.508Z - info: Using extension resources
+2018-01-06T22:09:30.600Z - info: Using extension base
+2018-01-06T22:09:30.602Z - info: Using extension studio
+2018-01-06T22:09:30.890Z - info: Using extension html-to-xlsx
+2018-01-06T22:09:31.182Z - info: Using extension scripts
+2018-01-06T22:09:31.275Z - info: Using extension assets
+2018-01-06T22:09:31.390Z - info: Using extension scheduling
+2018-01-06T22:09:31.559Z - info: Using extension xlsx
+2018-01-06T22:09:32.129Z - info: Using extension sample-template
+2018-01-06T22:09:32.212Z - debug: Creating samples is disabled
+2018-01-06T22:09:32.212Z - info: Using extension public-templates
+2018-01-06T22:09:32.312Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2018-01-06T22:09:32.473Z - info: Creating default express app.
+2018-01-06T22:09:32.678Z - info: jsreport server successfully started on http port: 2000
+2018-01-06T22:09:32.690Z - info: Verifying license key free
+2018-01-06T22:09:32.696Z - info: Using free license
+2018-01-06T22:09:32.706Z - info: reporter initialized
+2018-01-06T22:13:52.102Z - info: Initializing jsreport@1.8.2 in development mode using configuration file dev.config.json
+2018-01-06T22:13:52.104Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-01-06T22:13:52.110Z - info: Searching for available extensions in C:\Users\Alink\Desktop\sistema_dental\
+2018-01-06T22:13:52.135Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Alink\Desktop\sistema_dental\node_modules\
+2018-01-06T22:14:10.967Z - info: Found 30 extensions
+2018-01-06T22:14:11.001Z - debug: Writing extension locations cache to C:\Users\Alink\AppData\Local\Temp\jsreport-temp\extensions\locations.json
+2018-01-06T22:14:11.004Z - debug: Discovered 30 extensions
+2018-01-06T22:14:11.005Z - info: Using extension import-export
+2018-01-06T22:14:11.408Z - info: Using extension tags
+2018-01-06T22:14:11.416Z - info: Using extension templates
+2018-01-06T22:14:11.494Z - info: Using extension jsrender
+2018-01-06T22:14:11.496Z - info: Using extension authentication
+2018-01-06T22:14:11.779Z - info: Using extension cli
+2018-01-06T22:14:11.781Z - info: Using extension handlebars
+2018-01-06T22:14:11.785Z - info: Using extension debug
+2018-01-06T22:14:11.787Z - info: Using extension express
+2018-01-06T22:14:11.987Z - info: Using extension fop-pdf
+2018-01-06T22:14:12.096Z - info: Using extension phantom-pdf
+2018-01-06T22:14:12.240Z - info: Using extension fs-store
+2018-01-06T22:14:12.745Z - info: Using extension authorization
+2018-01-06T22:14:12.827Z - info: Using extension images
+2018-01-06T22:14:12.912Z - info: Using extension child-templates
+2018-01-06T22:14:12.989Z - info: Using extension browser-client
+2018-01-06T22:14:12.994Z - info: Using extension licensing
+2018-01-06T22:14:13.198Z - info: Using extension data
+2018-01-06T22:14:13.280Z - info: Using extension text
+2018-01-06T22:14:13.282Z - info: Using extension reports
+2018-01-06T22:14:13.374Z - info: Using extension resources
+2018-01-06T22:14:13.453Z - info: Using extension base
+2018-01-06T22:14:13.455Z - info: Using extension studio
+2018-01-06T22:14:13.690Z - info: Using extension html-to-xlsx
+2018-01-06T22:14:13.906Z - info: Using extension scripts
+2018-01-06T22:14:13.983Z - info: Using extension assets
+2018-01-06T22:14:14.089Z - info: Using extension scheduling
+2018-01-06T22:14:14.223Z - info: Using extension xlsx
+2018-01-06T22:14:14.694Z - info: Using extension sample-template
+2018-01-06T22:14:14.770Z - debug: Creating samples is disabled
+2018-01-06T22:14:14.770Z - info: Using extension public-templates
+2018-01-06T22:14:14.857Z - info: Initializing fs storage at C:\Users\Alink\Desktop\sistema_dental\data
+2018-01-06T22:14:14.999Z - info: Creating default express app.
+2018-01-06T22:14:15.164Z - info: jsreport server successfully started on http port: 2000
+2018-01-06T22:14:15.176Z - info: Verifying license key free
+2018-01-06T22:14:15.186Z - info: Using free license
+2018-01-06T22:14:15.188Z - info: reporter initialized

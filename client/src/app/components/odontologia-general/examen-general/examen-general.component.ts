@@ -1,7 +1,10 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Paciente} from "../../../models/paciente";
 import {PacienteService} from "../../../services/pacientes/paciente.service";
 import {ActivatedRoute} from "@angular/router";
+import {ExamenOdontologiaGeneral} from "../../../models/examen-odontologia-general";
+import {ModalTratamientoComponent} from "../modal-tratamiento/modal-tratamiento.component";
+import {TratamientoService} from "../../../services/tratamientos/tratamiento.service";
 
 @Component({
   selector: 'app-examen-general',
@@ -14,13 +17,17 @@ export class ExamenGeneralComponent implements OnInit {
   public cargando = true;
   public paciente: Paciente;
   public id_paciente: string;
-  public examen_dentario = new Array(32);
+  public examen: ExamenOdontologiaGeneral;
+  public dienteSeleccionado: any;
+  @ViewChild('modalTratamiento') modalTratamiento: ModalTratamientoComponent;
 
   constructor(
     private _pacienteService: PacienteService,
-    private _activatedRoute: ActivatedRoute
+    private _activatedRoute: ActivatedRoute,
+    private _tratamientoService: TratamientoService
   ) {
     this.paciente = new Paciente();
+    this.examen = new ExamenOdontologiaGeneral();
   }
 
   ngOnInit() {
@@ -42,6 +49,32 @@ export class ExamenGeneralComponent implements OnInit {
         }
       }
     )
+  }
+
+  abrirModalDiente(diente) {
+    this.dienteSeleccionado = diente;
+    this.modalTratamiento.show();
+  }
+
+  capturarTratamiento(event) {
+    this.dienteSeleccionado.idTratamiento = event.id;
+    this.dienteSeleccionado.cantidadTratamiento = event.cantidad;
+
+    this.obtenerTratamientoOdontologiaGeneral(this.dienteSeleccionado.idTratamiento);
+    console.log(this.examen.examen_dentario);
+    console.log(event);
+  }
+
+  obtenerTratamientoOdontologiaGeneral(id: string){
+    this._tratamientoService.obtenerTratamientoOdontologia(id).subscribe(
+      (result: any) => {
+        this.dienteSeleccionado.nombreTratamiento = result.nombre;
+        this.dienteSeleccionado.precioSeleccionado = result.precio;
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 
 }

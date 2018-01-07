@@ -109,4 +109,14 @@ export class TratamientoService {
     const url = `${this.url + this.port}/api/tratamientos/${idTratamiento}/listadoDeProblemas`;
     return this.httpClient.get(url);
   }
+
+  obtenerListadoTratamientosOdontologiaGeneral() {
+    const url = `${this.url + this.port}/api/servicioOdontologia`;
+    return this.httpClient.get(url);
+  }
+
+  obtenerTratamientoOdontologia(id: string) {
+    const url = `${this.url + this.port}/api/servicioOdontologia/${id}`;
+    return this.httpClient.get(url);
+  }
 }

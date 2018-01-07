@@ -79,5 +79,9 @@
   "examenOdontologiaGeneral": {
     "dataSource": "db",
     "public": true
+  },
+  "servicioOdontologia": {
+    "dataSource": "db",
+    "public": true
   }
 }

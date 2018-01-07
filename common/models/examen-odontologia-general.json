@@ -86,7 +86,22 @@
     },
     "examen_dentario": {
       "type": [
-        "object"
+        {
+          "type": {
+            "idTratamiento": {
+              "type": "string"
+            },
+            "nombreTratamiento": {
+              "type": "string"
+            },
+            "cantidadTratamiento": {
+              "type": "number"
+            },
+            "precioTratamiento": {
+              "type": "number"
+            }
+          }
+        }
       ]
     },
     "oclusion": {
