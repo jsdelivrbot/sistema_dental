@@ -77,6 +77,11 @@ export class TratamientoService {
     return this.httpClient.get(this.url + this.port + '/api/tratamientos/' + id_tratamiento + '/planificacionDeTratamiento');
   }
 
+  examenGeneralRealizado(idTratamiento: string) {
+    const url = `${this.url + this.port}/api/tratamientos/${idTratamiento}/examenOdontologiaGeneral`;
+    return this.httpClient.get(url);
+  }
+
   imprimirPresupuestoOrtodoncia(tratamiento: Tratamiento, planTratamiento: PlanTratamiento, listadoProblemas: ListadoProblemas) {
     const url = `${this.url}:2000/api/report`;
     const headers = new Headers();

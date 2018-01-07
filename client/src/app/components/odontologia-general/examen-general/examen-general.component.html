@@ -20,7 +20,7 @@
 
       <!-- examen -->
       <div class="">
-        <form #exmaneFacial="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
+        <form #exmaneFacial="ngForm" (submit)="guardarExamen()" class="row p-20 m-t-0 p-t-0">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <div class="card">
               <div class="card-header border-bottom">
@@ -222,22 +222,22 @@
 
                 <div class="form-group row">
                   <label for="oclusion">Oclusión</label>
-                  <input type="text" class="form-control" name="oclusion" id="oclusion" [(ngModel)]="examen.oclusion">
+                  <input type="text" class="form-control" name="oclusion" id="oclusion" (click)="abrirModalDiente(examen.oclusion)" value="{{examen.oclusion.nombreTratamiento}}">
                 </div>
 
                 <div class="form-group row">
                   <label for="implantes">Implantes</label>
-                  <input type="text" class="form-control" name="implantes" id="implantes" [(ngModel)]="examen.implantes">
+                  <input type="text" class="form-control" name="implantes" id="implantes" (click)="abrirModalDiente(examen.implantes)" value="{{examen.implantes.nombreTratamiento}}">
                 </div>
 
                 <div class="form-group row">
                   <label for="prot_fija_plural">Prot. Fija plural</label>
-                  <input type="text" class="form-control" name="prot_fija_plural" id="prot_fija_plural" [(ngModel)]="examen.prot_fija_plural">
+                  <input type="text" class="form-control" name="prot_fija_plural" id="prot_fija_plural" (click)="abrirModalDiente(examen.prot_fija_plural)" value="{{examen.prot_fija_plural.nombreTratamiento}}">
                 </div>
 
                 <div class="form-group row">
                   <label for="prot_removible">Prot. Removible</label>
-                  <input type="text" class="form-control" name="prot_removible" id="prot_removible" [(ngModel)]="examen.prot_removible">
+                  <input type="text" class="form-control" name="prot_removible" id="prot_removible" (click)="abrirModalDiente(examen.prot_removible)" value="{{examen.prot_removible.nombreTratamiento}}">
                 </div>
               </div>
             </div>

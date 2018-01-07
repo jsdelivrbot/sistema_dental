@@ -5,6 +5,7 @@ import { Subject } from 'rxjs/Subject';
 import {ExamenFuncional} from "../../models/examen-funcional";
 import {ExamenDental} from "../../models/examen-dental";
 import {RelacionesDentales} from "../../models/relaciones-dentales";
+import {ExamenOdontologiaGeneral} from "../../models/examen-odontologia-general";
 
 @Injectable()
 export class ExamenService {
@@ -63,6 +64,16 @@ export class ExamenService {
 
   editarRelacionesDentales(examen: RelacionesDentales) {
     return this.httpClient.patch(this.url + this.port + '/api/relacionesDentales', examen);
+  }
+
+  guardarExamenOdontologiaGeneral(examen: ExamenOdontologiaGeneral) {
+    const url = `${this.url + this.port}/api/examenOdontologiaGeneral`;
+    return this.httpClient.post(url, examen);
+  }
+
+  editarExamenOdontologiaGeneral(examen: ExamenOdontologiaGeneral) {
+    const url = `${this.url + this.port}/api/examenOdontologiaGeneral`;
+    return this.httpClient.patch(url, examen);
   }
 
 }

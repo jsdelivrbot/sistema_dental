@@ -1,10 +1,12 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {Paciente} from "../../../models/paciente";
 import {PacienteService} from "../../../services/pacientes/paciente.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {ExamenOdontologiaGeneral} from "../../../models/examen-odontologia-general";
 import {ModalTratamientoComponent} from "../modal-tratamiento/modal-tratamiento.component";
 import {TratamientoService} from "../../../services/tratamientos/tratamiento.service";
+import {ExamenService} from "../../../services/examenes/examen.service";
+import {AlertService} from "../../../services/alert/alert.service";
 
 @Component({
   selector: 'app-examen-general',
@@ -19,12 +21,16 @@ export class ExamenGeneralComponent implements OnInit {
   public id_paciente: string;
   public examen: ExamenOdontologiaGeneral;
   public dienteSeleccionado: any;
+  public idTratamiento: string;
   @ViewChild('modalTratamiento') modalTratamiento: ModalTratamientoComponent;
 
   constructor(
     private _pacienteService: PacienteService,
     private _activatedRoute: ActivatedRoute,
-    private _tratamientoService: TratamientoService
+    private _router: Router,
+    private _tratamientoService: TratamientoService,
+    private _examenService: ExamenService,
+    private _alertService: AlertService
   ) {
     this.paciente = new Paciente();
     this.examen = new ExamenOdontologiaGeneral();
@@ -38,6 +44,13 @@ export class ExamenGeneralComponent implements OnInit {
         this.obtenerDatosPaciente();
       }
     );
+
+    this._activatedRoute.parent.params.subscribe(
+      params => {
+        this.idTratamiento = params['id'];
+        console.log(this.idTratamiento);
+      }
+    )
   }
 
   obtenerDatosPaciente() {
@@ -77,4 +90,19 @@ export class ExamenGeneralComponent implements OnInit {
     );
   }
 
+  guardarExamen() {
+    this.examen.tratamientoId = this.idTratamiento;
+    this._examenService.guardarExamenOdontologiaGeneral(this.examen).subscribe(
+      (result: ExamenOdontologiaGeneral) => {
+        if (result.id != null) {
+          this._alertService.showAlert(true, "Diagnostico de Odontología General guardado", 1);
+          this._router.navigate(['../..'], {relativeTo: this._activatedRoute});
+        }
+      },
+      error => {
+        console.log(error);
+        this._alertService.showAlert(true, "Algo ha salido mal", 2);
+      }
+    );
+  }
 }

@@ -105,16 +105,16 @@
       ]
     },
     "oclusion": {
-      "type": "string"
+      "type": "object"
     },
     "implantes": {
-      "type": "string"
+      "type": "object"
     },
     "prot_fija_plural": {
-      "type": "string"
+      "type": "object"
     },
     "prot_removible": {
-      "type": "string"
+      "type": "object"
     },
     "oclusionTipo": {
       "type": "string"

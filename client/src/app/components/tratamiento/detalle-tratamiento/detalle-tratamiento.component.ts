@@ -8,6 +8,7 @@ import {AlertService} from "../../../services/alert/alert.service";
 import {UtilService} from "../../../services/util/util.service";
 import {PlanTratamiento} from "../../../models/plan-tratamiento";
 import {ListadoProblemas} from "../../../models/listado-problemas";
+import {ExamenOdontologiaGeneral} from "../../../models/examen-odontologia-general";
 
 @Component({
   selector: 'app-detalle-tratamiento',
@@ -26,6 +27,7 @@ export class DetalleTratamientoComponent implements OnInit {
   public prespuestoOrtodonciaRealizado: boolean;
   public examenes_realizados: boolean;
   public planTratamientoRealizado: boolean;
+  public examenGeneralRealizado: boolean;
   public planTratamiento: PlanTratamiento;
   public listadoProblemas: ListadoProblemas;
 
@@ -57,6 +59,7 @@ export class DetalleTratamientoComponent implements OnInit {
         this.obtenerTratamiento();
         this.comprobarExamenesRealizados();
         this.comprobarPlanTratamiento();
+        this.comprobarExamenGeneral();
       }
     );
   }
@@ -164,6 +167,16 @@ export class DetalleTratamientoComponent implements OnInit {
         if ( result.id != null ) {
           this.planTratamientoRealizado = true;
           this.planTratamiento = result;
+        }
+      }
+    );
+  }
+
+  comprobarExamenGeneral() {
+    this._tratamientoService.examenGeneralRealizado(this.id_tratamiento).subscribe(
+      (result: ExamenOdontologiaGeneral) => {
+        if (result.id != null) {
+          this.examenGeneralRealizado = true;
         }
       }
     );

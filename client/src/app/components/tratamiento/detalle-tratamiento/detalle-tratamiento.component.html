@@ -127,8 +127,16 @@
               <h3 class="card-title">Exámen Odontología Gnral.</h3>
             </div>
             <div class="card-body">
-              <div class="p-t-5 p-b-10x">
+
+              <div *ngIf="!examenGeneralRealizado" class="p-t-5 p-b-10x">
                 <a href="javascript:void(0)" [routerLink]="['odontologia-general/examen-general']">
+                  <img src="/assets/img/icons/d2.png" alt="ondontologia_general" class="rounded circle max-w-20">
+                  Odontologia General
+                </a>
+              </div>
+
+              <div *ngIf="examenGeneralRealizado" class="p-t-5 p-b-10x">
+                <a href="javascript:void(0)" [routerLink]="['odontologia-general/examen-general/editar']">
                   <img src="/assets/img/icons/d2.png" alt="ondontologia_general" class="rounded circle max-w-20">
                   Odontologia General
                 </a>

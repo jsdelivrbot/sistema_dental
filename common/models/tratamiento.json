@@ -66,6 +66,11 @@
       "type": "hasOne",
       "model": "planficacionDeTratamiento",
       "foreignKey": "tratamientoId"
+    },
+    "examenOdontologiaGeneral": {
+      "type": "hasOne",
+      "model": "examenOdontologiaGeneral",
+      "foreignKey": "tratamientoId"
     }
   },
   "acls": [],

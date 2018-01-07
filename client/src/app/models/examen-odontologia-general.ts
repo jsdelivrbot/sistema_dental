@@ -33,10 +33,10 @@ export class ExamenOdontologiaGeneral {
   public examen_clinico_periodonto: boolean;
   public examen_clinico_periodonto_txt: string;
   public examen_dentario: Array<DetalleExamenDentario>;
-  public oclusion: string;
-  public implantes: string;
-  public prot_fija_plural: string;
-  public prot_removible: string;
+  public oclusion: Object;
+  public implantes: Object;
+  public prot_fija_plural: Object;
+  public prot_removible: Object;
   public oclusionTipo: string;
   public smv: string;
   public smh: string;
@@ -50,6 +50,7 @@ export class ExamenOdontologiaGeneral {
   public lat_izq_hb: string;
   public radiologico: string;
   public id: string;
+  public tratamientoId: string;
 
   constructor() {
     this.hia_dental_actual = false;
@@ -134,5 +135,10 @@ export class ExamenOdontologiaGeneral {
     this.examen_dentario[30].num2 = 17;
     this.examen_dentario[31].num1 = 3.8;
     this.examen_dentario[31].num2 = 32;
+
+    this.oclusion = {nombreTratamiento: ""};
+    this.implantes = {nombreTratamiento: ""};
+    this.prot_fija_plural = {nombreTratamiento: ""};
+    this.prot_removible = {nombreTratamiento: ""};
   }
 }
