@@ -3,13 +3,14 @@
     "recipe": "phantom-pdf",
     "engine": "handlebars",
     "modificationDate": {
-        "$$date": 1510846559405
+        "$$date": 1510951626328
     },
     "_id": "dEVbQMXBwglKkpE6",
     "phantom": {
         "headerHeight": "",
-        "margin": "{\"top\":\"10px\",\"left\":\"50px\",\"right\":\"50px\",\"bottom\":\"10px\"}",
-        "phantomjsVersion": "2.1.1"
+        "margin": "",
+        "phantomjsVersion": "2.1.1",
+        "format": "Legal"
     },
     "data": {
         "shortid": "SyEl27baW"

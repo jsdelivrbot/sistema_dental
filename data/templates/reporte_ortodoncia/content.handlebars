@@ -7,21 +7,21 @@
     </style>
     <style>
         *{
-            font-size: 0.65rem;
+            font-size: 0.53rem;
         }
         .page-break {
             display: block;
             page-break-before: always;
         }
         .row{
-            margin-top: .5rem;
+            margin-bottom: 1px;
         }
+    
     </style>
 </head>
 
 <body>
     <div id="logo">
-        <h1 style="text-align: center;">LOGO</h1>
     </div>
 
     <table style="font-size: 12px;">
@@ -36,7 +36,7 @@
     <hr>
 
     <!-- titulo -->
-    <h4 style="text-align: center; font-weight: bold;">ESTUDIO DIAGNOSTICO Y CONSENTIMIENTO INFORMADO</h4>
+    <h6 style="text-align: center; font-weight: bold;">ESTUDIO DIAGNOSTICO Y CONSENTIMIENTO INFORMADO</h6>
 
     <!-- datos paciente -->
     <table style="font-size: 12px;">
@@ -57,11 +57,11 @@
     </table>
 
     <!-- lista de problemas -->
-    <h5 style="margin-bottom: 0px; padding-bottom: 0px;">LISTA DE PROBLEMAS</h5><hr>
+    <h6 style="margin-bottom: 0px; padding-bottom: 0px;">LISTA DE PROBLEMAS</h6><hr>
         <ul class="" style="margin-top: 0px; padding-left: 0px;">
              {{#if listado_problemas.motivacion}}
             <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
-                <div class="row" style="margin-top: 0px;">
+                <div class="row" style="margin-top: 0px; margin-bottom: 0px;">
                     <div class="cell auto-size">
                          <p>Motivación: {{listado_problemas.motivacion}}</p>
                     </div>
@@ -69,7 +69,7 @@
             </li>
              {{/if}}
             <li class="flex-grid" style="padding: 0px; padding-left: 0px; margin:0px;">
-                <div class="row" style="margin-top: 0px;">
+                <div class="row" style="margin-top: 0px; margin-bottom: 0px;">
                     {{#if listado_problemas.frontal}}
                     <div class="cell auto-size no-margin-bottom">
                         <span>Frontal:</span> <span >{{listado_problemas.frontal}}</span>
@@ -83,7 +83,7 @@
                     {{#if listado_problemas.linea_media1}}
                     <div class="cell auto-size">
                         <span>L. Medias dentales:</span> 
-                        <span>{{listado_problemas.linea_media1}} | {{listado_problemas.linea_media2}}</span><br>
+                        <span>{{listado_problemas.linea_media1}} | {{listado_problemas.linea_media2}}</span><br style="margin:0px !important; padding:0px !important;">
                         <span style="visibility: hidden;">L. Medias dentales:</span>
                         <span style="border-top: 1px solid;">{{listado_problemas.linea_media3}} | {{listado_problemas.linea_media4}}</span>
                     </div>
@@ -1036,7 +1036,7 @@
         <thead>
             <tr>
                 <th style="padding:0px;" colspan="2">
-                    <h5 style="text-align: center;">PRESUPUESTO ORTODONCIA</h5>
+                    <h6 style="text-align: center;">PRESUPUESTO ORTODONCIA</h6>
                 </th>
             </tr>
         </thead>
@@ -1050,7 +1050,7 @@
                 <td>$50000</td>
             </tr>
             {{#each ortodoncia.resumen}}
-            <tr>
+            <tr style="padding: 0px !important; margin: 0px !important;">
                 <td>{{nombre}}</td>
                 <td>${{formatear precio}}</td>
             </tr>
@@ -1075,7 +1075,7 @@
         <thead>
             <tr>
                 <th style="padding:0px;" colspan="2">
-                    <h5 style="text-align: center;">EXTRAS</h5>
+                    <h6 style="text-align: center;">EXTRAS</h6>
                 </th>
             </tr>
         </thead>
