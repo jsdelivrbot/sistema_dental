@@ -1,0 +1,171 @@
+{
+  "name": "relacionesDentales",
+  "plural": "relacionesDentales",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "max_apinado": {
+      "type": "number",
+      "default": 0
+    },
+    "max_espaciado": {
+      "type": "number",
+      "default": 0
+    },
+    "max_exacto": {
+      "type": "boolean",
+      "default": false
+    },
+    "man_apinado": {
+      "type": "number",
+      "default": 0
+    },
+    "man_espaciado": {
+      "type": "number",
+      "default": 0
+    },
+    "man_exacto": {
+      "type": "boolean",
+      "default": false
+    },
+    "max_arc": {
+      "type": "string"
+    },
+    "man_arc": {
+      "type": "string"
+    },
+    "canino_der": {
+      "type": "string",
+      "default": "0"
+    },
+    "canino_izq": {
+      "type": "string",
+      "default": "0"
+    },
+    "molar_der": {
+      "type": "string",
+      "default": "0"
+    },
+    "molar_izq": {
+      "type": "string",
+      "default": "0"
+    },
+    "smh": {
+      "type": "number",
+      "default": 0
+    },
+    "obs_anteroposterior": {
+      "type": "string"
+    },
+    "linea_media1": {
+      "type": "number",
+      "default": 0
+    },
+    "linea_media2": {
+      "type": "number",
+      "default": 0
+    },
+    "linea_media3": {
+      "type": "number",
+      "default": 0
+    },
+    "linea_media4": {
+      "type": "number",
+      "default": 0
+    },
+    "mordida_cruzada": {
+      "type": "string"
+    },
+    "denticion1": {
+      "type": "string"
+    },
+    "denticion2": {
+      "type": "string"
+    },
+    "perdida_temprana": {
+      "type": "string"
+    },
+    "smv": {
+      "type": "number",
+      "default": 0
+    },
+    "c_de_spee": {
+      "type": "string",
+      "default": "normal"
+    },
+    "ma": {
+      "type": "number",
+      "default": 0
+    },
+    "mc": {
+      "type": "number",
+      "default": 4
+    },
+    "obs_vertical": {
+      "type": "string"
+    },
+    "gingivitis": {
+      "type": "boolean",
+      "default": false
+    },
+    "periodontitis": {
+      "type": "boolean",
+      "default": false
+    },
+    "recesion": {
+      "type": "boolean",
+      "default": false
+    },
+    "obs_tejidos_blandos": {
+      "type": "string"
+    },
+    "fotos_modelos": {
+      "type": "boolean",
+      "default": false
+    },
+    "rx_pa": {
+      "type": "string"
+    },
+    "rx_lateral": {
+      "type": "string"
+    },
+    "panoramica": {
+      "type": "boolean",
+      "default": false
+    },
+    "oclusal": {
+      "type": "boolean",
+      "default": false
+    },
+    "periapicales": {
+      "type": "boolean",
+      "default": false
+    },
+    "rx_de_carpo": {
+      "type": "boolean",
+      "default": false
+    },
+    "rx_3d": {
+      "type": "boolean",
+      "default": false
+    },
+    "obs_examenes_complementarios": {
+      "type": "string"
+    },
+    "fecha_realizacion": {
+      "type": "date",
+      "required": true
+    },
+    "fecha_actualizacion": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

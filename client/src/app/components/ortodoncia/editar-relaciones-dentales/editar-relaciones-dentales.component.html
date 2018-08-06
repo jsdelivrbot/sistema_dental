@@ -1,0 +1,445 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+              <i class="zmdi zmdi-menu"></i>
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row p-20 p-b-5 m-b-0">
+        <app-detalles-paciente class="col-lg-12" [paciente]="paciente"></app-detalles-paciente>
+      </div>
+
+      <!-- examen -->
+      <div class="">
+        <form #editarRelacionesDentales="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Longitud de arco</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col-lg-12 text-center border-bottom">
+                    <label class="control-label">Maxilar</label>
+                  </div>
+                  <div class="col">
+                    <label for="max_apinado" class="control-label">Apiñado</label>
+                    <select name="max_apinado" id="max_apinado" class="form-control" [(ngModel)]="examen.max_apinado">
+                      <option *ngFor="let item of max_select; let i = index;" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="max_espaciado" class="control-label">Espaciado</label>
+                    <select name="max_espaciado" id="max_espaciado" class="form-control" [(ngModel)]="examen.max_espaciado">
+                      <option *ngFor="let item of max_select; let i = index;" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="max_exacto" class="control-label">Exacto</label><br>
+                    <md-checkbox name="max_exacto" id="max_exacto" [(ngModel)]="examen.max_exacto"></md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col-lg-12 text-center border-bottom">
+                    <label class="control-label">Mandibular</label>
+                  </div>
+                  <div class="col">
+                    <label for="man_apinado" class="control-label">Apiñado</label>
+                    <select name="man_apinado" id="man_apinado" class="form-control" [(ngModel)]="examen.man_apinado">
+                      <option *ngFor="let item of max_select; let i = index;" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="man_espaciado" class="control-label">Espaciado</label>
+                    <select name="man_espaciado" id="man_espaciado" class="form-control" [(ngModel)]="examen.man_espaciado">
+                      <option *ngFor="let item of max_select; let i = index;" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="man_exacto" class="control-label">Exacto</label><br>
+                    <md-checkbox name="man_exacto" id="man_exacto" [(ngModel)]="examen.man_exacto"></md-checkbox>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Coordinación de arcadas</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col-lg-12 text-center border-bottom">
+                    <label class="control-label">Maxilar</label>
+                  </div>
+                  <div class="col-sm-12">
+                    <md-radio-group name="max_arc" [(ngModel)]="examen.max_arc">
+                      <md-radio-button class="col-sm-4" value="amplio">Amplio</md-radio-button>
+                      <md-radio-button class="col-sm-4" value="angosto">Angosto</md-radio-button>
+                      <md-radio-button class="col-sm-3" value="normal">Normal</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col-lg-12 text-center border-bottom">
+                    <label class="control-label">Mandibular</label>
+                  </div>
+                  <div class="col-sm-12">
+                    <md-radio-group name="man_arc" [(ngModel)]="examen.man_arc">
+                      <md-radio-button class="col-sm-4" value="amplio">Amplio</md-radio-button>
+                      <md-radio-button class="col-sm-4" value="angosto">Angosto</md-radio-button>
+                      <md-radio-button class="col-sm-3" value="normal">Normal</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Anteroposterior</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <table class="table">
+                    <thead>
+                    <tr>
+                      <th></th>
+                      <th>DER</th>
+                      <th>IZQ</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td><strong>Canino</strong></td>
+                      <td>
+                        <select name="canino_der" id="canino_der" class="form-control" [(ngModel)]="examen.canino_der">
+                          <option value="0">0</option>
+                          <option value="I">I</option>
+                          <option value="II">II</option>
+                          <option value="III">III</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="canino_izq" id="canino_izq" class="form-control" [(ngModel)]="examen.canino_izq">
+                          <option value="0">0</option>
+                          <option value="I">I</option>
+                          <option value="II">II</option>
+                          <option value="III">III</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>Molar</strong></td>
+                      <td>
+                        <select name="molar_der" id="molar_der" class="form-control" [(ngModel)]="examen.molar_der">
+                          <option value="0">0</option>
+                          <option value="I">I</option>
+                          <option value="II">II</option>
+                          <option value="III">III</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="molar_izq" id="molar_izq" class="form-control" [(ngModel)]="examen.molar_izq">
+                          <option value="0">0</option>
+                          <option value="I">I</option>
+                          <option value="II">II</option>
+                          <option value="III">III</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><strong>SMH</strong></td>
+                      <td>
+                        <select name="smh" id="smh" class="form-control" [(ngModel)]="examen.smh">
+                          <option *ngFor="let item of smh; let i = index" value="{{i-10}}">{{i-10}}</option>
+                        </select>
+                      </td>
+                      <td>
+                        <strong>mm</strong>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="form-grouo row m-b-10">
+                  <div class="col">
+                    <label for="obs_anteroposterior" class="control-label">Observaciones</label>
+                    <textarea name="obs_anteroposterior" id="obs_anteroposterior" cols="30" rows="10"
+                              class="form-control" [(ngModel)]="examen.obs_anteroposterior"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Tranverso</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <table class="table">
+                      <thead>
+                      <tr>
+                        <th></th>
+                        <th><strong>DER</strong></th>
+                        <th><strong>IZQ</strong></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>Línea 1/2</td>
+                        <td>
+                          <select name="linea_media1" id="linea_media1" class="form-control" [(ngModel)]="examen.linea_media1">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="linea_media2" id="linea_media2" class="form-control" [(ngModel)]="examen.linea_media2">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>
+                          <select name="linea_media3" id="linea_media3" class="form-control" [(ngModel)]="examen.linea_media3">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="linea_media4" id="linea_media4" class="form-control" [(ngModel)]="examen.linea_media4">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="mord_cruzada" class="control-label">Mord Cruzada</label>
+                    <textarea name="mord_cruzada" id="mord_cruzada" cols="30" rows="10" class="form-control" [(ngModel)]="examen.mordida_cruzada"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Dentición</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <md-radio-group name="denticion1" [(ngModel)]="examen.denticion1">
+                      <md-radio-button class="col-sm-4" value="mand">Mand</md-radio-button>
+                      <md-radio-button class="col-sm-4" value="max">Max</md-radio-button>
+                      <md-radio-button class="col-sm-3" value="bimax">Bimax</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <md-radio-group name="denticion2" [(ngModel)]="examen.denticion2">
+                      <md-radio-button class="col-sm-5" value="protruvisiva">Protruvisiva</md-radio-button>
+                      <md-radio-button class="col-sm-5" value="retrusiva">Retrusiva</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <label for="perdida_temprana" class="control-label">Pérdida Temprana</label>
+                  <textarea name="perdida_temprana" id="perdida_temprana" cols="30" rows="10"
+                            class="form-control" [(ngModel)]="examen.perdida_temprana"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Vertical</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="smv" class="control-label">SMV</label>
+                    <select name="smv" id="smv" class="form-control" [(ngModel)]="examen.smv">
+                      <option *ngFor="let item of smv; let i = index;" value="{{i-10}}">{{i-10}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="c_de_spee" class="control-label">C de Spee</label>
+                    <select name="c_de_spee" id="c_de_spee" class="form-control" [(ngModel)]="examen.c_de_spee">
+                      <option value="normal">Normal</option>
+                      <option value="aumentada">Aumentada</option>
+                      <option value="disminuida">Disminuida</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="ma" class="control-label">MA</label>
+                    <select name="ma" id="ma" class="form-control" [(ngModel)]="examen.ma">
+                      <option *ngFor="let item of ma; let i = index;" value="{{i-10}}">{{i-10}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="mc" class="control-label">MC</label>
+                    <select name="mc" id="mc" class="form-control" [(ngModel)]="examen.mc">
+                      <option *ngFor="let item of mc; let i = index;" value="{{i+4}}">{{i+4}}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="obs_vertical" class="control-label">Observaciones</label>
+                    <textarea name="obs_vertical" id="obs_vertical" cols="30" rows="10" class="form-control" [(ngModel)]="examen.obs_vertical"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Tejidos Blandos</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <md-checkbox name="gingivitis" [(ngModel)]="examen.gingivitis">Gingivitis</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="periodontitis" [(ngModel)]="examen.periodontitis">Periodontitis</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="recesion" [(ngModel)]="examen.recesion">Recesión</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="obs_tejidos_blandos" class="control-label">Observaciones</label>
+                    <textarea name="obs_tejidos_blandos" id="obs_tejidos_blandos" cols="30" rows="10"
+                              class="form-control" [(ngModel)]="examen.obs_tejidos_blandos"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Exámenes complementarios</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="fotos_modelos" class="control-label">Fotos-Modelos</label><br>
+                    <md-checkbox name="fotos_modelos" id="fotos_modelos" [(ngModel)]="examen.fotos_modelos"></md-checkbox>
+                  </div>
+                  <div class="col">
+                    <label for="panoramica" class="control-label">Panorámica</label><br>
+                    <md-checkbox name="panoramica" id="panoramica" [(ngModel)]="examen.panoramica"></md-checkbox>
+                  </div>
+                  <div class="col">
+                    <label for="oclusal" class="control-label">Oclusal</label><br>
+                    <md-checkbox name="oclusal" id="oclusal" [(ngModel)]="examen.oclusal"></md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="periapicales" class="control-label">Periapicales</label><br>
+                    <md-checkbox name="periapicales" id="periapicales" [(ngModel)]="examen.periapicales"></md-checkbox>
+                  </div>
+                  <div class="col">
+                    <label for="rx_de_carpo" class="control-label">Rx de carpo</label><br>
+                    <md-checkbox name="rx_de_carpo" id="rx_de_carpo" [(ngModel)]="examen.rx_de_carpo"></md-checkbox>
+                  </div>
+                  <div class="col">
+                    <label for="rx_3d" class="control-label">Rx 3D</label><br>
+                    <md-checkbox name="rx_3d" id="rx_3d" [(ngModel)]="examen.rx_3d"></md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col-auto">
+                    <label class="control-label">Rx: PA</label>
+                  </div>
+                  <div class="col">
+                    <md-radio-group name="rx_pa" [(ngModel)]="examen.rx_pa">
+                      <md-radio-button value="mic">MIC</md-radio-button>
+                      <md-radio-button value="rc">RC</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                  <div class="col-auto">
+                    <label class="control-label">Rx: Lateral</label>
+                  </div>
+                  <div class="col">
+                    <md-radio-group name="rx_lateral" [(ngModel)]="examen.rx_lateral">
+                      <md-radio-button value="mic">MIC</md-radio-button>
+                      <md-radio-button value="rc">RC</md-radio-button>
+                    </md-radio-group>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="obs_examenes_complementarios" class="control-label">Observaciones</label>
+                    <textarea name="obs_examenes_complementarios" id="obs_examenes_complementarios" cols="30" rows="10"
+                              class="form-control" [(ngModel)]="examen.obs_examenes_complementarios"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-footer">
+                <div class="row">
+                  <button type="submit" class="btn btn-primary m-auto" mdRipple>
+                    <i class="zmdi zmdi-save"></i>
+                    Terminar Exámen
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </md-sidenav-container>
+</div>

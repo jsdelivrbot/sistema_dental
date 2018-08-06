@@ -1,0 +1,179 @@
+{
+  "name": "examenDental",
+  "plural": "examenDental",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "d11": {
+      "type": "string"
+    },
+    "d12": {
+      "type": "string"
+    },
+    "d13": {
+      "type": "string"
+    },
+    "d14": {
+      "type": "string"
+    },
+    "d15": {
+      "type": "string"
+    },
+    "d16": {
+      "type": "string"
+    },
+    "d17": {
+      "type": "string"
+    },
+    "d18": {
+      "type": "string"
+    },
+    "d21": {
+      "type": "string"
+    },
+    "d22": {
+      "type": "string"
+    },
+    "d23": {
+      "type": "string"
+    },
+    "d24": {
+      "type": "string"
+    },
+    "d25": {
+      "type": "string"
+    },
+    "d26": {
+      "type": "string"
+    },
+    "d27": {
+      "type": "string"
+    },
+    "d28": {
+      "type": "string"
+    },
+    "d31": {
+      "type": "string"
+    },
+    "d32": {
+      "type": "string"
+    },
+    "d33": {
+      "type": "string"
+    },
+    "d34": {
+      "type": "string"
+    },
+    "d35": {
+      "type": "string"
+    },
+    "d36": {
+      "type": "string"
+    },
+    "d37": {
+      "type": "string"
+    },
+    "d38": {
+      "type": "string"
+    },
+    "d41": {
+      "type": "string"
+    },
+    "d42": {
+      "type": "string"
+    },
+    "d43": {
+      "type": "string"
+    },
+    "d44": {
+      "type": "string"
+    },
+    "d45": {
+      "type": "string"
+    },
+    "d46": {
+      "type": "string"
+    },
+    "d47": {
+      "type": "string"
+    },
+    "d48": {
+      "type": "string"
+    },
+    "d51": {
+      "type": "string"
+    },
+    "d52": {
+      "type": "string"
+    },
+    "d53": {
+      "type": "string"
+    },
+    "d54": {
+      "type": "string"
+    },
+    "d55": {
+      "type": "string"
+    },
+    "d61": {
+      "type": "string"
+    },
+    "d62": {
+      "type": "string"
+    },
+    "d63": {
+      "type": "string"
+    },
+    "d64": {
+      "type": "string"
+    },
+    "d65": {
+      "type": "string"
+    },
+    "d71": {
+      "type": "string"
+    },
+    "d72": {
+      "type": "string"
+    },
+    "d73": {
+      "type": "string"
+    },
+    "d74": {
+      "type": "string"
+    },
+    "d75": {
+      "type": "string"
+    },
+    "d81": {
+      "type": "string"
+    },
+    "d82": {
+      "type": "string"
+    },
+    "d83": {
+      "type": "string"
+    },
+    "d84": {
+      "type": "string"
+    },
+    "d85": {
+      "type": "string"
+    },
+    "fecha_realizacion": {
+      "type": "date",
+      "required": true
+    },
+    "fecha_actualizacion": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

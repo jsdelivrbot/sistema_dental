@@ -1,0 +1,401 @@
+{
+  "name": "planficacionDeTratamiento",
+  "plural": "planificacionDeTratamiento",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "en_observacion": {
+      "type": "boolean",
+      "default": false
+    },
+    "ortodoncia": {
+      "type": "boolean",
+      "default": false
+    },
+    "ortognatica": {
+      "type": "boolean",
+      "default": false
+    },
+    "compromiso": {
+      "type": "boolean",
+      "default": false
+    },
+    "pronostico": {
+      "type": "string"
+    },
+    "labio_ph": {
+      "type": "string"
+    },
+    "sindrome": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "tecnica": {
+      "type": "string"
+    },
+    "brakets": {
+      "type": "string"
+    },
+    "slot": {
+      "type": "string"
+    },
+    "extra": {
+      "type": "string"
+    },
+    "erup_guiada": {
+      "type": "boolean",
+      "default": false
+    },
+    "extr_seriada": {
+      "type": "boolean",
+      "default": false
+    },
+    "dientes": {
+      "type": "object"
+    },
+    "d11": {
+      "type": "boolean",
+      "default": false
+    },
+    "d12": {
+      "type": "boolean",
+      "default": false
+    },
+    "d13": {
+      "type": "boolean",
+      "default": false
+    },
+    "d14": {
+      "type": "boolean",
+      "default": false
+    },
+    "d15": {
+      "type": "boolean",
+      "default": false
+    },
+    "d16": {
+      "type": "boolean",
+      "default": false
+    },
+    "d17": {
+      "type": "boolean",
+      "default": false
+    },
+    "d18": {
+      "type": "boolean",
+      "default": false
+    },
+    "d21": {
+      "type": "boolean",
+      "default": false
+    },
+    "d22": {
+      "type": "boolean",
+      "default": false
+    },
+    "d23": {
+      "type": "boolean",
+      "default": false
+    },
+    "d24": {
+      "type": "boolean",
+      "default": false
+    },
+    "d25": {
+      "type": "boolean",
+      "default": false
+    },
+    "d26": {
+      "type": "boolean",
+      "default": false
+    },
+    "d27": {
+      "type": "boolean",
+      "default": false
+    },
+    "d28": {
+      "type": "boolean",
+      "default": false
+    },
+    "d31": {
+      "type": "boolean",
+      "default": false
+    },
+    "d32": {
+      "type": "boolean",
+      "default": false
+    },
+    "d33": {
+      "type": "boolean",
+      "default": false
+    },
+    "d34": {
+      "type": "boolean",
+      "default": false
+    },
+    "d35": {
+      "type": "boolean",
+      "default": false
+    },
+    "d36": {
+      "type": "boolean",
+      "default": false
+    },
+    "d37": {
+      "type": "boolean",
+      "default": false
+    },
+    "d38": {
+      "type": "boolean",
+      "default": false
+    },
+    "d41": {
+      "type": "boolean",
+      "default": false
+    },
+    "d42": {
+      "type": "boolean",
+      "default": false
+    },
+    "d43": {
+      "type": "boolean",
+      "default": false
+    },
+    "d44": {
+      "type": "boolean",
+      "default": false
+    },
+    "d45": {
+      "type": "boolean",
+      "default": false
+    },
+    "d46": {
+      "type": "boolean",
+      "default": false
+    },
+    "d47": {
+      "type": "boolean",
+      "default": false
+    },
+    "d48": {
+      "type": "boolean",
+      "default": false
+    },
+    "d51": {
+      "type": "boolean",
+      "default": false
+    },
+    "d52": {
+      "type": "boolean",
+      "default": false
+    },
+    "d53": {
+      "type": "boolean",
+      "default": false
+    },
+    "d54": {
+      "type": "boolean",
+      "default": false
+    },
+    "d55": {
+      "type": "boolean",
+      "default": false
+    },
+    "d61": {
+      "type": "boolean",
+      "default": false
+    },
+    "d62": {
+      "type": "boolean",
+      "default": false
+    },
+    "d63": {
+      "type": "boolean",
+      "default": false
+    },
+    "d64": {
+      "type": "boolean",
+      "default": false
+    },
+    "d65": {
+      "type": "boolean",
+      "default": false
+    },
+    "d71": {
+      "type": "boolean",
+      "default": false
+    },
+    "d72": {
+      "type": "boolean",
+      "default": false
+    },
+    "d73": {
+      "type": "boolean",
+      "default": false
+    },
+    "d74": {
+      "type": "boolean",
+      "default": false
+    },
+    "d75": {
+      "type": "boolean",
+      "default": false
+    },
+    "d81": {
+      "type": "boolean",
+      "default": false
+    },
+    "d82": {
+      "type": "boolean",
+      "default": false
+    },
+    "d83": {
+      "type": "boolean",
+      "default": false
+    },
+    "d84": {
+      "type": "boolean",
+      "default": false
+    },
+    "d85": {
+      "type": "boolean",
+      "default": false
+    },
+    "obs_dientes": {
+      "type": "string"
+    },
+    "cirugia_fase1": {
+      "type": "string"
+    },
+    "ortopedia_transversal": {
+      "type": "string"
+    },
+    "ortopedia_ap": {
+      "type": "string"
+    },
+    "ortopedia_vertical": {
+      "type": "string"
+    },
+    "aparatos_fijos": {
+      "type": "string"
+    },
+    "cirugia_fase2": {
+      "type": "string"
+    },
+    "forma_arco": {
+      "type": "boolean",
+      "default": false
+    },
+    "obs_cirugia_fase2": {
+      "type": "string"
+    },
+    "directo": {
+      "type": "string"
+    },
+    "bkt_caninos1": {
+      "type": "string"
+    },
+    "bkt_caninos2": {
+      "type": "string"
+    },
+    "bkt_caninos3": {
+      "type": "string"
+    },
+    "bkt_caninos4": {
+      "type": "string"
+    },
+    "bandas1": {
+      "type": "string"
+    },
+    "bandas2": {
+      "type": "string"
+    },
+    "bandas3": {
+      "type": "string"
+    },
+    "bandas4": {
+      "type": "string"
+    },
+    "tubos1": {
+      "type": "string"
+    },
+    "tubos2": {
+      "type": "string"
+    },
+    "tubos3": {
+      "type": "string"
+    },
+    "tubos4": {
+      "type": "string"
+    },
+    "cirugia_fase3": {
+      "type": "string"
+    },
+    "cirugia": {
+      "type": "boolean",
+      "default": false
+    },
+    "perio": {
+      "type": "boolean",
+      "default": false
+    },
+    "protesis": {
+      "type": "boolean",
+      "default": false
+    },
+    "otros_fase3": {
+      "type": "string"
+    },
+    "max_anclaje": {
+      "type": "string"
+    },
+    "max_min": {
+      "type": "boolean",
+      "default": false
+    },
+    "max_mod": {
+      "type": "boolean",
+      "default": false
+    },
+    "max_max": {
+      "type": "boolean",
+      "default": false
+    },
+    "max_obs": {
+      "type": "string"
+    },
+    "man_anclaje": {
+      "type": "string"
+    },
+    "man_min": {
+      "type": "boolean",
+      "default": false
+    },
+    "man_mod": {
+      "type": "boolean",
+      "default": false
+    },
+    "man_max": {
+      "type": "boolean",
+      "default": false
+    },
+    "man_obs": {
+      "type": "string"
+    },
+    "fecha_realizacion": {
+      "type": "date"
+    },
+    "fecha_actualizacion": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

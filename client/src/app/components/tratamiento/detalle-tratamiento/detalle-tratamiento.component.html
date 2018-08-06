@@ -1,0 +1,161 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+							<i class="zmdi zmdi-menu"></i>
+						</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row p-20 p-b-5 m-b-0">
+        <app-detalles-paciente class="col-lg-12" [paciente]="paciente" [tratamiento]="tratamiento"></app-detalles-paciente>
+      </div>
+
+      <div class="row p-20 m-t-0">
+        <!-- examenes -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Exámenes</h3>
+            </div>
+            <div class="card-body">
+
+              <div class="p-t-10 p-b-5">
+                <a [routerLink]="['examenes/ortodoncia']" href="javascript:void(0)">
+                  <img src="/assets/img/icons/d1.png" alt="ortodoncia" class="rounded circle max-w-20">
+                  Ortodoncia
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /examenes -->
+        <!-- listado de problemas -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h4 *ngIf="!examenes_realizados" class="card-title">
+                Listado de problemas
+              </h4>
+              <h4 *ngIf="examenes_realizados" class="card-title">
+                <a href="javascript:void(0);" [routerLink]="['listado-de-problemas']">
+                  Listado de problemas
+                </a>
+              </h4>
+            </div>
+            <div *ngIf="!examenes_realizados" class="card-body">
+              <h4>
+                <label class="label label-warning">No se han realizado todos los exámenes</label>
+              </h4>
+            </div>
+            <div *ngIf="examenes_realizados" class="card-body">
+              <h4><label class="label label-success">Realizado</label></h4>
+              <div>
+                <i class="zmdi zmdi-calendar"></i> Fecha actualización: 01/01/2017
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /listado de problemas -->
+        <!-- plan de tratamiento -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h4 *ngIf="!planTratamientoRealizado" class="card-title">
+                <a href="javascript:void(0);" [routerLink]="['plan-tratamiento']">
+                  Plan de tratamiento
+                </a>
+              </h4>
+              <h4 *ngIf="planTratamientoRealizado" class="card-title">
+                <a href="javascript:void(0);" [routerLink]="['plan-tratamiento/edit']">
+                  Plan de tratamiento
+                </a>
+              </h4>
+            </div>
+            <div *ngIf="!planTratamientoRealizado" class="card-body">
+              <h4><label class="label label-warning">No realizado</label></h4>
+            </div>
+            <div *ngIf="planTratamientoRealizado" class="card-body">
+              <h4><label class="label label-success">Realizado</label></h4>
+              <div>
+                <i class="zmdi zmdi-calendar"></i> Fecha actualización: {{planTratamiento.fecha_actualizacion | date:'dd/MM/yyyy'}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /plan de tratamiento -->
+        <!-- presupuesto -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Presupuesto</h3>
+            </div>
+            <div class="card-body">
+              <div *ngIf="!prespuestoOrtodonciaRealizado"  class="p-10">
+                  <a [routerLink]="['presupuesto/ortodoncia']" href="javascript:void(0)" class="row">
+                      Ortodoncia
+                  </a>
+              </div>
+                <div *ngIf="prespuestoOrtodonciaRealizado"  class="p-10">
+                    <a (click)="imprimirOrtodoncia()" href="javascript:void(0)" class="row">
+                        <span class="mr-auto">
+                          <i class="zmdi zmdi-print"></i>
+                          Revisar Documento - Ortodoncia
+                        </span>
+                        <span class="label label-success">Realizado</span>
+                    </a>
+                </div>
+              <!--div class="p-10 p-b-0"><a href="javascript:void(0)">Completo</a></div-->
+            </div>
+          </div>
+        </div>
+        <!-- /presupuesto -->
+      </div>
+
+
+      <div class="row p-20 m-t-0">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Exámen Odontología Gnral.</h3>
+            </div>
+            <div class="card-body">
+
+              <div *ngIf="!examenGeneralRealizado" class="p-t-5 p-b-10x">
+                <a href="javascript:void(0)" [routerLink]="['odontologia-general/examen-general']">
+                  <img src="/assets/img/icons/d2.png" alt="ondontologia_general" class="rounded circle max-w-20">
+                  Odontologia General
+                </a>
+              </div>
+
+              <div *ngIf="examenGeneralRealizado" class="p-t-5 p-b-10x">
+                <a href="javascript:void(0)" [routerLink]="['odontologia-general/examen-general/editar']">
+                  <img src="/assets/img/icons/d2.png" alt="ondontologia_general" class="rounded circle max-w-20">
+                  Odontologia General
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header border-bottom">
+              <h3 class="card-title">Presupuesto</h3>
+            </div>
+            <div class="card-body">
+              <div class="p-10 p-t-0"><a href="javascript:void(0)" class="row">Odontología General</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </md-sidenav-container>
+</div>

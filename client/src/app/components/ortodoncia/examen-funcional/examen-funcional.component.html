@@ -1,0 +1,327 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+              <i class="zmdi zmdi-menu"></i>
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="row p-20 p-b-5 m-b-0">
+        <app-detalles-paciente class="col-lg-12" [paciente]="paciente"></app-detalles-paciente>
+      </div>
+
+      <!-- examen -->
+      <div class="">
+        <form #exmaneFuncional="ngForm" (submit)="onSubmit()" class="row p-20 m-t-0 p-t-0">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">
+                  Hábitos
+                </h3>
+              </div>
+
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <md-checkbox name="lengua" [(ngModel)]="examen.lengua">Lengua</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="labio" [(ngModel)]="examen.labio">Labio</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="dedo" [(ngModel)]="examen.dedo">Dedo</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="bruxismo" [(ngModel)]="examen.bruxismo">Bruxismo</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="funcion_labial" class="control-label">Función Labial</label>
+                    <select class="form-control" name="funcion_labial" id="funcion_labial" [(ngModel)]="examen.funcion_labial">
+                      <option value="normal">Normal</option>
+                      <option value="incompetente">Incompetente</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="tono_musc" class="control-label">Tono Musc</label>
+                    <select name="tono_musc" id="tono_musc" class="form-control" [(ngModel)]="examen.tono_musc">
+                      <option value="normal">Normal</option>
+                      <option value="hipertonico">Hipertonico</option>
+                      <option value="hipotonico">Hipotonico</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <md-checkbox name="resp_oral" [(ngModel)]="examen.resp_oral">Resp Oral</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="ojeras" [(ngModel)]="examen.ojeras">Ojeras</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="gingivitis" [(ngModel)]="examen.gingivitis">Gingivitis</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="labios_resecos" [(ngModel)]="examen.labios_resecos">Labios Resecos</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <label for="obs_habitos" class="control-label">Observación</label>
+                  <textarea name="obs_habitos" id="obs_habitos" cols="30" rows="8" class="form-control" [(ngModel)]="examen.obs_habitos"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <div class="h3 card-title">ATM</div>
+              </div>
+
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col-lg-6 col-md-6 col-sm-12 border border-left-0 border-top-0 border-bottom-0">
+                    <div class="col-auto text-center">
+                      <label class="control-label">Derecha</label>
+                    </div>
+                    <div class="col-auto p-0 m-b-10">
+                      <md-radio-group name="dolor_der" [(ngModel)]="examen.atm_der_dolor">
+                        <md-radio-button class="m-r-50" value="con_dolor">Dolor</md-radio-button>
+                        <md-radio-button value="sin_dolor">Sin Dolor</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                    <div class="col-auto p-0 m-b-10">
+                      <md-radio-group name="ruido_der" [(ngModel)]="examen.atm_der_ruido">
+                        <md-radio-button class="m-r-50" value="con_ruido">Ruido</md-radio-button>
+                        <md-radio-button value="sin_ruido">Sin Ruido</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                    <div class="col-auto p-0">
+                      <md-radio-group name="crepitacion_der" [(ngModel)]="examen.atm_der_crepitacion">
+                        <md-radio-button value="con_crepitacion">Crepitación</md-radio-button>
+                        <md-radio-button value="sin_crepitacion">Sin Crepitación</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-auto text-center">
+                      <label class="control-label">Izquierda</label>
+                    </div>
+                    <div class="col-auto p-0 m-b-10">
+                      <md-radio-group name="dolor_izq" [(ngModel)]="examen.atm_izq_dolor">
+                        <md-radio-button class="m-r-50" value="con_dolor">Dolor</md-radio-button>
+                        <md-radio-button value="sin_dolor">Sin Dolor</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                    <div class="col-auto p-0 m-b-10">
+                      <md-radio-group name="ruido_izq" [(ngModel)]="examen.atm_izq_ruido">
+                        <md-radio-button class="m-r-50" value="con_ruido">Ruido</md-radio-button>
+                        <md-radio-button value="sin_ruido">Sin Ruido</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                    <div class="col-auto p-0">
+                      <md-radio-group name="crepitacion_izq" [(ngModel)]="examen.atm_izq_crepitacion">
+                        <md-radio-button value="con_crepitacion">Crepitación</md-radio-button>
+                        <md-radio-button value="sin_crepitacion">Sin Crepitación</md-radio-button>
+                      </md-radio-group>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="polo_lateral_der" class="control-label">Polo lateral derecho</label>
+                    <select name="polo_lateral_der" id="polo_lateral_der" class="form-control" [(ngModel)]="examen.polo_lateral_der">
+                      <option value="0">0</option>
+                      <option value="+">+</option>
+                      <option value="++">++</option>
+                      <option value="+++">+++</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="polo_lateral_izq" class="control-label">Polo lateral izquierdo</label>
+                    <select name="polo_lateral_izq" id="polo_lateral_izq" class="form-control" [(ngModel)]="examen.polo_lateral_izq">
+                      <option value="0">0</option>
+                      <option value="+">+</option>
+                      <option value="++">++</option>
+                      <option value="+++">+++</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="sinovial_anterior" class="control-label">Sinovial Anterior</label>
+                    <table id="sinovial_anterior" class="table">
+                      <tbody>
+                        <tr>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_anterior1" id="sinovial_anterior1" [(ngModel)]="examen.sinovial_anterior1">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_anterior2" id="sinovial_anterior2" [(ngModel)]="examen.sinovial_anterior2">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_anterior3" id="sinovial_anterior3" [(ngModel)]="examen.sinovial_anterior3">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_anterior4" id="sinovial_anterior4" [(ngModel)]="examen.sinovial_anterior4">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col">
+                    <label for="sinovial_posterior" class="control-label">Sinovial Posterior</label>
+                    <table id="sinovial_posterior" class="table">
+                      <tbody>
+                        <tr>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_posterior1" id="sinovial_posterior1" [(ngModel)]="examen.sinovial_posterior1">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_posterior2" id="sinovial_posterior2" [(ngModel)]="examen.sinovial_posterior2">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_posterior3" id="sinovial_posterior3" [(ngModel)]="examen.sinovial_posterior3">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                          <td class="p-0">
+                            <select class="form-control" name="sinovial_posterior4" id="sinovial_posterior4" [(ngModel)]="examen.sinovial_posterior4">
+                              <option value="0">0</option>
+                              <option value="+">+</option>
+                            </select>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Frenillos</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <md-checkbox name="labial" [(ngModel)]="examen.labial">Labial</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="lingual" [(ngModel)]="examen.lingual">Lingual</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="max" [(ngModel)]="examen.max">Max</md-checkbox>
+                  </div>
+                  <div class="col">
+                    <md-checkbox name="mand" [(ngModel)]="examen.mand">Mand</md-checkbox>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="obs_frenillos" class="control-label">Observación</label>
+                    <textarea name="obs_frenillos" id="obs_frenillos" cols="30" rows="10" class="form-control" [(ngModel)]="examen.obs_frenillos"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-header border-bottom">
+                <h3 class="card-title">Proporciones apertura y cierre</h3>
+              </div>
+              <div class="card-body">
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="apertura" class="control-label">Apertura</label>
+                    <select name="apertura" id="apertura" class="form-control" [(ngModel)]="examen.apertura">
+                      <option *ngFor="let item of apertura; let i = index" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="lat_der" class="control-label">Lat Der</label>
+                    <select name="lat_der" id="lat_der" class="form-control" [(ngModel)]="examen.lat_der">
+                      <option *ngFor="let item of laterales; let i = index" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="lat_izq" class="control-label">Lat Izq</label>
+                    <select name="lat_izq" id="lat_izq" class="form-control" [(ngModel)]="examen.lat_izq">
+                      <option *ngFor="let item of laterales; let i = index" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="protrusion" class="control-label">Protrusión</label>
+                    <select name="protrusion" id="protrusion" class="form-control" [(ngModel)]="examen.protrusion">
+                      <option *ngFor="let item of prostrusion; let i = index" value="{{i}}">{{i}}</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row m-b-10">
+                  <div class="col">
+                    <label for="rc_oc" class="control-label">RC-OC</label>
+                    <input type="text" class="form-control" name="rc_oc" id="rc_oc" [(ngModel)]="examen.rc_oc">
+                  </div>
+                </div>
+                <div class="form-group row m-b-5">
+                  <div class="col">
+                    <label for="palpacion_musc" class="control-label">Palpación Musc</label>
+                    <textarea name="palpacion_musc" id="palpacion_musc" cols="30" rows="4" class="form-control" [(ngModel)]="examen.palpacion_musc"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-footer">
+                <div class="row">
+                  <button type="submit" class="btn btn-primary m-auto" mdRipple>
+                    <i class="zmdi zmdi-save"></i>
+                    Terminar Exámen
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </md-sidenav-container>
+</div>

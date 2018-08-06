@@ -1,0 +1,78 @@
+{
+  "name": "tratamiento",
+  "plural": "tratamientos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "fecha_creacion": {
+      "type": "date",
+      "required": true
+    },
+    "archivado": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "fecha_actualizacion": {
+      "type": "date"
+    },
+    "presupuestos": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "examenFacial": {
+      "type": "hasOne",
+      "model": "examenFacial",
+      "foreignKey": "tratamientoId"
+    },
+    "examenFuncional": {
+      "type": "hasOne",
+      "model": "examenFuncional",
+      "foreignKey": "tratamientoId"
+    },
+    "examenDental": {
+      "type": "hasOne",
+      "model": "examenDental",
+      "foreignKey": "tratamientoId"
+    },
+    "relacionesDentales": {
+      "type": "hasOne",
+      "model": "relacionesDentales",
+      "foreignKey": "tratamientoId"
+    },
+    "listadoDeProblemas": {
+      "type": "hasOne",
+      "model": "listadoDeProblemas",
+      "foreignKey": "tratamientoId"
+    },
+    "paciente": {
+      "type": "belongsTo",
+      "model": "paciente",
+      "foreignKey": ""
+    },
+    "planificacionDeTratamiento": {
+      "type": "hasOne",
+      "model": "planficacionDeTratamiento",
+      "foreignKey": "tratamientoId"
+    },
+    "examenOdontologiaGeneral": {
+      "type": "hasOne",
+      "model": "examenOdontologiaGeneral",
+      "foreignKey": "tratamientoId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

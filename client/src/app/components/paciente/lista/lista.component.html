@@ -1,0 +1,80 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+	<!--// Sidenav component container-->
+	<md-sidenav-container class="sidenav-container">
+		<div class="content min-h-900">
+			<header class="header-wrapper header-sm shadow-none">
+				<h1>{{title}}</h1>
+				<ul class="actions icons top-right">
+					<li>
+						<a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+							<i class="zmdi zmdi-menu"></i>
+						</a>
+					</li>
+				</ul>
+			</header>
+
+			<div class="p-20">
+				<div class="form-group row p-0 m-0">
+					<div class="col-lg-9 mr-auto p-0">
+						<label for="filtrar_pacientes" class="control-label">
+							<md-icon class="mat-icon material-icons align-middle">search</md-icon>
+							Buscar por nombre
+						</label>
+						<input [(ngModel)]="busqueda" name="busqueda" type="text" class="form-control" placeholder="Buscar..." (keyup)="filtrarPacientes()">
+					</div>
+					<div class="col-auto p-0" style="line-height:71px">
+						<a [routerLink]="['../crear']" href="javascript:void(0);" class="btn btn-primary m-t-20 m-b-0" mdRipple>
+							<md-icon class="mat-icon material-icons align-middle" role="img">person_add</md-icon>
+							Nuevo Paciente
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div *ngIf="pacientes" class="row p-20">
+				<div *ngFor="let paciente of pacientes | paginate: { itemsPerPage: 6, currentPage: p }" class="col-lg-4 col-md-6 col-sm-12">
+					<div class="shadow-4dp card">
+						<div class="card-header p-0">
+							<div class="row">
+								<div class="col-auto mr-auto"></div>
+								<div class="col-auto m-0">
+									<a [routerLink]="['../editar', paciente.id]" href="javascript:void(0)" style="line-height: 40px; min-width:40px; width:40px; height:40px;"
+									 class="btn btn-default btn-flat btn-fab">
+										<md-icon class="mat-icon material-icons">mode_edit</md-icon>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-body text-center b-t-0">
+							<img src="/assets/img/profiles/02.jpg" class="rounded-circle max-w-100 max-h-100 h-100" alt="">
+							<h4>{{ paciente.nombre + ' ' + paciente.apepat + ' ' + ((paciente.apemat) ? paciente.apemat : '') }}</h4>
+							<div>{{paciente.fech_nacimiento | amLocale:'es' | amTimeAgo:true}}</div>
+						</div>
+						<div class="card-footer border-top">
+							<ul class="more">
+								<li>
+									<a [routerLink]="['../', paciente.id]" href="javascript:void(0);" class="btn btn-default btn-flat" mdRipple>Ver detalles</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 text-center">
+					<pagination-controls previousLabel="Anterior"
+					nextLabel="Siguiente" (pageChange)="p = $event"></pagination-controls>
+				</div>
+			</div>
+		</div>
+		<!-- Sidenav -->
+		<md-sidenav #rightSidenav2 mode="{{navMode}}" align="end" class="sidenav">
+			<aside id="rightSidenav2" class="p-20">
+
+			</aside>
+		</md-sidenav>
+		<!-- /END Sidenav -->
+		<!--  Footer Wrapper -->
+	</md-sidenav-container>
+	<!-- /END Sidenav component container -->
+</div>
+<!-- /END Content Wrapper - right Sidenav 2-->

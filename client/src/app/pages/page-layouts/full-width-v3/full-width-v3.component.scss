@@ -1,0 +1,8 @@
+.fullWidth1-wrapper{
+	.content{
+			//This keeps the main content height from collapsing.
+			.content-body{
+						 min-height: 88.9vh !important;
+			}
+	}
+}

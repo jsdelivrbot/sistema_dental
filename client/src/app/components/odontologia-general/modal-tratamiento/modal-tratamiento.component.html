@@ -1,0 +1,44 @@
+<div div class="modal fade " bsModal id="modalTratamiento" #modalTratamiento="bs-modal" tabindex="-1" role="dialog"
+     aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-left">Opciones de tratamiento</h4>
+        <button (click)="modalTratamiento.hide()" aria-label="Close" class="close pull-right" type="button">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="form-group row">
+          <div class="col">
+            <label for="nombre" class="control-label">Nombre servicio:</label>
+            <select class="form-control" name="nombre" id="nombre" [(ngModel)]="idTratamientoSeleccionado">
+              <option *ngFor="let tratamiento of listaTratamientos | async" value="{{tratamiento.id}}">
+                {{tratamiento.nombre}}
+              </option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="col">
+            <label for="cantidad" class="control-label">Cantidad:</label>
+            <input type="number" class="form-control" name="cantidad" id="cantidad" [(ngModel)]="cantidad" min="1">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer border-top">
+        <div class="row">
+          <div class="col-auto mr-auto">
+            <button mdRipple type="button" class="btn btn-default" (click)="modalTratamiento.hide()">Cancelar</button>
+          </div>
+          <div class="col-auto">
+            <button mdRipple (click)="guardar()" class="btn btn-accent">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,101 @@
+<div class="">
+  <div class="card m-b-10">
+    <div class="card-header border-bottom">
+      <h3 class="card-title">{{ paciente.nombre + ' ' + paciente.apepat + ' ' + paciente.apemat }}</h3>
+    </div>
+
+    <div class="card-body row">
+      <div class="col-lg-2 col-md-12 col-sm-12 text-center avatar">
+        <img src="/assets/img/profiles/02.jpg" alt="foto_paciente" class="img-circle max-w-150">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 border border-top-0 border-bottom-0 border-left-0">
+        <span class="border-bottom"><strong>Datos</strong></span>
+        <div class="form-group row">
+          <div class="col">
+            <label for="correo" class="control-label">
+              <i class="zmdi zmdi-email"></i>
+              Correo:
+            </label>
+            <span id="correo">{{ paciente.email }}</span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col">
+            <label for="rut" class="control-label">
+                <i class="zmdi zmdi-account-box"></i>
+                RUT:
+              </label>
+            <span id="rut">{{ paciente.rut }}</span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col">
+            <label for="direccion" class="control-label">
+                <i class="zmdi zmdi-pin"></i>
+                Dirección:
+              </label>
+            <span id="direccion">{{ paciente.direccion }}</span>
+          </div>
+        </div>
+        <div *ngIf="tratamiento" class="form-group row">
+          <div class="col">
+            <label for="motivo_consulta" class="control-label">
+              <i class="zmdi zmdi-pin"></i>
+              Motivo de consulta:
+            </label>
+            <span id="motivo_consulta">{{ tratamiento.descripcion }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12 border border-top-0 border-bottom-0 border-left-0">
+        <div *ngIf="!paciente.apoderado.nombre">
+          <div class="alert md-bg-light-blue-50">Sin apoderado asignado</div>
+        </div>
+        <div *ngIf="paciente.apoderado.nombre">
+          <span class="border-bottom"><strong>Apoderado</strong></span>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="list-group-item-heading">
+                {{paciente.apoderado.nombre + ' ' + paciente.apoderado.apepat + ' ' + paciente.apoderado.apemat}}
+              </div>
+              <div class="list-group-item-text">
+                <div class="row">
+                  <div class="col-auto mr-auto">
+                    <label for="apoderado_fono" class="control-label">
+                      <i class="zmdi zmdi-phone"></i>
+                    </label>
+                    <span id="apoderado_fono">{{paciente.apoderado.fono}}</span>
+                  </div>
+
+                  <div class="col-auto">
+                    <label for="apoderado_email" class="control-label">
+                      <i class="zmdi zmdi-email"></i>
+                    </label>
+                    <span id="apoderado_email">{{paciente.apoderado.email}}</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-12">
+        <span *ngIf="paciente.historial_medico.length > 0" class="border-bottom"><strong>Historial Médico</strong></span>
+        <div *ngIf="paciente.historial_medico.length == 0" class="col-auto">
+          <div class="alert md-bg-light-blue-50">
+            Sin historial médico
+          </div>
+        </div>
+        <ul *ngIf="paciente.historial_medico.length > 0" class="list-group">
+          <li *ngFor="let historial of paciente.historial_medico" class="list-group-item border-bottom">
+            <div><strong>{{ historial.antecedente }}</strong></div>
+            <div>
+              <md-icon class="mat-icon material-icon align-middle" role="img">date_range</md-icon>
+              <strong>fecha: </strong> {{ historial.fecha | date: 'dd/MM/y' }}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

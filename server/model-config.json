@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "paciente": {
+    "dataSource": "db",
+    "public": true
+  },
+  "tratamiento": {
+    "dataSource": "db",
+    "public": true
+  },
+  "examenFacial": {
+    "dataSource": "db",
+    "public": true
+  },
+  "servicioOrtodoncia": {
+    "dataSource": "db",
+    "public": true
+  },
+  "reporte": {
+    "dataSource": null,
+    "public": true
+  },
+  "examenFuncional": {
+    "dataSource": "db",
+    "public": true
+  },
+  "examenDental": {
+    "dataSource": "db",
+    "public": true
+  },
+  "relacionesDentales": {
+    "dataSource": "db",
+    "public": true
+  },
+  "listadoDeProblemas": {
+    "dataSource": "db",
+    "public": true
+  },
+  "planficacionDeTratamiento": {
+    "dataSource": "db",
+    "public": true
+  },
+  "examenOdontologiaGeneral": {
+    "dataSource": "db",
+    "public": true
+  },
+  "servicioOdontologia": {
+    "dataSource": "db",
+    "public": true
+  }
+}

@@ -1,0 +1,259 @@
+<div *ngIf="cargando" class="loader loader-pink"></div>
+<div *ngIf="!cargando" id="content_wrapper" class="fullWidth2-wrapper rightSidenav2-wrapper">
+  <!--// Sidenav component container-->
+  <md-sidenav-container class="sidenav-container">
+    <div class="content min-h-900">
+      <header class="header-wrapper header-sm shadow-none">
+        <h1>{{title}}</h1>
+        <ul class="actions icons top-right">
+          <li>
+            <a href="javascript:void(0)" (click)="rightSidenav2.toggle()">
+                  <i class="zmdi zmdi-menu"></i>
+                </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="card">
+        <div class="card-header border-bottom">
+          <h3 class="card-title">
+            <md-icon class="mat-icon material-icons align-middle" role="img">person_add</md-icon>
+            Datos del nuevo paciente
+          </h3>
+        </div>
+
+        <div *ngIf="paciente" class="card-body">
+          <form #formEditarPaciente="ngForm" (submit)="onSubmit()">
+            <div class="form-group row">
+              <div class="col">
+                <div class="alert alert-info" role="alert">
+                  <strong>¡Atención!</strong> los campos marcados con <strong>*</strong> son obligatorios.
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <label for="nombre" class="control-label">Nombre*</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="paciente.nombre" required>
+              </div>
+              <div class="col">
+                <label for="apepat" class="control-label">Apellido Paterno*</label>
+                <input type="text" class="form-control" name="apepat" id="apepat" [(ngModel)]="paciente.apepat" required>
+              </div>
+              <div class="col">
+                <label for="apemat" class="control-label">Apellido Materno</label>
+                <input type="text" class="form-control" name="apemat" id="apemat" [(ngModel)]="paciente.apemat">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col">
+                <label for="rut" class="control-label">RUT*</label>
+                <input type="text" class="form-control" name="rut" id="rut" [(ngModel)]="paciente.rut" required>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col">
+                <label for="fech_nacimiento" class="control-label">Fecha de nacimiento*</label>
+                <input type="date" class="form-control" name="fech_nacimiento" id="fech_nacimiento" [ngModel]="paciente.fech_nacimiento | date:'yyyy-MM-dd'"
+                  (ngModelChange)="paciente.fech_nacimiento = $event" required>
+              </div>
+              <div class="col">
+                <label for="email" class="control-label">Correo*</label>
+                <input type="email" class="form-control" name="email" id="email" [(ngModel)]="paciente.email" required>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col">
+                <label for="direccion" class="control-label">Dirección*</label>
+                <input type="text" class="form-control" name="direccion" id="direccion" [(ngModel)]="paciente.direccion" required>
+              </div>
+              <div class="col">
+                <label for="ciudad" class="control-label">Ciudad*</label>
+                <select type="text" class="form-control" name="ciudad" id="ciudad" [(ngModel)]="paciente.ciudad" required>
+                      <option value="chillan">Chillán</option>
+                      <option value="chillan_viejo">Chillán Viejo</option>
+                      <option value="bulnes">Bulnes</option>
+                      <option value="san_carlos">San Carlos</option>
+                    </select>
+              </div>
+              <div class="col">
+                <label for="telefono" class="control-label">Teléfono</label>
+                <input type="text" class="form-control" name="telefono" id="telefono" [(ngModel)]="paciente.telefono">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-auto">
+                <a href="javascript:void(0);" class="btn btn-primary" (click)="modalApoderado.show()" mdRipple>
+                    <md-icon class="mat-icon material-icons" role="img">person_add</md-icon>
+                    Asignar Apoderado
+                </a>
+              </div>
+              <div *ngIf="!paciente.apoderado.nombre" class="col-auto">
+                <div class="alert md-bg-light-blue-50">
+                  Sin apoderado asignado, puede asignar un apoderado haciendo click en el botón <strong>"Asignar Apoderado"</strong>
+                </div>
+              </div>
+              <div class="col-auto">
+                <ul *ngIf="paciente.apoderado.nombre" class="list-group">
+                  <strong class="list-group-item-heading border-bottom">Apoderado</strong>
+                  <li class="list-group-item">
+                    <div><strong>{{ paciente.apoderado.nombre + ' ' + (paciente.apoderado.apepat ? paciente.apoderado.apepat : ' ' ) + ' ' + (paciente.apoderado.apemat ? paciente.apoderado.apemat : ' ') }}</strong></div>
+                    <div>Correo: {{ paciente.apoderado.email }}</div>
+                    <div>Teléfono: {{ paciente.apoderado.fono }}</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <label for="tipo_sangre" class="control-label">Tipo de sangre</label>
+                <select class="form-control" name="tipo_sangre" id="tipo_sangre" [(ngModel)]="paciente.tipo_sangre">
+                    <option value="a_negativo">A Negativo</option>
+                    <option value="a_positivo">A Positivo</option>
+                    <option value="b_negativo">B Negativo</option>
+                    <option value="b_positivo">B Positivo</option>
+                    <option value="ab_negativo">AB Negativo</option>
+                    <option value="ab_positivo">AB Positivo</option>
+                    <option value="o_negativo">O Negativo</option>
+                    <option value="o_positivo">O Positivo</option>
+                  </select>
+              </div>
+              <div class="col text-center">
+                <a href="javascript:void(0);" (click)="modalHistorialMedico.show()" style="margin-top: 25px !important;" class="btn btn-primary m-b-10" mdRipple>
+                          <md-icon class="mat-icon material-icons" role="img">add</md-icon>
+                          Añadir ítem al historial medico
+                </a>
+
+                <div *ngIf="paciente.historial_medico.length == 0" class="col-auto">
+                  <div class="alert md-bg-light-blue-50">
+                    Sin historial médico, puede agregar datos al historial haciendo click en el botón <strong>"Añadir ítem"</strong>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <ul *ngIf="paciente.historial_medico.length > 0" class="list-group">
+                    <strong class="list-group-item-heading border-bottom">Historial Médico</strong>
+                    <li *ngFor="let historial of paciente.historial_medico" class="list-group-item border-bottom">
+                      <div><strong>{{ historial.antecedente }}</strong></div>
+                      <div>
+                        <md-icon class="mat-icon material-icon align-middle" role="img">date_range</md-icon>
+                        <strong>fecha: </strong> {{ historial.fecha | date: 'dd/MM/y' }}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-auto mr-auto ml-auto">
+                <button [disabled]="!formEditarPaciente.valid" type="submit" class="btn btn-primary">Editar Paciente</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Sidenav -->
+    <md-sidenav #rightSidenav2 mode="{{navMode}}" align="end" class="sidenav">
+      <aside id="rightSidenav2" class="p-20">
+
+      </aside>
+    </md-sidenav>
+    <!-- /END Sidenav -->
+    <!--  Footer Wrapper -->
+    <footer id="footer_wrapper" class="footer_wrapper"></footer>
+  </md-sidenav-container>
+  <!-- /END Sidenav component container -->
+</div>
+
+<div div class="modal fade " bsModal id="modalApoderado" #modalApoderado="bs-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-left">Asignar apoderado al paciente</h4>
+        <button aria-label="Close" class="close pull-right" type="button">
+              <span  aria-hidden="true">×</span>
+            </button>
+      </div>
+      <form #formularioAgregarApoderado (submit)="agregarApoderado()">
+        <div class="modal-body">
+          <!-- Formulario apoderado -->
+
+          <div class="form-group row">
+            <div class="col">
+              <label for="nombre_apoderado" class="control-label">Nombres</label>
+              <input type="text" class="form-control" name="nombre_apoderado" id="nombre_apoderado" [(ngModel)]="paciente.apoderado.nombre">
+            </div>
+            <div class="col">
+              <label for="apepat_apoderado" class="control-label">Apellido Paterno</label>
+              <input type="text" class="form-control" name="apepat_apoderado" id="apepat_apoderado" [(ngModel)]="paciente.apoderado.apepat">
+            </div>
+            <div class="col">
+              <label for="apemat_apoderado" class="control-label">Apellido Materno</label>
+              <input type="text" class="form-control" name="apemat_apoderado" id="apemat_apoderado" [(ngModel)]="paciente.apoderado.apemat">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <label for="email_apoderado" class="control-label">Correo</label>
+              <input type="email" class="form-control" name="email_apoderado" id="email_apoderado" [(ngModel)]="paciente.apoderado.email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <label for="fono_apoderado" class="control-label">Teléfono</label>
+              <input type="text" class="form-control" name="fono_apoderado" id="fono_apoderado" [(ngModel)]="paciente.apoderado.fono">
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-flat" type="button" (click)="modalApoderado.hide()">Cancelar</button>
+          <button class="btn btn-accent" type="submit">Asignar Apoderado</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div div class="modal fade " bsModal id="modalHistorialMedico" #modalHistorialMedico="bs-modal" tabindex="-1" role="dialog"
+  aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title float-left">Agregar un antecedente médico</h4>
+        <button aria-label="Close" class="close pull-right" type="button">
+            <span  aria-hidden="true">×</span>
+          </button>
+      </div>
+      <form #formularioAgregarHistorialMedico (submit)="agregarHistorialMedico()">
+        <div class="modal-body">
+          <!-- Formulario apoderado -->
+
+          <div class="form-group row">
+            <div class="col">
+              <label for="fecha_antecedente" class="control-label">Fecha</label>
+              <input type="date" class="form-control" name="fecha_antecedente" id="fecha_antecedente" [(ngModel)]="hm.fecha">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <label for="detalle_antecedente" class="control-label">Antecedente</label>
+              <input type="text" class="form-control" name="detalle_antecedente" id="detalle_antecedente" [(ngModel)]="hm.antecedente">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default btn-flat" type="button" (click)="modalHistorialMedico.hide()">Cancelar</button>
+          <button class="btn btn-accent" type="submit">Agregar al historial médico</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- /END Content Wrapper - right Sidenav 2-->
