@@ -16056,3 +16056,61 @@ Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SE
 2018-01-07T15:48:32.589Z - info: Verifying license key free
 2018-01-07T15:48:32.594Z - info: Using free license
 2018-01-07T15:48:32.596Z - info: reporter initialized
+2018-09-16T04:12:19.516Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:12:19.522Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:12:19.528Z - info: Searching for available extensions in /backend/
+2018-09-16T04:12:19.536Z - info: Extensions location cache not found, crawling directories
+2018-09-16T04:12:20.569Z - info: Found 30 extensions
+2018-09-16T04:12:42.652Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:12:42.656Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:12:42.661Z - info: Searching for available extensions in /backend/
+2018-09-16T04:12:42.701Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:13:07.502Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:13:07.506Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:13:07.517Z - info: Searching for available extensions in /backend/
+2018-09-16T04:13:07.561Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:13:31.418Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:13:31.419Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:13:31.423Z - info: Searching for available extensions in /backend/
+2018-09-16T04:13:31.444Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:13:54.435Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:13:54.436Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:13:54.465Z - info: Searching for available extensions in /backend/
+2018-09-16T04:13:54.507Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:14:13.780Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:14:13.781Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:14:13.784Z - info: Searching for available extensions in /backend/
+2018-09-16T04:14:13.800Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:14:33.819Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:14:33.826Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:14:33.839Z - info: Searching for available extensions in /backend/
+2018-09-16T04:14:33.893Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:23:46.626Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:23:46.628Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:23:46.633Z - info: Searching for available extensions in /backend/
+2018-09-16T04:23:46.645Z - info: Extensions location cache not found, crawling directories
+2018-09-16T04:23:47.701Z - info: Found 30 extensions
+2018-09-16T04:25:34.497Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:25:34.499Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:25:34.509Z - info: Searching for available extensions in /backend/
+2018-09-16T04:25:34.544Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:26:08.550Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:26:08.553Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:26:08.561Z - info: Searching for available extensions in /backend/
+2018-09-16T04:26:08.644Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:26:42.054Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:26:42.057Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:26:42.066Z - info: Searching for available extensions in /backend/
+2018-09-16T04:26:42.159Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T04:27:02.985Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T04:27:02.986Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T04:27:02.988Z - info: Searching for available extensions in /backend/
+2018-09-16T04:27:03.006Z - info: Extensions location cache doesn't contain entry yet, crawling
+2018-09-16T22:08:42.842Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T22:08:42.843Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T22:08:42.852Z - info: Searching for available extensions in /backend/
+2018-09-16T22:08:42.861Z - info: Extensions location cache not found, crawling directories
+2018-09-16T22:08:44.412Z - info: Found 30 extensions
+2018-09-16T22:09:02.375Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-16T22:09:02.377Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-16T22:09:02.379Z - info: Searching for available extensions in /backend/
