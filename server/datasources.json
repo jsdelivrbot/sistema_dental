@@ -2,11 +2,11 @@
   "db": {
     "host": "localhost",
     "port": 27017,
-    "url": "",
+    "url": "mongodb://mongodb:27017",
     "database": "dental",
-    "password": "",
+    "password": "123",
     "name": "db",
-    "user": "",
+    "user": "root",
     "connector": "mongodb"
   }
 }

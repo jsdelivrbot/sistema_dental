@@ -16114,3 +16114,102 @@ Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SE
 2018-09-16T22:09:02.375Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
 2018-09-16T22:09:02.377Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
 2018-09-16T22:09:02.379Z - info: Searching for available extensions in /backend/
+2018-09-18T05:02:43.317Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T05:02:43.318Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T05:02:43.320Z - info: Searching for available extensions in /usr/app/
+2018-09-18T05:02:43.323Z - info: Extensions location cache not found, crawling directories
+2018-09-18T05:02:43.706Z - info: Found 30 extensions
+2018-09-18T05:05:24.645Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T05:05:24.646Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T05:05:24.648Z - info: Searching for available extensions in /usr/app/
+2018-09-18T05:09:58.041Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T05:09:58.042Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T05:09:58.044Z - info: Searching for available extensions in /usr/app/
+2018-09-18T05:09:58.048Z - info: Extensions location cache not found, crawling directories
+2018-09-18T05:09:58.401Z - info: Found 30 extensions
+2018-09-18T05:09:58.409Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T05:09:58.410Z - debug: Discovered 30 extensions
+2018-09-18T05:09:58.411Z - info: Using extension import-export
+2018-09-18T05:09:58.545Z - info: Using extension tags
+2018-09-18T05:09:58.546Z - info: Using extension templates
+2018-09-18T05:09:58.549Z - info: Using extension jsrender
+2018-09-18T05:09:58.550Z - info: Using extension authentication
+2018-09-18T05:09:58.638Z - info: Using extension cli
+2018-09-18T05:09:58.638Z - info: Using extension handlebars
+2018-09-18T05:09:58.639Z - info: Using extension debug
+2018-09-18T05:09:58.641Z - info: Using extension express
+2018-09-18T05:09:58.675Z - info: Using extension fop-pdf
+2018-09-18T05:09:58.710Z - info: Using extension phantom-pdf
+2018-09-18T05:09:58.789Z - info: Using extension fs-store
+2018-09-18T05:09:59.052Z - info: Using extension authorization
+2018-09-18T05:09:59.081Z - info: Using extension images
+2018-09-18T05:09:59.113Z - info: Using extension child-templates
+2018-09-18T05:09:59.116Z - info: Using extension browser-client
+2018-09-18T05:09:59.117Z - info: Using extension licensing
+2018-09-18T05:09:59.170Z - info: Using extension data
+2018-09-18T05:09:59.200Z - info: Using extension text
+2018-09-18T05:09:59.200Z - info: Using extension reports
+2018-09-18T05:09:59.241Z - info: Using extension resources
+2018-09-18T05:09:59.271Z - info: Using extension base
+2018-09-18T05:09:59.272Z - info: Using extension studio
+2018-09-18T05:09:59.323Z - info: Using extension html-to-xlsx
+2018-09-18T05:09:59.401Z - info: Using extension scripts
+2018-09-18T05:09:59.431Z - info: Using extension assets
+2018-09-18T05:09:59.437Z - info: Using extension scheduling
+2018-09-18T05:09:59.475Z - info: Using extension xlsx
+2018-09-18T05:09:59.576Z - info: Using extension sample-template
+2018-09-18T05:09:59.606Z - debug: Creating samples is disabled
+2018-09-18T05:09:59.606Z - info: Using extension public-templates
+2018-09-18T05:09:59.640Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T05:09:59.850Z - info: Creating default express app.
+2018-09-18T05:09:59.886Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T05:09:59.891Z - info: Verifying license key free
+2018-09-18T05:09:59.892Z - info: Using free license
+2018-09-18T05:09:59.893Z - info: reporter initialized
+2018-09-18T05:11:26.391Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T05:11:26.392Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T05:11:26.394Z - info: Searching for available extensions in /usr/app/
+2018-09-18T05:13:14.995Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T05:13:14.995Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T05:13:14.998Z - info: Searching for available extensions in /usr/app/
+2018-09-18T05:13:15.001Z - info: Extensions location cache not found, crawling directories
+2018-09-18T05:13:15.372Z - info: Found 30 extensions
+2018-09-18T05:13:15.388Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T05:13:15.389Z - debug: Discovered 30 extensions
+2018-09-18T05:13:15.391Z - info: Using extension import-export
+2018-09-18T05:13:15.531Z - info: Using extension tags
+2018-09-18T05:13:15.533Z - info: Using extension templates
+2018-09-18T05:13:15.535Z - info: Using extension jsrender
+2018-09-18T05:13:15.536Z - info: Using extension authentication
+2018-09-18T05:13:15.627Z - info: Using extension cli
+2018-09-18T05:13:15.627Z - info: Using extension handlebars
+2018-09-18T05:13:15.628Z - info: Using extension debug
+2018-09-18T05:13:15.630Z - info: Using extension express
+2018-09-18T05:13:15.670Z - info: Using extension fop-pdf
+2018-09-18T05:13:15.706Z - info: Using extension phantom-pdf
+2018-09-18T05:13:15.793Z - info: Using extension fs-store
+2018-09-18T05:13:16.060Z - info: Using extension authorization
+2018-09-18T05:13:16.091Z - info: Using extension images
+2018-09-18T05:13:16.123Z - info: Using extension child-templates
+2018-09-18T05:13:16.125Z - info: Using extension browser-client
+2018-09-18T05:13:16.126Z - info: Using extension licensing
+2018-09-18T05:13:16.179Z - info: Using extension data
+2018-09-18T05:13:16.212Z - info: Using extension text
+2018-09-18T05:13:16.212Z - info: Using extension reports
+2018-09-18T05:13:16.254Z - info: Using extension resources
+2018-09-18T05:13:16.284Z - info: Using extension base
+2018-09-18T05:13:16.285Z - info: Using extension studio
+2018-09-18T05:13:16.349Z - info: Using extension html-to-xlsx
+2018-09-18T05:13:16.425Z - info: Using extension scripts
+2018-09-18T05:13:16.456Z - info: Using extension assets
+2018-09-18T05:13:16.462Z - info: Using extension scheduling
+2018-09-18T05:13:16.502Z - info: Using extension xlsx
+2018-09-18T05:13:16.605Z - info: Using extension sample-template
+2018-09-18T05:13:16.636Z - debug: Creating samples is disabled
+2018-09-18T05:13:16.636Z - info: Using extension public-templates
+2018-09-18T05:13:16.669Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T05:13:16.880Z - info: Creating default express app.
+2018-09-18T05:13:16.912Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T05:13:16.917Z - info: Verifying license key free
+2018-09-18T05:13:16.918Z - info: Using free license
+2018-09-18T05:13:16.919Z - info: reporter initialized
