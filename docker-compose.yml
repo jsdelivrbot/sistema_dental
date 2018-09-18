@@ -6,6 +6,8 @@ services:
         environment:
             MONGO_INITDB_ROOT_USERNAME: root
             MONGO_INITDB_ROOT_PASSWORD: 123
+            MONGO_INITDB_USERNAME: root
+            MONGO_INITDB_PASSWORD: 123
             MONGO_INITDB_DATABASE: dental
         ports:
             - 27017:27017
@@ -30,18 +32,19 @@ services:
         depends_on:
             - mongodb
     frontend:
-        build:
-            context: ./client
+        build: ./client
         volumes:
-            - /client:/usr/app/client/
+            - ./client:/usr/app/client/
             - /usr/app/client/node_modules
         expose:
             - "4200"
         ports:
             - 4200:4200
-        command: ng serve
+        command: npm run start
         networks:
             - app_backend
+        links:
+            - backend
         depends_on:
             - backend
 networks:
