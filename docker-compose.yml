@@ -3,12 +3,6 @@ services:
     mongodb:
         image: mongo
         restart: always
-        environment:
-            MONGO_INITDB_ROOT_USERNAME: root
-            MONGO_INITDB_ROOT_PASSWORD: 123
-            MONGO_INITDB_USERNAME: root
-            MONGO_INITDB_PASSWORD: 123
-            MONGO_INITDB_DATABASE: dental
         ports:
             - 27017:27017
         expose:
@@ -17,6 +11,7 @@ services:
             - app_backend
         volumes:
             - /data_db:/data/db
+            - "$PWD/mongo-entrypoint/:/docker-entrypoint-initdb.d/"
     backend:
         build: .
         volumes:
@@ -24,8 +19,10 @@ services:
             - /usr/app/node_modules
         expose:
             - "3000"
+            - "2000"
         ports:
             - 3000:3000
+            - 2000:2000
         command: npm run start
         networks:
             - app_backend

@@ -16565,3 +16565,877 @@ Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SE
 2018-09-18T16:40:32.153Z - info: Verifying license key free
 2018-09-18T16:40:32.154Z - info: Using free license
 2018-09-18T16:40:32.156Z - info: reporter initialized
+2018-09-18T22:03:34.537Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T22:03:34.538Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T22:03:34.540Z - info: Searching for available extensions in /usr/app/
+2018-09-18T22:03:34.543Z - info: Extensions location cache not found, crawling directories
+2018-09-18T22:03:34.965Z - info: Found 30 extensions
+2018-09-18T22:03:34.982Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T22:03:34.982Z - debug: Discovered 30 extensions
+2018-09-18T22:03:34.984Z - info: Using extension import-export
+2018-09-18T22:03:35.141Z - info: Using extension tags
+2018-09-18T22:03:35.142Z - info: Using extension templates
+2018-09-18T22:03:35.145Z - info: Using extension jsrender
+2018-09-18T22:03:35.146Z - info: Using extension authentication
+2018-09-18T22:03:35.239Z - info: Using extension cli
+2018-09-18T22:03:35.239Z - info: Using extension handlebars
+2018-09-18T22:03:35.240Z - info: Using extension debug
+2018-09-18T22:03:35.242Z - info: Using extension express
+2018-09-18T22:03:35.278Z - info: Using extension fop-pdf
+2018-09-18T22:03:35.318Z - info: Using extension phantom-pdf
+2018-09-18T22:03:35.409Z - info: Using extension fs-store
+2018-09-18T22:03:35.710Z - info: Using extension authorization
+2018-09-18T22:03:35.742Z - info: Using extension images
+2018-09-18T22:03:35.777Z - info: Using extension child-templates
+2018-09-18T22:03:35.779Z - info: Using extension browser-client
+2018-09-18T22:03:35.780Z - info: Using extension licensing
+2018-09-18T22:03:35.837Z - info: Using extension data
+2018-09-18T22:03:35.869Z - info: Using extension text
+2018-09-18T22:03:35.870Z - info: Using extension reports
+2018-09-18T22:03:35.908Z - info: Using extension resources
+2018-09-18T22:03:35.951Z - info: Using extension base
+2018-09-18T22:03:35.952Z - info: Using extension studio
+2018-09-18T22:03:36.008Z - info: Using extension html-to-xlsx
+2018-09-18T22:03:36.095Z - info: Using extension scripts
+2018-09-18T22:03:36.140Z - info: Using extension assets
+2018-09-18T22:03:36.146Z - info: Using extension scheduling
+2018-09-18T22:03:36.187Z - info: Using extension xlsx
+2018-09-18T22:03:36.283Z - info: Using extension sample-template
+2018-09-18T22:03:36.316Z - debug: Creating samples is disabled
+2018-09-18T22:03:36.316Z - info: Using extension public-templates
+2018-09-18T22:03:36.354Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T22:03:36.643Z - info: Creating default express app.
+2018-09-18T22:03:36.677Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T22:03:36.682Z - info: Verifying license key free
+2018-09-18T22:03:36.683Z - info: Using free license
+2018-09-18T22:03:36.684Z - info: reporter initialized
+2018-09-18T22:14:33.877Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T22:14:33.878Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T22:14:33.880Z - info: Searching for available extensions in /usr/app/
+2018-09-18T22:14:33.883Z - info: Extensions location cache not found, crawling directories
+2018-09-18T22:14:34.295Z - info: Found 30 extensions
+2018-09-18T22:14:34.305Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T22:14:34.306Z - debug: Discovered 30 extensions
+2018-09-18T22:14:34.308Z - info: Using extension import-export
+2018-09-18T22:14:34.469Z - info: Using extension tags
+2018-09-18T22:14:34.470Z - info: Using extension templates
+2018-09-18T22:14:34.473Z - info: Using extension jsrender
+2018-09-18T22:14:34.474Z - info: Using extension authentication
+2018-09-18T22:14:34.571Z - info: Using extension cli
+2018-09-18T22:14:34.572Z - info: Using extension handlebars
+2018-09-18T22:14:34.573Z - info: Using extension debug
+2018-09-18T22:14:34.574Z - info: Using extension express
+2018-09-18T22:14:34.613Z - info: Using extension fop-pdf
+2018-09-18T22:14:34.651Z - info: Using extension phantom-pdf
+2018-09-18T22:14:34.735Z - info: Using extension fs-store
+2018-09-18T22:14:35.057Z - info: Using extension authorization
+2018-09-18T22:14:35.090Z - info: Using extension images
+2018-09-18T22:14:35.125Z - info: Using extension child-templates
+2018-09-18T22:14:35.127Z - info: Using extension browser-client
+2018-09-18T22:14:35.128Z - info: Using extension licensing
+2018-09-18T22:14:35.185Z - info: Using extension data
+2018-09-18T22:14:35.217Z - info: Using extension text
+2018-09-18T22:14:35.217Z - info: Using extension reports
+2018-09-18T22:14:35.252Z - info: Using extension resources
+2018-09-18T22:14:35.296Z - info: Using extension base
+2018-09-18T22:14:35.297Z - info: Using extension studio
+2018-09-18T22:14:35.353Z - info: Using extension html-to-xlsx
+2018-09-18T22:14:35.436Z - info: Using extension scripts
+2018-09-18T22:14:35.481Z - info: Using extension assets
+2018-09-18T22:14:35.487Z - info: Using extension scheduling
+2018-09-18T22:14:35.518Z - info: Using extension xlsx
+2018-09-18T22:14:35.632Z - info: Using extension sample-template
+2018-09-18T22:14:35.669Z - debug: Creating samples is disabled
+2018-09-18T22:14:35.669Z - info: Using extension public-templates
+2018-09-18T22:14:35.716Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T22:14:35.958Z - info: Creating default express app.
+2018-09-18T22:14:35.992Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T22:14:35.997Z - info: Verifying license key free
+2018-09-18T22:14:35.998Z - info: Using free license
+2018-09-18T22:14:36.000Z - info: reporter initialized
+2018-09-18T22:30:59.754Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T22:30:59.755Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T22:30:59.757Z - info: Searching for available extensions in /usr/app/
+2018-09-18T22:30:59.759Z - info: Extensions location cache not found, crawling directories
+2018-09-18T22:31:00.181Z - info: Found 30 extensions
+2018-09-18T22:31:00.194Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T22:31:00.195Z - debug: Discovered 30 extensions
+2018-09-18T22:31:00.197Z - info: Using extension import-export
+2018-09-18T22:31:00.374Z - info: Using extension tags
+2018-09-18T22:31:00.376Z - info: Using extension templates
+2018-09-18T22:31:00.379Z - info: Using extension jsrender
+2018-09-18T22:31:00.380Z - info: Using extension authentication
+2018-09-18T22:31:00.486Z - info: Using extension cli
+2018-09-18T22:31:00.487Z - info: Using extension handlebars
+2018-09-18T22:31:00.488Z - info: Using extension debug
+2018-09-18T22:31:00.490Z - info: Using extension express
+2018-09-18T22:31:00.534Z - info: Using extension fop-pdf
+2018-09-18T22:31:00.577Z - info: Using extension phantom-pdf
+2018-09-18T22:31:00.662Z - info: Using extension fs-store
+2018-09-18T22:31:01.022Z - info: Using extension authorization
+2018-09-18T22:31:01.059Z - info: Using extension images
+2018-09-18T22:31:01.099Z - info: Using extension child-templates
+2018-09-18T22:31:01.102Z - info: Using extension browser-client
+2018-09-18T22:31:01.103Z - info: Using extension licensing
+2018-09-18T22:31:01.171Z - info: Using extension data
+2018-09-18T22:31:01.212Z - info: Using extension text
+2018-09-18T22:31:01.214Z - info: Using extension reports
+2018-09-18T22:31:01.257Z - info: Using extension resources
+2018-09-18T22:31:01.295Z - info: Using extension base
+2018-09-18T22:31:01.296Z - info: Using extension studio
+2018-09-18T22:31:01.371Z - info: Using extension html-to-xlsx
+2018-09-18T22:31:01.467Z - info: Using extension scripts
+2018-09-18T22:31:01.520Z - info: Using extension assets
+2018-09-18T22:31:01.527Z - info: Using extension scheduling
+2018-09-18T22:31:01.564Z - info: Using extension xlsx
+2018-09-18T22:31:01.694Z - info: Using extension sample-template
+2018-09-18T22:31:01.733Z - debug: Creating samples is disabled
+2018-09-18T22:31:01.733Z - info: Using extension public-templates
+2018-09-18T22:31:01.783Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T22:31:02.058Z - info: Creating default express app.
+2018-09-18T22:31:02.089Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T22:31:02.094Z - info: Verifying license key free
+2018-09-18T22:31:02.095Z - info: Using free license
+2018-09-18T22:31:02.097Z - info: reporter initialized
+2018-09-18T22:37:54.983Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T22:37:54.984Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T22:37:54.987Z - info: Searching for available extensions in /usr/app/
+2018-09-18T22:37:54.990Z - info: Extensions location cache not found, crawling directories
+2018-09-18T22:37:55.403Z - info: Found 30 extensions
+2018-09-18T22:37:55.420Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T22:37:55.420Z - debug: Discovered 30 extensions
+2018-09-18T22:37:55.422Z - info: Using extension import-export
+2018-09-18T22:37:55.574Z - info: Using extension tags
+2018-09-18T22:37:55.575Z - info: Using extension templates
+2018-09-18T22:37:55.578Z - info: Using extension jsrender
+2018-09-18T22:37:55.579Z - info: Using extension authentication
+2018-09-18T22:37:55.683Z - info: Using extension cli
+2018-09-18T22:37:55.684Z - info: Using extension handlebars
+2018-09-18T22:37:55.685Z - info: Using extension debug
+2018-09-18T22:37:55.687Z - info: Using extension express
+2018-09-18T22:37:55.727Z - info: Using extension fop-pdf
+2018-09-18T22:37:55.767Z - info: Using extension phantom-pdf
+2018-09-18T22:37:55.862Z - info: Using extension fs-store
+2018-09-18T22:37:56.167Z - info: Using extension authorization
+2018-09-18T22:37:56.199Z - info: Using extension images
+2018-09-18T22:37:56.233Z - info: Using extension child-templates
+2018-09-18T22:37:56.236Z - info: Using extension browser-client
+2018-09-18T22:37:56.237Z - info: Using extension licensing
+2018-09-18T22:37:56.292Z - info: Using extension data
+2018-09-18T22:37:56.324Z - info: Using extension text
+2018-09-18T22:37:56.324Z - info: Using extension reports
+2018-09-18T22:37:56.360Z - info: Using extension resources
+2018-09-18T22:37:56.402Z - info: Using extension base
+2018-09-18T22:37:56.403Z - info: Using extension studio
+2018-09-18T22:37:56.458Z - info: Using extension html-to-xlsx
+2018-09-18T22:37:56.540Z - info: Using extension scripts
+2018-09-18T22:37:56.585Z - info: Using extension assets
+2018-09-18T22:37:56.591Z - info: Using extension scheduling
+2018-09-18T22:37:56.633Z - info: Using extension xlsx
+2018-09-18T22:37:56.731Z - info: Using extension sample-template
+2018-09-18T22:37:56.768Z - debug: Creating samples is disabled
+2018-09-18T22:37:56.768Z - info: Using extension public-templates
+2018-09-18T22:37:56.813Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T22:37:57.073Z - info: Creating default express app.
+2018-09-18T22:37:57.106Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T22:37:57.111Z - info: Verifying license key free
+2018-09-18T22:37:57.112Z - info: Using free license
+2018-09-18T22:37:57.114Z - info: reporter initialized
+2018-09-18T22:48:41.590Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T22:48:41.590Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T22:48:41.593Z - info: Searching for available extensions in /usr/app/
+2018-09-18T22:48:41.596Z - info: Extensions location cache not found, crawling directories
+2018-09-18T22:48:41.987Z - info: Found 30 extensions
+2018-09-18T22:48:42.011Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T22:48:42.012Z - debug: Discovered 30 extensions
+2018-09-18T22:48:42.014Z - info: Using extension import-export
+2018-09-18T22:48:42.176Z - info: Using extension tags
+2018-09-18T22:48:42.177Z - info: Using extension templates
+2018-09-18T22:48:42.180Z - info: Using extension jsrender
+2018-09-18T22:48:42.181Z - info: Using extension authentication
+2018-09-18T22:48:42.273Z - info: Using extension cli
+2018-09-18T22:48:42.274Z - info: Using extension handlebars
+2018-09-18T22:48:42.275Z - info: Using extension debug
+2018-09-18T22:48:42.276Z - info: Using extension express
+2018-09-18T22:48:42.315Z - info: Using extension fop-pdf
+2018-09-18T22:48:42.354Z - info: Using extension phantom-pdf
+2018-09-18T22:48:42.430Z - info: Using extension fs-store
+2018-09-18T22:48:42.731Z - info: Using extension authorization
+2018-09-18T22:48:42.763Z - info: Using extension images
+2018-09-18T22:48:42.798Z - info: Using extension child-templates
+2018-09-18T22:48:42.800Z - info: Using extension browser-client
+2018-09-18T22:48:42.801Z - info: Using extension licensing
+2018-09-18T22:48:42.857Z - info: Using extension data
+2018-09-18T22:48:42.891Z - info: Using extension text
+2018-09-18T22:48:42.891Z - info: Using extension reports
+2018-09-18T22:48:42.925Z - info: Using extension resources
+2018-09-18T22:48:42.957Z - info: Using extension base
+2018-09-18T22:48:42.957Z - info: Using extension studio
+2018-09-18T22:48:43.022Z - info: Using extension html-to-xlsx
+2018-09-18T22:48:43.103Z - info: Using extension scripts
+2018-09-18T22:48:43.149Z - info: Using extension assets
+2018-09-18T22:48:43.156Z - info: Using extension scheduling
+2018-09-18T22:48:43.189Z - info: Using extension xlsx
+2018-09-18T22:48:43.306Z - info: Using extension sample-template
+2018-09-18T22:48:43.339Z - debug: Creating samples is disabled
+2018-09-18T22:48:43.339Z - info: Using extension public-templates
+2018-09-18T22:48:43.378Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T22:48:43.693Z - info: Creating default express app.
+2018-09-18T22:48:43.727Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T22:48:43.732Z - info: Verifying license key free
+2018-09-18T22:48:43.733Z - info: Using free license
+2018-09-18T22:48:43.735Z - info: reporter initialized
+2018-09-18T22:54:57.154Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T22:54:57.155Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T22:54:57.157Z - info: Searching for available extensions in /usr/app/
+2018-09-18T22:54:57.159Z - info: Extensions location cache not found, crawling directories
+2018-09-18T22:54:57.791Z - info: Found 30 extensions
+2018-09-18T22:54:57.802Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T22:54:57.803Z - debug: Discovered 30 extensions
+2018-09-18T22:54:57.804Z - info: Using extension import-export
+2018-09-18T22:54:57.947Z - info: Using extension tags
+2018-09-18T22:54:57.948Z - info: Using extension templates
+2018-09-18T22:54:57.951Z - info: Using extension jsrender
+2018-09-18T22:54:57.952Z - info: Using extension authentication
+2018-09-18T22:54:58.043Z - info: Using extension cli
+2018-09-18T22:54:58.043Z - info: Using extension handlebars
+2018-09-18T22:54:58.044Z - info: Using extension debug
+2018-09-18T22:54:58.046Z - info: Using extension express
+2018-09-18T22:54:58.081Z - info: Using extension fop-pdf
+2018-09-18T22:54:58.118Z - info: Using extension phantom-pdf
+2018-09-18T22:54:58.191Z - info: Using extension fs-store
+2018-09-18T22:54:58.491Z - info: Using extension authorization
+2018-09-18T22:54:58.523Z - info: Using extension images
+2018-09-18T22:54:58.558Z - info: Using extension child-templates
+2018-09-18T22:54:58.560Z - info: Using extension browser-client
+2018-09-18T22:54:58.561Z - info: Using extension licensing
+2018-09-18T22:54:58.618Z - info: Using extension data
+2018-09-18T22:54:58.652Z - info: Using extension text
+2018-09-18T22:54:58.653Z - info: Using extension reports
+2018-09-18T22:54:58.687Z - info: Using extension resources
+2018-09-18T22:54:58.719Z - info: Using extension base
+2018-09-18T22:54:58.719Z - info: Using extension studio
+2018-09-18T22:54:58.793Z - info: Using extension html-to-xlsx
+2018-09-18T22:54:58.881Z - info: Using extension scripts
+2018-09-18T22:54:58.923Z - info: Using extension assets
+2018-09-18T22:54:58.929Z - info: Using extension scheduling
+2018-09-18T22:54:58.957Z - info: Using extension xlsx
+2018-09-18T22:54:59.060Z - info: Using extension sample-template
+2018-09-18T22:54:59.091Z - debug: Creating samples is disabled
+2018-09-18T22:54:59.091Z - info: Using extension public-templates
+2018-09-18T22:54:59.131Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T22:54:59.347Z - info: Creating default express app.
+2018-09-18T22:54:59.370Z - error: Error occured during reporter init Error: ENOSPC: no space left on device, open '/usr/app/node_modules/jsreport-studio/static/dist/1.client.js'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.writeFileSync (fs.js:1291:33)
+    at Reporter.<anonymous> (/usr/app/node_modules/jsreport-studio/lib/studio.js:91:10)
+    at emitOne (events.js:121:20)
+    at Reporter.emit (events.js:211:7)
+    at configureExpressApp (/usr/app/node_modules/jsreport-express/lib/reporter.express.js:131:12)
+    at module.exports.<anonymous> (/usr/app/node_modules/jsreport-express/lib/reporter.express.js:182:5)
+    at /usr/app/node_modules/listener-collection/lib/listenerCollection.js:171:33
+    at /usr/app/node_modules/listener-collection/lib/listenerCollection.js:151:16
+    at tryCatcher (/usr/app/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/usr/app/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/usr/app/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/usr/app/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/usr/app/node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (/usr/app/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/usr/app/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/usr/app/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+2018-09-18T22:57:59.885Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T22:57:59.886Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T22:57:59.888Z - info: Searching for available extensions in /usr/app/
+2018-09-18T22:57:59.893Z - info: Extensions location cache contains up to date information, skipping crawling in /usr/app/node_modules/
+2018-09-18T22:57:59.910Z - info: Found 30 extensions
+2018-09-18T22:57:59.918Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T22:57:59.919Z - debug: Discovered 30 extensions
+2018-09-18T22:57:59.921Z - info: Using extension import-export
+2018-09-18T22:58:00.083Z - info: Using extension tags
+2018-09-18T22:58:00.085Z - info: Using extension templates
+2018-09-18T22:58:00.087Z - info: Using extension jsrender
+2018-09-18T22:58:00.088Z - info: Using extension authentication
+2018-09-18T22:58:00.180Z - info: Using extension cli
+2018-09-18T22:58:00.181Z - info: Using extension handlebars
+2018-09-18T22:58:00.182Z - info: Using extension debug
+2018-09-18T22:58:00.183Z - info: Using extension express
+2018-09-18T22:58:00.218Z - info: Using extension fop-pdf
+2018-09-18T22:58:00.265Z - info: Using extension phantom-pdf
+2018-09-18T22:58:00.347Z - info: Using extension fs-store
+2018-09-18T22:58:00.651Z - info: Using extension authorization
+2018-09-18T22:58:00.681Z - info: Using extension images
+2018-09-18T22:58:00.714Z - info: Using extension child-templates
+2018-09-18T22:58:00.717Z - info: Using extension browser-client
+2018-09-18T22:58:00.718Z - info: Using extension licensing
+2018-09-18T22:58:00.772Z - info: Using extension data
+2018-09-18T22:58:00.802Z - info: Using extension text
+2018-09-18T22:58:00.803Z - info: Using extension reports
+2018-09-18T22:58:00.844Z - info: Using extension resources
+2018-09-18T22:58:00.875Z - info: Using extension base
+2018-09-18T22:58:00.875Z - info: Using extension studio
+2018-09-18T22:58:00.926Z - info: Using extension html-to-xlsx
+2018-09-18T22:58:01.005Z - info: Using extension scripts
+2018-09-18T22:58:01.049Z - info: Using extension assets
+2018-09-18T22:58:01.055Z - info: Using extension scheduling
+2018-09-18T22:58:01.092Z - info: Using extension xlsx
+2018-09-18T22:58:01.184Z - info: Using extension sample-template
+2018-09-18T22:58:01.214Z - debug: Creating samples is disabled
+2018-09-18T22:58:01.214Z - info: Using extension public-templates
+2018-09-18T22:58:01.252Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T22:58:01.471Z - info: Creating default express app.
+2018-09-18T22:58:01.503Z - error: Error occured during reporter init Error: ENOSPC: no space left on device, open '/usr/app/node_modules/jsreport-studio/static/dist/1.client.js'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.writeFileSync (fs.js:1291:33)
+    at Reporter.<anonymous> (/usr/app/node_modules/jsreport-studio/lib/studio.js:91:10)
+    at emitOne (events.js:121:20)
+    at Reporter.emit (events.js:211:7)
+    at configureExpressApp (/usr/app/node_modules/jsreport-express/lib/reporter.express.js:131:12)
+    at module.exports.<anonymous> (/usr/app/node_modules/jsreport-express/lib/reporter.express.js:182:5)
+    at /usr/app/node_modules/listener-collection/lib/listenerCollection.js:171:33
+    at /usr/app/node_modules/listener-collection/lib/listenerCollection.js:151:16
+    at tryCatcher (/usr/app/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/usr/app/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/usr/app/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/usr/app/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/usr/app/node_modules/bluebird/js/release/promise.js:693:18)
+    at Async._drainQueue (/usr/app/node_modules/bluebird/js/release/async.js:133:16)
+    at Async._drainQueues (/usr/app/node_modules/bluebird/js/release/async.js:143:10)
+    at Immediate.Async.drainQueues (/usr/app/node_modules/bluebird/js/release/async.js:17:14)
+    at runCallback (timers.js:789:20)
+    at tryOnImmediate (timers.js:751:5)
+    at processImmediate [as _immediateCallback] (timers.js:722:5)
+2018-09-18T23:01:16.357Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T23:01:16.358Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T23:01:16.360Z - info: Searching for available extensions in /usr/app/
+2018-09-18T23:01:16.362Z - info: Extensions location cache not found, crawling directories
+2018-09-18T23:01:16.868Z - info: Found 30 extensions
+2018-09-18T23:01:16.886Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T23:01:16.888Z - debug: Discovered 30 extensions
+2018-09-18T23:01:16.891Z - info: Using extension import-export
+2018-09-18T23:01:17.054Z - info: Using extension tags
+2018-09-18T23:01:17.055Z - info: Using extension templates
+2018-09-18T23:01:17.059Z - info: Using extension jsrender
+2018-09-18T23:01:17.059Z - info: Using extension authentication
+2018-09-18T23:01:17.166Z - info: Using extension cli
+2018-09-18T23:01:17.167Z - info: Using extension handlebars
+2018-09-18T23:01:17.168Z - info: Using extension debug
+2018-09-18T23:01:17.169Z - info: Using extension express
+2018-09-18T23:01:17.205Z - info: Using extension fop-pdf
+2018-09-18T23:01:17.244Z - info: Using extension phantom-pdf
+2018-09-18T23:01:17.335Z - info: Using extension fs-store
+2018-09-18T23:01:17.635Z - info: Using extension authorization
+2018-09-18T23:01:17.667Z - info: Using extension images
+2018-09-18T23:01:17.701Z - info: Using extension child-templates
+2018-09-18T23:01:17.703Z - info: Using extension browser-client
+2018-09-18T23:01:17.704Z - info: Using extension licensing
+2018-09-18T23:01:17.759Z - info: Using extension data
+2018-09-18T23:01:17.792Z - info: Using extension text
+2018-09-18T23:01:17.792Z - info: Using extension reports
+2018-09-18T23:01:17.828Z - info: Using extension resources
+2018-09-18T23:01:17.870Z - info: Using extension base
+2018-09-18T23:01:17.871Z - info: Using extension studio
+2018-09-18T23:01:17.925Z - info: Using extension html-to-xlsx
+2018-09-18T23:01:18.007Z - info: Using extension scripts
+2018-09-18T23:01:18.050Z - info: Using extension assets
+2018-09-18T23:01:18.056Z - info: Using extension scheduling
+2018-09-18T23:01:18.086Z - info: Using extension xlsx
+2018-09-18T23:01:18.200Z - info: Using extension sample-template
+2018-09-18T23:01:18.232Z - debug: Creating samples is disabled
+2018-09-18T23:01:18.232Z - info: Using extension public-templates
+2018-09-18T23:01:18.270Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T23:01:18.552Z - info: Creating default express app.
+2018-09-18T23:01:18.585Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T23:01:18.589Z - info: Verifying license key free
+2018-09-18T23:01:18.590Z - info: Using free license
+2018-09-18T23:01:18.592Z - info: reporter initialized
+2018-09-18T23:13:08.320Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-18T23:13:08.321Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-18T23:13:08.323Z - info: Searching for available extensions in /usr/app/
+2018-09-18T23:13:08.326Z - info: Extensions location cache not found, crawling directories
+2018-09-18T23:13:08.832Z - info: Found 30 extensions
+2018-09-18T23:13:08.866Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-18T23:13:08.868Z - debug: Discovered 30 extensions
+2018-09-18T23:13:08.871Z - info: Using extension import-export
+2018-09-18T23:13:09.063Z - info: Using extension tags
+2018-09-18T23:13:09.065Z - info: Using extension templates
+2018-09-18T23:13:09.068Z - info: Using extension jsrender
+2018-09-18T23:13:09.069Z - info: Using extension authentication
+2018-09-18T23:13:09.212Z - info: Using extension cli
+2018-09-18T23:13:09.212Z - info: Using extension handlebars
+2018-09-18T23:13:09.214Z - info: Using extension debug
+2018-09-18T23:13:09.215Z - info: Using extension express
+2018-09-18T23:13:09.264Z - info: Using extension fop-pdf
+2018-09-18T23:13:09.312Z - info: Using extension phantom-pdf
+2018-09-18T23:13:09.412Z - info: Using extension fs-store
+2018-09-18T23:13:09.789Z - info: Using extension authorization
+2018-09-18T23:13:09.826Z - info: Using extension images
+2018-09-18T23:13:09.863Z - info: Using extension child-templates
+2018-09-18T23:13:09.866Z - info: Using extension browser-client
+2018-09-18T23:13:09.868Z - info: Using extension licensing
+2018-09-18T23:13:09.952Z - info: Using extension data
+2018-09-18T23:13:10.002Z - info: Using extension text
+2018-09-18T23:13:10.003Z - info: Using extension reports
+2018-09-18T23:13:10.037Z - info: Using extension resources
+2018-09-18T23:13:10.070Z - info: Using extension base
+2018-09-18T23:13:10.070Z - info: Using extension studio
+2018-09-18T23:13:10.143Z - info: Using extension html-to-xlsx
+2018-09-18T23:13:10.297Z - info: Using extension scripts
+2018-09-18T23:13:10.357Z - info: Using extension assets
+2018-09-18T23:13:10.367Z - info: Using extension scheduling
+2018-09-18T23:13:10.403Z - info: Using extension xlsx
+2018-09-18T23:13:10.511Z - info: Using extension sample-template
+2018-09-18T23:13:10.544Z - debug: Creating samples is disabled
+2018-09-18T23:13:10.544Z - info: Using extension public-templates
+2018-09-18T23:13:10.604Z - info: Initializing fs storage at /usr/app/data
+2018-09-18T23:13:10.865Z - info: Creating default express app.
+2018-09-18T23:13:10.908Z - info: jsreport server successfully started on http port: 2000
+2018-09-18T23:13:10.914Z - info: Verifying license key free
+2018-09-18T23:13:10.915Z - info: Using free license
+2018-09-18T23:13:10.918Z - info: reporter initialized
+2018-09-19T00:40:03.371Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-19T00:40:03.371Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-19T00:40:03.375Z - info: Searching for available extensions in /usr/app/
+2018-09-19T00:40:03.378Z - info: Extensions location cache not found, crawling directories
+2018-09-19T00:40:03.877Z - info: Found 30 extensions
+2018-09-19T00:40:03.916Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-19T00:40:03.917Z - debug: Discovered 30 extensions
+2018-09-19T00:40:03.919Z - info: Using extension import-export
+2018-09-19T00:40:04.147Z - info: Using extension tags
+2018-09-19T00:40:04.149Z - info: Using extension templates
+2018-09-19T00:40:04.153Z - info: Using extension jsrender
+2018-09-19T00:40:04.154Z - info: Using extension authentication
+2018-09-19T00:40:04.307Z - info: Using extension cli
+2018-09-19T00:40:04.308Z - info: Using extension handlebars
+2018-09-19T00:40:04.309Z - info: Using extension debug
+2018-09-19T00:40:04.311Z - info: Using extension express
+2018-09-19T00:40:04.356Z - info: Using extension fop-pdf
+2018-09-19T00:40:04.418Z - info: Using extension phantom-pdf
+2018-09-19T00:40:04.516Z - info: Using extension fs-store
+2018-09-19T00:40:04.904Z - info: Using extension authorization
+2018-09-19T00:40:04.939Z - info: Using extension images
+2018-09-19T00:40:04.978Z - info: Using extension child-templates
+2018-09-19T00:40:04.981Z - info: Using extension browser-client
+2018-09-19T00:40:04.982Z - info: Using extension licensing
+2018-09-19T00:40:05.131Z - info: Using extension data
+2018-09-19T00:40:05.170Z - info: Using extension text
+2018-09-19T00:40:05.171Z - info: Using extension reports
+2018-09-19T00:40:05.224Z - info: Using extension resources
+2018-09-19T00:40:05.262Z - info: Using extension base
+2018-09-19T00:40:05.263Z - info: Using extension studio
+2018-09-19T00:40:05.341Z - info: Using extension html-to-xlsx
+2018-09-19T00:40:05.437Z - info: Using extension scripts
+2018-09-19T00:40:05.486Z - info: Using extension assets
+2018-09-19T00:40:05.493Z - info: Using extension scheduling
+2018-09-19T00:40:05.547Z - info: Using extension xlsx
+2018-09-19T00:40:05.663Z - info: Using extension sample-template
+2018-09-19T00:40:05.709Z - debug: Creating samples is disabled
+2018-09-19T00:40:05.709Z - info: Using extension public-templates
+2018-09-19T00:40:05.775Z - info: Initializing fs storage at /usr/app/data
+2018-09-19T00:40:06.051Z - info: Creating default express app.
+2018-09-19T00:40:06.103Z - info: jsreport server successfully started on http port: 2000
+2018-09-19T00:40:06.109Z - info: Verifying license key free
+2018-09-19T00:40:06.110Z - info: Using free license
+2018-09-19T00:40:06.112Z - info: reporter initialized
+2018-09-19T01:09:02.414Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-09-19T01:09:02.415Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-09-19T01:09:02.420Z - info: Searching for available extensions in /usr/app/
+2018-09-19T01:09:02.423Z - info: Extensions location cache not found, crawling directories
+2018-09-19T01:09:02.942Z - info: Found 30 extensions
+2018-09-19T01:09:02.979Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-09-19T01:09:02.981Z - debug: Discovered 30 extensions
+2018-09-19T01:09:02.984Z - info: Using extension import-export
+2018-09-19T01:09:03.217Z - info: Using extension tags
+2018-09-19T01:09:03.218Z - info: Using extension templates
+2018-09-19T01:09:03.222Z - info: Using extension jsrender
+2018-09-19T01:09:03.223Z - info: Using extension authentication
+2018-09-19T01:09:03.398Z - info: Using extension cli
+2018-09-19T01:09:03.399Z - info: Using extension handlebars
+2018-09-19T01:09:03.400Z - info: Using extension debug
+2018-09-19T01:09:03.402Z - info: Using extension express
+2018-09-19T01:09:03.446Z - info: Using extension fop-pdf
+2018-09-19T01:09:03.532Z - info: Using extension phantom-pdf
+2018-09-19T01:09:03.622Z - info: Using extension fs-store
+2018-09-19T01:09:04.065Z - info: Using extension authorization
+2018-09-19T01:09:04.101Z - info: Using extension images
+2018-09-19T01:09:04.137Z - info: Using extension child-templates
+2018-09-19T01:09:04.139Z - info: Using extension browser-client
+2018-09-19T01:09:04.141Z - info: Using extension licensing
+2018-09-19T01:09:04.253Z - info: Using extension data
+2018-09-19T01:09:04.287Z - info: Using extension text
+2018-09-19T01:09:04.288Z - info: Using extension reports
+2018-09-19T01:09:04.386Z - info: Using extension resources
+2018-09-19T01:09:04.420Z - info: Using extension base
+2018-09-19T01:09:04.420Z - info: Using extension studio
+2018-09-19T01:09:04.481Z - info: Using extension html-to-xlsx
+2018-09-19T01:09:04.603Z - info: Using extension scripts
+2018-09-19T01:09:04.649Z - info: Using extension assets
+2018-09-19T01:09:04.656Z - info: Using extension scheduling
+2018-09-19T01:09:04.704Z - info: Using extension xlsx
+2018-09-19T01:09:04.827Z - info: Using extension sample-template
+2018-09-19T01:09:04.860Z - debug: Creating samples is disabled
+2018-09-19T01:09:04.860Z - info: Using extension public-templates
+2018-09-19T01:09:04.950Z - info: Initializing fs storage at /usr/app/data
+2018-09-19T01:09:05.214Z - info: Creating default express app.
+2018-09-19T01:09:05.266Z - info: jsreport server successfully started on http port: 2000
+2018-09-19T01:09:05.272Z - info: Verifying license key free
+2018-09-19T01:09:05.273Z - info: Using free license
+2018-09-19T01:09:05.274Z - info: reporter initialized
+2018-09-19T01:10:34.232Z - debug: API logging in user admin
+2018-09-19T01:10:34.233Z - info: Starting rendering request 1 (user: admin) requestId=1
+2018-09-19T01:10:34.236Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:false} requestId=1
+2018-09-19T01:10:34.236Z - debug: Inline data specified. requestId=1
+2018-09-19T01:10:34.244Z - debug: Replaced assets ["metro.css"] requestId=1
+2018-09-19T01:10:34.245Z - debug: Resources not defined for this template. requestId=1
+2018-09-19T01:10:34.247Z - debug: Base url not specified, skipping its injection. requestId=1
+2018-09-19T01:10:34.249Z - debug: Rendering engine handlebars requestId=1
+2018-09-19T01:10:34.602Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:10:34 GMT+0000 (UTC), requestId=1
+2018-09-19T01:10:34.697Z - debug: Replaced images ["23695606"] requestId=1
+2018-09-19T01:10:34.709Z - debug: Executing recipe phantom-pdf requestId=1
+2018-09-19T01:10:34.722Z - debug: Starting child request to render pdf footer requestId=1
+2018-09-19T01:10:34.725Z - info: Starting rendering request 2 (user: admin) requestId=2
+2018-09-19T01:10:34.726Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:false} requestId=2
+2018-09-19T01:10:34.726Z - debug: Inline data specified. requestId=2
+2018-09-19T01:10:34.728Z - debug: Resources not defined for this template. requestId=2
+2018-09-19T01:10:34.728Z - debug: Base url not specified, skipping its injection. requestId=2
+2018-09-19T01:10:34.729Z - debug: Rendering engine handlebars requestId=2
+2018-09-19T01:10:34.878Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:10:34 GMT+0000 (UTC), requestId=2
+2018-09-19T01:10:34.880Z - debug: Replaced images [] requestId=2
+2018-09-19T01:10:34.882Z - debug: Executing recipe html requestId=2
+2018-09-19T01:10:34.884Z - debug: Skipping storing report. requestId=2
+2018-09-19T01:10:34.888Z - info: Rendering request 2 finished in 163 ms requestId=2
+2018-09-19T01:10:34.925Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=1
+2018-09-19T01:10:34.926Z - error: Error during processing request: http://localhost:2000/api/report details: Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:11:55.256Z - info: Logging in user admin
+2018-09-19T01:11:55.885Z - debug: OData query on scripts
+2018-09-19T01:11:55.887Z - debug: OData query on templates
+2018-09-19T01:11:55.890Z - debug: OData query on tags
+2018-09-19T01:11:55.891Z - debug: OData query on data
+2018-09-19T01:11:55.892Z - debug: OData query on images
+2018-09-19T01:11:55.895Z - debug: OData query on assets
+2018-09-19T01:11:55.911Z - debug: OData query on xlsxTemplates
+2018-09-19T01:11:55.912Z - debug: OData query on users
+2018-09-19T01:11:55.913Z - debug: OData query on schedules
+2018-09-19T01:11:55.917Z - debug: OData query on settings
+2018-09-19T01:11:56.115Z - debug: OData query on templates
+2018-09-19T01:11:56.125Z - debug: OData query on settings
+2018-09-19T01:12:06.662Z - debug: API logging in user admin
+2018-09-19T01:12:06.663Z - info: Starting rendering request 3 (user: admin) requestId=3
+2018-09-19T01:12:06.664Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:false} requestId=3
+2018-09-19T01:12:06.664Z - debug: Inline data specified. requestId=3
+2018-09-19T01:12:06.669Z - debug: Replaced assets ["metro.css"] requestId=3
+2018-09-19T01:12:06.670Z - debug: Resources not defined for this template. requestId=3
+2018-09-19T01:12:06.671Z - debug: Base url not specified, skipping its injection. requestId=3
+2018-09-19T01:12:06.672Z - debug: Rendering engine handlebars requestId=3
+2018-09-19T01:12:06.981Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:12:06 GMT+0000 (UTC), requestId=3
+2018-09-19T01:12:06.987Z - debug: Replaced images ["23695606"] requestId=3
+2018-09-19T01:12:06.998Z - debug: Executing recipe phantom-pdf requestId=3
+2018-09-19T01:12:07.087Z - debug: Starting child request to render pdf footer requestId=3
+2018-09-19T01:12:07.089Z - info: Starting rendering request 4 (user: admin) requestId=4
+2018-09-19T01:12:07.090Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:false} requestId=4
+2018-09-19T01:12:07.091Z - debug: Inline data specified. requestId=4
+2018-09-19T01:12:07.092Z - debug: Resources not defined for this template. requestId=4
+2018-09-19T01:12:07.092Z - debug: Base url not specified, skipping its injection. requestId=4
+2018-09-19T01:12:07.093Z - debug: Rendering engine handlebars requestId=4
+2018-09-19T01:12:07.237Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:12:07 GMT+0000 (UTC), requestId=4
+2018-09-19T01:12:07.239Z - debug: Replaced images [] requestId=4
+2018-09-19T01:12:07.241Z - debug: Executing recipe html requestId=4
+2018-09-19T01:12:07.242Z - debug: Skipping storing report. requestId=4
+2018-09-19T01:12:07.244Z - info: Rendering request 4 finished in 155 ms requestId=4
+2018-09-19T01:12:07.271Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=3
+2018-09-19T01:12:07.272Z - error: Error during processing request: http://localhost:2000/api/report details: Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:12:33.941Z - debug: OData query on templates
+2018-09-19T01:12:33.960Z - debug: OData query on templates
+2018-09-19T01:12:34.271Z - debug: OData query on settings
+2018-09-19T01:12:42.750Z - info: Starting rendering request 5 (user: admin) requestId=5
+2018-09-19T01:12:42.751Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=5
+2018-09-19T01:12:42.752Z - debug: Adding sample data SyEl27baW requestId=5
+2018-09-19T01:12:42.757Z - debug: Replaced assets ["metro.css"] requestId=5
+2018-09-19T01:12:42.757Z - debug: Resources not defined for this template. requestId=5
+2018-09-19T01:12:42.758Z - debug: Base url not specified, skipping its injection. requestId=5
+2018-09-19T01:12:42.759Z - debug: Rendering engine handlebars requestId=5
+2018-09-19T01:12:43.080Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:12:42 GMT+0000 (UTC), requestId=5
+2018-09-19T01:12:43.087Z - debug: Replaced images ["23695606"] requestId=5
+2018-09-19T01:12:43.098Z - debug: Executing recipe phantom-pdf requestId=5
+2018-09-19T01:12:43.198Z - debug: Starting child request to render pdf footer requestId=5
+2018-09-19T01:12:43.201Z - info: Starting rendering request 6 (user: admin) requestId=6
+2018-09-19T01:12:43.205Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:true} requestId=6
+2018-09-19T01:12:43.205Z - debug: Inline data specified. requestId=6
+2018-09-19T01:12:43.207Z - debug: Resources not defined for this template. requestId=6
+2018-09-19T01:12:43.207Z - debug: Base url not specified, skipping its injection. requestId=6
+2018-09-19T01:12:43.208Z - debug: Rendering engine handlebars requestId=6
+2018-09-19T01:12:43.360Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:12:43 GMT+0000 (UTC), requestId=6
+2018-09-19T01:12:43.361Z - debug: Replaced images [] requestId=6
+2018-09-19T01:12:43.362Z - debug: Executing recipe html requestId=6
+2018-09-19T01:12:43.362Z - debug: Skipping storing report. requestId=6
+2018-09-19T01:12:43.363Z - info: Rendering request 6 finished in 162 ms requestId=6
+2018-09-19T01:12:43.386Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=5
+2018-09-19T01:12:43.387Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:13:29.680Z - info: Starting rendering request 7 (user: admin) requestId=7
+2018-09-19T01:13:29.682Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=7
+2018-09-19T01:13:29.682Z - debug: Adding sample data SyEl27baW requestId=7
+2018-09-19T01:13:29.688Z - debug: Replaced assets ["metro.css"] requestId=7
+2018-09-19T01:13:29.689Z - debug: Resources not defined for this template. requestId=7
+2018-09-19T01:13:29.690Z - debug: Base url not specified, skipping its injection. requestId=7
+2018-09-19T01:13:29.690Z - debug: Rendering engine handlebars requestId=7
+2018-09-19T01:13:30.018Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:29 GMT+0000 (UTC), requestId=7
+2018-09-19T01:13:30.024Z - debug: Replaced images ["23695606"] requestId=7
+2018-09-19T01:13:30.035Z - debug: Executing recipe phantom-pdf requestId=7
+2018-09-19T01:13:30.131Z - debug: Starting child request to render pdf footer requestId=7
+2018-09-19T01:13:30.136Z - info: Starting rendering request 8 (user: admin) requestId=8
+2018-09-19T01:13:30.137Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:true} requestId=8
+2018-09-19T01:13:30.138Z - debug: Inline data specified. requestId=8
+2018-09-19T01:13:30.140Z - debug: Resources not defined for this template. requestId=8
+2018-09-19T01:13:30.140Z - debug: Base url not specified, skipping its injection. requestId=8
+2018-09-19T01:13:30.141Z - debug: Rendering engine handlebars requestId=8
+2018-09-19T01:13:30.290Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:30 GMT+0000 (UTC), requestId=8
+2018-09-19T01:13:30.290Z - debug: Replaced images [] requestId=8
+2018-09-19T01:13:30.291Z - debug: Executing recipe html requestId=8
+2018-09-19T01:13:30.291Z - debug: Skipping storing report. requestId=8
+2018-09-19T01:13:30.293Z - info: Rendering request 8 finished in 157 ms requestId=8
+2018-09-19T01:13:30.318Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=7
+2018-09-19T01:13:30.319Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:13:31.336Z - info: Starting rendering request 9 (user: admin) requestId=9
+2018-09-19T01:13:31.337Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=9
+2018-09-19T01:13:31.338Z - debug: Adding sample data SyEl27baW requestId=9
+2018-09-19T01:13:31.342Z - debug: Replaced assets ["metro.css"] requestId=9
+2018-09-19T01:13:31.343Z - debug: Resources not defined for this template. requestId=9
+2018-09-19T01:13:31.343Z - debug: Base url not specified, skipping its injection. requestId=9
+2018-09-19T01:13:31.344Z - debug: Rendering engine handlebars requestId=9
+2018-09-19T01:13:31.663Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:31 GMT+0000 (UTC), requestId=9
+2018-09-19T01:13:31.668Z - debug: Replaced images ["23695606"] requestId=9
+2018-09-19T01:13:31.679Z - debug: Executing recipe phantom-pdf requestId=9
+2018-09-19T01:13:31.784Z - debug: Starting child request to render pdf footer requestId=9
+2018-09-19T01:13:31.788Z - info: Starting rendering request 10 (user: admin) requestId=10
+2018-09-19T01:13:31.790Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:true} requestId=10
+2018-09-19T01:13:31.790Z - debug: Inline data specified. requestId=10
+2018-09-19T01:13:31.792Z - debug: Resources not defined for this template. requestId=10
+2018-09-19T01:13:31.792Z - debug: Base url not specified, skipping its injection. requestId=10
+2018-09-19T01:13:31.793Z - debug: Rendering engine handlebars requestId=10
+2018-09-19T01:13:31.946Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:31 GMT+0000 (UTC), requestId=10
+2018-09-19T01:13:31.947Z - debug: Replaced images [] requestId=10
+2018-09-19T01:13:31.949Z - debug: Executing recipe html requestId=10
+2018-09-19T01:13:31.950Z - debug: Skipping storing report. requestId=10
+2018-09-19T01:13:31.953Z - info: Rendering request 10 finished in 165 ms requestId=10
+2018-09-19T01:13:31.976Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=9
+2018-09-19T01:13:31.976Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:13:32.995Z - debug: OData update on templates
+2018-09-19T01:13:33.825Z - info: Starting rendering request 11 (user: admin) requestId=11
+2018-09-19T01:13:33.827Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=11
+2018-09-19T01:13:33.828Z - debug: Adding sample data SyEl27baW requestId=11
+2018-09-19T01:13:33.832Z - debug: Replaced assets ["metro.css"] requestId=11
+2018-09-19T01:13:33.833Z - debug: Resources not defined for this template. requestId=11
+2018-09-19T01:13:33.833Z - debug: Base url not specified, skipping its injection. requestId=11
+2018-09-19T01:13:33.834Z - debug: Rendering engine handlebars requestId=11
+2018-09-19T01:13:34.158Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:33 GMT+0000 (UTC), requestId=11
+2018-09-19T01:13:34.163Z - debug: Replaced images ["23695606"] requestId=11
+2018-09-19T01:13:34.174Z - debug: Executing recipe phantom-pdf requestId=11
+2018-09-19T01:13:34.176Z - debug: Starting child request to render pdf footer requestId=11
+2018-09-19T01:13:34.177Z - info: Starting rendering request 12 (user: admin) requestId=12
+2018-09-19T01:13:34.178Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:true} requestId=12
+2018-09-19T01:13:34.178Z - debug: Inline data specified. requestId=12
+2018-09-19T01:13:34.179Z - debug: Resources not defined for this template. requestId=12
+2018-09-19T01:13:34.179Z - debug: Base url not specified, skipping its injection. requestId=12
+2018-09-19T01:13:34.180Z - debug: Rendering engine handlebars requestId=12
+2018-09-19T01:13:34.331Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:34 GMT+0000 (UTC), requestId=12
+2018-09-19T01:13:34.332Z - debug: Replaced images [] requestId=12
+2018-09-19T01:13:34.333Z - debug: Executing recipe html requestId=12
+2018-09-19T01:13:34.337Z - debug: Skipping storing report. requestId=12
+2018-09-19T01:13:34.338Z - info: Rendering request 12 finished in 161 ms requestId=12
+2018-09-19T01:13:34.363Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=11
+2018-09-19T01:13:34.363Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:13:54.830Z - debug: OData update on templates
+2018-09-19T01:13:55.543Z - info: Starting rendering request 13 (user: admin) requestId=13
+2018-09-19T01:13:55.544Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=13
+2018-09-19T01:13:55.545Z - debug: Adding sample data SyEl27baW requestId=13
+2018-09-19T01:13:55.551Z - debug: Replaced assets ["metro.css"] requestId=13
+2018-09-19T01:13:55.552Z - debug: Resources not defined for this template. requestId=13
+2018-09-19T01:13:55.553Z - debug: Base url not specified, skipping its injection. requestId=13
+2018-09-19T01:13:55.554Z - debug: Rendering engine handlebars requestId=13
+2018-09-19T01:13:55.873Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:55 GMT+0000 (UTC), requestId=13
+2018-09-19T01:13:55.880Z - debug: Replaced images ["23695606"] requestId=13
+2018-09-19T01:13:55.890Z - debug: Executing recipe phantom-pdf requestId=13
+2018-09-19T01:13:55.983Z - debug: Starting child request to render pdf footer requestId=13
+2018-09-19T01:13:55.985Z - info: Starting rendering request 14 (user: admin) requestId=14
+2018-09-19T01:13:55.986Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:true} requestId=14
+2018-09-19T01:13:55.986Z - debug: Inline data specified. requestId=14
+2018-09-19T01:13:55.988Z - debug: Resources not defined for this template. requestId=14
+2018-09-19T01:13:55.988Z - debug: Base url not specified, skipping its injection. requestId=14
+2018-09-19T01:13:55.989Z - debug: Rendering engine handlebars requestId=14
+2018-09-19T01:13:56.141Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:13:56 GMT+0000 (UTC), requestId=14
+2018-09-19T01:13:56.141Z - debug: Replaced images [] requestId=14
+2018-09-19T01:13:56.142Z - debug: Executing recipe html requestId=14
+2018-09-19T01:13:56.143Z - debug: Skipping storing report. requestId=14
+2018-09-19T01:13:56.145Z - info: Rendering request 14 finished in 159 ms requestId=14
+2018-09-19T01:13:56.172Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=13
+2018-09-19T01:13:56.172Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:14:11.796Z - debug: OData query on templates
+2018-09-19T01:14:14.376Z - info: Starting rendering request 15 (user: admin) requestId=15
+2018-09-19T01:14:14.378Z - info: Rendering template {shortid:ByRo2r-6W, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=15
+2018-09-19T01:14:14.379Z - debug: Data item not defined for this template. requestId=15
+2018-09-19T01:14:14.380Z - debug: Resources not defined for this template. requestId=15
+2018-09-19T01:14:14.380Z - debug: Base url not specified, skipping its injection. requestId=15
+2018-09-19T01:14:14.381Z - debug: Rendering engine handlebars requestId=15
+2018-09-19T01:14:14.529Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:14:14 GMT+0000 (UTC), requestId=15
+2018-09-19T01:14:14.531Z - debug: Replaced images ["23695606"] requestId=15
+2018-09-19T01:14:14.533Z - debug: Executing recipe phantom-pdf requestId=15
+2018-09-19T01:14:14.557Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=15
+2018-09-19T01:14:14.561Z - error: Error during processing request: http://localhost:2000/api/report/reporte_listado_problemas details: Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:14:15.783Z - info: Starting rendering request 16 (user: admin) requestId=16
+2018-09-19T01:14:15.784Z - info: Rendering template {shortid:ByRo2r-6W, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=16
+2018-09-19T01:14:15.785Z - debug: Data item not defined for this template. requestId=16
+2018-09-19T01:14:15.787Z - debug: Resources not defined for this template. requestId=16
+2018-09-19T01:14:15.788Z - debug: Base url not specified, skipping its injection. requestId=16
+2018-09-19T01:14:15.789Z - debug: Rendering engine handlebars requestId=16
+2018-09-19T01:14:15.933Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:14:15 GMT+0000 (UTC), requestId=16
+2018-09-19T01:14:15.935Z - debug: Replaced images ["23695606"] requestId=16
+2018-09-19T01:14:15.936Z - debug: Executing recipe phantom-pdf requestId=16
+2018-09-19T01:14:15.959Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=16
+2018-09-19T01:14:15.960Z - error: Error during processing request: http://localhost:2000/api/report/reporte_listado_problemas details: Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:14:18.169Z - info: Starting rendering request 17 (user: admin) requestId=17
+2018-09-19T01:14:18.171Z - info: Rendering template {shortid:BJ_drYgTb, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=17
+2018-09-19T01:14:18.173Z - debug: Adding sample data SyEl27baW requestId=17
+2018-09-19T01:14:18.177Z - debug: Replaced assets ["metro.css"] requestId=17
+2018-09-19T01:14:18.178Z - debug: Resources not defined for this template. requestId=17
+2018-09-19T01:14:18.178Z - debug: Base url not specified, skipping its injection. requestId=17
+2018-09-19T01:14:18.179Z - debug: Rendering engine handlebars requestId=17
+2018-09-19T01:14:18.495Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:14:18 GMT+0000 (UTC), requestId=17
+2018-09-19T01:14:18.501Z - debug: Replaced images ["23695606"] requestId=17
+2018-09-19T01:14:18.512Z - debug: Executing recipe phantom-pdf requestId=17
+2018-09-19T01:14:18.617Z - debug: Starting child request to render pdf footer requestId=17
+2018-09-19T01:14:18.624Z - info: Starting rendering request 18 (user: admin) requestId=18
+2018-09-19T01:14:18.625Z - info: Rendering template {shortid:BJ_drYgTb, recipe:html, engine:handlebars, preview:true} requestId=18
+2018-09-19T01:14:18.625Z - debug: Inline data specified. requestId=18
+2018-09-19T01:14:18.627Z - debug: Resources not defined for this template. requestId=18
+2018-09-19T01:14:18.627Z - debug: Base url not specified, skipping its injection. requestId=18
+2018-09-19T01:14:18.627Z - debug: Rendering engine handlebars requestId=18
+2018-09-19T01:14:18.776Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:14:18 GMT+0000 (UTC), requestId=18
+2018-09-19T01:14:18.777Z - debug: Replaced images [] requestId=18
+2018-09-19T01:14:18.777Z - debug: Executing recipe html requestId=18
+2018-09-19T01:14:18.778Z - debug: Skipping storing report. requestId=18
+2018-09-19T01:14:18.779Z - info: Rendering request 18 finished in 155 ms requestId=18
+2018-09-19T01:14:18.803Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=17
+2018-09-19T01:14:18.804Z - error: Error during processing request: http://localhost:2000/api/report/reporte_ortodoncia details: Error during rendering report: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantomjs-exact-2-1-1/node_modules/phantomjs-prebuilt/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-09-19T01:14:21.457Z - info: Starting rendering request 19 (user: admin) requestId=19
+2018-09-19T01:14:21.458Z - info: Rendering template {shortid:ByRo2r-6W, recipe:phantom-pdf, engine:handlebars, preview:true} requestId=19
+2018-09-19T01:14:21.459Z - debug: Data item not defined for this template. requestId=19
+2018-09-19T01:14:21.460Z - debug: Resources not defined for this template. requestId=19
+2018-09-19T01:14:21.460Z - debug: Base url not specified, skipping its injection. requestId=19
+2018-09-19T01:14:21.461Z - debug: Rendering engine handlebars requestId=19
+2018-09-19T01:14:21.608Z - debug: Compiled template not found in the cache, compiling timestamp=Wed Sep 19 2018 01:14:21 GMT+0000 (UTC), requestId=19
+2018-09-19T01:14:21.612Z - debug: Replaced images ["23695606"] requestId=19
+2018-09-19T01:14:21.613Z - debug: Executing recipe phantom-pdf requestId=19
+2018-09-19T01:14:21.635Z - error: Error when processing render request Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9) requestId=19
+2018-09-19T01:14:21.635Z - error: Error during processing request: http://localhost:2000/api/report/reporte_listado_problemas details: Error during rendering report: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT Error: spawn /usr/app/node_modules/phantom-html-to-pdf/node_modules/phantomjs/lib/phantom/bin/phantomjs ENOENT
+    at _errnoException (util.js:1024:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
