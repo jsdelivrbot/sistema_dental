@@ -17439,3 +17439,47 @@ Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SE
     at onErrorNT (internal/child_process.js:372:16)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)
     at process._tickCallback (internal/process/next_tick.js:180:9)
+2018-10-15T02:47:05.225Z - info: Initializing jsreport@1.10.0 in development mode using configuration file: none
+2018-10-15T02:47:05.226Z - info: Setting process based strategy for rendering. Please visit http://jsreport.net/learn/configuration for information how to get more performance.
+2018-10-15T02:47:05.230Z - info: Searching for available extensions in /usr/app/
+2018-10-15T02:47:05.233Z - info: Extensions location cache not found, crawling directories
+2018-10-15T02:47:05.696Z - info: Found 30 extensions
+2018-10-15T02:47:05.721Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2018-10-15T02:47:05.723Z - debug: Discovered 30 extensions
+2018-10-15T02:47:05.726Z - info: Using extension import-export
+2018-10-15T02:47:05.879Z - info: Using extension tags
+2018-10-15T02:47:05.881Z - info: Using extension templates
+2018-10-15T02:47:05.884Z - info: Using extension jsrender
+2018-10-15T02:47:05.884Z - info: Using extension authentication
+2018-10-15T02:47:05.978Z - info: Using extension cli
+2018-10-15T02:47:05.978Z - info: Using extension handlebars
+2018-10-15T02:47:05.979Z - info: Using extension debug
+2018-10-15T02:47:05.981Z - info: Using extension express
+2018-10-15T02:47:06.017Z - info: Using extension fop-pdf
+2018-10-15T02:47:06.053Z - info: Using extension phantom-pdf
+2018-10-15T02:47:06.133Z - info: Using extension fs-store
+2018-10-15T02:47:06.420Z - info: Using extension authorization
+2018-10-15T02:47:06.452Z - info: Using extension images
+2018-10-15T02:47:06.485Z - info: Using extension child-templates
+2018-10-15T02:47:06.488Z - info: Using extension browser-client
+2018-10-15T02:47:06.488Z - info: Using extension licensing
+2018-10-15T02:47:06.543Z - info: Using extension data
+2018-10-15T02:47:06.574Z - info: Using extension text
+2018-10-15T02:47:06.577Z - info: Using extension reports
+2018-10-15T02:47:06.610Z - info: Using extension resources
+2018-10-15T02:47:06.652Z - info: Using extension base
+2018-10-15T02:47:06.653Z - info: Using extension studio
+2018-10-15T02:47:06.705Z - info: Using extension html-to-xlsx
+2018-10-15T02:47:06.784Z - info: Using extension scripts
+2018-10-15T02:47:06.827Z - info: Using extension assets
+2018-10-15T02:47:06.833Z - info: Using extension scheduling
+2018-10-15T02:47:06.873Z - info: Using extension xlsx
+2018-10-15T02:47:06.966Z - info: Using extension sample-template
+2018-10-15T02:47:06.999Z - debug: Creating samples is disabled
+2018-10-15T02:47:06.999Z - info: Using extension public-templates
+2018-10-15T02:47:07.038Z - info: Initializing fs storage at /usr/app/data
+2018-10-15T02:47:07.284Z - info: Creating default express app.
+2018-10-15T02:47:07.315Z - info: jsreport server successfully started on http port: 2000
+2018-10-15T02:47:07.319Z - info: Verifying license key free
+2018-10-15T02:47:07.320Z - info: Using free license
+2018-10-15T02:47:07.322Z - info: reporter initialized
